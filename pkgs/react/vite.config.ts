@@ -9,13 +9,7 @@ import dts from 'vite-plugin-dts';
 import path from 'path';
 
 const peerDeps = Object.keys(peerDependencies);
-const primitiveDeps = [
-  '@radix-ui/react-avatar',
-  '@radix-ui/react-menubar',
-  '@radix-ui/react-switch',
-  '@radix-ui/react-tooltip',
-  '@radix-ui/react-popover',
-];
+const primitiveDeps = [];
 
 export default defineConfig({
   build: {
@@ -26,12 +20,6 @@ export default defineConfig({
         globals: {
           react: 'React',
           'react-dom': 'ReactDom',
-          '@radix-ui/react-avatar': 'AVI',
-          '@radix-ui/react-menubar': 'MBAR',
-          '@radix-ui/react-hover-card': 'HOV',
-          '@radix-ui/react-tooltip': 'TIP',
-          '@radix-ui/react-switch': 'SwitchRoot, SwitchThumb',
-          '@radix-ui/react-popover': 'POP',
         },
       },
     },
@@ -45,14 +33,15 @@ export default defineConfig({
   plugins: [
     react(),
     zipPack({
-      outDir: 'pkg',
-      outFileName: `kit(${process.env.npm_package_version}).zip`,
+      outDir: 'zip',
+      outFileName: `kit.[${process.env.npm_package_version}].zip`,
     }),
     banner(`
-    atelierkit© v${process.env.npm_package_version}. 
+    AtelierKit© v${process.env.npm_package_version}. 
     Copyright © 2023 atlrdsgn®. All rights reserved.
     
     see https://docs.atlrdsgn.com for more information.
+    @atlrdsgn/kit is licensed under the MIT License.
     `),
     dts({
       outDir: 'dist/types',
