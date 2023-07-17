@@ -1,0 +1,36 @@
+
+
+.DS_Store
+Icon
+
+# Swap the comments on the following lines if you don't wish to use zero-installs
+# Documentation here: https://yarnpkg.com/features/zero-installs
+#.pnp.*
+
+.pnp.cjs
+.pnp.loader.mjs
+
+
+# vscode
+.vscode
+
+# deps
+node_modules
+pnpm-lock.yaml
+package-lock.json
+
+# outputs
+.turbo
+dist/*
+dist-ssr
+
+*.log
+*.local
+
+.env
+.cache
+server/dist
+public/dist
+storybook-static/
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "kit",
+  "private": true,
+  "author": "chvndler",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo build",
+    "build:kit": "turbo build --filter=kit",
+    "build:kit:deps": "turbo build --filter=kit^... --no-cache",
+    "build:app:dir": "turbo build --filter='./apps/*'",
+    "build:pkg:dir": "turbo build --filter='./package/*'",
+    "clean": "turbo clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "prettier": "^3.0.0",
+    "turbo": "^1.10.7"
+  }
+}

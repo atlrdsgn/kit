@@ -1,0 +1,26 @@
+# Misc.
+.vscode
+.DS_Store
+Icon
+
+# Dependencies
+.env
+.cache
+node_modules
+pnpm-lock.yaml
+.turbo
+
+# Build
+.next
+build
+dist
+dist-ssr
+coverage
+server/dist
+public/dist
+
+*.log
+*.out
+*.pid
+*.seed
+*.local
