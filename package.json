@@ -8,7 +8,7 @@
     "build:kit": "turbo build --filter=kit",
     "build:kit:deps": "turbo build --filter=kit^... --no-cache",
     "build:app:dir": "turbo build --filter='./apps/*'",
-    "build:pkg:dir": "turbo build --filter='./package/*'",
+    "build:pkg:dir": "turbo build --filter='./pkgs/*'",
     "clean": "turbo clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
