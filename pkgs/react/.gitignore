@@ -21,7 +21,6 @@ package-lock.json
 
 # outputs
 .turbo
-dist/*
 dist-ssr
 
 *.log
