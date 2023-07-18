@@ -15,6 +15,8 @@ export const KitContext = createContext<KitContextValue>({
 export const useTheme = (): KitContextValue => {
   const context = useContext(KitContext);
   if (!context)
-    throw new Error('Atelier® Kit components must be used within [KitProvider]');
+    throw new Error(
+      'Atelier® Kit components must be used within [KitProvider]',
+    );
   return context;
 };

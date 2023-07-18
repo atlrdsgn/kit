@@ -1,5 +1,6 @@
 {
   "name": "kit",
+  "description": "an ever– expanding library of React components by @atlrdsgn",
   "private": true,
   "author": "chvndler",
   "license": "MIT",
