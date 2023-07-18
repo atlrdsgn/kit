@@ -1,3 +1,0 @@
-## AtelierKit Packages
-
-- react

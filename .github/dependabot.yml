@@ -5,29 +5,26 @@
 
 version: 2
 updates:
-    # Maintain yarn [npm] packages in the root package.
-  - package-ecosystem: "npm"
-    directory: "/"
+  # Maintain yarn [npm] packages in the root package.
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "weekly"
-      
-      
-    # Maintain main project dependencies.  
-  - package-ecosystem: "npm"
-    directory: "package/atlrdsgn-kit/"
+      interval: 'weekly'
+
+    # Maintain main project dependencies.
+  - package-ecosystem: 'npm'
+    directory: 'pkgs/react/'
     schedule:
-      interval: "weekly"
-      
-      
-    # Maintain apps directory  
-  - package-ecosystem: "npm"
-    directory: "apps/next-kit/"
+      interval: 'weekly'
+
+    # Maintain apps directory
+  - package-ecosystem: 'npm'
+    directory: 'apps/www/'
     schedule:
-      interval: "weekly"
-      
-      
-   # Maintain dependencies for GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
+      interval: 'weekly'
+
+    # Maintain dependencies for GitHub Actions
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "weekly"     
+      interval: 'weekly'
