@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageLayout } from '@/components/core';
 import ComponentsPage from '@/components/core/components.page';
+import DemoPopover from '@/components/react-kit/DemoPopover';
 import {
   DemoButton,
   DemoChip,
@@ -19,6 +20,7 @@ const ComponentsIndex = () => {
         <DemoContainer />
         <DemoChip />
         <DemoButton />
+        <DemoPopover />
 
         <DemoText />
       </PageLayout>

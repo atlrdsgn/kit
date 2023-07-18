@@ -6,6 +6,7 @@ export * from './container';
 export * from './flex';
 export * from './grid';
 export * from './heading';
+export * from './popover';
 export * from './rect';
 export * from './section';
 export * from './space';

@@ -1,4 +1,5 @@
 import { RuntimeFn, type RecipeVariants } from '@vanilla-extract/recipes';
+/** ------------------------------------------------ */
 declare const size: Record<"xs" | "sm" | "md" | "lg", string>;
 declare const variant: Record<"slate" | "jade", string>;
 /** -------------------------------------------- */

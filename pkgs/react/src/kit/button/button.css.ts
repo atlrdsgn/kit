@@ -11,7 +11,7 @@ const btn = {
   },
   secondary: {},
   jade: {
-    background: `var(--jade8, ${kit.color.jade8})`,
+    background: `var(--jade6, ${kit.color.jade6})`,
     color: `var(--jade1, ${kit.color.jade1})`,
     border: `var(--jade9, ${kit.color.jade9})`,
     shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
@@ -132,6 +132,8 @@ const COLOR_MAP = {
     boxShadow: btn.jade.shadow,
   },
 } as const;
+
+/** ------------------------------------------------ */
 
 const size = styleVariants(SIZE_MAP, (value) => ({
   fontSize: value.fontSize,

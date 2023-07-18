@@ -13,3 +13,4 @@ export {
   type RequiredResponsiveValue,
   type OptionalResponsiveObject,
 } from './sprinkles.css';
+export { element, type KitElement } from './reset.css';

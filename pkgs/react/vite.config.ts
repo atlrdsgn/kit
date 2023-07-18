@@ -9,7 +9,7 @@ import dts from 'vite-plugin-dts';
 import path from 'path';
 
 const peerDeps = Object.keys(peerDependencies);
-const primitiveDeps = [];
+const primitiveDeps = ['@radix-ui/react-popover'];
 
 export default defineConfig({
   build: {
@@ -18,7 +18,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'kit',
-      fileName: (format) => (format === 'es' ? 'index.mjs' : 'index.cjs'),
+      fileName: (format) => (format === 'es' ? 'index.esm.mjs' : 'index.cjs'),
       // fileName: 'index',
       formats: ['cjs', 'es', 'umd'],
     },
@@ -29,6 +29,7 @@ export default defineConfig({
           react: 'React',
           'react-dom': 'ReactDom',
           'react/jsx-runtime': 'jsxRuntime',
+          '@radix-ui/react-popover': 'POP',
         },
       },
     },
@@ -57,8 +58,8 @@ export default defineConfig({
       exclude: [],
     }),
     vanillaExtractPlugin({
-      identifiers: 'short',
-      emitCssInSsr: true,
+      identifiers: 'debug',
+      // emitCssInSsr: true,
     }),
     banner(`
     AtelierKit© v${process.env.npm_package_version}. 

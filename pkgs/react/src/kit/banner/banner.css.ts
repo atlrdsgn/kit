@@ -69,7 +69,7 @@ const shape = styleVariants(SHAPE_MAP, (value) => ({
   borderRadius: value.borderRadius,
 }));
 
-const applyBorder = {
+const border = {
   true: [
     ...style({
       border: '1px solid',
@@ -80,12 +80,7 @@ const applyBorder = {
       borderColor: 'inherit',
     }),
   ],
-  false: [],
 };
-
-const border = styleVariants(applyBorder, (value) => ({
-  ...value,
-}));
 
 /** --------------------------------------------------- */
 

@@ -53,6 +53,21 @@ const VARIANT_COLOR_MAP = {
       boxShadow: chipShadows.primary.focus,
     },
   },
+  jade: {
+    backgroundColor: kit.color.jade3,
+    border: `1px solid ${kit.color.jade5}`,
+    color: kit.color.jade7,
+    boxShadow: chipShadows.primary.initial,
+    onHover: {
+      backgroundColor: kit.color.jade3,
+      border: `1px solid ${kit.color.jade6}`,
+      color: kit.color.jade7,
+      boxShadow: chipShadows.primary.hover,
+    },
+    onFocus: {
+      boxShadow: chipShadows.primary.focus,
+    },
+  },
 } as const;
 
 /** --------------------------------------------------- */
