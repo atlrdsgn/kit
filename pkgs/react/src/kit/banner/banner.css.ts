@@ -26,6 +26,18 @@ const SIZE_MAP = {
   },
 } as const;
 
+const SHAPE_MAP = {
+  sharp: {
+    borderRadius: '0px',
+  },
+  rounded: {
+    borderRadius: '6px',
+  },
+  pill: {
+    borderRadius: '9999px',
+  },
+} as const;
+
 const COLOR_VARIANTS = {
   one: {
     backgroundColor: kit.color.slate2,
@@ -38,11 +50,6 @@ const COLOR_VARIANTS = {
     borderColor: kit.color.sapphire5,
   },
 } as const;
-
-const colorKeys = Object.keys(COLOR_VARIANTS) as Array<
-  keyof typeof COLOR_VARIANTS
->;
-const sizeKeys = Object.keys(SIZE_MAP) as Array<keyof typeof SIZE_MAP>;
 
 /** ----------------- variants ---------------------- */
 
@@ -58,6 +65,10 @@ const variant = styleVariants(COLOR_VARIANTS, (value) => ({
   borderColor: value.borderColor,
 }));
 
+const shape = styleVariants(SHAPE_MAP, (value) => ({
+  borderRadius: value.borderRadius,
+}));
+
 const applyBorder = {
   true: [
     ...style({
@@ -69,11 +80,12 @@ const applyBorder = {
       borderColor: 'inherit',
     }),
   ],
+  false: [],
 };
 
-const border = styleVariants(applyBorder, (value) => value);
-
-const borderKeys = Object.keys(applyBorder) as Array<keyof typeof applyBorder>;
+const border = styleVariants(applyBorder, (value) => ({
+  ...value,
+}));
 
 /** --------------------------------------------------- */
 
@@ -101,9 +113,9 @@ const BASE_BANNER = style({
 });
 
 /** ------------------------------------------------------- */
-export type BannerSize = typeof sizeKeys;
-export type BannerBorderBoolean = typeof borderKeys;
-export type BannerVariant = typeof colorKeys;
+export type BannerSize = typeof size;
+export type BannerBorderBoolean = typeof border;
+export type BannerVariant = typeof variant;
 export type BannerVariants = RecipeVariants<typeof banner>;
 export const banner = recipe({
   base: BASE_BANNER,

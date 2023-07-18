@@ -16,12 +16,12 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
           align='center'>
           <Heading
             align='center'
-            size='H1'
-            weight='bold'
+            size='H2'
+            weight='semibold'
             font='system'>
             {components.introduction}
           </Heading>
-
+          <Space size='sm' />
           <Text
             color='jade5'
             align='center'
@@ -31,6 +31,8 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
             {components.subtitle}
           </Text>
         </Container>
+
+        <Space size='xxl' />
       </Section>
 
       {children}

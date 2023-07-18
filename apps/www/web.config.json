@@ -18,8 +18,8 @@
   },
 
   "components": {
-    "introduction": "Atelierkit",
-    "subtitle": "An ever expanding component kit, for the disruptive.",
+    "introduction": "atlrdsgn/kit",
+    "subtitle": "An ever expanding UI kit, for the disruptive.",
 
     "components": {}
   },

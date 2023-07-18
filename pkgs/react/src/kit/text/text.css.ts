@@ -138,7 +138,7 @@ export const text = recipe({
     font: 'system',
     size: 'md',
     weight: 'medium',
-    color: 'slate9',
+    color: 'current',
     align: 'left',
     casing: 'none',
   },
