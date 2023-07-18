@@ -9,7 +9,7 @@ export type ChipProps = ChipVariantProps &
 export const Chip: React.FC<ChipProps> = ({
   children,
   className,
-  size = 'small',
+  size = 'sm',
   shape = 'pill',
   variant = 'slate',
   ...rest

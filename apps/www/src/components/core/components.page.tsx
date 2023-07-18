@@ -23,11 +23,11 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
           </Heading>
 
           <Text
-            color='volt7'
+            color='jade5'
             align='center'
             size='lg'
             weight='medium'
-            font='inter'>
+            font='system'>
             {components.subtitle}
           </Text>
         </Container>

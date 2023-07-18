@@ -1,5 +1,6 @@
 import { style, styleVariants } from '@vanilla-extract/css';
 import { recipe, type RecipeVariants } from '@vanilla-extract/recipes';
+import { chipShadows } from '../@shared/shadows';
 import { kit } from '../../lib';
 
 const BORDER_RADIUS_XSMALL = '7px';
@@ -7,19 +8,19 @@ const BORDER_RADIUS_SMALL = '8px';
 const BORDER_RADIUS_MEDIUM = '12px';
 
 const SIZE_MAP = {
-  xsmall: {
+  xs: {
     fontSize: kit.font.size.MINI,
     lineHeight: kit.font.lineheight.MINI,
     padding: '3px 6px',
     borderRadius: BORDER_RADIUS_XSMALL,
   },
-  small: {
+  sm: {
     fontSize: kit.font.size.XS,
     lineHeight: kit.font.lineheight.XS,
     padding: '3px 6px',
     borderRadius: BORDER_RADIUS_SMALL,
   },
-  medium: {
+  md: {
     fontSize: kit.font.size.SM,
     lineHeight: kit.font.size.MD,
     padding: '4px 8px',
@@ -41,30 +42,15 @@ const VARIANT_COLOR_MAP = {
     backgroundColor: kit.color.slate1,
     border: `1px solid ${kit.color.slate3}`,
     color: kit.color.slate5,
-    boxShadow: component_shadows.primary.initial,
+    boxShadow: chipShadows.primary.initial,
     onHover: {
       backgroundColor: kit.color.slate1,
       border: `1px solid ${kit.color.slate4}`,
       color: kit.color.slate5,
-      boxShadow: component_shadows.primary.hover,
+      boxShadow: chipShadows.primary.hover,
     },
     onFocus: {
-      boxShadow: component_shadows.primary.focus,
-    },
-  },
-  hyper: {
-    backgroundColor: kit.color.hyper6,
-    border: `1px solid ${kit.color.hyper7}`,
-    color: kit.color.hyper1,
-    boxShadow: component_shadows.hyper.initial,
-    onHover: {
-      backgroundColor: kit.color.hyper5,
-      border: `1px solid ${kit.color.hyper6}`,
-      color: kit.color.hyper1,
-      boxShadow: component_shadows.hyper.hover,
-    },
-    onFocus: {
-      boxShadow: component_shadows.hyper.focus,
+      boxShadow: chipShadows.primary.focus,
     },
   },
 } as const;
@@ -125,6 +111,7 @@ const CHIP_ROOT = style({
   fontWeight: kit.font.weight.MEDIUM,
   fontVariantNumeric: 'tabular-nums',
   gap: '4px',
+  maxWidth: 'fit-content',
 
   '@media': {},
 
@@ -148,7 +135,7 @@ export const chip = recipe({
   base: CHIP_ROOT,
   variants: { size, shape, variant },
   defaultVariants: {
-    size: 'small',
+    size: 'sm',
     shape: 'pill',
     variant: 'slate',
   },

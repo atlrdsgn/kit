@@ -60,7 +60,7 @@ export const validStackComponents = [
   'span',
 ] as const;
 
-type Props = {
+export type StackProps = {
   as?: (typeof validStackComponents)[number];
   align?: DivProps['alignItems'];
   children: ReactNodeNoStrings;
@@ -80,7 +80,7 @@ export const Stack = ({
   direction = 'vertical',
   space = '4px 4px',
   wrap,
-}: React.PropsWithChildren<Props>) => {
+}: React.PropsWithChildren<StackProps>) => {
   const flexDirection = directionToFlexDirection(direction);
   const flexWrap = wrapToFlexWrap(wrap);
   return (

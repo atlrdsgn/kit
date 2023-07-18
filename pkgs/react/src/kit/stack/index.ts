@@ -1,1 +1,1 @@
-export { Stack, type Direction, type Wrap } from './stack';
+export { Stack, type Direction, type Wrap, type StackProps } from './stack';
