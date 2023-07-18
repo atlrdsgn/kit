@@ -1,0 +1,31 @@
+{
+  "index": {
+    "type": "page",
+    "title": "Nextra",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "components": "Components",
+  "colour": "Colour",
+  "advanced": "Advanced",
+  "changelog": {
+    "title": "Changelog",
+    "type": "page"
+  },
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://twitter.com/shuding_",
+    "newWindow": true
+  },
+  "github_link": {
+    "title": "Atelierkit",
+    "href": "https://github.com/atlrdsgn/atelierkit"
+  }
+}

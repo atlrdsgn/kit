@@ -78,6 +78,6 @@ export const DefaultExample = () => (
 );
 ```
 
-#### You can view full documentation at [ds.atlrdsgn.com](https://ds.atlrdsgn.com)
+#### You can view full documentation at [docs.atlrdsgn.com](https://docs.atlrdsgn.com)
 
 `© 2023 atlrdsgn®`

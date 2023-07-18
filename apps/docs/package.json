@@ -1,0 +1,33 @@
+{
+  "name": "kit-docs",
+  "version": "0.1.1",
+  "private": true,
+  "description": "@atlrdsn/kit Documentation",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlrdsgn/kit/apps/docs.git"
+  },
+  "author": "Chandler Chappell <chan@atlrdsgn.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atlrdsgn/kit/apps/docs/issues"
+  },
+  "homepage": "https://github.com/atlrdsgn/kit/apps/docs#readme",
+  "dependencies": {
+    "next": "^13.4.4",
+    "nextra": "^2.8.0",
+    "nextra-theme-docs": "^2.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
+  }
+}
