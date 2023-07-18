@@ -1,12 +1,11 @@
 import * as React from 'react';
 
 import {
-  OptionalResponsiveObject,
-  OptionalResponsiveValue,
+  type OptionalResponsiveObject,
+  type OptionalResponsiveValue,
   mapResponsiveValue,
-} from '../../lib/css';
-import { ReactNodeNoStrings } from '../_shared/types';
-
+} from '../../lib';
+import { type ReactNodeNoStrings } from '../@utils/utils';
 import { Rect, type DivProps } from '../rect';
 
 export type Direction = 'horizontal' | 'vertical';

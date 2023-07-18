@@ -1,5 +1,5 @@
 import { style, styleVariants } from '@vanilla-extract/css';
-import { recipe, RecipeVariants } from '@vanilla-extract/recipes';
+import { recipe, type RecipeVariants } from '@vanilla-extract/recipes';
 import { kit } from '../../lib';
 
 const FONT_MAP = {
@@ -84,6 +84,10 @@ const weight = styleVariants(WEIGHT_MAP, (value) => ({
   fontWeight: value.fontWeight,
 }));
 
+const color = styleVariants(kit.color, (value) => ({
+  color: value,
+}));
+
 const align = styleVariants(ALIGNMENT_MAP, (value) => ({
   textAlign: value.textAlign,
 }));
@@ -104,6 +108,7 @@ const TEXT_BASE = style({
 
 export type TextFontVariants = keyof typeof font;
 export type TextSizeVariants = keyof typeof size;
+export type TextColorVariants = keyof typeof color;
 export type TextWeightVariants = keyof typeof weight;
 export type TextAlignVariants = keyof typeof align;
 export type TextCasingVariants = keyof typeof casing;
@@ -125,6 +130,7 @@ export const text = recipe({
     font,
     size,
     weight,
+    color,
     align,
     casing,
   },
@@ -132,6 +138,7 @@ export const text = recipe({
     font: 'system',
     size: 'md',
     weight: 'medium',
+    color: 'slate9',
     align: 'left',
     casing: 'none',
   },

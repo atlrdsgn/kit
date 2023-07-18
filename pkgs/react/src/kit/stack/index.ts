@@ -1,1 +1,1 @@
-export { Stack } from './stack';
+export { Stack, type Direction, type Wrap } from './stack';

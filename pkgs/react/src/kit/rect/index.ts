@@ -1,4 +1,5 @@
 export {
+  Box,
   Rect,
   //..
   type DivProps,

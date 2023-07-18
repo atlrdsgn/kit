@@ -13,21 +13,24 @@ const primitiveDeps = [];
 
 export default defineConfig({
   build: {
+    target: 'esnext',
     sourcemap: true,
+    lib: {
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: 'kit',
+      fileName: (format) => (format === 'es' ? 'index.mjs' : 'index.cjs'),
+      // fileName: 'index',
+      formats: ['cjs', 'es', 'umd'],
+    },
     rollupOptions: {
-      external: [...peerDeps, ...primitiveDeps],
+      external: [...peerDeps, ...primitiveDeps, 'react/jsx-runtime'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDom',
+          'react/jsx-runtime': 'jsxRuntime',
         },
       },
-    },
-    lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'kit',
-      fileName: 'index',
-      formats: ['cjs', 'es', 'umd'],
     },
   },
   plugins: [
@@ -36,21 +39,17 @@ export default defineConfig({
       outDir: 'zip',
       outFileName: `kit.[${process.env.npm_package_version}].zip`,
     }),
-    banner(`
-    AtelierKit© v${process.env.npm_package_version}. 
-    Copyright © 2023 atlrdsgn®. All rights reserved.
-    
-    see https://docs.atlrdsgn.com for more information.
-    @atlrdsgn/kit is licensed under the MIT License.
-    `),
     dts({
+      entryRoot: 'src',
       outDir: 'dist/types',
+      staticImport: true,
+      /*
       beforeWriteFile: (filePath, content) => ({
         content,
         filePath: filePath.replace('src', ''),
       }),
+      */
       compilerOptions: {
-        baseUrl: './src/',
         emitDeclarationOnly: true,
         noEmit: false,
       },
@@ -61,5 +60,12 @@ export default defineConfig({
       identifiers: 'short',
       emitCssInSsr: true,
     }),
+    banner(`
+    AtelierKit© v${process.env.npm_package_version}. 
+    Copyright © 2023 atlrdsgn®. All rights reserved.
+    
+    see https://docs.atlrdsgn.com for more information.
+    @atlrdsgn/kit is licensed under the MIT License.
+    `),
   ],
 });

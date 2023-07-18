@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { KitMode, KitContext } from './context';
+import { type KitMode, KitContext } from './context';
 import { themes } from '../theme/kit.css';
 
 export interface KitProviderProps {

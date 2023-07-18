@@ -7,9 +7,9 @@ export {
 } from './sprinkles.css';
 export { breakpoints } from './constants';
 export { colorModeStyle } from './mode';
-export type {
-  OptionalResponsiveValue,
-  RequiredResponsiveObject,
-  RequiredResponsiveValue,
-  OptionalResponsiveObject,
+export {
+  type OptionalResponsiveValue,
+  type RequiredResponsiveObject,
+  type RequiredResponsiveValue,
+  type OptionalResponsiveObject,
 } from './sprinkles.css';

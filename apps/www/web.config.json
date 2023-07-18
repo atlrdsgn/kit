@@ -1,0 +1,31 @@
+{
+  "global": {
+    "title": "Global",
+    "description": "Global settings for the site"
+  },
+
+  "meta": [
+    {
+      "name": "og:type",
+      "value": "website"
+    }
+  ],
+
+  "index": {
+    "introduction": "We'll be back.",
+    "subtitle": "We are currently updating a few things,",
+    "line2": "and the documentation site will be back online soon."
+  },
+
+  "components": {
+    "introduction": "Atelierkit",
+    "subtitle": "An ever expanding component kit, for the disruptive.",
+
+    "components": {}
+  },
+
+  "footer": {
+    "componentlink": "/components",
+    "copyright": "© 2023"
+  }
+}

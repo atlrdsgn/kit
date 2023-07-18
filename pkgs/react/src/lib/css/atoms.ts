@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 import * as styleRes from './reset.css';
-import { Sprinkles, sprinkles } from './sprinkles.css';
+import { type Sprinkles, sprinkles } from './sprinkles.css';
 
 export type Atoms = Sprinkles & {
   reset?:

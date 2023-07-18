@@ -1,8 +1,8 @@
 import {
   defineProperties,
   createSprinkles,
-  ConditionalValue,
-  RequiredConditionalValue,
+  type ConditionalValue,
+  type RequiredConditionalValue,
 } from '@vanilla-extract/sprinkles';
 import { createMapValueFn } from '@vanilla-extract/sprinkles';
 import { breakpoints, breakpointNames } from './constants';
