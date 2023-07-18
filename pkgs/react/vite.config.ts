@@ -18,9 +18,9 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'kit',
-      fileName: (format) => (format === 'es' ? 'index.esm.mjs' : 'index.cjs'),
+      fileName: (format) => (format === 'es' ? 'index.esm.js' : 'index.js'),
       // fileName: 'index',
-      formats: ['cjs', 'es', 'umd'],
+      formats: ['es', 'umd'],
     },
     rollupOptions: {
       external: [...peerDeps, ...primitiveDeps, 'react/jsx-runtime'],
