@@ -2,7 +2,6 @@ import React from 'react';
 import { PageLayout } from '@/components/core';
 import ComponentsPage from '@/components/core/components.page';
 import {
-  DemoBanner,
   DemoButton,
   DemoChip,
   DemoContainer,
@@ -20,7 +19,6 @@ const ComponentsIndex = () => {
         <DemoContainer />
         <DemoChip />
         <DemoButton />
-        <DemoBanner />
 
         <DemoText />
       </PageLayout>
