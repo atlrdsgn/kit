@@ -13,7 +13,6 @@ pnpm-lock.yaml
 # Build
 .next
 build
-dist
 dist-ssr
 coverage
 server/dist
