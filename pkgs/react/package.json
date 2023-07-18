@@ -1,6 +1,6 @@
 {
   "name": "@atlrdsgn/kit",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "AtelierKit® React",
   "main": "src/index.ts",
   "module": "dist/index.cjs",
