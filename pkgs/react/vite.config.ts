@@ -9,7 +9,7 @@ import dts from 'vite-plugin-dts';
 import path from 'path';
 
 const peerDeps = Object.keys(peerDependencies);
-const primitiveDeps = ['@radix-ui/react-popover'];
+const primitiveDeps = ['@radix-ui/react-popover', '@radix-ui/react-switch'];
 
 export default defineConfig({
   build: {

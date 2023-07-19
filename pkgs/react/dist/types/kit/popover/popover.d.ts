@@ -4,9 +4,9 @@ export declare const PopoverRoot: React.FC<POP.PopoverProps>;
 export declare const PopoverArrow: React.ForwardRefExoticComponent<POP.PopoverArrowProps & React.RefAttributes<SVGSVGElement>>;
 export declare const PopoverAnchor: React.ForwardRefExoticComponent<POP.PopoverAnchorProps & React.RefAttributes<HTMLDivElement>>;
 export declare const PopoverPortal: React.FC<POP.PopoverPortalProps>;
-export declare const PopoverTrigger: React.ForwardRefExoticComponent<Omit<POP.PopoverTriggerProps & React.RefAttributes<HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
-export declare const PopoverContent: React.ForwardRefExoticComponent<Omit<POP.PopoverContentProps & React.RefAttributes<HTMLDivElement>, "ref"> & React.RefAttributes<HTMLDivElement>>;
-export declare const PopoverClose: React.ForwardRefExoticComponent<Omit<POP.PopoverCloseProps & React.RefAttributes<HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
+declare const PopoverTrigger: React.ForwardRefExoticComponent<Omit<POP.PopoverTriggerProps & React.RefAttributes<HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
+declare const PopoverContent: React.ForwardRefExoticComponent<Omit<POP.PopoverContentProps & React.RefAttributes<HTMLDivElement>, "ref"> & React.RefAttributes<HTMLDivElement>>;
+declare const PopoverClose: React.ForwardRefExoticComponent<Omit<POP.PopoverCloseProps & React.RefAttributes<HTMLButtonElement>, "ref"> & React.RefAttributes<HTMLButtonElement>>;
 /** ----------------------------------------- */
 export type PopoverProps = React.ComponentProps<typeof POP.Root>;
 export declare const Popover: React.FC<PopoverProps> & {
@@ -17,4 +17,5 @@ export declare const Popover: React.FC<PopoverProps> & {
     Arrow: typeof POP.Arrow;
     Close: typeof PopoverClose;
 };
+export {};
 //# sourceMappingURL=popover.d.ts.map

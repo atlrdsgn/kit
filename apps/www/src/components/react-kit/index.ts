@@ -6,3 +6,4 @@ export * from './DemoGrid';
 export * from './DemoSection';
 export * from './DemoText';
 export * from './DemoPopover';
+export * from './DemoSwitch';

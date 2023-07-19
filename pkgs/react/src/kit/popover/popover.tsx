@@ -8,7 +8,7 @@ export const PopoverArrow = POP.Arrow;
 export const PopoverAnchor = POP.Anchor;
 export const PopoverPortal = POP.Portal;
 
-export const PopoverTrigger = React.forwardRef<
+const PopoverTrigger = React.forwardRef<
   React.ElementRef<typeof POP.Trigger>,
   React.ComponentProps<typeof POP.Trigger>
 >(({ children, className, asChild = false, ...props }, ref) => {
@@ -22,7 +22,7 @@ export const PopoverTrigger = React.forwardRef<
   );
 });
 
-export const PopoverContent = React.forwardRef<
+const PopoverContent = React.forwardRef<
   React.ElementRef<typeof POP.Content>,
   React.ComponentPropsWithoutRef<typeof POP.Content>
 >(
@@ -34,27 +34,30 @@ export const PopoverContent = React.forwardRef<
       sideOffset = 6,
       sticky = 'partial',
       side = 'bottom',
+      onInteractOutside,
       ...props
     },
     forwardedRef,
   ) => {
     return (
-      <POP.Portal>
+      <>
         <POP.Content
           {...props}
           ref={forwardedRef}
           align={align}
           sideOffset={sideOffset}
+          sticky={sticky}
+          onInteractOutside={onInteractOutside}
           side={side}
           className={clsx(CSS.popoverContent, className)}>
           {children}
         </POP.Content>
-      </POP.Portal>
+      </>
     );
   },
 );
 
-export const PopoverClose = React.forwardRef<
+const PopoverClose = React.forwardRef<
   React.ElementRef<typeof POP.Close>,
   React.ComponentProps<typeof POP.Close>
 >(({ children, className, asChild, ...props }, ref) => {

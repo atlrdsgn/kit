@@ -11,6 +11,7 @@ export * from './rect';
 export * from './section';
 export * from './space';
 export * from './stack';
+export * from './switch';
 export * from './text';
 
 // @shared ..

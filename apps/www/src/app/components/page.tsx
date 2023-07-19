@@ -7,6 +7,7 @@ import {
   DemoChip,
   DemoContainer,
   DemoSection,
+  DemoSwitch,
   DemoText,
 } from '@/components/react-kit';
 
@@ -21,6 +22,7 @@ const ComponentsIndex = () => {
         <DemoChip />
         <DemoButton />
         <DemoPopover />
+        <DemoSwitch />
 
         <DemoText />
       </PageLayout>
