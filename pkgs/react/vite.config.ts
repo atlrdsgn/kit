@@ -19,7 +19,6 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'kit',
       fileName: (format) => (format === 'es' ? 'index.esm.js' : 'index.js'),
-      // fileName: 'index',
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
@@ -59,7 +58,7 @@ export default defineConfig({
       exclude: [],
     }),
     vanillaExtractPlugin({
-      identifiers: 'debug',
+      identifiers: 'short',
       // emitCssInSsr: true,
     }),
     banner(`
