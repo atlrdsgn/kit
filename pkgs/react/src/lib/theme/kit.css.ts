@@ -8,14 +8,16 @@ import { themeVars } from './vars.css';
  * [kitClass] refers to a css class, representing the base theme.
  * [tokens] represents the generated tokens used for theming.
  */
-export const [kitClass, tokens] = createTheme(themeVars);
+export const [kitClass, kit] = createTheme(themeVars);
 
-const lightTheme = createTheme(tokens, BASE);
-const darkTheme = createTheme(tokens, DARK);
+const lightTheme = createTheme(kit, BASE);
+const darkTheme = createTheme(kit, DARK);
 
-export const kit = tokens;
 export const themes = {
   base: kitClass,
   light: lightTheme,
   dark: darkTheme,
 };
+
+export type Themes = keyof typeof themes;
+export type Kit = typeof kit;

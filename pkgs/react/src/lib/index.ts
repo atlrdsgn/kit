@@ -1,26 +1,29 @@
-// The main theming object.
-export { kit } from './theme/kit.css';
-
-/** ------------ provider -------------- */
-export { KitProvider, type KitProviderProps } from './provider';
 export {
-  KitContext,
+  // ..
+  kit,
+  themes,
+  type Kit,
+  type Themes,
+} from './theme/kit.css';
+
+export {
   useTheme,
+  KitContext,
+  KitProvider,
+  type KitProviderProps,
   type KitContextValue,
   type KitMode,
 } from './provider';
 
-/** ------------ css -------------- */
-export { atoms, type Atoms } from './css';
 export {
+  atoms,
   sprinkles,
-  type Sprinkles,
   mapResponsiveValue,
   mapColorValue,
-} from './css';
-export { breakpoints } from './css';
-export { colorModeStyle } from './css';
-export {
+  breakpoints,
+  colorModeStyle,
+  type Atoms,
+  type Sprinkles,
   type OptionalResponsiveValue,
   type RequiredResponsiveObject,
   type RequiredResponsiveValue,

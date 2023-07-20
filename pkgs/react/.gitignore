@@ -1,5 +1,3 @@
-
-
 .DS_Store
 Icon
 
@@ -20,6 +18,7 @@ pnpm-lock.yaml
 package-lock.json
 
 # outputs
+prod.package/*
 .turbo
 dist-ssr
 

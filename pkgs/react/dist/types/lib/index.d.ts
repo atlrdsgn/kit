@@ -1,11 +1,4 @@
-export { kit } from './theme/kit.css';
-/** ------------ provider -------------- */
-export { KitProvider, type KitProviderProps } from './provider';
-export { KitContext, useTheme, type KitContextValue, type KitMode, } from './provider';
-/** ------------ css -------------- */
-export { atoms, type Atoms } from './css';
-export { sprinkles, type Sprinkles, mapResponsiveValue, mapColorValue, } from './css';
-export { breakpoints } from './css';
-export { colorModeStyle } from './css';
-export { type OptionalResponsiveValue, type RequiredResponsiveObject, type RequiredResponsiveValue, type OptionalResponsiveObject, } from './css';
+export { kit, themes, type Kit, type Themes, } from './theme/kit.css';
+export { useTheme, KitContext, KitProvider, type KitProviderProps, type KitContextValue, type KitMode, } from './provider';
+export { atoms, sprinkles, mapResponsiveValue, mapColorValue, breakpoints, colorModeStyle, type Atoms, type Sprinkles, type OptionalResponsiveValue, type RequiredResponsiveObject, type RequiredResponsiveValue, type OptionalResponsiveObject, } from './css';
 //# sourceMappingURL=index.d.ts.map
