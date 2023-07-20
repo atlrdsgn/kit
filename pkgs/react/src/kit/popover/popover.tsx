@@ -22,7 +22,7 @@ const PopoverTrigger = React.forwardRef<
 
 const PopoverContent = React.forwardRef<
   React.ElementRef<typeof POP.Content>,
-  React.ComponentProps<typeof POP.Content>
+  React.ComponentPropsWithoutRef<typeof POP.Content>
 >(
   (
     {
@@ -57,7 +57,7 @@ const PopoverContent = React.forwardRef<
 
 const PopoverClose = React.forwardRef<
   React.ElementRef<typeof POP.Close>,
-  React.ComponentPropsWithoutRef<typeof POP.Close>
+  React.ComponentProps<typeof POP.Close>
 >(({ children, className, asChild, ...props }, ref) => {
   return (
     <POP.Close
