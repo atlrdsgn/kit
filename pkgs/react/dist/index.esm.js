@@ -595,14 +595,17 @@ const ir = v.Root, er = v.Arrow, sr = v.Anchor, ar = v.Portal, nr = C.forwardRef
     sideOffset: o = 6,
     sticky: i = "partial",
     side: e = "bottom",
-    ...s
-  }, a) => /* @__PURE__ */ d(p_, { children: /* @__PURE__ */ d(
+    onInteractOutside: s,
+    ...a
+  }, n) => /* @__PURE__ */ d(p_, { children: /* @__PURE__ */ d(
     v.Content,
     {
-      ...s,
-      ref: a,
+      ...a,
+      ref: n,
       align: l,
       sideOffset: o,
+      sticky: i,
+      onInteractOutside: s,
       side: e,
       className: p(or, r),
       children: _

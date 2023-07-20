@@ -1,26 +1,25 @@
-import { nodeResolve } from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import typescript from 'rollup-plugin-typescript2';
+import typescript from '@rollup/plugin-typescript';
+import nodeResolve from '@rollup/plugin-node-resolve';
 
 export default {
-  input: 'src/index.ts', // Entry point of your library
-  output: {
-    file: 'dist/index.js',
-    format: 'esm', // ES module format
-  },
+  input: 'src/index.ts',
+  output: [
+    {
+      file: 'dist/index.js',
+      format: 'cjs',
+      sourcemap: true,
+    },
+    {
+      file: 'dist/index.esm.js',
+      format: 'esm',
+      sourcemap: true,
+    },
+  ],
   plugins: [
     nodeResolve(),
-    commonjs(),
     typescript({
-      useTsconfigDeclarationDir: true,
-      exclude: [
-        'node_modules/**',
-        '**/*.stories.tsx',
-        '**/*.stories.ts',
-        '**/*.test.tsx',
-        '**/anatomy/*.example.md',
-      ],
+      tsconfig: './tsconfig.json',
     }),
   ],
-  external: ['react', 'react-dom'], // Specify external dependencies
+  external: ['react', 'react-dom'], // Add any other external dependencies here
 };

@@ -27,12 +27,13 @@
   },
   "scripts": {
     "build": "vite build",
-    "rollup": "rollup --config",
+    "rollup": "rollup --config --bundleConfigAsCjs",
     "build:types": "yarn tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
     "lint": "eslint *.ts*",
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf pkg/*",
     "release": "npm publish --access public",
     "dev:release": "npm publish --access private",
+    "npm:login": "npm login --registry=https://npm.pkg.github.com --scope=@atlrdsgn",
     "pretty": "prettier --write src/**/*.{ts,tsx,js,jsx,json,css,md}"
   },
   "peerDependencies": {
@@ -44,6 +45,7 @@
     "@radix-ui/react-switch": "^1.0.3"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.1.0",
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
@@ -60,6 +62,8 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react": "^7.32.2",
     "prettier": "^3.0.0",
+    "rollup": "^3.26.3",
+    "rollup-plugin-typescript2": "^0.35.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.4",
     "vite-plugin-banner": "^0.7.0",
