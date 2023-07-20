@@ -7,7 +7,7 @@
      */
 import { jsx as d } from "react/jsx-runtime";
 import C, { createContext as p_, useContext as k_, useState as h_, forwardRef as A, createElement as J, Children as u_ } from "react";
-import * as x from "@radix-ui/react-popover";
+import * as v from "@radix-ui/react-popover";
 import * as Q from "@radix-ui/react-switch";
 var xr = m_, z = { base: "kit_kitClass__jolfc70", light: "kit_lightTheme__jolfc768", dark: "kit_darkTheme__jolfc769" }, m_ = { media: { breakpoints: { small: "var(--media-breakpoints-small__jolfc71)", medium: "var(--media-breakpoints-medium__jolfc72)", large: "var(--media-breakpoints-large__jolfc73)", xlarge: "var(--media-breakpoints-xlarge__jolfc74)" }, colorModes: { LIGHT: "var(--media-colorModes-LIGHT__jolfc75)", DARK: "var(--media-colorModes-DARK__jolfc76)" } }, font: { family: { system: "var(--font-family-system__jolfc77)", mono: "var(--font-family-mono__jolfc78)" }, heading: { H1: "var(--font-heading-H1__jolfc79)", H2: "var(--font-heading-H2__jolfc7a)", H3: "var(--font-heading-H3__jolfc7b)", H4: "var(--font-heading-H4__jolfc7c)", H5: "var(--font-heading-H5__jolfc7d)", H6: "var(--font-heading-H6__jolfc7e)" }, size: { MINI: "var(--font-size-MINI__jolfc7f)", XS: "var(--font-size-XS__jolfc7g)", SM: "var(--font-size-SM__jolfc7h)", MD: "var(--font-size-MD__jolfc7i)", LG: "var(--font-size-LG__jolfc7j)", XL: "var(--font-size-XL__jolfc7k)", XXL: "var(--font-size-XXL__jolfc7l)", "3XL": "var(--font-size-3XL__jolfc7m)", "4XL": "var(--font-size-4XL__jolfc7n)", "5XL": "var(--font-size-5XL__jolfc7o)", "6XL": "var(--font-size-6XL__jolfc7p)", "7XL": "var(--font-size-7XL__jolfc7q)", "8XL": "var(--font-size-8XL__jolfc7r)", "9XL": "var(--font-size-9XL__jolfc7s)" }, lineheight: { MINI: "var(--font-lineheight-MINI__jolfc7t)", XS: "var(--font-lineheight-XS__jolfc7u)", SM: "var(--font-lineheight-SM__jolfc7v)", MD: "var(--font-lineheight-MD__jolfc7w)", LG: "var(--font-lineheight-LG__jolfc7x)", XL: "var(--font-lineheight-XL__jolfc7y)", XXL: "var(--font-lineheight-XXL__jolfc7z)", "3XL": "var(--font-lineheight-3XL__jolfc710)", "4XL": "var(--font-lineheight-4XL__jolfc711)", "5XL": "var(--font-lineheight-5XL__jolfc712)", "6XL": "var(--font-lineheight-6XL__jolfc713)", "7XL": "var(--font-lineheight-7XL__jolfc714)", "8XL": "var(--font-lineheight-8XL__jolfc715)", "9XL": "var(--font-lineheight-9XL__jolfc716)" }, weight: { SUPRLITE: "var(--font-weight-SUPRLITE__jolfc717)", ULTRALITE: "var(--font-weight-ULTRALITE__jolfc718)", LITE: "var(--font-weight-LITE__jolfc719)", REGULAR: "var(--font-weight-REGULAR__jolfc71a)", MEDIUM: "var(--font-weight-MEDIUM__jolfc71b)", SEMIBOLD: "var(--font-weight-SEMIBOLD__jolfc71c)", BOLD: "var(--font-weight-BOLD__jolfc71d)", HEAVY: "var(--font-weight-HEAVY__jolfc71e)", BLACK: "var(--font-weight-BLACK__jolfc71f)" } }, radii: { ZERO: "var(--radii-ZERO__jolfc71g)", NO: "var(--radii-NO__jolfc71h)", DF: "var(--radii-DF__jolfc71i)", XS: "var(--radii-XS__jolfc71j)", SM: "var(--radii-SM__jolfc71k)", MD: "var(--radii-MD__jolfc71l)", LG: "var(--radii-LG__jolfc71m)", XL: "var(--radii-XL__jolfc71n)", XXL: "var(--radii-XXL__jolfc71o)", PILL: "var(--radii-PILL__jolfc71p)" }, space: { ZERO: "var(--space-ZERO__jolfc71q)", NO: "var(--space-NO__jolfc71r)", DF: "var(--space-DF__jolfc71s)", APX: "var(--space-APX__jolfc71t)", BPX: "var(--space-BPX__jolfc71u)", CPX: "var(--space-CPX__jolfc71v)", DPX: "var(--space-DPX__jolfc71w)", EPX: "var(--space-EPX__jolfc71x)", FPX: "var(--space-FPX__jolfc71y)", GPX: "var(--space-GPX__jolfc71z)", HPX: "var(--space-HPX__jolfc720)", IPX: "var(--space-IPX__jolfc721)", JPX: "var(--space-JPX__jolfc722)", KPX: "var(--space-KPX__jolfc723)", LPX: "var(--space-LPX__jolfc724)", MPX: "var(--space-MPX__jolfc725)", NPX: "var(--space-NPX__jolfc726)", OPX: "var(--space-OPX__jolfc727)", PPX: "var(--space-PPX__jolfc728)", QPX: "var(--space-QPX__jolfc729)", RPX: "var(--space-RPX__jolfc72a)", SPX: "var(--space-SPX__jolfc72b)", TPX: "var(--space-TPX__jolfc72c)", UPX: "var(--space-UPX__jolfc72d)", VPX: "var(--space-VPX__jolfc72e)", WPX: "var(--space-WPX__jolfc72f)", XPX: "var(--space-XPX__jolfc72g)", YPX: "var(--space-YPX__jolfc72h)", ZPX: "var(--space-ZPX__jolfc72i)" }, z: { indice: { ZERO: "var(--z-indice-ZERO__jolfc72j)", DF: "var(--z-indice-DF__jolfc72k)", LOW: "var(--z-indice-LOW__jolfc72l)", MED: "var(--z-indice-MED__jolfc72m)", HIGH: "var(--z-indice-HIGH__jolfc72n)", TOP: "var(--z-indice-TOP__jolfc72o)", MAX: "var(--z-indice-MAX__jolfc72p)" } }, shadow: { NO: "var(--shadow-NO__jolfc72q)", DF: "var(--shadow-DF__jolfc72r)", LOW: "var(--shadow-LOW__jolfc72s)", MED: "var(--shadow-MED__jolfc72t)", HIGH: "var(--shadow-HIGH__jolfc72u)" }, color: { transparent: "var(--color-transparent__jolfc72v)", current: "var(--color-current__jolfc72w)", white: "var(--color-white__jolfc72x)", black: "var(--color-black__jolfc72y)", jade0: "var(--color-jade0__jolfc72z)", jade1: "var(--color-jade1__jolfc730)", jade2: "var(--color-jade2__jolfc731)", jade3: "var(--color-jade3__jolfc732)", jade4: "var(--color-jade4__jolfc733)", jade5: "var(--color-jade5__jolfc734)", jade6: "var(--color-jade6__jolfc735)", jade7: "var(--color-jade7__jolfc736)", jade8: "var(--color-jade8__jolfc737)", jade9: "var(--color-jade9__jolfc738)", jade10: "var(--color-jade10__jolfc739)", jade11: "var(--color-jade11__jolfc73a)", jade12: "var(--color-jade12__jolfc73b)", sapphire0: "var(--color-sapphire0__jolfc73c)", sapphire1: "var(--color-sapphire1__jolfc73d)", sapphire2: "var(--color-sapphire2__jolfc73e)", sapphire3: "var(--color-sapphire3__jolfc73f)", sapphire4: "var(--color-sapphire4__jolfc73g)", sapphire5: "var(--color-sapphire5__jolfc73h)", sapphire6: "var(--color-sapphire6__jolfc73i)", sapphire7: "var(--color-sapphire7__jolfc73j)", sapphire8: "var(--color-sapphire8__jolfc73k)", sapphire9: "var(--color-sapphire9__jolfc73l)", sapphire10: "var(--color-sapphire10__jolfc73m)", sapphire11: "var(--color-sapphire11__jolfc73n)", sapphire12: "var(--color-sapphire12__jolfc73o)", peach0: "var(--color-peach0__jolfc73p)", peach1: "var(--color-peach1__jolfc73q)", peach2: "var(--color-peach2__jolfc73r)", peach3: "var(--color-peach3__jolfc73s)", peach4: "var(--color-peach4__jolfc73t)", peach5: "var(--color-peach5__jolfc73u)", peach6: "var(--color-peach6__jolfc73v)", peach7: "var(--color-peach7__jolfc73w)", peach8: "var(--color-peach8__jolfc73x)", peach9: "var(--color-peach9__jolfc73y)", peach10: "var(--color-peach10__jolfc73z)", peach11: "var(--color-peach11__jolfc740)", peach12: "var(--color-peach12__jolfc741)", carbon0: "var(--color-carbon0__jolfc742)", carbon1: "var(--color-carbon1__jolfc743)", carbon2: "var(--color-carbon2__jolfc744)", carbon3: "var(--color-carbon3__jolfc745)", carbon4: "var(--color-carbon4__jolfc746)", carbon5: "var(--color-carbon5__jolfc747)", carbon6: "var(--color-carbon6__jolfc748)", carbon7: "var(--color-carbon7__jolfc749)", carbon8: "var(--color-carbon8__jolfc74a)", carbon9: "var(--color-carbon9__jolfc74b)", carbon10: "var(--color-carbon10__jolfc74c)", carbon11: "var(--color-carbon11__jolfc74d)", carbon12: "var(--color-carbon12__jolfc74e)", slate0: "var(--color-slate0__jolfc74f)", slate1: "var(--color-slate1__jolfc74g)", slate2: "var(--color-slate2__jolfc74h)", slate3: "var(--color-slate3__jolfc74i)", slate4: "var(--color-slate4__jolfc74j)", slate5: "var(--color-slate5__jolfc74k)", slate6: "var(--color-slate6__jolfc74l)", slate7: "var(--color-slate7__jolfc74m)", slate8: "var(--color-slate8__jolfc74n)", slate9: "var(--color-slate9__jolfc74o)", slate10: "var(--color-slate10__jolfc74p)", slate11: "var(--color-slate11__jolfc74q)", slate12: "var(--color-slate12__jolfc74r)", azure0: "var(--color-azure0__jolfc74s)", azure1: "var(--color-azure1__jolfc74t)", azure2: "var(--color-azure2__jolfc74u)", azure3: "var(--color-azure3__jolfc74v)", azure4: "var(--color-azure4__jolfc74w)", azure5: "var(--color-azure5__jolfc74x)", azure6: "var(--color-azure6__jolfc74y)", azure7: "var(--color-azure7__jolfc74z)", azure8: "var(--color-azure8__jolfc750)", azure9: "var(--color-azure9__jolfc751)", azure10: "var(--color-azure10__jolfc752)", azure11: "var(--color-azure11__jolfc753)", azure12: "var(--color-azure12__jolfc754)", cherry0: "var(--color-cherry0__jolfc755)", cherry1: "var(--color-cherry1__jolfc756)", cherry2: "var(--color-cherry2__jolfc757)", cherry3: "var(--color-cherry3__jolfc758)", cherry4: "var(--color-cherry4__jolfc759)", cherry5: "var(--color-cherry5__jolfc75a)", cherry6: "var(--color-cherry6__jolfc75b)", cherry7: "var(--color-cherry7__jolfc75c)", cherry8: "var(--color-cherry8__jolfc75d)", cherry9: "var(--color-cherry9__jolfc75e)", cherry10: "var(--color-cherry10__jolfc75f)", cherry11: "var(--color-cherry11__jolfc75g)", cherry12: "var(--color-cherry12__jolfc75h)", lime0: "var(--color-lime0__jolfc75i)", lime1: "var(--color-lime1__jolfc75j)", lime2: "var(--color-lime2__jolfc75k)", lime3: "var(--color-lime3__jolfc75l)", lime4: "var(--color-lime4__jolfc75m)", lime5: "var(--color-lime5__jolfc75n)", lime6: "var(--color-lime6__jolfc75o)", lime7: "var(--color-lime7__jolfc75p)", lime8: "var(--color-lime8__jolfc75q)", lime9: "var(--color-lime9__jolfc75r)", lime10: "var(--color-lime10__jolfc75s)", lime11: "var(--color-lime11__jolfc75t)", lime12: "var(--color-lime12__jolfc75u)", lemon0: "var(--color-lemon0__jolfc75v)", lemon1: "var(--color-lemon1__jolfc75w)", lemon2: "var(--color-lemon2__jolfc75x)", lemon3: "var(--color-lemon3__jolfc75y)", lemon4: "var(--color-lemon4__jolfc75z)", lemon5: "var(--color-lemon5__jolfc760)", lemon6: "var(--color-lemon6__jolfc761)", lemon7: "var(--color-lemon7__jolfc762)", lemon8: "var(--color-lemon8__jolfc763)", lemon9: "var(--color-lemon9__jolfc764)", lemon10: "var(--color-lemon10__jolfc765)", lemon11: "var(--color-lemon11__jolfc766)", lemon12: "var(--color-lemon12__jolfc767)" } };
 const __ = p_({
@@ -206,8 +206,8 @@ var z_ = (_) => function() {
               super(D), this.name = "SprinklesError";
             }
           }
-          var j = (v) => typeof v == "string" ? '"'.concat(v, '"') : v, S = (v, D, c_) => {
-            throw new b('"'.concat(v, '" has no value ').concat(j(D), ". Possible values are ").concat(Object.keys(c_).map(j).join(", ")));
+          var j = (x) => typeof x == "string" ? '"'.concat(x, '"') : x, S = (x, D, c_) => {
+            throw new b('"'.concat(x, '" has no value ').concat(j(D), ". Possible values are ").concat(Object.keys(c_).map(j).join(", ")));
           };
           if (!t)
             throw new b('"'.concat(k, '" is not a valid sprinkle'));
@@ -579,8 +579,8 @@ const Q_ = C.forwardRef(
 );
 Q_.displayName = "Heading";
 var _r = "popover_popoverClose__cubg343", rr = "popover_popoverContent__cubg341", or = "popover_popoverTrigger__cubg340";
-const lr = x.Root, ir = C.forwardRef(({ children: _, className: r, asChild: l, ...o }, i) => /* @__PURE__ */ d(
-  x.Trigger,
+const lr = v.Root, ir = C.forwardRef(({ children: _, className: r, asChild: l, ...o }, i) => /* @__PURE__ */ d(
+  v.Trigger,
   {
     ...o,
     ref: i,
@@ -598,8 +598,8 @@ const lr = x.Root, ir = C.forwardRef(({ children: _, className: r, asChild: l, .
     side: e = "bottom",
     onInteractOutside: s,
     ...a
-  }, n) => /* @__PURE__ */ d(
-    x.Content,
+  }, n) => /* @__PURE__ */ d(v.Portal, { children: /* @__PURE__ */ d(
+    v.Content,
     {
       ...a,
       ref: n,
@@ -611,9 +611,9 @@ const lr = x.Root, ir = C.forwardRef(({ children: _, className: r, asChild: l, .
       className: p(rr, r),
       children: _
     }
-  )
+  ) })
 ), sr = C.forwardRef(({ children: _, className: r, asChild: l, ...o }, i) => /* @__PURE__ */ d(
-  x.Close,
+  v.Close,
   {
     ...o,
     ref: i,
@@ -624,8 +624,8 @@ const lr = x.Root, ir = C.forwardRef(({ children: _, className: r, asChild: l, .
 )), u = (_) => /* @__PURE__ */ d(lr, { ..._ });
 u.Trigger = ir;
 u.Content = er;
-u.Anchor = x.Anchor;
-u.Arrow = x.Arrow;
+u.Anchor = v.Anchor;
+u.Arrow = v.Arrow;
 u.Close = sr;
 u.displayName = "Popover";
 u.Trigger.displayName = "Popover.Trigger";
