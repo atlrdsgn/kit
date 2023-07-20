@@ -38,17 +38,19 @@ const PopoverContent = React.forwardRef<
     forwardedRef,
   ) => {
     return (
-      <POP.Content
-        {...props}
-        ref={forwardedRef}
-        align={align}
-        sideOffset={sideOffset}
-        sticky={sticky}
-        onInteractOutside={onInteractOutside}
-        side={side}
-        className={clsx(CSS.popoverContent, className)}>
-        {children}
-      </POP.Content>
+      <POP.Portal>
+        <POP.Content
+          {...props}
+          ref={forwardedRef}
+          align={align}
+          sideOffset={sideOffset}
+          sticky={sticky}
+          onInteractOutside={onInteractOutside}
+          side={side}
+          className={clsx(CSS.popoverContent, className)}>
+          {children}
+        </POP.Content>
+      </POP.Portal>
     );
   },
 );
