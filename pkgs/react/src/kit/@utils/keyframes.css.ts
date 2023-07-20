@@ -45,7 +45,7 @@ const eighty = keyframes({
 
 export const slideFadeUp = style({
   animationName: SLIDE_UP_FADE,
-  animation: `${SLIDE_UP_FADE} 0.2s`,
+  animation: `${SLIDE_UP_FADE} 0.3s`,
 });
 
 export const slideFadeDown = style({
@@ -82,4 +82,14 @@ export const rotate180 = style({
 
 export const rotate = style({
   animation: `${eighty} 2s`,
+});
+
+export const SUF = keyframes({
+  '0%': { opacity: 0, transform: 'translateY(2px)' },
+  '100%': { opacity: 1, transform: 'translateY(0)' },
+});
+
+export const SDF = keyframes({
+  '0%': { opacity: 0, transform: 'translateY(-2px)' },
+  '100%': { opacity: 1, transform: 'translateY(0)' },
 });

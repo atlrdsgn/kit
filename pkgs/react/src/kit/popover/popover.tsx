@@ -3,19 +3,17 @@ import * as POP from '@radix-ui/react-popover';
 import * as CSS from './popover.css';
 import clsx from 'clsx';
 
-export const PopoverRoot = POP.Root;
-export const PopoverArrow = POP.Arrow;
-export const PopoverAnchor = POP.Anchor;
-export const PopoverPortal = POP.Portal;
+const PopoverRoot = POP.Root;
 
 const PopoverTrigger = React.forwardRef<
   React.ElementRef<typeof POP.Trigger>,
   React.ComponentProps<typeof POP.Trigger>
->(({ children, className, asChild = false, ...props }, ref) => {
+>(({ children, className, asChild, ...rest }, ref) => {
   return (
     <POP.Trigger
-      {...props}
+      {...rest}
       ref={ref}
+      asChild={asChild}
       className={clsx(CSS.popoverTrigger, className)}>
       {children}
     </POP.Trigger>
@@ -24,14 +22,14 @@ const PopoverTrigger = React.forwardRef<
 
 const PopoverContent = React.forwardRef<
   React.ElementRef<typeof POP.Content>,
-  React.ComponentPropsWithoutRef<typeof POP.Content>
+  React.ComponentProps<typeof POP.Content>
 >(
   (
     {
       children,
       className,
       align = 'center',
-      sideOffset = 6,
+      sideOffset = 10,
       sticky = 'partial',
       side = 'bottom',
       onInteractOutside,
@@ -40,26 +38,24 @@ const PopoverContent = React.forwardRef<
     forwardedRef,
   ) => {
     return (
-      <>
-        <POP.Content
-          {...props}
-          ref={forwardedRef}
-          align={align}
-          sideOffset={sideOffset}
-          sticky={sticky}
-          onInteractOutside={onInteractOutside}
-          side={side}
-          className={clsx(CSS.popoverContent, className)}>
-          {children}
-        </POP.Content>
-      </>
+      <POP.Content
+        {...props}
+        ref={forwardedRef}
+        align={align}
+        sideOffset={sideOffset}
+        sticky={sticky}
+        onInteractOutside={onInteractOutside}
+        side={side}
+        className={clsx(CSS.popoverContent, className)}>
+        {children}
+      </POP.Content>
     );
   },
 );
 
 const PopoverClose = React.forwardRef<
   React.ElementRef<typeof POP.Close>,
-  React.ComponentProps<typeof POP.Close>
+  React.ComponentPropsWithoutRef<typeof POP.Close>
 >(({ children, className, asChild, ...props }, ref) => {
   return (
     <POP.Close
@@ -73,10 +69,11 @@ const PopoverClose = React.forwardRef<
 });
 
 /** ----------------------------------------- */
+export type PopoverTriggerProps = React.ComponentProps<typeof PopoverTrigger>;
+export type PopoverContentProps = React.ComponentProps<typeof PopoverContent>;
+export type PopoverProps = React.ComponentProps<typeof PopoverRoot>;
 
-export type PopoverProps = React.ComponentProps<typeof POP.Root>;
 export const Popover: React.FC<PopoverProps> & {
-  Portal: typeof PopoverPortal;
   Trigger: typeof PopoverTrigger;
   Content: typeof PopoverContent;
   //..
@@ -85,15 +82,13 @@ export const Popover: React.FC<PopoverProps> & {
   Close: typeof PopoverClose;
 } = (props) => <PopoverRoot {...props} />;
 
-Popover.Portal = PopoverPortal;
 Popover.Trigger = PopoverTrigger;
 Popover.Content = PopoverContent;
-Popover.Anchor = PopoverAnchor;
-Popover.Arrow = PopoverArrow;
+Popover.Anchor = POP.Anchor;
+Popover.Arrow = POP.Arrow;
 Popover.Close = PopoverClose;
 
 Popover.displayName = 'Popover';
-Popover.Portal.displayName = 'Popover.Portal';
 Popover.Trigger.displayName = 'Popover.Trigger';
 Popover.Content.displayName = 'Popover.Content';
 Popover.Anchor.displayName = 'Popover.Anchor';

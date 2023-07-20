@@ -1,4 +1,3 @@
-import { JSX } from 'react/jsx-runtime';
 import * as React from 'react';
 import { type OptionalResponsiveObject, type OptionalResponsiveValue } from '../../lib';
 import { type ReactNodeNoStrings } from '../@utils/utils';
@@ -19,5 +18,5 @@ export type StackProps = {
     space?: DivProps['gap'];
     wrap?: OptionalResponsiveObject<true | false>;
 };
-export declare const Stack: ({ as, align, children, justify, flex, direction, space, wrap, }: React.PropsWithChildren<StackProps>) => JSX.Element;
+export declare const Stack: ({ as, align, children, justify, flex, direction, space, wrap, }: React.PropsWithChildren<StackProps>) => React.JSX.Element;
 //# sourceMappingURL=stack.d.ts.map

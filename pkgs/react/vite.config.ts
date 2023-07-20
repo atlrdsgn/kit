@@ -20,7 +20,7 @@ export default defineConfig({
       name: 'kit',
       fileName: (format) => (format === 'es' ? 'index.esm.js' : 'index.js'),
       // fileName: 'index',
-      formats: ['es', 'umd'],
+      formats: ['es', 'cjs'],
     },
     rollupOptions: {
       external: [...peerDeps, ...primitiveDeps, 'react/jsx-runtime'],
@@ -30,6 +30,7 @@ export default defineConfig({
           'react-dom': 'ReactDom',
           'react/jsx-runtime': 'jsxRuntime',
           '@radix-ui/react-popover': 'POP',
+          '@radix-ui/react-switch': 'SWI',
         },
       },
     },
@@ -37,7 +38,7 @@ export default defineConfig({
   plugins: [
     react(),
     zipPack({
-      outDir: 'zip',
+      outDir: 'prod.package',
       outFileName: `kit.[${process.env.npm_package_version}].zip`,
     }),
     dts({

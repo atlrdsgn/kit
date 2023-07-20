@@ -1,8 +1,8 @@
 {
   "name": "@atlrdsgn/kit",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "AtelierKit® React",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
   "files": [
@@ -10,8 +10,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.esm.js"
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
     },
     "./css": {
       "import": "./dist/style.css",
@@ -30,7 +30,7 @@
     "rollup": "rollup --config --bundleConfigAsCjs",
     "build:types": "yarn tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
     "lint": "eslint *.ts*",
-    "clean": "rm -rf node_modules && rm -rf dist && rm -rf pkg/*",
+    "clean": "rm -rf node_modules && rm -rf dist && rm -rf prod.package/*",
     "release": "npm publish --access public",
     "dev:release": "npm publish --access private",
     "npm:login": "npm login --registry=https://npm.pkg.github.com --scope=@atlrdsgn",

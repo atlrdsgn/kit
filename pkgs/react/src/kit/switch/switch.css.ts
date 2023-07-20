@@ -8,16 +8,16 @@ const ROOT_SIZE_VARIANTS = {
     height: 'auto',
   },
   medium: {
-    width: '34px',
+    width: '32px',
     height: 'auto',
   },
 } as const;
 
 const TOGGLE_SIZE_VARIANTS = {
   small: {
-    width: '14px',
-    height: '14px',
-    transform: 'translateX(2px)',
+    width: '15px',
+    height: '15px',
+    transform: 'translateX(1px)',
     checked: { transform: 'translateX(13px)' },
   },
   medium: {
@@ -35,7 +35,7 @@ const COMMON_PROPERTIES = {
   display: 'inline-flex',
   borderRadius: kit.radii.PILL,
   willChange: 'transform',
-  transition: 'transform 100ms',
+  transition: 'transform 300ms',
 } as const;
 
 const BASE_ROOT = style({
@@ -44,12 +44,12 @@ const BASE_ROOT = style({
   outline: 'none',
   position: 'relative',
   margin: 'auto',
-  paddingTop: 2,
-  paddingBottom: 2,
+  paddingTop: '1px',
+  paddingBottom: '1px',
   paddingLeft: 0,
   paddingRight: 0,
   flexShrink: 0,
-  backgroundColor: kit.color.slate2,
+  backgroundColor: kit.color.carbon1,
   border: 'none',
   borderStyle: 'none',
   ':focus': {
@@ -58,7 +58,7 @@ const BASE_ROOT = style({
   },
   selectors: {
     '&[data-state="checked"]': {
-      backgroundColor: kit.color.slate3,
+      backgroundColor: kit.color.carbon1,
     },
   },
 });

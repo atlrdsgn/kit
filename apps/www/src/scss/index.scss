@@ -37,6 +37,7 @@
       rgba(1, 65, 255, 0.3)
     );
   }
+
 }
 
 *,
@@ -118,6 +119,11 @@ body:not(.user-is-tabbing) textarea:focus {
   html {
     color-scheme: dark;
   }
+
+  .component-wrapper {
+    box-shadow: inset 0 0 0 1.4px #212326 !important;
+    background-color: #1d1d1d !important;
+  }
 }
 
 @supports (font-variation-settings: normal) {
@@ -146,10 +152,13 @@ body {
 .component-wrapper {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
-  box-shadow: inset 0 0 0 1.4px #dddddd !important;
-  background-color: #F7F7F7 !important;
+  box-shadow: inset 0 0 0 1.4px #dddddd;
+  background-color: #F7F7F7;
   border-radius: 12px !important;
 }
+
+
+
 
 footer {
   display: flex;
@@ -187,6 +196,11 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+.component-wrapper {
+  box-shadow: inset 0 0 0 1.4px #212326 !important;
+  background-color: #1d1d1d !important;
+}
+
   .kitLogo {
     filter: invert(1);
   }
@@ -210,7 +224,7 @@ footer {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 .center::before {

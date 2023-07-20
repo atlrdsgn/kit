@@ -6,4 +6,6 @@ export declare const spin: string;
 export declare const spinAgain: string;
 export declare const rotate180: string;
 export declare const rotate: string;
+export declare const SUF: string;
+export declare const SDF: string;
 //# sourceMappingURL=keyframes.css.d.ts.map
