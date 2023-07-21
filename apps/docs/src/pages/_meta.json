@@ -1,15 +1,10 @@
 {
-  "index": {
-    "type": "page",
-    "title": "Nextra",
-    "display": "hidden",
-    "theme": {
-      "layout": "raw"
-    }
-  },
+  "index": "Introduction",
+  "start": "Getting Started",
   "components": "Components",
   "colour": "Colour",
   "advanced": "Advanced",
+
   "changelog": {
     "title": "Changelog",
     "type": "page"

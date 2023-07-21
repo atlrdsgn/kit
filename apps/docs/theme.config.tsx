@@ -2,6 +2,9 @@ import React from 'react';
 import Logo from './src/components/kit.logo';
 import { type DocsThemeConfig } from 'nextra-theme-docs';
 
+/**
+ * @type {import('nextra-theme-docs').DocsThemeConfig}
+ */
 const config: DocsThemeConfig = {
   logo: (
     <span>
