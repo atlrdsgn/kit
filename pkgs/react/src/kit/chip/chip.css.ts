@@ -38,6 +38,40 @@ const SHAPE_MAP = {
 } as const;
 
 const VARIANT_COLOR_MAP = {
+  /**
+   * @carbon
+   */
+  carbon: {
+    backgroundColor: kit.color.carbon1,
+    border: `1px solid ${kit.color.carbon2}`,
+    color: kit.color.carbon8,
+    boxShadow: chipShadows.primary.initial,
+    onHover: {
+      backgroundColor: kit.color.carbon1,
+      border: `1px solid ${kit.color.carbon1}`,
+      color: kit.color.carbon8,
+      boxShadow: chipShadows.primary.hover,
+    },
+    onFocus: {
+      boxShadow: chipShadows.primary.focus,
+    },
+    darkMode: {
+      backgroundColor: kit.color.carbon8,
+      border: `1px solid ${kit.color.carbon7}`,
+      color: kit.color.carbon3,
+      boxShadow: chipShadows.primary.initial,
+      onHover: {
+        backgroundColor: kit.color.carbon8,
+        border: `1px solid ${kit.color.carbon6}`,
+        color: kit.color.carbon3,
+        boxShadow: chipShadows.primary.hover,
+      },
+    },
+  },
+  /**
+   *
+   * @slate
+   */
   slate: {
     backgroundColor: kit.color.slate1,
     border: `1px solid ${kit.color.slate3}`,
@@ -52,7 +86,23 @@ const VARIANT_COLOR_MAP = {
     onFocus: {
       boxShadow: chipShadows.primary.focus,
     },
+    darkMode: {
+      backgroundColor: kit.color.slate8,
+      border: `1px solid ${kit.color.slate7}`,
+      color: kit.color.slate3,
+      boxShadow: chipShadows.primary.initial,
+      onHover: {
+        backgroundColor: kit.color.slate8,
+        border: `1px solid ${kit.color.slate6}`,
+        color: kit.color.slate3,
+        boxShadow: chipShadows.primary.hover,
+      },
+    },
   },
+  /**
+   *
+   * @jade
+   */
   jade: {
     backgroundColor: kit.color.jade3,
     border: `1px solid ${kit.color.jade5}`,
@@ -66,6 +116,18 @@ const VARIANT_COLOR_MAP = {
     },
     onFocus: {
       boxShadow: chipShadows.primary.focus,
+    },
+    darkMode: {
+      backgroundColor: kit.color.jade8,
+      border: `1px solid ${kit.color.jade7}`,
+      color: kit.color.jade3,
+      boxShadow: chipShadows.primary.initial,
+      onHover: {
+        backgroundColor: kit.color.jade8,
+        border: `1px solid ${kit.color.jade6}`,
+        color: kit.color.jade3,
+        boxShadow: chipShadows.primary.hover,
+      },
     },
   },
 } as const;
@@ -101,6 +163,22 @@ const variant = styleVariants(VARIANT_COLOR_MAP, (variant) => ({
 
   ':focus': {
     boxShadow: variant.onFocus.boxShadow,
+  },
+
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      backgroundColor: variant.darkMode.backgroundColor,
+      border: variant.darkMode.border,
+      color: variant.darkMode.color,
+      boxShadow: variant.darkMode.boxShadow,
+
+      ':hover': {
+        backgroundColor: variant.darkMode.onHover.backgroundColor,
+        border: variant.darkMode.onHover.border,
+        color: variant.darkMode.onHover.color,
+        boxShadow: variant.darkMode.onHover.boxShadow,
+      },
+    },
   },
 }));
 
@@ -152,6 +230,6 @@ export const chip = recipe({
   defaultVariants: {
     size: 'sm',
     shape: 'pill',
-    variant: 'slate',
+    variant: 'carbon',
   },
 });

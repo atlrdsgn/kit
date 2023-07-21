@@ -465,13 +465,13 @@ gi.Header = Qi;
 gi.displayName = "Card";
 gi.Content.displayName = "CardContent";
 gi.Header.displayName = "CardHeader";
-var Ho = F({ defaultClassName: "qoiret7", variantClassNames: { size: { xs: "qoiret0", sm: "qoiret1", md: "qoiret2" }, shape: { rounded: "qoiret3", pill: "qoiret4" }, variant: { slate: "qoiret5", jade: "qoiret6" } }, defaultVariants: { size: "sm", shape: "pill", variant: "slate" }, compoundVariants: [] });
+var Ho = F({ defaultClassName: "qoiret8", variantClassNames: { size: { xs: "qoiret0", sm: "qoiret1", md: "qoiret2" }, shape: { rounded: "qoiret3", pill: "qoiret4" }, variant: { carbon: "qoiret5", slate: "qoiret6", jade: "qoiret7" } }, defaultVariants: { size: "sm", shape: "pill", variant: "carbon" }, compoundVariants: [] });
 const Fo = ({
   children: i,
   className: o,
   size: e = "sm",
   shape: a = "pill",
-  variant: r = "slate",
+  variant: r = "carbon",
   ...t
 }) => /* @__PURE__ */ f(
   "span",

@@ -11,7 +11,7 @@ export const Chip: React.FC<ChipProps> = ({
   className,
   size = 'sm',
   shape = 'pill',
-  variant = 'slate',
+  variant = 'carbon',
   ...rest
 }) => (
   <span
