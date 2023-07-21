@@ -494,12 +494,6 @@ declare const responsiveProperties: {
                 length: 4;
             };
             values: {
-                "12px": {
-                    defaultClass: string;
-                    conditions: {
-                        [x: string]: string;
-                    };
-                };
                 "16px": {
                     defaultClass: string;
                     conditions: {
@@ -531,6 +525,12 @@ declare const responsiveProperties: {
                     };
                 };
                 "10px": {
+                    defaultClass: string;
+                    conditions: {
+                        [x: string]: string;
+                    };
+                };
+                "12px": {
                     defaultClass: string;
                     conditions: {
                         [x: string]: string;
@@ -909,9 +909,9 @@ export declare const sprinkles: ((props: {
     margin?: ("0" | "none" | "inherit" | "initial" | "unset" | "auto" | {
         [x: string]: "0" | "none" | "inherit" | "initial" | "unset" | "auto" | undefined;
     } | undefined) | ResponsiveArray<2 | 1 | 4 | 3, "0" | "none" | "inherit" | "initial" | "unset" | "auto" | null>;
-    padding?: ("12px" | "16px" | "20px" | "0" | "4px" | "8px" | "10px" | "none" | "inherit" | "initial" | "unset" | "auto" | {
-        [x: string]: "12px" | "16px" | "20px" | "0" | "4px" | "8px" | "10px" | "none" | "inherit" | "initial" | "unset" | "auto" | undefined;
-    } | undefined) | ResponsiveArray<2 | 1 | 4 | 3, "12px" | "16px" | "20px" | "0" | "4px" | "8px" | "10px" | "none" | "inherit" | "initial" | "unset" | "auto" | null>;
+    padding?: ("16px" | "20px" | "0" | "4px" | "8px" | "10px" | "12px" | "none" | "inherit" | "initial" | "unset" | "auto" | {
+        [x: string]: "16px" | "20px" | "0" | "4px" | "8px" | "10px" | "12px" | "none" | "inherit" | "initial" | "unset" | "auto" | undefined;
+    } | undefined) | ResponsiveArray<2 | 1 | 4 | 3, "16px" | "20px" | "0" | "4px" | "8px" | "10px" | "12px" | "none" | "inherit" | "initial" | "unset" | "auto" | null>;
     width?: ("auto" | "100%" | {
         [x: string]: "auto" | "100%" | undefined;
     } | undefined) | ResponsiveArray<2 | 1 | 4 | 3, "auto" | "100%" | null>;
@@ -1443,12 +1443,6 @@ export declare const mapResponsiveValue: <OutputValue extends string | number | 
                 length: 4;
             };
             values: {
-                "12px": {
-                    defaultClass: string;
-                    conditions: {
-                        [x: string]: string;
-                    };
-                };
                 "16px": {
                     defaultClass: string;
                     conditions: {
@@ -1480,6 +1474,12 @@ export declare const mapResponsiveValue: <OutputValue extends string | number | 
                     };
                 };
                 "10px": {
+                    defaultClass: string;
+                    conditions: {
+                        [x: string]: string;
+                    };
+                };
+                "12px": {
                     defaultClass: string;
                     conditions: {
                         [x: string]: string;

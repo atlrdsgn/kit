@@ -1,6 +1,6 @@
 {
   "name": "@atlrdsgn/kit",
-  "version": "0.3.9",
+  "version": "0.4.0",
   "description": "AtelierKit® React",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -42,6 +42,8 @@
   },
   "dependencies": {
     "@radix-ui/react-popover": "^1.0.6",
+    "@radix-ui/react-portal": "^1.0.3",
+    "@radix-ui/react-select": "^1.2.2",
     "@radix-ui/react-switch": "^1.0.3"
   },
   "devDependencies": {

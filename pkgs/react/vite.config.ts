@@ -9,7 +9,12 @@ import dts from 'vite-plugin-dts';
 import path from 'path';
 
 const peerDeps = Object.keys(peerDependencies);
-const primitiveDeps = ['@radix-ui/react-popover', '@radix-ui/react-switch'];
+const primitiveDeps = [
+  '@radix-ui/react-select',
+  '@radix-ui/react-switch',
+  '@radix-ui/react-portal',
+  '@radix-ui/react-popover',
+];
 
 export default defineConfig({
   build: {
@@ -28,8 +33,10 @@ export default defineConfig({
           react: 'React',
           'react-dom': 'ReactDom',
           'react/jsx-runtime': 'jsxRuntime',
-          '@radix-ui/react-popover': 'POP',
+          '@radix-ui/react-select': 'SLCT',
           '@radix-ui/react-switch': 'SWI',
+          '@radix-ui/react-portal': 'P',
+          '@radix-ui/react-popover': 'POP',
         },
       },
     },

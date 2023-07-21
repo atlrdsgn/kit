@@ -12,6 +12,7 @@ export declare const base: string;
  * type of elements..
  */
 export declare const element: {
+    radix_portal: string;
     article: string;
     aside: string;
     details: string;

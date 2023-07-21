@@ -84,12 +84,28 @@ export const rotate = style({
   animation: `${eighty} 2s`,
 });
 
+/** -------------------------------------------------------------------- */
+
 export const SUF = keyframes({
+  // slide up fade
   '0%': { opacity: 0, transform: 'translateY(2px)' },
   '100%': { opacity: 1, transform: 'translateY(0)' },
 });
 
 export const SDF = keyframes({
+  // slide down fade
   '0%': { opacity: 0, transform: 'translateY(-2px)' },
   '100%': { opacity: 1, transform: 'translateY(0)' },
+});
+
+export const SRF = keyframes({
+  // slide right fade
+  '0%': { opacity: 0, transform: 'translateX(-2px)' },
+  '100%': { opacity: 1, transform: 'translateX(0)' },
+});
+
+export const SLF = keyframes({
+  // slide left fade
+  '0%': { opacity: 0, transform: 'translateX(2px)' },
+  '100%': { opacity: 1, transform: 'translateX(0)' },
 });

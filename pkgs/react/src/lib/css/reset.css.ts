@@ -118,12 +118,17 @@ const a = styleRes({
   color: 'inherit',
 });
 
+const radix_portal = styleRes({
+  all: 'unset',
+});
+
 /**
  *
  *
  * type of elements..
  */
 export const element = {
+  radix_portal,
   article: block,
   aside: block,
   details: block,

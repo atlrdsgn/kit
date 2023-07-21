@@ -11,6 +11,7 @@ export * from './pass-link';
 export * from './popover';
 export * from './rect';
 export * from './section';
+export * from './select';
 export * from './space';
 export * from './stack';
 export * from './switch';
