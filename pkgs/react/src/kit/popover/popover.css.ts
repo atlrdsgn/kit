@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { SDF, SUF } from '../@utils/keyframes.css';
+import { SDF } from '../@utils/keyframes.css';
 import { kit } from '../../lib';
 
 const textStyle = {

@@ -13,9 +13,7 @@ function DemoPopover() {
             size='sm'
             color='slate6'
             weight='semibold'>
-            Commodo laborum sunt et in non cupidatat proident dolor. Nostrud
-            proident sint velit mollit proident elit cupidatat aliqua ut cillum
-            exercitation aliqua.
+            Commodo laborum sunt et in non cupidatat proident dolor.
           </Text>
         </Popover.Content>
       </Popover>

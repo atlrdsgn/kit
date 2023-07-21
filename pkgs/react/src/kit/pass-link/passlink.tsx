@@ -6,6 +6,7 @@ import type {
   LinkFontProps,
   LinkSizeProps,
 } from './passlink.css';
+import PropTypes from 'prop-types';
 
 interface LinkElementProps {
   children: React.ReactNode;
@@ -54,3 +55,13 @@ export const PassLink = forwardRef<HTMLAnchorElement, PassLinkProps>(
 );
 
 PassLink.displayName = 'PassLink';
+
+PassLink.propTypes = {
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string,
+  target: PropTypes.oneOf(['_self', '_blank', '_parent', '_top']),
+  className: PropTypes.string,
+  size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', 'xxl']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'inherit']),
+  font: PropTypes.oneOf(['inherit', 'system', 'mono']),
+};

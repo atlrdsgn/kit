@@ -22,27 +22,6 @@ const SLIDE_LEFT_FADE = keyframes({
 
 /* -------------------------------------------------------------------------- */
 
-const threeSixty = keyframes({
-  '0%': { transform: 'rotate(0deg)' },
-  '100%': { transform: 'rotate(360deg)' },
-});
-
-const oneEighty = keyframes({
-  '0%': { transform: 'rotate(0deg)' },
-  '100%': { transform: 'rotate(180deg)' },
-});
-
-const eighty = keyframes({
-  from: {
-    transform: `rotate(0deg)`,
-  },
-  to: {
-    transform: `rotate(180deg)`,
-  },
-});
-
-/* -------------------------------------------------------------------------- */
-
 export const slideFadeUp = style({
   animationName: SLIDE_UP_FADE,
   animation: `${SLIDE_UP_FADE} 0.3s`,
@@ -61,27 +40,6 @@ export const slideFadeRight = style({
 export const slideFadeLeft = style({
   animationName: SLIDE_LEFT_FADE,
   animation: `${SLIDE_LEFT_FADE} 0.2s`,
-});
-
-/* -------------------------------------------------------------------------- */
-
-export const spin = style({
-  animationName: threeSixty,
-  animationDuration: '3s',
-});
-
-export const spinAgain = style({
-  animation: `${threeSixty} 3s`,
-});
-
-export const rotate180 = style({
-  animationName: oneEighty,
-  animationDuration: '2s',
-  animation: `${oneEighty} 2s`,
-});
-
-export const rotate = style({
-  animation: `${eighty} 2s`,
 });
 
 /** -------------------------------------------------------------------- */
@@ -108,4 +66,25 @@ export const SLF = keyframes({
   // slide left fade
   '0%': { opacity: 0, transform: 'translateX(2px)' },
   '100%': { opacity: 1, transform: 'translateX(0)' },
+});
+
+/** ------------------------------------------------------- */
+
+export const oneEighty = keyframes({
+  from: {
+    transform: `rotate(0deg)`,
+  },
+  to: {
+    transform: `rotate(180deg)`,
+  },
+});
+
+export const eighty = keyframes({
+  '0%': { transform: 'rotate(0deg)' },
+  '100%': { transform: 'rotate(180deg)' },
+});
+
+export const threeSixty = keyframes({
+  '0%': { transform: 'rotate(0deg)' },
+  '100%': { transform: 'rotate(360deg)' },
 });

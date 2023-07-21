@@ -1,9 +1,9 @@
 import { style } from '@vanilla-extract/css';
 import { kit } from '../../lib';
-import { SDF, SUF, SRF, SLF } from '../@utils/keyframes.css';
+import { SDF, SUF, SRF, SLF, eighty } from '../@utils/keyframes.css';
 
-const TRGGR_PADDING_LEFT = '12px';
-const TRGGR_PADDING_RIGHT = '8px';
+const TRGGR_PADDING_LEFT = '14px';
+const TRGGR_PADDING_RIGHT = '10px';
 const TRGGR_RADII = kit.radii.XS;
 const CONTENT_RADII = kit.radii.SM;
 const ITEM_RADII = kit.radii.XS;
@@ -18,8 +18,8 @@ export const selectTrigger = style({
   justifyContent: 'space-between',
   verticalAlign: 'middle',
 
-  gap: 20,
-  height: 32,
+  gap: '8px',
+  height: '34px',
   minWidth: 140,
   maxWidth: 280,
   width: 200,
@@ -27,7 +27,7 @@ export const selectTrigger = style({
   fontFamily: kit.font.family.system,
   fontSize: kit.font.size.SM,
   fontWeight: kit.font.weight.MEDIUM,
-  lineHeight: kit.font.lineheight.SM,
+  lineHeight: kit.font.lineheight.MD,
 
   color: kit.color.carbon8,
   border: `1.5px solid ${kit.color.carbon3}`,
@@ -44,9 +44,17 @@ export const selectTrigger = style({
   ':hover': { backgroundColor: kit.color.carbon1 },
   ':focus': { boxShadow: `0 0 0 2.5px ${kit.color.jade3}` },
 
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      borderColor: kit.color.carbon8,
+      backgroundColor: kit.color.carbon9,
+      color: kit.color.carbon0,
+
+      ':hover': { backgroundColor: kit.color.carbon8 },
+    },
+  },
+
   selectors: {
-    '&[data-state="open"]': { animationName: `${SDF}` },
-    '&[data-state="closed"]': { animationName: `${SUF}` },
     '&[data-placeholder]': {
       color: kit.color.slate5,
       fontWeight: kit.font.weight.REGULAR,
@@ -74,14 +82,31 @@ export const selectContent = style({
   boxShadow:
     'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
 
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      borderColor: kit.color.carbon8,
+      backgroundColor: kit.color.carbon9,
+      color: kit.color.carbon0,
+    },
+  },
+
   selectors: {
-    '&::-webkit-scrollbar': {},
-    '&[data-state="open"]': { animationName: `${SDF}` },
-    '&[data-state="closed"]': { animationName: `${SUF}` },
+    '&::-webkit-scrollbar': {
+      display: 'none',
+    },
+
+    '&[data-state="open"][data-side="bottom"]': {
+      animationName: `${SDF}`,
+      animation: `${SDF} 400ms cubic-bezier(0.16, 1, 0.3, 1)`,
+    },
+
+    '&[data-state="closed"][data-side="bottom"]': {
+      animationName: `${SUF}`,
+      animation: `${SUF} 400ms cubic-bezier(0.16, 1, 0.3, 1)`,
+    },
 
     '&[data-side="top"]': { animationName: `${SDF}` },
     '&[data-side="right"]': { animationName: `${SLF}` },
-    '&[data-side="bottom"]': { animationName: `${SUF}` },
     '&[data-side="left"]': { animationName: `${SRF}` },
   },
 });
@@ -106,17 +131,17 @@ export const selectItem = style({
 
   borderRadius: ITEM_RADII,
 
-  paddingLeft: 8,
-  paddingRight: 8,
-  paddingTop: 2,
-  paddingBottom: 2,
+  paddingLeft: '8px',
+  paddingRight: '8px',
+  paddingTop: '4px',
+  paddingBottom: '4px',
 
   ...SLCT_TEXT_STX,
 
   ':hover': {
     cursor: 'pointer',
     outline: 'none',
-    backgroundColor: kit.color.sapphire5,
+    backgroundColor: kit.color.sapphire3,
     color: kit.color.white,
   },
 
@@ -131,19 +156,33 @@ export const selectItem = style({
 
   selectors: {
     '&[data-highlighted]': {
-      backgroundColor: kit.color.sapphire6,
-      color: kit.color.carbon0,
+      backgroundColor: kit.color.jade5,
+      color: kit.color.carbon9,
     },
   },
 });
 
 export const selectIcon = style({
+  boxSizing: 'border-box',
   lineHeight: 'inherit',
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
   width: '16px',
   height: '16px',
+
+  selectors: {
+    '&[data-state="open"]': {
+      animationName: `${eighty}`,
+      animationDuration: '400ms',
+      animation: `${eighty}`,
+    },
+    '&[data-state="closed"]': {
+      animationName: `${eighty}`,
+      animationDuration: '400ms',
+      animation: `${eighty}`,
+    },
+  },
 });
 
 export const selectItemText = style({

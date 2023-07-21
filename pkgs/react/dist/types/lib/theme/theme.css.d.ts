@@ -80,7 +80,7 @@ export declare const theme: {
         readonly ZERO: "0px";
         readonly NO: "0px";
         readonly DF: "14px";
-        readonly XS: "9px";
+        readonly XS: "10px";
         readonly SM: "11px";
         readonly MD: "13px";
         readonly LG: "16px";
@@ -343,7 +343,7 @@ export declare const BASE: {
         readonly ZERO: "0px";
         readonly NO: "0px";
         readonly DF: "14px";
-        readonly XS: "9px";
+        readonly XS: "10px";
         readonly SM: "11px";
         readonly MD: "13px";
         readonly LG: "16px";
@@ -606,7 +606,7 @@ export declare const DARK: {
         readonly ZERO: "0px";
         readonly NO: "0px";
         readonly DF: "14px";
-        readonly XS: "9px";
+        readonly XS: "10px";
         readonly SM: "11px";
         readonly MD: "13px";
         readonly LG: "16px";

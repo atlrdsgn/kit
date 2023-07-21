@@ -56,19 +56,48 @@ const BASE_ROOT = style({
     outline: 'none',
     boxShadow: `0 0 0.4px 1.4px ${kit.color.slate5}`,
   },
+
   selectors: {
     '&[data-state="checked"]': {
       backgroundColor: kit.color.carbon1,
+    },
+  },
+
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      backgroundColor: kit.color.carbon9,
+
+      ':focus': {
+        outline: 'none',
+        boxShadow: `0 0 0.4px 1.4px ${kit.color.slate8}`,
+      },
+
+      selectors: {
+        '&[data-state="checked"]': { backgroundColor: kit.color.carbon8 },
+      },
     },
   },
 });
 
 const BASE_TOGGLE = style({
   ...COMMON_PROPERTIES,
-  backgroundColor: kit.color.jade4,
+  backgroundColor: kit.color.jade3,
+
   selectors: {
     '&[data-state="checked"]': {
       backgroundColor: kit.color.jade6,
+    },
+  },
+
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      backgroundColor: kit.color.carbon6,
+
+      selectors: {
+        '&[data-state="checked"]': {
+          backgroundColor: kit.color.sapphire4,
+        },
+      },
     },
   },
 });

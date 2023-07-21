@@ -85,7 +85,7 @@ export const theme = {
     ZERO: '0px',
     NO: '0px',
     DF: '14px',
-    XS: '9px',
+    XS: '10px',
     SM: '11px',
     MD: '13px',
     LG: '16px',

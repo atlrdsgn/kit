@@ -21,11 +21,10 @@ export const Button = ({
   ...rest
 }: ButtonProps) => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
+
     if (href) {
-      event.preventDefault();
       window.open(href, target, rel);
-    } else {
-      event.preventDefault();
     }
 
     onClick(event);
