@@ -2,6 +2,7 @@
 .vscode
 .DS_Store
 Icon
+pkgs/Icon
 
 # Dependencies
 .env
