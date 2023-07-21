@@ -5,7 +5,7 @@
 
 version: 2
 updates:
-  # Maintain yarn [npm] packages in the root package.
+  # Maintain [npm] packages in the root package.
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
@@ -20,6 +20,11 @@ updates:
     # Maintain apps directory
   - package-ecosystem: 'npm'
     directory: 'apps/www/'
+    schedule:
+      interval: 'weekly'
+
+  - package-ecosystem: 'npm'
+    directory: 'apps/docs/'
     schedule:
       interval: 'weekly'
 
