@@ -2,7 +2,7 @@
 
 import React from 'react';
 import content from '../../../web.config.json';
-import { Container, Text, Space } from '@atlrdsgn/kit';
+import { Container, Text, Space, PassLink } from '@atlrdsgn/kit';
 
 function GlobalFooter() {
   const { index, footer } = content;
@@ -12,13 +12,6 @@ function GlobalFooter() {
       <Container
         width='medium'
         align='center'>
-        {/* <!-- Hold Icon
-      <LogoIcon
-        width={'22'}
-        height={'22'}
-      />
-      --> */}
-
         <Space size='sm' />
         <Text
           color='slate6'
@@ -38,6 +31,22 @@ function GlobalFooter() {
           weight='normal'
           font='inter'>
           {footer.copyright}
+        </Text>
+
+        <Text
+          color='slate8'
+          size='xs'
+          align='center'
+          weight='normal'
+          font='inter'>
+          powered by{' '}
+          <PassLink
+            size='xs'
+            color='jade5'
+            href='https://kit.atlrdsgn.com'
+            target='_blank'>
+            @atlrdsgn
+          </PassLink>
         </Text>
       </Container>
     </footer>

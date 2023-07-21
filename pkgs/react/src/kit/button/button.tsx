@@ -11,13 +11,13 @@ export type ButtonProps = ButtonElementProps;
 export const Button = ({
   children,
   type = 'button',
-  as = 'a',
   onClick = () => {},
   href,
   target = '_self',
   rel = 'noopener noreferrer',
   size = 'sm',
-  variant = 'slate',
+  variant = 'primary',
+  font = 'system',
   ...rest
 }: ButtonProps) => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -35,7 +35,7 @@ export const Button = ({
     <button
       {...rest}
       type={type}
-      className={button({ size, variant })}
+      className={button({ size, variant, font })}
       onClick={handleClick}>
       {children}
     </button>

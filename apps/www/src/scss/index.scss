@@ -19,7 +19,10 @@
     #0071ff33 160deg,
     transparent 360deg
   );
-  --secondary-glow: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  --secondary-glow: radial-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,7 +40,6 @@
       rgba(1, 65, 255, 0.3)
     );
   }
-
 }
 
 *,
@@ -153,12 +155,9 @@ body {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
   box-shadow: inset 0 0 0 1.4px #dddddd;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border-radius: 12px !important;
 }
-
-
-
 
 footer {
   display: flex;
@@ -196,10 +195,10 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-.component-wrapper {
-  box-shadow: inset 0 0 0 1.4px #212326 !important;
-  background-color: #1d1d1d !important;
-}
+  .component-wrapper {
+    box-shadow: inset 0 0 0 1.4px #212326 !important;
+    background-color: #1d1d1d !important;
+  }
 
   .kitLogo {
     filter: invert(1);
@@ -224,7 +223,7 @@ footer {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 3rem 0;
+  padding: 0.8rem 0;
 }
 
 .center::before {

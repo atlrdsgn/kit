@@ -4,86 +4,63 @@ import { kit } from '../../lib';
 
 const btn = {
   primary: {
-    background: `var(--slate6, ${kit.color.slate2})`,
-    color: `var(--slate1, ${kit.color.slate9})`,
-    border: `var(--slate2, ${kit.color.slate3})`,
+    background: `var(--sapphire6, ${kit.color.sapphire4})`,
+    color: `var(--carbon0, ${kit.color.carbon0})`,
+    border: `var(--sapphire5, ${kit.color.sapphire5})`,
     shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
-  },
-  secondary: {},
-  jade: {
-    background: `var(--jade6, ${kit.color.jade6})`,
-    color: `var(--jade1, ${kit.color.jade1})`,
-    border: `var(--jade9, ${kit.color.jade9})`,
-    shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
-  },
-} as const;
 
-const style_properties = {
-  padding: {
-    XSMALL: `6px 10px`,
-    SMALL: `6px 14px`,
-    MEDIUM: `10px 12px`,
-    LARGE: `12px 18px`,
+    HOVER: {
+      background: `var(--sapphire5, ${kit.color.sapphire5})`,
+    },
   },
+  secondary: {
+    background: `var(--carbon2, ${kit.color.carbon2})`,
+    color: `var(--carbon9, ${kit.color.carbon9})`,
+    border: `var(--carbon3, ${kit.color.carbon3})`,
+    shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
+
+    HOVER: {
+      background: `var(--carbon3, ${kit.color.carbon3})`,
+    },
+  },
+  jade: {
+    background: `var(--jade6, ${kit.color.jade7})`,
+    color: `var(--jade1, ${kit.color.white})`,
+    border: `var(--jade9, ${kit.color.jade8})`,
+    shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
+
+    HOVER: {
+      background: `var(--jade5, ${kit.color.jade8})`,
+    },
+  },
+
+  // ...
+
+  padding: {
+    XSMALL: `4px 10px`,
+    SMALL: `4px 14px`,
+    MEDIUM: `5px 12px`,
+    LARGE: `6px 18px`,
+  },
+
+  // ...
+
   radii: {
     XSMALL: `9px`,
-    SMALL: `9px`,
+    SMALL: `10px`,
     MEDIUM: `12px`,
     LARGE: `14px`,
   },
+
+  // ...
+
   border: {
     XSMALL: `1.5px solid`,
     SMALL: `1.5px solid`,
     MEDIUM: `2px solid`,
     LARGE: `2px solid`,
   },
-  shadows: {
-    // slate_shadows
-    SLATE: {
-      INITIAL: {
-        XS: `0px 1px 2px -1px rgba(0, 0, 0, 0.25)`,
-        SM: `none`,
-        MD: `none`,
-        LG: `none`,
-      },
-      HOVER: {
-        XS: `0px 2px 4px rgba(0, 0, 0, 0.3)`,
-        SM: `none`,
-        MD: `none`,
-        LG: `none`,
-      },
-      FOCUS: {
-        XS: `0px 1px 2px rgba(0, 0, 0, 0.25), 0px 0px 0px 3.5px rgba(0, 0, 0, 0.2)`,
-        SM: `none`,
-        MD: `0px 2px 4px rgba(17, 12, 34, 0.18), 0px 0px 0px 5px rgba(236, 236, 237, 1)`,
-        LG: `0px 2px 4px rgba(17, 12, 34, 0.12), 0px 0px 0px 6px rgba(236, 236, 237, 1)`,
-      },
-    },
-    // hyper_shadows
-    HYPER: {
-      INITIAL: {
-        XS: `0px 1px 2px -1px rgba(102, 27, 95, 0.75)`,
-        SM: `none`,
-        MD: `none`,
-        LG: `none`,
-      },
-      HOVER: {
-        XS: `0px 2px 4px rgba(102, 27, 95, 0.3)`,
-        SM: `0px 3px 6px -1px rgba(102, 27, 95, 0.4)`,
-        MD: `none`,
-        LG: `none`,
-      },
-      FOCUS: {
-        XS: `0px 1px 2px rgba(102, 27, 95, 0.3), 0px 0px 0px 3.5px rgba(226, 220, 255, 1)`,
-        SM: `0px 1px 2px rgba(102, 27, 95, 0.3), 0px 0px 0px 4.5px rgba(255, 105, 241, 0.2)`,
-        MD: `none`,
-        LG: `none`,
-      },
-    },
-  },
 } as const;
-
-const sp = style_properties;
 
 /** ---------------------------------------------- */
 
@@ -91,46 +68,60 @@ const SIZE_MAP = {
   xs: {
     fontSize: kit.font.size.MINI,
     lineHeight: kit.font.lineheight.MINI,
-    padding: sp.padding.XSMALL,
-    border: sp.border.XSMALL,
-    borderRadius: sp.radii.XSMALL,
+    padding: btn.padding.XSMALL,
+    border: btn.border.XSMALL,
+    borderRadius: btn.radii.XSMALL,
   },
   sm: {
     fontSize: kit.font.size.SM,
     lineHeight: kit.font.lineheight.SM,
-    padding: sp.padding.SMALL,
-    border: sp.border.SMALL,
-    borderRadius: sp.radii.SMALL,
+    padding: btn.padding.SMALL,
+    border: btn.border.SMALL,
+    borderRadius: btn.radii.SMALL,
   },
   md: {
     fontSize: kit.font.size.MD,
     lineHeight: kit.font.lineheight.MD,
-    padding: sp.padding.MEDIUM,
-    border: sp.border.MEDIUM,
-    borderRadius: sp.radii.MEDIUM,
+    padding: btn.padding.MEDIUM,
+    border: btn.border.MEDIUM,
+    borderRadius: btn.radii.MEDIUM,
   },
   lg: {
     fontSize: kit.font.size.LG,
     lineHeight: kit.font.lineheight.LG,
-    padding: sp.padding.LARGE,
-    border: sp.border.LARGE,
-    borderRadius: sp.radii.LARGE,
+    padding: btn.padding.LARGE,
+    border: btn.border.LARGE,
+    borderRadius: btn.radii.LARGE,
   },
 } as const;
 
 const COLOR_MAP = {
-  slate: {
+  primary: {
     backgroundColor: btn.primary.background,
     borderColor: btn.primary.border,
     color: btn.primary.color,
     boxShadow: btn.primary.shadow,
+    hBg: btn.primary.HOVER.background,
+  },
+  secondary: {
+    backgroundColor: btn.secondary.background,
+    borderColor: btn.secondary.border,
+    color: btn.secondary.color,
+    boxShadow: btn.secondary.shadow,
+    hBg: btn.secondary.HOVER.background,
   },
   jade: {
     backgroundColor: btn.jade.background,
     borderColor: btn.jade.border,
     color: btn.jade.color,
     boxShadow: btn.jade.shadow,
+    hBg: btn.jade.HOVER.background,
   },
+} as const;
+
+const FONT_MAP = {
+  system: { fontFamily: kit.font.family.system },
+  mono: { fontFamily: kit.font.family.mono },
 } as const;
 
 /** ------------------------------------------------ */
@@ -141,54 +132,56 @@ const size = styleVariants(SIZE_MAP, (value) => ({
   padding: value.padding,
   border: value.border,
   borderRadius: value.borderRadius,
-
-  ':hover': {},
-  ':focus': {},
 }));
 
 const variant = styleVariants(COLOR_MAP, (value) => ({
   backgroundColor: value.backgroundColor,
   color: value.color,
+  borderColor: value.borderColor,
+  boxShadow: value.boxShadow,
 
-  ':hover': {},
-  ':focus': {},
+  ':hover': {
+    backgroundColor: value.hBg,
+  },
+}));
+
+const font = styleVariants(FONT_MAP, (value) => ({
+  fontFamily: value.fontFamily,
 }));
 
 /** --------------------------------------------- */
 
 const textStyle = {
-  textAlign: 'center',
-  fontFamily: kit.font.family.system,
-  fontSize: kit.font.size.SM,
+  cursor: 'pointer',
+  fontVariantNumeric: 'tabular-nums',
+  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+  userSelect: 'none',
   fontWeight: kit.font.weight.MEDIUM,
-  lineHeight: kit.font.lineheight.SM,
-  letterSpacing: '-0.2px',
+  textAlign: 'center',
+  letterbtnacing: '-0.2px',
 } as const;
 
 const BUTTON_BASE = style({
   ...textStyle,
 
   boxSizing: 'border-box',
-  userSelect: 'none',
   outline: 0,
-  cursor: 'pointer',
-  fontVariantNumeric: 'tabular-nums',
-  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
   gap: '8px',
   position: 'relative',
-  verticalAlign: 'middle',
-  transition: '0.2s cubic-bezier(0.3, 0, 0.5, 1)',
-  transitionProperty: 'color, backgroundColor, borderColor',
+  // verticalAlign: 'middle',
+  transition: 'all 0.6s ease-in-out',
   willChange: 'color, backgroundColor, borderColor, boxShadow',
 
+  /*
   ':hover': {},
   ':focus': {},
   ':active': {},
   ':disabled': {},
+  */
 
   selectors: {},
 });
@@ -200,9 +193,10 @@ export type ButtonVariant = keyof typeof variant;
 export type ButtonVariantProps = RecipeVariants<typeof button>;
 export const button = recipe({
   base: BUTTON_BASE,
-  variants: { size, variant },
+  variants: { size, variant, font },
   defaultVariants: {
     size: 'sm',
-    variant: 'slate',
+    variant: 'primary',
+    font: 'system',
   },
 });

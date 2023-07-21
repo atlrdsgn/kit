@@ -362,29 +362,29 @@ const Yi = ({
   }
 );
 Yi.displayName = "Banner";
-var Ji = p({ defaultClassName: "_1lxtq9d6", variantClassNames: { size: { xs: "_1lxtq9d0", sm: "_1lxtq9d1", md: "_1lxtq9d2", lg: "_1lxtq9d3" }, variant: { slate: "_1lxtq9d4", jade: "_1lxtq9d5" } }, defaultVariants: { size: "sm", variant: "slate" }, compoundVariants: [] });
+var Ji = p({ defaultClassName: "_1lxtq9d9", variantClassNames: { size: { xs: "_1lxtq9d0", sm: "_1lxtq9d1", md: "_1lxtq9d2", lg: "_1lxtq9d3" }, variant: { primary: "_1lxtq9d4", secondary: "_1lxtq9d5", jade: "_1lxtq9d6" }, font: { system: "_1lxtq9d7", mono: "_1lxtq9d8" } }, defaultVariants: { size: "sm", variant: "primary", font: "system" }, compoundVariants: [] });
 const Qi = ({
   children: i,
   type: o = "button",
-  as: l = "a",
-  onClick: a = () => {
+  onClick: l = () => {
   },
-  href: s,
-  target: e = "_self",
-  rel: t = "noopener noreferrer",
-  size: r = "sm",
-  variant: n = "slate",
+  href: a,
+  target: s = "_self",
+  rel: e = "noopener noreferrer",
+  size: t = "sm",
+  variant: r = "primary",
+  font: n = "system",
   ...f
 }) => {
   const y = (j) => {
-    s ? (j.preventDefault(), window.open(s, e, t)) : j.preventDefault(), a(j);
+    a ? (j.preventDefault(), window.open(a, s, e)) : j.preventDefault(), l(j);
   };
   return /* @__PURE__ */ g(
     "button",
     {
       ...f,
       type: o,
-      className: Ji({ size: r, variant: n }),
+      className: Ji({ size: t, variant: r, font: n }),
       onClick: y,
       children: i
     }

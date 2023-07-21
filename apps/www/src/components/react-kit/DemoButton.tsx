@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Button, Flex } from '@atlrdsgn/kit';
+import { Button, Flex, Space } from '@atlrdsgn/kit';
 import ComponentWrapper from '../core/component.wrapper';
 
 export const DemoButton = () => {
@@ -8,20 +8,127 @@ export const DemoButton = () => {
     <ComponentWrapper>
       <Flex
         direction={'row'}
-        align={'start'}
-        justify={'start'}
+        align={'center'}
+        justify={'center'}
         gap={'xs'}
         wrap={'wrap'}
-        style={{ marginBottom: '20px', marginTop: '20px' }}>
+        style={{ marginBottom: '10px', marginTop: '10px' }}>
         <Button
+          font='mono'
           size='xs'
-          variant='slate'>
-          Small Button
+          variant='primary'>
+          Lorem ipsum
         </Button>
         <Button
+          font='system'
+          size='xs'
+          variant='primary'>
+          Lorem ipsum
+        </Button>
+        <Button
+          font='system'
+          size='xs'
+          variant='secondary'>
+          Lorem ipsum
+        </Button>
+        <Button
+          font='system'
           size='xs'
           variant='jade'>
-          Small Button
+          Lorem ipsum
+        </Button>
+        <Button
+          font='mono'
+          size='xs'
+          variant='jade'>
+          Lorem ipsum
+        </Button>
+      </Flex>
+
+      <Space size={'sm'} />
+
+      <Flex
+        direction={'row'}
+        align={'center'}
+        justify={'center'}
+        gap={'xs'}
+        wrap={'wrap'}
+        style={{ marginBottom: '10px', marginTop: '10px' }}>
+        <Button
+          font='system'
+          size='sm'
+          variant='primary'>
+          Lorem ipsum
+        </Button>
+        <Button
+          font='system'
+          size='sm'
+          variant='secondary'>
+          Lorem ipsum
+        </Button>
+        <Button
+          font='system'
+          size='sm'
+          variant='jade'>
+          Lorem ipsum
+        </Button>
+      </Flex>
+
+      <Space size={'sm'} />
+
+      <Flex
+        direction={'row'}
+        align={'center'}
+        justify={'center'}
+        gap={'xs'}
+        wrap={'wrap'}
+        style={{ marginBottom: '10px', marginTop: '10px' }}>
+        <Button
+          font='system'
+          size='md'
+          variant='primary'>
+          Lorem ipsum
+        </Button>
+        <Button
+          font='system'
+          size='md'
+          variant='secondary'>
+          Lorem ipsum
+        </Button>
+        <Button
+          font='system'
+          size='md'
+          variant='jade'>
+          Lorem ipsum
+        </Button>
+      </Flex>
+
+      <Space size={'sm'} />
+
+      <Flex
+        direction={'row'}
+        align={'center'}
+        justify={'center'}
+        gap={'xs'}
+        wrap={'wrap'}
+        style={{ marginBottom: '10px', marginTop: '10px' }}>
+        <Button
+          font='system'
+          size='lg'
+          variant='primary'>
+          Lorem ipsum
+        </Button>
+        <Button
+          font='system'
+          size='lg'
+          variant='secondary'>
+          Lorem ipsum
+        </Button>
+        <Button
+          font='system'
+          size='lg'
+          variant='jade'>
+          Lorem ipsum
         </Button>
       </Flex>
     </ComponentWrapper>

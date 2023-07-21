@@ -1,12 +1,4 @@
-# Yarn-Berry
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-.yarn/
-
-# Misc.
+# Misc
 .vscode
 .DS_Store
 Icon
@@ -29,10 +21,6 @@ coverage
 *.seed
 *.local
 
-# Swap the comments on the following lines if you don't wish to use zero-installs
-# Documentation here: https://yarnpkg.com/features/zero-installs
-.yarn/cache
-#.pnp.*
 
 .next
 .next/cache

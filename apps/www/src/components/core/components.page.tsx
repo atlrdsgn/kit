@@ -23,7 +23,7 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
           </Heading>
           <Space size='sm' />
           <Text
-            color='jade5'
+            color='jade7'
             align='center'
             size='lg'
             weight='medium'

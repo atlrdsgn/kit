@@ -4,7 +4,7 @@ import { type ButtonVariantProps } from './button.css';
 type ButtonElementProps = BASE_BUTTON_PROPS & ButtonVariantProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
 export type ButtonProps = ButtonElementProps;
 export declare const Button: {
-    ({ children, type, as, onClick, href, target, rel, size, variant, ...rest }: ButtonProps): React.JSX.Element;
+    ({ children, type, onClick, href, target, rel, size, variant, font, ...rest }: ButtonProps): React.JSX.Element;
     displayName: string;
 };
 export {};

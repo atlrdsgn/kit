@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Canvas } from '@atlrdsgn/kit';
+import { Canvas, PassLink } from '@atlrdsgn/kit';
 
 function HomePage() {
   return (
@@ -18,6 +18,15 @@ function HomePage() {
             priority
           />
         </div>
+
+        <PassLink
+          size='sm'
+          font='mono'
+          variant='primary'
+          href='/components'
+          style={{ zIndex: 9999 }}>
+          VIEW COMPONENTS →
+        </PassLink>
       </Canvas>
     </>
   );
