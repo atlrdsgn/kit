@@ -2,9 +2,7 @@ import React from 'react';
 import * as POP from '@radix-ui/react-popover';
 import * as CSS from './popover.css';
 import clsx from 'clsx';
-// import { Portal } from '../@shared';
 
-// const PopoverPortal = Portal;
 const PopoverRoot = POP.Root;
 
 const PopoverTrigger = React.forwardRef<
