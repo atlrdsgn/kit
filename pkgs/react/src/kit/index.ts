@@ -4,6 +4,7 @@ export * from './canvas';
 export * from './card';
 export * from './chip';
 export * from './container';
+export * from './dropdown';
 export * from './flex';
 export * from './grid';
 export * from './heading';

@@ -15,7 +15,7 @@ const baseItem = {
   fontFamily: kit.font.family.system,
   fontSize: kit.font.size.SM,
   fontWeight: kit.font.weight.MEDIUM,
-  lineHeight: kit.font.lineheight.SM,
+  lineHeight: kit.font.lineheight.LG,
 
   width: 'auto',
   padding: '0 10px 0 11px',
@@ -23,14 +23,14 @@ const baseItem = {
   backgroundColor: kit.color.carbon0,
   color: kit.color.carbon8,
   border: `1px solid ${kit.color.carbon1}`,
-  borderRadius: kit.radii.XS,
+  borderRadius: kit.radii.DF,
   boxShadow: `rgba(213, 217, 217, .5) 0 2px 5px 0`,
 
   transition: 'all 0.4s ease-in-out',
 
   ':focus': {
     outline: 'none',
-    boxShadow: `rgba(213, 217, 217, .5) 0 2px 5px 0`,
+    boxShadow: `rgba(0,0,0 .5) 0 2px 5px 0`,
     borderColor: kit.color.carbon2,
   },
 } as const;
@@ -49,6 +49,14 @@ export const dropTrigger = style({
     filter: 'saturate(0.2) opacity(0.5)',
     WebkitFilter: 'saturate(0.2) opacity(0.5)',
     cursor: 'not-allowed',
+  },
+
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      backgroundColor: kit.color.carbon9,
+      color: kit.color.carbon0,
+      borderColor: kit.color.carbon8,
+    },
   },
 
   selectors: {},

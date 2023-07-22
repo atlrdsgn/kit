@@ -4,22 +4,31 @@ import * as CSS from './dropdown.css';
 import clsx from 'clsx';
 
 const DropdownRoot = DROP.Root;
+const DropdownSeparator = DROP.Separator;
+const DropdownGroup = DROP.Group;
+const DrobdownLabel = DROP.Label;
+const DropdownItemIndicator = DROP.ItemIndicator;
 
+const DropdownSub = DROP.Sub;
+const DropdownSubTrigger = DROP.SubTrigger;
+const DropdownSubContent = DROP.SubContent;
+
+// trigger
 const DropdownTrigger = React.forwardRef<
   React.ElementRef<typeof DROP.Trigger>,
   React.ComponentProps<typeof DROP.Trigger>
->(({ children, className, asChild, ...rest }, ref) => {
+>(({ className, asChild, ...rest }, ref) => {
   return (
     <DROP.Trigger
       {...rest}
       ref={ref}
       asChild={asChild}
-      className={clsx(CSS.dropTrigger, className)}>
-      {children}
-    </DROP.Trigger>
+      className={clsx(CSS.dropTrigger, className)}
+    />
   );
 });
 
+// content
 type DropdownContentProps = React.ComponentProps<typeof DROP.Content> & {
   loop?: boolean;
   onCloseAutoFocus?: (event: Event) => void;
@@ -41,13 +50,11 @@ const DropdownContent = React.forwardRef<
 >(
   (
     {
-      children,
       className,
       align = 'center',
-      sideOffset = 10,
+      sideOffset = 6,
       sticky = 'partial',
       side = 'bottom',
-      onInteractOutside,
       ...props
     },
     forwardedRef,
@@ -59,11 +66,36 @@ const DropdownContent = React.forwardRef<
         align={align}
         sideOffset={sideOffset}
         sticky={sticky}
-        onInteractOutside={onInteractOutside}
         side={side}
-        className={clsx(CSS.dropContent, className)}>
-        {children}
-      </DROP.Content>
+        className={clsx(CSS.dropContent, className)}
+      />
+    );
+  },
+);
+
+// item
+type DropdownItemProps = React.ComponentProps<typeof DROP.Item> & {
+  className?: string;
+};
+
+const DropdownItem = React.forwardRef<
+  React.ElementRef<typeof DROP.Item>,
+  DropdownItemProps
+>(
+  (
+    { className, onSelect, textValue, asChild, disabled, ...props },
+    forwardedRef,
+  ) => {
+    return (
+      <DROP.Item
+        {...props}
+        ref={forwardedRef}
+        onSelect={onSelect}
+        textValue={textValue}
+        asChild={asChild}
+        disabled={disabled}
+        className={clsx(CSS.dropItem, className)}
+      />
     );
   },
 );
@@ -72,57 +104,36 @@ export type DropdownProps = React.ComponentProps<typeof DROP.Root>;
 export const Dropdown: React.FC<DropdownProps> & {
   Trigger: typeof DropdownTrigger;
   Content: typeof DropdownContent;
+  Item: typeof DropdownItem;
+  //..
+  Group: typeof DropdownGroup;
+  Label: typeof DrobdownLabel;
+  Separator: typeof DropdownSeparator;
+  ItemIndicator: typeof DropdownItemIndicator;
+  Sub: typeof DropdownSub;
+  SubContent: typeof DropdownSubContent;
+  SubTrigger: typeof DropdownSubTrigger;
 } = (props) => <DropdownRoot {...props} />;
 
 Dropdown.displayName = 'Dropdown';
 Dropdown.Trigger = DropdownTrigger;
 Dropdown.Content = DropdownContent;
+Dropdown.Item = DropdownItem;
+Dropdown.Group = DropdownGroup;
+Dropdown.Label = DrobdownLabel;
+Dropdown.Separator = DropdownSeparator;
+Dropdown.ItemIndicator = DropdownItemIndicator;
+Dropdown.Sub = DropdownSub;
+Dropdown.SubContent = DropdownSubContent;
+Dropdown.SubTrigger = DropdownSubTrigger;
+
 DropdownContent.displayName = 'DropdownContent';
 DropdownTrigger.displayName = 'DropdownTrigger';
-
-/**
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
-
-<DropdownMenu.Root>
-  <DropdownMenu.Trigger>…</DropdownMenu.Trigger>
-  <DropdownMenu.Portal>
-    <DropdownMenu.Content>
-      <DropdownMenu.Item>…</DropdownMenu.Item>
-      <DropdownMenu.Item>…</DropdownMenu.Item>
-      <DropdownMenu.Separator />
-      <DropdownMenu.Sub>
-        <DropdownMenu.SubTrigger>Sub menu →</DropdownMenu.SubTrigger>
-        <DropdownMenu.Portal>
-          <DropdownMenu.SubContent>
-            <DropdownMenu.Item>Sub menu item</DropdownMenu.Item>
-            <DropdownMenu.Item>Sub menu item</DropdownMenu.Item>
-            <DropdownMenu.Arrow />
-          </DropdownMenu.SubContent>
-        </DropdownMenu.Portal>
-      </DropdownMenu.Sub>
-      <DropdownMenu.Separator />
-      <DropdownMenu.Item>…</DropdownMenu.Item>
-    </DropdownMenu.Content>
-  </DropdownMenu.Portal>
-</DropdownMenu.Root>
-*/
+DropdownItem.displayName = 'DropdownItem';
+DropdownGroup.displayName = 'DropdownGroup';
+DrobdownLabel.displayName = 'DrobdownLabel';
+DropdownSeparator.displayName = 'DropdownSeparator';
+DropdownItemIndicator.displayName = 'DropdownItemIndicator';
+DropdownSub.displayName = 'DropdownSub';
+DropdownSubContent.displayName = 'DropdownSubContent';
+DropdownSubTrigger.displayName = 'DropdownSubTrigger';

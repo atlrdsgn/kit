@@ -118,11 +118,13 @@ export const banner = recipe({
     size,
     border,
     variant,
+    shape,
   },
 
   defaultVariants: {
     size: 'medium',
     border: false,
     variant: 'one',
+    shape: 'rounded',
   },
 });

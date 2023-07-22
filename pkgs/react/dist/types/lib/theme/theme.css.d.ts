@@ -79,7 +79,7 @@ export declare const theme: {
     readonly radii: {
         readonly ZERO: "0px";
         readonly NO: "0px";
-        readonly DF: "14px";
+        readonly DF: "8px";
         readonly XS: "10px";
         readonly SM: "11px";
         readonly MD: "13px";
@@ -342,7 +342,7 @@ export declare const BASE: {
     radii: {
         readonly ZERO: "0px";
         readonly NO: "0px";
-        readonly DF: "14px";
+        readonly DF: "8px";
         readonly XS: "10px";
         readonly SM: "11px";
         readonly MD: "13px";
@@ -605,7 +605,7 @@ export declare const DARK: {
     radii: {
         readonly ZERO: "0px";
         readonly NO: "0px";
-        readonly DF: "14px";
+        readonly DF: "8px";
         readonly XS: "10px";
         readonly SM: "11px";
         readonly MD: "13px";
