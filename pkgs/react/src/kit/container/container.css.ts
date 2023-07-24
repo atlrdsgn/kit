@@ -34,30 +34,42 @@ const BORDER_API = {
     border: `1px solid ${kit.color.slate3}`,
     backgroundColor: kit.color.slate3,
   },
-};
+} as const;
+
+const FLUSH_API = {
+  true: {
+    paddingTop: '0px !important',
+    paddingBottom: '0px !important',
+    paddingLeft: '0px !important',
+    paddingRight: '0px !important',
+  },
+} as const;
 
 /** -------------------------------------------- */
 
-export const width = {
-  ...styleVariants(WIDTH_MAP, (value) => ({
-    maxWidth: value.maxWidth,
-  })),
-} as const;
+export const width = styleVariants(WIDTH_MAP, (value) => ({
+  maxWidth: value.maxWidth,
+}));
 
-export const align = {
-  ...styleVariants(ALIGNMENT_MAP, (value) => ({
-    alignItems: value.alignItems,
-    alignContent: value.alignContent,
-    justifyContent: value.justifyContent,
-  })),
-} as const;
+export const align = styleVariants(ALIGNMENT_MAP, (value) => ({
+  alignItems: value.alignItems,
+  alignContent: value.alignContent,
+  justifyContent: value.justifyContent,
+}));
 
-export const border = {
-  ...styleVariants(BORDER_API, (value) => ({
-    border: value.border,
-    backgroundColor: value.backgroundColor,
-  })),
-} as const;
+export const border = styleVariants(BORDER_API, (value) => ({
+  border: value.border,
+  backgroundColor: value.backgroundColor,
+}));
+
+export const flush = styleVariants(FLUSH_API, (value) => ({
+  paddingTop: value.paddingTop,
+  paddingBottom: value.paddingBottom,
+  paddingLeft: value.paddingLeft,
+  paddingRight: value.paddingRight,
+}));
+
+/** ---------------------------------------------- */
 
 export const CONTAINER_BASE = style({
   backgroundColor: 'transparent',
@@ -83,9 +95,15 @@ export const CONTAINER_BASE = style({
 export type ContainerAlignment = keyof typeof align;
 export type ContainerWidth = keyof typeof width;
 export type ContainerBorder = keyof typeof border;
+export type ContainerFlush = keyof typeof flush;
 export type ContainerVariantProps = RecipeVariants<typeof container>;
 export const container = recipe({
   base: [CONTAINER_BASE],
-  variants: { align, width, border },
-  defaultVariants: { align: 'start', width: 'max', border: false },
+  variants: { align, width, border, flush },
+  defaultVariants: {
+    align: 'start',
+    width: 'max',
+    border: false,
+    flush: false,
+  },
 });

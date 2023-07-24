@@ -10,6 +10,12 @@ function DemoDropdown() {
         <Dropdown.Trigger>Trigger</Dropdown.Trigger>
         <Dropdown.Content>
           <Dropdown.Item>one</Dropdown.Item>
+          <Dropdown.Item>two</Dropdown.Item>
+          <Dropdown.Item>three</Dropdown.Item>
+          <Dropdown.Separator />
+          <Dropdown.Item>four</Dropdown.Item>
+          <Dropdown.Item>five</Dropdown.Item>
+          <Dropdown.Item>six</Dropdown.Item>
         </Dropdown.Content>
       </Dropdown>
     </ComponentWrapper>

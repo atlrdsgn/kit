@@ -1,32 +1,197 @@
 'use client';
 import React from 'react';
-import { Flex } from '@atlrdsgn/kit';
+import { Container, Section, Flex, Space, Text, Heading } from '@atlrdsgn/kit';
 import { ColourBox } from './ColourBox';
-import ComponentWrapper from '../../core/component.wrapper';
 
 export const DemoColour = () => {
   return (
-    <ComponentWrapper>
-      <Flex
-        direction={'row'}
-        align={'center'}
-        justify={'center'}
-        gap={'xs'}
-        wrap={'wrap'}
-        style={{ marginBottom: '20px', marginTop: '20px' }}>
-        <ColourBox
-          colour={'carbon0'}
-          className={'carbon0'}
-        />
-        <ColourBox
-          colour={'carbon1'}
-          className={'carbon1'}
-        />
-        <ColourBox
-          colour={'carbon2'}
-          className={'carbon2'}
-        />
-      </Flex>
-    </ComponentWrapper>
+    <Section>
+      <Space size='lg' />
+      <Container
+        width='medium'
+        align='center'>
+        {/* <!-- CORE --> */}
+
+        <Container
+          width='medium'
+          align='start'
+          flush>
+          <Heading
+            align='left'
+            size='H3'
+            weight='semibold'
+            font='system'>
+            Core
+          </Heading>
+        </Container>
+        {/* <!-- sapphire --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-sapphire
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'sapphire0'} />
+            <ColourBox colour={'sapphire1'} />
+            <ColourBox colour={'sapphire2'} />
+            <ColourBox colour={'sapphire3'} />
+            <ColourBox colour={'sapphire4'} />
+            <ColourBox colour={'sapphire5'} />
+            <ColourBox colour={'sapphire6'} />
+            <ColourBox colour={'sapphire7'} />
+            <ColourBox colour={'sapphire8'} />
+            <ColourBox colour={'sapphire9'} />
+            <ColourBox colour={'sapphire10'} />
+            <ColourBox colour={'sapphire11'} />
+            <ColourBox colour={'sapphire12'} />
+          </Flex>
+        </Section>
+
+        {/* <!-- Jade --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-jade
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'jade0'} />
+            <ColourBox colour={'jade1'} />
+            <ColourBox colour={'jade2'} />
+            <ColourBox colour={'jade3'} />
+            <ColourBox colour={'jade4'} />
+            <ColourBox colour={'jade5'} />
+            <ColourBox colour={'jade6'} />
+            <ColourBox colour={'jade7'} />
+            <ColourBox colour={'jade8'} />
+            <ColourBox colour={'jade9'} />
+            <ColourBox colour={'jade10'} />
+            <ColourBox colour={'jade11'} />
+            <ColourBox colour={'jade12'} />
+          </Flex>
+        </Section>
+
+        {/* <!-- Orange --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-orange
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'orange0'} />
+            <ColourBox colour={'orange1'} />
+            <ColourBox colour={'orange2'} />
+            <ColourBox colour={'orange3'} />
+            <ColourBox colour={'orange4'} />
+            <ColourBox colour={'orange5'} />
+            <ColourBox colour={'orange6'} />
+            <ColourBox colour={'orange7'} />
+            <ColourBox colour={'orange8'} />
+            <ColourBox colour={'orange9'} />
+            <ColourBox colour={'orange10'} />
+            <ColourBox colour={'orange11'} />
+            <ColourBox colour={'orange12'} />
+          </Flex>
+        </Section>
+
+        {/* <!-- NEUTRAL --> */}
+        <Container
+          width='medium'
+          align='start'
+          flush>
+          <Heading
+            align='left'
+            size='H3'
+            weight='semibold'
+            font='system'>
+            Neutral
+          </Heading>
+        </Container>
+        {/* <!-- carbon --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-carbon
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'carbon0'} />
+            <ColourBox colour={'carbon1'} />
+            <ColourBox colour={'carbon2'} />
+            <ColourBox colour={'carbon3'} />
+            <ColourBox colour={'carbon4'} />
+            <ColourBox colour={'carbon5'} />
+            <ColourBox colour={'carbon6'} />
+            <ColourBox colour={'carbon7'} />
+            <ColourBox colour={'carbon8'} />
+            <ColourBox colour={'carbon9'} />
+            <ColourBox colour={'carbon10'} />
+            <ColourBox colour={'carbon11'} />
+            <ColourBox colour={'carbon12'} />
+          </Flex>
+        </Section>
+
+        {/* <!-- slate --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-slate
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'slate0'} />
+            <ColourBox colour={'slate1'} />
+            <ColourBox colour={'slate2'} />
+            <ColourBox colour={'slate3'} />
+            <ColourBox colour={'slate4'} />
+            <ColourBox colour={'slate5'} />
+            <ColourBox colour={'slate6'} />
+            <ColourBox colour={'slate7'} />
+            <ColourBox colour={'slate8'} />
+            <ColourBox colour={'slate9'} />
+            <ColourBox colour={'slate10'} />
+            <ColourBox colour={'slate11'} />
+            <ColourBox colour={'slate12'} />
+          </Flex>
+        </Section>
+      </Container>
+    </Section>
   );
 };

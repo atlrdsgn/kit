@@ -1,6 +1,5 @@
 import React from 'react';
 import * as DROP from '@radix-ui/react-dropdown-menu';
-declare const DropdownSeparator: React.ForwardRefExoticComponent<DROP.DropdownMenuSeparatorProps & React.RefAttributes<HTMLDivElement>>;
 declare const DropdownGroup: React.ForwardRefExoticComponent<DROP.DropdownMenuGroupProps & React.RefAttributes<HTMLDivElement>>;
 declare const DrobdownLabel: React.ForwardRefExoticComponent<DROP.DropdownMenuLabelProps & React.RefAttributes<HTMLDivElement>>;
 declare const DropdownItemIndicator: React.ForwardRefExoticComponent<DROP.DropdownMenuItemIndicatorProps & React.RefAttributes<HTMLSpanElement>>;
@@ -27,6 +26,10 @@ type DropdownItemProps = React.ComponentProps<typeof DROP.Item> & {
     className?: string;
 };
 declare const DropdownItem: React.ForwardRefExoticComponent<Omit<DropdownItemProps, "ref"> & React.RefAttributes<HTMLDivElement>>;
+type DropdownSeparatorProps = React.ComponentProps<typeof DROP.Separator> & {
+    className?: string;
+};
+declare const DropdownSeparator: React.ForwardRefExoticComponent<Omit<DropdownSeparatorProps, "ref"> & React.RefAttributes<HTMLDivElement>>;
 export type DropdownProps = React.ComponentProps<typeof DROP.Root>;
 export declare const Dropdown: React.FC<DropdownProps> & {
     Trigger: typeof DropdownTrigger;

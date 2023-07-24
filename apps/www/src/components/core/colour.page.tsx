@@ -9,8 +9,8 @@ function ColourPage({ children }: { children?: React.ReactNode }) {
       <Section>
         <Space size='xxl' />
         <Container
-          width='small'
-          align='center'>
+          width='medium'
+          align='start'>
           <Heading
             align='center'
             size='H2'
@@ -21,7 +21,7 @@ function ColourPage({ children }: { children?: React.ReactNode }) {
           <Space size='sm' />
           <Text
             color='jade7'
-            align='center'
+            align='left'
             size='lg'
             weight='medium'
             font='system'>

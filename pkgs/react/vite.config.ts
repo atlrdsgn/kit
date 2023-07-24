@@ -10,6 +10,7 @@ import path from 'path';
 
 const peerDeps = Object.keys(peerDependencies);
 const primitiveDeps = [
+  'clsx',
   '@radix-ui/react-dropdown-menu',
   '@radix-ui/react-select',
   '@radix-ui/react-switch',
@@ -34,6 +35,7 @@ export default defineConfig({
           react: 'React',
           'react-dom': 'ReactDom',
           'react/jsx-runtime': 'jsxRuntime',
+          clsx: 'clsx',
 
           '@radix-ui/react-dropdown-menu': 'DROP',
           '@radix-ui/react-select': 'SLCT',

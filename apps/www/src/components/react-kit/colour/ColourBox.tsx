@@ -17,7 +17,12 @@ export const ColourBox = ({
 }: ColourBoxProps) => {
   return (
     <Rect
-      style={{ backgroundColor: `${colour}`, width: '80px', height: '80px' }}
+      backgroundColor={colour}
+      style={{
+        width: '40px',
+        height: '40px',
+        border: '1px solid gray',
+      }}
       className={className}
       color={colour}
       {...rest}>

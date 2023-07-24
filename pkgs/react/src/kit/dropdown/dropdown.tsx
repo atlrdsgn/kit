@@ -4,7 +4,6 @@ import * as CSS from './dropdown.css';
 import clsx from 'clsx';
 
 const DropdownRoot = DROP.Root;
-const DropdownSeparator = DROP.Separator;
 const DropdownGroup = DROP.Group;
 const DrobdownLabel = DROP.Label;
 const DropdownItemIndicator = DROP.ItemIndicator;
@@ -100,6 +99,24 @@ const DropdownItem = React.forwardRef<
   },
 );
 
+// separator
+type DropdownSeparatorProps = React.ComponentProps<typeof DROP.Separator> & {
+  className?: string;
+};
+
+const DropdownSeparator = React.forwardRef<
+  React.ElementRef<typeof DROP.Separator>,
+  DropdownSeparatorProps
+>((props, forwardedRef) => {
+  return (
+    <DROP.Separator
+      {...props}
+      ref={forwardedRef}
+      className={clsx(CSS.dropSeparator, props.className)}
+    />
+  );
+});
+
 export type DropdownProps = React.ComponentProps<typeof DROP.Root>;
 export const Dropdown: React.FC<DropdownProps> & {
   Trigger: typeof DropdownTrigger;
@@ -126,7 +143,6 @@ Dropdown.ItemIndicator = DropdownItemIndicator;
 Dropdown.Sub = DropdownSub;
 Dropdown.SubContent = DropdownSubContent;
 Dropdown.SubTrigger = DropdownSubTrigger;
-
 DropdownContent.displayName = 'DropdownContent';
 DropdownTrigger.displayName = 'DropdownTrigger';
 DropdownItem.displayName = 'DropdownItem';

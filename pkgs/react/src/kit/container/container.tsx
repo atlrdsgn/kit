@@ -5,6 +5,7 @@ import {
   // ..
   type ContainerAlignment,
   type ContainerBorder,
+  type ContainerFlush,
   type ContainerVariantProps,
   type ContainerWidth,
 } from './container.css';
@@ -16,6 +17,7 @@ export type ContainerProps = ContainerVariantProps &
     width?: ContainerWidth;
     align?: ContainerAlignment;
     border?: ContainerBorder | boolean;
+    flush?: ContainerFlush | boolean;
   };
 
 export const Container: React.FC<ContainerProps> = ({
@@ -24,12 +26,13 @@ export const Container: React.FC<ContainerProps> = ({
   width = 'max',
   align = 'start',
   border = false,
+  flush = false,
   ...rest
 }) => {
   return (
     <div
       {...rest}
-      className={clsx(className, container({ width, align, border }))}>
+      className={clsx(className, container({ width, align, border, flush }))}>
       {children}
     </div>
   );
