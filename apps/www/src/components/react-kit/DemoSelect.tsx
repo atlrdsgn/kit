@@ -34,8 +34,7 @@ function DemoSelect() {
   return (
     <ComponentWrapper>
       <Select>
-        <Select.Trigger placeholder='Lorem ipsum.'>Trigger</Select.Trigger>
-
+        <Select.Trigger placeholder='Select a component.' />
         <Select.Content>
           {/* <!--- Map the values to the options --> */}
           {ops.map((options) => (

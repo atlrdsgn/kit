@@ -5,7 +5,7 @@ import { SDF, SUF, SRF, SLF, eighty } from '../@utils/keyframes.css';
 const TRGGR_PADDING_LEFT = '14px';
 const TRGGR_PADDING_RIGHT = '10px';
 const TRGGR_RADII = kit.radii.XS;
-const CONTENT_RADII = kit.radii.SM;
+const CONTENT_RADII = kit.radii.LG;
 const ITEM_RADII = kit.radii.XS;
 
 /** ----- trigger ------ */
@@ -18,7 +18,7 @@ export const selectTrigger = style({
   justifyContent: 'space-between',
   verticalAlign: 'middle',
 
-  gap: '8px',
+  gap: '6px',
   height: '34px',
   minWidth: 140,
   maxWidth: 280,
@@ -29,8 +29,8 @@ export const selectTrigger = style({
   fontWeight: kit.font.weight.MEDIUM,
   lineHeight: kit.font.lineheight.MD,
 
-  color: kit.color.carbon8,
-  border: `1.5px solid ${kit.color.carbon3}`,
+  color: kit.color.carbon7,
+  border: `1.5px solid ${kit.color.carbon2}`,
   borderRadius: TRGGR_RADII,
   backgroundColor: kit.color.white,
 
@@ -41,8 +41,8 @@ export const selectTrigger = style({
 
   transition: 'all 0.2s ease-in-out',
 
-  ':hover': { backgroundColor: kit.color.carbon1 },
-  ':focus': { boxShadow: `0 0 0 2.5px ${kit.color.jade3}` },
+  ':hover': { backgroundColor: kit.color.carbon0 },
+  ':focus': { boxShadow: `0 0 0 3px ${kit.color.sapphire3}` },
 
   '@media': {
     '(prefers-color-scheme: dark)': {
@@ -70,17 +70,30 @@ export const selectTrigger = style({
 /** ----- content ------ */
 
 export const selectContent = style({
-  zIndex: 999,
   maxHeight: 'var(--radix-select-content-available-height)',
+  minWidth: 'var(--radix-select-trigger-width)',
+  maxWidth: 'var(--radix-select-trigger-width)',
   width: 'var(--radix-select-trigger-width)',
-  color: kit.color.slate9,
-  borderRadius: CONTENT_RADII,
-  backgroundColor: kit.color.white,
+
   overflow: 'hidden',
   scrollbarWidth: 'none',
-  padding: '2px',
-  boxShadow:
-    'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  justifyContent: 'center',
+  position: 'relative',
+  zIndex: 999,
+  color: kit.color.slate9,
+  border: `1px solid`,
+  borderColor: kit.color.carbon1,
+  borderRadius: CONTENT_RADII,
+  backgroundColor: kit.color.white,
+  margin: 'auto',
+  paddingTop: '6px',
+  paddingBottom: '10px',
+  paddingLeft: '6px',
+  paddingRight: '6px',
+  boxShadow: '0px 16px 20px -8px rgba(17, 12, 34, 0.10)',
 
   '@media': {
     '(prefers-color-scheme: dark)': {
@@ -121,27 +134,44 @@ const SLCT_TEXT_STX = {
   lineHeight: kit.font.lineheight.SM,
 } as const;
 
+export const selectItemText = style({
+  width: '100%',
+  justifyContent: 'flex-start',
+  alignItems: 'center',
+  color: kit.color.carbon8,
+  ...SLCT_TEXT_STX,
+
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      color: kit.color.carbon0,
+    },
+  },
+});
+
 export const selectItem = style({
-  position: 'relative',
-  display: 'flex',
+  ...SLCT_TEXT_STX,
+
+  display: 'inline-flex',
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'space-between',
+  gap: '16px',
   height: 'auto',
+  minWidth: '100%',
+  width: '100%',
 
   borderRadius: ITEM_RADII,
 
-  paddingLeft: '8px',
-  paddingRight: '8px',
-  paddingTop: '4px',
-  paddingBottom: '4px',
-
-  ...SLCT_TEXT_STX,
+  paddingLeft: '10px',
+  paddingRight: '10px',
+  paddingTop: '6px',
+  paddingBottom: '6px',
+  margin: 'auto',
 
   ':hover': {
     cursor: 'pointer',
     outline: 'none',
-    backgroundColor: kit.color.sapphire3,
+    backgroundColor: kit.color.carbon4,
     color: kit.color.white,
   },
 
@@ -156,8 +186,25 @@ export const selectItem = style({
 
   selectors: {
     '&[data-highlighted]': {
-      backgroundColor: kit.color.jade5,
-      color: kit.color.carbon9,
+      backgroundColor: kit.color.sapphire4,
+      color: kit.color.carbon0,
+    },
+  },
+});
+
+export const selectIndicate = style({
+  position: 'relative',
+  alignItems: 'center',
+  justifyContent: 'flex-end',
+  width: '16px',
+  height: '16px',
+
+  // icon color
+  color: kit.color.sapphire5,
+
+  selectors: {
+    '&[data-highlighted]': {
+      color: kit.color.sapphire0,
     },
   },
 });
@@ -183,26 +230,6 @@ export const selectIcon = style({
       animation: `${eighty}`,
     },
   },
-});
-
-export const selectItemText = style({
-  justifyContent: 'flex-start',
-  alignItems: 'center',
-  color: kit.color.carbon8,
-  ...SLCT_TEXT_STX,
-});
-
-export const selectIndicate = style({
-  position: 'relative',
-  display: 'flex',
-  flexDirection: 'row',
-  alignItems: 'center',
-  justifyContent: 'flex-end',
-  width: 16,
-  height: 16,
-
-  // icon color
-  color: kit.color.jade6,
 });
 
 /** ------ group ------ */

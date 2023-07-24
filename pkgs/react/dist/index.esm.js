@@ -1,5 +1,5 @@
 /*! 
-    AtelierKit© v0.4.0. 
+    AtelierKit© v0.4.1. 
     Copyright © 2023 atlrdsgn®. All rights reserved.
     
     see https://docs.atlrdsgn.com for more information.
@@ -1465,7 +1465,7 @@ const Ia = ({
   }
 );
 Ia.displayName = "Section";
-var Da = "_1oghhg39", La = "_1oghhg38", Ma = "_1oghhg31", Xa = "_1oghhg33", Va = "_1oghhg35", $a = "_1oghhg32", Ha = "_1oghhg34", Fa = "_1oghhg30";
+var Da = "_1oghhg39", La = "_1oghhg38", Ma = "_1oghhg31", Xa = "_1oghhg35", Va = "_1oghhg34", $a = "_1oghhg33", Ha = "_1oghhg32", Fa = "_1oghhg30";
 const Wa = ({
   color: i = "currentColor",
   ...o
