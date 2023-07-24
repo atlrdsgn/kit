@@ -1,5 +1,5 @@
 import { carbon, slate } from './neutral';
-import { jade, sapphire, peach } from './core';
+import { jade, sapphire, orange } from './core';
 import { azure, cherry, lime, lemon } from './neon';
 
 export const kitColour = {
@@ -11,7 +11,7 @@ export const kitColour = {
   // core
   ...jade,
   ...sapphire,
-  ...peach,
+  ...orange,
 
   // neutrals
   ...carbon,

@@ -198,19 +198,19 @@ export const themeVars = createThemeContract({
     sapphire11: null,
     sapphire12: null,
 
-    peach0: null,
-    peach1: null,
-    peach2: null,
-    peach3: null,
-    peach4: null,
-    peach5: null,
-    peach6: null,
-    peach7: null,
-    peach8: null,
-    peach9: null,
-    peach10: null,
-    peach11: null,
-    peach12: null,
+    orange0: null,
+    orange1: null,
+    orange2: null,
+    orange3: null,
+    orange4: null,
+    orange5: null,
+    orange6: null,
+    orange7: null,
+    orange8: null,
+    orange9: null,
+    orange10: null,
+    orange11: null,
+    orange12: null,
 
     // neutrals
     carbon0: null,
@@ -302,7 +302,7 @@ export const themeVars = createThemeContract({
   // core
   ...jade,
   ...sapphire,
-  ...peach,
+  ...orange,
 
   // neutrals
   ...carbon,

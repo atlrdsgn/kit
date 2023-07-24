@@ -7,3 +7,5 @@ export * from './DemoSection';
 export * from './DemoText';
 export * from './DemoPopover';
 export * from './DemoSwitch';
+
+export * from './colour/DemoColour';

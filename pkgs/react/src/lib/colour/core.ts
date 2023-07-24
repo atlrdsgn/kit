@@ -30,43 +30,20 @@ export const ocGreen = {
   oc_green12: 'rgba(43, 138, 62, 1)',
 } as const;
 
-/*
---oc-green-0: #ebfbee;
---oc-green-0-rgb: 235, 251, 238;
---oc-green-1: #d3f9d8;
---oc-green-1-rgb: 211, 249, 216;
---oc-green-2: #b2f2bb;
---oc-green-2-rgb: 178, 242, 187;
---oc-green-3: #8ce99a;
---oc-green-3-rgb: 140, 233, 154;
---oc-green-4: #69db7c;
---oc-green-4-rgb: 105, 219, 124;
---oc-green-5: #51cf66;
---oc-green-5-rgb: 81, 207, 102;
---oc-green-6: #40c057;
---oc-green-6-rgb: 64, 192, 87;
---oc-green-7: #37b24d;
---oc-green-7-rgb: 55, 178, 77;
---oc-green-8: #2f9e44;
---oc-green-8-rgb: 47, 158, 68;
---oc-green-9: #2b8a3e;
---oc-green-9-rgb: 43, 138, 62;
-*/
-
-export const peach = {
-  peach0: 'rgba(255, 255, 255, 1)',
-  peach1: 'rgba(255, 243, 234, 1)',
-  peach2: 'rgba(255, 236, 224, 1)',
-  peach3: 'rgba(255, 224, 204, 1)',
-  peach4: 'rgba(255, 213, 184, 1)',
-  peach5: 'rgba(255, 203, 163, 1)',
-  peach6: 'rgba(255, 193, 133, 1)',
-  peach7: 'rgba(255, 176, 96, 1)',
-  peach8: 'rgba(244, 146, 69, 1)',
-  peach9: 'rgba(235, 140, 0, 1)',
-  peach10: 'rgba(235, 110, 0, 1)',
-  peach11: 'rgba(235, 88, 0, 1)',
-  peach12: 'rgba(43, 41, 28, 1)',
+export const orange = {
+  orange0: 'rgba(255, 255, 255, 1)',
+  orange1: 'rgba(255, 243, 234, 1)',
+  orange2: 'rgba(255, 236, 224, 1)',
+  orange3: 'rgba(255, 224, 204, 1)',
+  orange4: 'rgba(255, 213, 184, 1)',
+  orange5: 'rgba(255, 203, 163, 1)',
+  orange6: 'rgba(255, 193, 133, 1)',
+  orange7: 'rgba(255, 176, 96, 1)',
+  orange8: 'rgba(244, 146, 69, 1)',
+  orange9: 'rgba(235, 140, 0, 1)',
+  orange10: 'rgba(235, 110, 0, 1)',
+  orange11: 'rgba(235, 88, 0, 1)',
+  orange12: 'rgba(43, 41, 28, 1)',
 } as const;
 
 export const sapphire = {
@@ -87,7 +64,7 @@ export const sapphire = {
 
 /**
  * @jade
- * @peach
+ * @orange
  * @sapphire
  *
  * 1 / 12
