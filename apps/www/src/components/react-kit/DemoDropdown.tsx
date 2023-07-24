@@ -5,7 +5,7 @@ import ComponentWrapper from '../core/component.wrapper';
 
 function DemoDropdown() {
   return (
-    <ComponentWrapper>
+    <ComponentWrapper label='dropdown menu'>
       <Dropdown>
         <Dropdown.Trigger>Trigger</Dropdown.Trigger>
         <Dropdown.Content>

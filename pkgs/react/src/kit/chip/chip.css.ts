@@ -48,7 +48,7 @@ const VARIANT_COLOR_MAP = {
     boxShadow: chipShadows.primary.initial,
     onHover: {
       backgroundColor: kit.color.carbon1,
-      border: `1px solid ${kit.color.carbon1}`,
+      border: `1px solid ${kit.color.carbon3}`,
       color: kit.color.carbon8,
       boxShadow: chipShadows.primary.hover,
     },

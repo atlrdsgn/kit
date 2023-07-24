@@ -5,7 +5,7 @@ import ComponentWrapper from '../core/component.wrapper';
 
 export const DemoSwitch = () => {
   return (
-    <ComponentWrapper>
+    <ComponentWrapper label='switch'>
       <Flex
         direction={'row'}
         align={'start'}

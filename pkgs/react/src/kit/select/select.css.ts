@@ -17,8 +17,6 @@ export const selectTrigger = style({
   alignItems: 'center',
   justifyContent: 'space-between',
   verticalAlign: 'middle',
-
-  gap: '6px',
   height: '34px',
   minWidth: 140,
   maxWidth: 280,

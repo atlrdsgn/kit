@@ -4,33 +4,33 @@ import { kit } from '../../lib';
 
 const btn = {
   primary: {
-    background: `var(--sapphire6, ${kit.color.sapphire4})`,
+    background: `var(--sapphire6, ${kit.color.sapphire5})`,
     color: `var(--carbon0, ${kit.color.carbon0})`,
     border: `var(--sapphire5, ${kit.color.sapphire5})`,
     shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
 
     HOVER: {
-      background: `var(--sapphire5, ${kit.color.sapphire5})`,
+      background: `var(--sapphire5, ${kit.color.sapphire6})`,
     },
   },
   secondary: {
-    background: `var(--carbon2, ${kit.color.carbon2})`,
+    background: `var(--carbon2, ${kit.color.carbon1})`,
     color: `var(--carbon9, ${kit.color.carbon9})`,
-    border: `var(--carbon3, ${kit.color.carbon3})`,
+    border: `var(--carbon3, ${kit.color.carbon1})`,
     shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
 
     HOVER: {
-      background: `var(--carbon3, ${kit.color.carbon3})`,
+      background: `var(--carbon3, ${kit.color.carbon2})`,
     },
   },
   jade: {
-    background: `var(--jade6, ${kit.color.jade7})`,
-    color: `var(--jade1, ${kit.color.white})`,
-    border: `var(--jade9, ${kit.color.jade8})`,
+    background: `var(--jade6, ${kit.color.jade4})`,
+    color: `var(--jade1, ${kit.color.carbon0})`,
+    border: `var(--jade9, ${kit.color.jade4})`,
     shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
 
     HOVER: {
-      background: `var(--jade5, ${kit.color.jade8})`,
+      background: `var(--jade5, ${kit.color.jade7})`,
     },
   },
 
@@ -158,7 +158,7 @@ const textStyle = {
   userSelect: 'none',
   fontWeight: kit.font.weight.MEDIUM,
   textAlign: 'center',
-  letterbtnacing: '-0.2px',
+  letterSacing: '-0.2px',
 } as const;
 
 const BUTTON_BASE = style({
@@ -172,8 +172,7 @@ const BUTTON_BASE = style({
   alignItems: 'center',
   gap: '8px',
   position: 'relative',
-  // verticalAlign: 'middle',
-  transition: 'all 0.6s ease-in-out',
+  transition: 'all 0.4s ease-in-out',
   willChange: 'color, backgroundColor, borderColor, boxShadow',
 
   /*

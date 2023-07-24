@@ -81,11 +81,11 @@ const BASE_ROOT = style({
 
 const BASE_TOGGLE = style({
   ...COMMON_PROPERTIES,
-  backgroundColor: kit.color.jade3,
+  backgroundColor: kit.color.sapphire4,
 
   selectors: {
     '&[data-state="checked"]': {
-      backgroundColor: kit.color.jade6,
+      backgroundColor: kit.color.sapphire6,
     },
   },
 
@@ -95,7 +95,7 @@ const BASE_TOGGLE = style({
 
       selectors: {
         '&[data-state="checked"]': {
-          backgroundColor: kit.color.sapphire4,
+          backgroundColor: kit.color.sapphire5,
         },
       },
     },

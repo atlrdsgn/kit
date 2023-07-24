@@ -5,7 +5,7 @@ import ComponentWrapper from '../core/component.wrapper';
 
 export const DemoText = () => {
   return (
-    <ComponentWrapper>
+    <ComponentWrapper label='text'>
       <Flex
         direction={'column'}
         align={'start'}

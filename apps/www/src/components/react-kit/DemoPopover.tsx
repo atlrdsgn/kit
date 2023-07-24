@@ -5,7 +5,7 @@ import ComponentWrapper from '../core/component.wrapper';
 
 function DemoPopover() {
   return (
-    <ComponentWrapper>
+    <ComponentWrapper label='popover'>
       <Popover>
         <Popover.Trigger>Trigger</Popover.Trigger>
         <Popover.Content>

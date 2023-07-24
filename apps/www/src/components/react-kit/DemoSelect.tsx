@@ -32,7 +32,7 @@ const ops = [
 
 function DemoSelect() {
   return (
-    <ComponentWrapper>
+    <ComponentWrapper label='select'>
       <Select>
         <Select.Trigger placeholder='Select a component.' />
         <Select.Content>

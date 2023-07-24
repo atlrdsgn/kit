@@ -5,7 +5,7 @@ import ComponentWrapper from '../core/component.wrapper';
 
 export const DemoButton = () => {
   return (
-    <ComponentWrapper>
+    <ComponentWrapper label='button'>
       <Flex
         direction={'row'}
         align={'center'}
