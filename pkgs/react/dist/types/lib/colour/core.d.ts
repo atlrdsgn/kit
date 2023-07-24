@@ -28,20 +28,20 @@ export declare const ocGreen: {
     readonly oc_green11: "rgba(43, 138, 62, 1)";
     readonly oc_green12: "rgba(43, 138, 62, 1)";
 };
-export declare const peach: {
-    readonly peach0: "rgba(255, 255, 255, 1)";
-    readonly peach1: "rgba(255, 243, 234, 1)";
-    readonly peach2: "rgba(255, 236, 224, 1)";
-    readonly peach3: "rgba(255, 224, 204, 1)";
-    readonly peach4: "rgba(255, 213, 184, 1)";
-    readonly peach5: "rgba(255, 203, 163, 1)";
-    readonly peach6: "rgba(255, 193, 133, 1)";
-    readonly peach7: "rgba(255, 176, 96, 1)";
-    readonly peach8: "rgba(244, 146, 69, 1)";
-    readonly peach9: "rgba(235, 140, 0, 1)";
-    readonly peach10: "rgba(235, 110, 0, 1)";
-    readonly peach11: "rgba(235, 88, 0, 1)";
-    readonly peach12: "rgba(43, 41, 28, 1)";
+export declare const orange: {
+    readonly orange0: "rgba(255, 255, 255, 1)";
+    readonly orange1: "rgba(255, 243, 234, 1)";
+    readonly orange2: "rgba(255, 236, 224, 1)";
+    readonly orange3: "rgba(255, 224, 204, 1)";
+    readonly orange4: "rgba(255, 213, 184, 1)";
+    readonly orange5: "rgba(255, 203, 163, 1)";
+    readonly orange6: "rgba(255, 193, 133, 1)";
+    readonly orange7: "rgba(255, 176, 96, 1)";
+    readonly orange8: "rgba(244, 146, 69, 1)";
+    readonly orange9: "rgba(235, 140, 0, 1)";
+    readonly orange10: "rgba(235, 110, 0, 1)";
+    readonly orange11: "rgba(235, 88, 0, 1)";
+    readonly orange12: "rgba(43, 41, 28, 1)";
 };
 export declare const sapphire: {
     readonly sapphire0: "rgba(244, 241, 249, 1)";
@@ -60,7 +60,7 @@ export declare const sapphire: {
 };
 /**
  * @jade
- * @peach
+ * @orange
  * @sapphire
  *
  * 1 / 12

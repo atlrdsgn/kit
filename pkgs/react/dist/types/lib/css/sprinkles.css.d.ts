@@ -940,17 +940,17 @@ export declare const sprinkles: ((props: {
         [x: string]: "150ms" | "300ms" | "500ms" | "700ms" | "1000ms" | undefined;
     } | undefined) | ResponsiveArray<2 | 1 | 4 | 3, "150ms" | "300ms" | "500ms" | "700ms" | "1000ms" | null>;
 } & {
-    color?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "peach0" | "peach1" | "peach2" | "peach3" | "peach4" | "peach5" | "peach6" | "peach7" | "peach8" | "peach9" | "peach10" | "peach11" | "peach12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | {
-        light?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "peach0" | "peach1" | "peach2" | "peach3" | "peach4" | "peach5" | "peach6" | "peach7" | "peach8" | "peach9" | "peach10" | "peach11" | "peach12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
-        dark?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "peach0" | "peach1" | "peach2" | "peach3" | "peach4" | "peach5" | "peach6" | "peach7" | "peach8" | "peach9" | "peach10" | "peach11" | "peach12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
+    color?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "orange0" | "orange1" | "orange2" | "orange3" | "orange4" | "orange5" | "orange6" | "orange7" | "orange8" | "orange9" | "orange10" | "orange11" | "orange12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | {
+        light?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "orange0" | "orange1" | "orange2" | "orange3" | "orange4" | "orange5" | "orange6" | "orange7" | "orange8" | "orange9" | "orange10" | "orange11" | "orange12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
+        dark?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "orange0" | "orange1" | "orange2" | "orange3" | "orange4" | "orange5" | "orange6" | "orange7" | "orange8" | "orange9" | "orange10" | "orange11" | "orange12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
     } | undefined;
-    backgroundColor?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "peach0" | "peach1" | "peach2" | "peach3" | "peach4" | "peach5" | "peach6" | "peach7" | "peach8" | "peach9" | "peach10" | "peach11" | "peach12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | {
-        light?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "peach0" | "peach1" | "peach2" | "peach3" | "peach4" | "peach5" | "peach6" | "peach7" | "peach8" | "peach9" | "peach10" | "peach11" | "peach12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
-        dark?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "peach0" | "peach1" | "peach2" | "peach3" | "peach4" | "peach5" | "peach6" | "peach7" | "peach8" | "peach9" | "peach10" | "peach11" | "peach12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
+    backgroundColor?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "orange0" | "orange1" | "orange2" | "orange3" | "orange4" | "orange5" | "orange6" | "orange7" | "orange8" | "orange9" | "orange10" | "orange11" | "orange12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | {
+        light?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "orange0" | "orange1" | "orange2" | "orange3" | "orange4" | "orange5" | "orange6" | "orange7" | "orange8" | "orange9" | "orange10" | "orange11" | "orange12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
+        dark?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "orange0" | "orange1" | "orange2" | "orange3" | "orange4" | "orange5" | "orange6" | "orange7" | "orange8" | "orange9" | "orange10" | "orange11" | "orange12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
     } | undefined;
-    borderColor?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "peach0" | "peach1" | "peach2" | "peach3" | "peach4" | "peach5" | "peach6" | "peach7" | "peach8" | "peach9" | "peach10" | "peach11" | "peach12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | {
-        light?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "peach0" | "peach1" | "peach2" | "peach3" | "peach4" | "peach5" | "peach6" | "peach7" | "peach8" | "peach9" | "peach10" | "peach11" | "peach12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
-        dark?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "peach0" | "peach1" | "peach2" | "peach3" | "peach4" | "peach5" | "peach6" | "peach7" | "peach8" | "peach9" | "peach10" | "peach11" | "peach12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
+    borderColor?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "orange0" | "orange1" | "orange2" | "orange3" | "orange4" | "orange5" | "orange6" | "orange7" | "orange8" | "orange9" | "orange10" | "orange11" | "orange12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | {
+        light?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "orange0" | "orange1" | "orange2" | "orange3" | "orange4" | "orange5" | "orange6" | "orange7" | "orange8" | "orange9" | "orange10" | "orange11" | "orange12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
+        dark?: "transparent" | "current" | "white" | "black" | "jade0" | "jade1" | "jade2" | "jade3" | "jade4" | "jade5" | "jade6" | "jade7" | "jade8" | "jade9" | "jade10" | "jade11" | "jade12" | "sapphire0" | "sapphire1" | "sapphire2" | "sapphire3" | "sapphire4" | "sapphire5" | "sapphire6" | "sapphire7" | "sapphire8" | "sapphire9" | "sapphire10" | "sapphire11" | "sapphire12" | "orange0" | "orange1" | "orange2" | "orange3" | "orange4" | "orange5" | "orange6" | "orange7" | "orange8" | "orange9" | "orange10" | "orange11" | "orange12" | "carbon0" | "carbon1" | "carbon2" | "carbon3" | "carbon4" | "carbon5" | "carbon6" | "carbon7" | "carbon8" | "carbon9" | "carbon10" | "carbon11" | "carbon12" | "slate0" | "slate1" | "slate2" | "slate3" | "slate4" | "slate5" | "slate6" | "slate7" | "slate8" | "slate9" | "slate10" | "slate11" | "slate12" | "azure0" | "azure1" | "azure2" | "azure3" | "azure4" | "azure5" | "azure6" | "azure7" | "azure8" | "azure9" | "azure10" | "azure11" | "azure12" | "cherry0" | "cherry1" | "cherry2" | "cherry3" | "cherry4" | "cherry5" | "cherry6" | "cherry7" | "cherry8" | "cherry9" | "cherry10" | "cherry11" | "cherry12" | "lime0" | "lime1" | "lime2" | "lime3" | "lime4" | "lime5" | "lime6" | "lime7" | "lime8" | "lime9" | "lime10" | "lime11" | "lime12" | "lemon0" | "lemon1" | "lemon2" | "lemon3" | "lemon4" | "lemon5" | "lemon6" | "lemon7" | "lemon8" | "lemon9" | "lemon10" | "lemon11" | "lemon12" | undefined;
     } | undefined;
 }) => string) & {
     properties: Set<"color" | "margin" | "alignContent" | "alignItems" | "appearance" | "backgroundColor" | "boxSizing" | "display" | "flexDirection" | "flexWrap" | "fontVariantNumeric" | "fontWeight" | "height" | "justifyContent" | "mixBlendMode" | "position" | "textTransform" | "transitionDuration" | "transitionProperty" | "transitionTimingFunction" | "userSelect" | "verticalAlign" | "width" | "all" | "borderColor" | "flex" | "gap" | "outline" | "padding" | "WebkitTapHighlightColor">;
@@ -2024,91 +2024,91 @@ export declare const mapColorValue: <OutputValue extends string | number | boole
                         dark: string;
                     };
                 };
-                peach0: {
+                orange0: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach1: {
+                orange1: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach2: {
+                orange2: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach3: {
+                orange3: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach4: {
+                orange4: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach5: {
+                orange5: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach6: {
+                orange6: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach7: {
+                orange7: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach8: {
+                orange8: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach9: {
+                orange9: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach10: {
+                orange10: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach11: {
+                orange11: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach12: {
+                orange12: {
                     defaultClass: string;
                     conditions: {
                         light: string;
@@ -2875,91 +2875,91 @@ export declare const mapColorValue: <OutputValue extends string | number | boole
                         dark: string;
                     };
                 };
-                peach0: {
+                orange0: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach1: {
+                orange1: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach2: {
+                orange2: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach3: {
+                orange3: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach4: {
+                orange4: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach5: {
+                orange5: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach6: {
+                orange6: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach7: {
+                orange7: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach8: {
+                orange8: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach9: {
+                orange9: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach10: {
+                orange10: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach11: {
+                orange11: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach12: {
+                orange12: {
                     defaultClass: string;
                     conditions: {
                         light: string;
@@ -3726,91 +3726,91 @@ export declare const mapColorValue: <OutputValue extends string | number | boole
                         dark: string;
                     };
                 };
-                peach0: {
+                orange0: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach1: {
+                orange1: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach2: {
+                orange2: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach3: {
+                orange3: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach4: {
+                orange4: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach5: {
+                orange5: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach6: {
+                orange6: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach7: {
+                orange7: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach8: {
+                orange8: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach9: {
+                orange9: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach10: {
+                orange10: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach11: {
+                orange11: {
                     defaultClass: string;
                     conditions: {
                         light: string;
                         dark: string;
                     };
                 };
-                peach12: {
+                orange12: {
                     defaultClass: string;
                     conditions: {
                         light: string;
