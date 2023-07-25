@@ -1,4 +1,63 @@
 export const jade = {
+  jade0: `#ebfbee`,
+  jade1: `#d3f9d8`,
+  jade2: `#b2f2bb`,
+  jade3: `#8ce99a`,
+  jade4: `#69db7c`,
+  jade5: `#51cf66`,
+  jade6: `#40c057`,
+  jade7: `#37b24d`,
+  jade8: `#2f9e44`,
+  jade9: `#2b8a3e`,
+  jade10: `#257d37`,
+  jade11: `#1e6e2e`,
+  jade12: `#185f26`,
+} as const;
+
+export const orange = {
+  orange0: '#ffffff',
+  orange1: '#fff3ea',
+  orange2: '#ffecd8',
+  orange3: '#ffe0cc',
+  orange4: '#ffd5b8',
+  orange5: '#ffcba3',
+  orange6: '#ffc185',
+  orange7: '#ffb060',
+  orange8: '#f49245',
+  orange9: '#eb8c00',
+  orange10: '#eb6e00',
+  orange11: '#eb5800',
+  orange12: '#2b291c',
+} as const;
+
+export const sapphire = {
+  sapphire0: '#f4f1f9',
+  sapphire1: '#e7e1f4',
+  sapphire2: '#dcdced',
+  sapphire3: '#d1c4e9',
+  sapphire4: '#b9a6de',
+  sapphire5: '#a289d2',
+  sapphire6: '#8b6bc7',
+  sapphire7: '#a289d2',
+  sapphire8: '#8b6bc7',
+  sapphire9: '#7056a2',
+  sapphire10: '#2d2241',
+  sapphire11: '#20182d',
+  sapphire12: '#120d1a',
+} as const;
+
+/**
+ * @jade
+ * @orange
+ * @sapphire
+ *
+ * 1 / 12
+ */
+
+/*
+// RGBA Values
+
+export const jade = {
   jade0: 'rgba(204, 255, 206, 1)',
   jade1: 'rgba(170, 255, 176, 1)',
   jade2: 'rgba(136, 255, 147, 1)',
@@ -12,22 +71,6 @@ export const jade = {
   jade10: 'rgba(0, 60, 47, 1)',
   jade11: 'rgba(0, 21, 20, 1)',
   jade12: 'rgba(0, 18, 20, 1)',
-} as const;
-
-export const ocGreen = {
-  oc_green0: 'rgba(235, 251, 238, 1)',
-  oc_green1: 'rgba(211, 249, 216, 1)',
-  oc_green2: 'rgba(178, 242, 187, 1)',
-  oc_green3: 'rgba(140, 233, 154, 1)',
-  oc_green4: 'rgba(105, 219, 124, 1)',
-  oc_green5: 'rgba(81, 207, 102, 1)',
-  oc_green6: 'rgba(64, 192, 87, 1)',
-  oc_green7: 'rgba(55, 178, 77, 1)',
-  oc_green8: 'rgba(47, 158, 68, 1)',
-  oc_green9: 'rgba(43, 138, 62, 1)',
-  oc_green10: 'rgba(43, 138, 62, 1)',
-  oc_green11: 'rgba(43, 138, 62, 1)',
-  oc_green12: 'rgba(43, 138, 62, 1)',
 } as const;
 
 export const orange = {
@@ -46,6 +89,7 @@ export const orange = {
   orange12: 'rgba(43, 41, 28, 1)',
 } as const;
 
+
 export const sapphire = {
   sapphire0: 'rgba(244, 241, 249, 1)',
   sapphire1: 'rgba(231, 225, 244, 1)',
@@ -61,11 +105,4 @@ export const sapphire = {
   sapphire11: 'rgba(32, 24, 45, 1)',
   sapphire12: 'rgba(18, 13, 26, 1)',
 } as const;
-
-/**
- * @jade
- * @orange
- * @sapphire
- *
- * 1 / 12
- */
+*/

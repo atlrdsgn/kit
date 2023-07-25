@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Button, Canvas, Space } from '@atlrdsgn/kit';
+import { Canvas } from '@atlrdsgn/kit';
 
 function HomePage() {
   return (
@@ -18,14 +18,6 @@ function HomePage() {
             priority
           />
         </div>
-        <Space size='sm' />
-        <Button
-          size='xs'
-          variant='primary'
-          style={{ zIndex: 9999 }}
-          href='/components'>
-          View components
-        </Button>
       </Canvas>
     </>
   );

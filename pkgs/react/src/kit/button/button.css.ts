@@ -9,28 +9,31 @@ const btn = {
     border: `var(--sapphire5, ${kit.color.sapphire5})`,
     shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
 
-    HOVER: {
-      background: `var(--sapphire5, ${kit.color.sapphire6})`,
+    HOVER: { background: `var(--sapphire5, ${kit.color.sapphire4})` },
+    FOCUS: {
+      boxShadow: `0px 0px 0px 3px #C2E2FF, 0px 2px 4px 0px rgba(17, 12, 34, 0.12)`,
     },
   },
   secondary: {
-    background: `var(--carbon2, ${kit.color.carbon1})`,
+    background: `var(--carbon2, ${kit.color.carbon2})`,
     color: `var(--carbon9, ${kit.color.carbon9})`,
-    border: `var(--carbon3, ${kit.color.carbon1})`,
+    border: `var(--carbon3, ${kit.color.carbon2})`,
     shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
 
-    HOVER: {
-      background: `var(--carbon3, ${kit.color.carbon2})`,
+    HOVER: { background: `var(--carbon3, ${kit.color.carbon1})` },
+    FOCUS: {
+      boxShadow: `0px 0px 0px 3px #ECECED, 0px 2px 4px 0px rgba(17, 12, 34, 0.12)`,
     },
   },
   jade: {
-    background: `var(--jade6, ${kit.color.jade4})`,
-    color: `var(--jade1, ${kit.color.carbon0})`,
-    border: `var(--jade9, ${kit.color.jade4})`,
+    background: `var(--kit-jade5, ${kit.color.jade5})`,
+    color: `var(--kit-carbon0, ${kit.color.carbon0})`,
+    border: `var(--kit-jade5, ${kit.color.jade5})`,
     shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
 
-    HOVER: {
-      background: `var(--jade5, ${kit.color.jade7})`,
+    HOVER: { background: `var(--kit-jade6, ${kit.color.jade4})` },
+    FOCUS: {
+      boxShadow: `0px 0px 0px 3px #C6F1DD, 0px 2px 4px 0px rgba(17, 12, 34, 0.12)`,
     },
   },
 
@@ -46,8 +49,8 @@ const btn = {
   // ...
 
   radii: {
-    XSMALL: `9px`,
-    SMALL: `10px`,
+    XSMALL: `7px`,
+    SMALL: `9px`,
     MEDIUM: `12px`,
     LARGE: `14px`,
   },
@@ -101,21 +104,27 @@ const COLOR_MAP = {
     borderColor: btn.primary.border,
     color: btn.primary.color,
     boxShadow: btn.primary.shadow,
-    hBg: btn.primary.HOVER.background,
+
+    hoverBg: btn.primary.HOVER.background,
+    focusShadow: btn.primary.FOCUS.boxShadow,
   },
   secondary: {
     backgroundColor: btn.secondary.background,
     borderColor: btn.secondary.border,
     color: btn.secondary.color,
     boxShadow: btn.secondary.shadow,
-    hBg: btn.secondary.HOVER.background,
+
+    hoverBg: btn.secondary.HOVER.background,
+    focusShadow: btn.secondary.FOCUS.boxShadow,
   },
   jade: {
     backgroundColor: btn.jade.background,
     borderColor: btn.jade.border,
     color: btn.jade.color,
     boxShadow: btn.jade.shadow,
-    hBg: btn.jade.HOVER.background,
+
+    hoverBg: btn.jade.HOVER.background,
+    focusShadow: btn.jade.FOCUS.boxShadow,
   },
 } as const;
 
@@ -141,7 +150,11 @@ const variant = styleVariants(COLOR_MAP, (value) => ({
   boxShadow: value.boxShadow,
 
   ':hover': {
-    backgroundColor: value.hBg,
+    backgroundColor: value.hoverBg,
+  },
+
+  ':focus': {
+    boxShadow: value.focusShadow,
   },
 }));
 
@@ -158,7 +171,6 @@ const textStyle = {
   userSelect: 'none',
   fontWeight: kit.font.weight.MEDIUM,
   textAlign: 'center',
-  letterSacing: '-0.2px',
 } as const;
 
 const BUTTON_BASE = style({
@@ -172,7 +184,7 @@ const BUTTON_BASE = style({
   alignItems: 'center',
   gap: '8px',
   position: 'relative',
-  transition: 'all 0.4s ease-in-out',
+  transition: 'all 0.2s ease-in-out',
   willChange: 'color, backgroundColor, borderColor, boxShadow',
 
   /*

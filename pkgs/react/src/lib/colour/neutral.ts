@@ -14,6 +14,22 @@ export const carbon = {
   carbon12: 'rgba(0, 2, 3, 1)',
 } as const;
 
+export const grey = {
+  grey0: '#fcfcfc',
+  grey1: '#f8f8f8',
+  grey2: '#f2f2f2',
+  grey3: '#ededed',
+  grey4: '#e7e7e7',
+  grey5: '#e1e1e1',
+  grey6: '#dddddd',
+  grey7: '#c8c8c8',
+  grey8: '#8f8f8f',
+  grey9: '#858585',
+  grey10: '#6f6f6f',
+  grey11: '#161616',
+  grey12: '#090909',
+} as const;
+
 export const slate = {
   slate0: `rgba(244, 244, 245, 1)`,
   slate1: `rgba(231, 233, 235, 1)`,
@@ -32,6 +48,7 @@ export const slate = {
 
 /**
  * @carbon
+ * @grey
  * @slate
  *
  * 1 / 12

@@ -1,5 +1,5 @@
 export {
-  // ..
+  // main
   kit,
   themes,
   type Kit,
@@ -7,6 +7,7 @@ export {
 } from './theme/kit.css';
 
 export {
+  // provider
   useTheme,
   KitContext,
   KitProvider,
@@ -16,6 +17,7 @@ export {
 } from './provider';
 
 export {
+  // css
   atoms,
   sprinkles,
   mapResponsiveValue,
@@ -29,3 +31,10 @@ export {
   type RequiredResponsiveValue,
   type OptionalResponsiveObject,
 } from './css';
+
+export {
+  // hooks
+  useGoogleFont,
+  useThemeFont,
+  useWindowSize,
+} from './hooks';

@@ -2,6 +2,15 @@ import { style } from '@vanilla-extract/css';
 import { SDF } from '../@utils/keyframes.css';
 import { kit } from '../../lib';
 
+const TRGGR_WIDTH = '180px';
+const TRGGR_PADDING_LEFT = '10px';
+const TRGGR_PADDING_RIGHT = '10px';
+const TRGGR_PADDING_BOTTOM = '4px';
+const TRGGR_PADDING_TOP = '4px';
+const TRGGR_RADII = kit.radii.XS;
+const CONTENT_RADII = kit.radii.MD;
+const ITEM_RADII = '7px';
+
 const baseItem = {
   boxSizing: 'border-box',
   cursor: 'pointer',
@@ -14,19 +23,25 @@ const baseItem = {
   fontWeight: kit.font.weight.MEDIUM,
   lineHeight: kit.font.lineheight.MD,
   width: 'auto',
-  padding: '0 10px 0 11px',
   backgroundColor: kit.color.carbon0,
   color: kit.color.carbon8,
-  border: `1px solid ${kit.color.carbon1}`,
-  borderRadius: '7px',
+  border: `1px solid ${kit.color.transparent}`,
   transition: 'all 0.4s ease-in-out',
 } as const;
 
 export const dropTrigger = style({
   ...baseItem,
 
+  width: TRGGR_WIDTH,
+  minWidth: TRGGR_WIDTH,
+
   textAlign: 'center',
   textDecoration: 'none',
+  borderRadius: TRGGR_RADII,
+  paddingLeft: TRGGR_PADDING_LEFT,
+  paddingRight: TRGGR_PADDING_RIGHT,
+  paddingBottom: TRGGR_PADDING_BOTTOM,
+  paddingTop: TRGGR_PADDING_TOP,
 
   ':focus': {
     outline: 'none',
@@ -53,6 +68,11 @@ export const dropTrigger = style({
 
 // content
 export const dropContent = style({
+  minWidth: `var(--radix-dropdown-menu-content-min-width)`,
+  width: `var(--radix-dropdown-menu-trigger-width)`,
+
+  maxHeight: `var(--radix-dropdown-menu-content-available-width)`,
+
   zIndex: kit.z.indice.MAX,
   opacity: 1,
   boxSizing: 'border-box',
@@ -62,10 +82,8 @@ export const dropContent = style({
   margin: 'auto',
   padding: '6px',
   maxWidth: '220px',
-  minWidth: '160px',
-  width: '100%',
-  borderRadius: kit.radii.MD,
-  backgroundColor: kit.color.carbon0,
+  borderRadius: CONTENT_RADII,
+  backgroundColor: kit.color.white,
   color: 'inherit',
   boxShadow:
     'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
@@ -76,6 +94,7 @@ export const dropContent = style({
     boxShadow:
       'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
   },
+
   '@media': {
     '(prefers-color-scheme: dark)': {
       backgroundColor: kit.color.carbon9,
@@ -96,15 +115,16 @@ export const dropItem = style({
 
   textAlign: 'left',
   textDecoration: 'none',
+  borderRadius: ITEM_RADII,
+  padding: '0 10px 0 11px',
 
   ':focus': {
     outline: 'none',
     boxShadow: `rgba(0,0,0 .5) 0 2px 5px 0`,
-    borderColor: kit.color.carbon2,
   },
 
   ':hover': {
-    backgroundColor: kit.color.carbon1,
+    backgroundColor: kit.color.sapphire3,
   },
 
   ':disabled': {
@@ -123,7 +143,6 @@ export const dropItem = style({
     '(prefers-color-scheme: dark)': {
       backgroundColor: kit.color.carbon9,
       color: kit.color.carbon0,
-      borderColor: kit.color.carbon8,
     },
   },
 });
@@ -147,7 +166,7 @@ export const dropSeparator = style({
   alignItems: 'center',
   justifyContent: 'center',
 
-  backgroundColor: kit.color.carbon3,
+  backgroundColor: kit.color.carbon1,
 
   '@media': {
     '(prefers-color-scheme: dark)': { backgroundColor: kit.color.carbon8 },

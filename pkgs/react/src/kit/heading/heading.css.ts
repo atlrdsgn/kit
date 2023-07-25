@@ -8,23 +8,23 @@ const SIZE_MAP = {
     lineHeight: kit.font.lineheight['6XL'],
   },
   H1: {
-    fontSize: kit.font.size['5XL'],
-    lineHeight: kit.font.lineheight['5XL'],
-  },
-  H2: {
     fontSize: kit.font.size['4XL'],
     lineHeight: kit.font.lineheight['4XL'],
   },
+  H2: {
+    fontSize: kit.font.size.XXL,
+    lineHeight: kit.font.lineheight.XXL,
+  },
   H3: {
-    fontSize: kit.font.size['3XL'],
-    lineHeight: kit.font.lineheight['3XL'],
+    fontSize: kit.font.size.XL,
+    lineHeight: kit.font.lineheight.XL,
   },
   H4: {
-    fontSize: kit.font.size['2XL'],
-    lineHeight: kit.font.lineheight['2XL'],
+    fontSize: kit.font.size.LG,
+    lineHeight: kit.font.lineheight.LG,
   },
-  H5: { fontSize: kit.font.size.XL, lineHeight: kit.font.lineheight.XL },
-  H6: { fontSize: kit.font.size.MD, lineHeight: kit.font.lineheight.MD },
+  H5: { fontSize: kit.font.size.MD, lineHeight: kit.font.lineheight.MD },
+  H6: { fontSize: kit.font.size.SM, lineHeight: kit.font.lineheight.SM },
 } as const;
 
 const WEIGHT_MAP = {
@@ -49,30 +49,22 @@ const ALIGNMENT_MAP = {
  * Font, Size, Weight, Alignment
  */
 
-export const font = {
-  ...styleVariants(kit.font.family, (KIT_FAMILY) => ({
-    fontFamily: KIT_FAMILY,
-  })),
-} as const;
+export const font = styleVariants(kit.font.family, (KIT_FAMILY) => ({
+  fontFamily: KIT_FAMILY,
+}));
 
-export const size = {
-  ...styleVariants(SIZE_MAP, (HEADING_SIZE) => ({
-    fontSize: HEADING_SIZE.fontSize,
-    lineHeight: HEADING_SIZE.lineHeight,
-  })),
-} as const;
+export const size = styleVariants(SIZE_MAP, (HEADING_SIZE) => ({
+  fontSize: HEADING_SIZE.fontSize,
+  lineHeight: HEADING_SIZE.lineHeight,
+}));
 
-export const weight = {
-  ...styleVariants(WEIGHT_MAP, (HEADING_WEIGHT) => ({
-    fontWeight: HEADING_WEIGHT.fontWeight,
-  })),
-} as const;
+export const weight = styleVariants(WEIGHT_MAP, (HEADING_WEIGHT) => ({
+  fontWeight: HEADING_WEIGHT.fontWeight,
+}));
 
-export const align = {
-  ...styleVariants(ALIGNMENT_MAP, (HEADING_ALIGNMENT) => ({
-    textAlign: HEADING_ALIGNMENT.textAlign,
-  })),
-} as const;
+export const align = styleVariants(ALIGNMENT_MAP, (HEADING_ALIGNMENT) => ({
+  textAlign: HEADING_ALIGNMENT.textAlign,
+}));
 
 /** ---------------------------------------- */
 

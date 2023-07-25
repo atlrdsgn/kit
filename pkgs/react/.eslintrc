@@ -14,7 +14,9 @@
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react-hooks/exhaustive-deps": "warn", // <--- THIS IS THE NEW RULE
+    "@typescript-eslint/no-explicit-any": "error"
   },
   "settings": {
     "react": {

@@ -1,0 +1,153 @@
+/**
+  *  K I T  -  𝗖 𝗢 𝗟 𝗢 U 𝗥
+  *
+  *  @license MIT
+  *  @version 1.0.0
+  */
+
+/**  General
+  *  ───────────────────────────────────
+  */
+
+$kit-white: #ffffff;
+$kit-black: #000000;
+
+/**  Gray
+  *  ───────────────────────────────────
+  */
+
+$kit-gray-list: (
+  '0': #f8f9fa,
+  '1': #f1f3f5,
+  '2': #e9ecef,
+  '3': #dee2e6,
+  '4': #ced4da,
+  '5': #adb5bd,
+  '6': #868e96,
+  '7': #495057,
+  '8': #343a40,
+  '9': #212529,
+);
+
+$kit-gray-0: map-get($kit-gray-list, '0');
+$kit-gray-1: map-get($kit-gray-list, '1');
+$kit-gray-2: map-get($kit-gray-list, '2');
+$kit-gray-3: map-get($kit-gray-list, '3');
+$kit-gray-4: map-get($kit-gray-list, '4');
+$kit-gray-5: map-get($kit-gray-list, '5');
+$kit-gray-6: map-get($kit-gray-list, '6');
+$kit-gray-7: map-get($kit-gray-list, '7');
+$kit-gray-8: map-get($kit-gray-list, '8');
+$kit-gray-9: map-get($kit-gray-list, '9');
+
+/**  Metal
+  *  ───────────────────────────────────
+  */
+
+$kit-metal-list: (
+  '0': #f3f4f7,
+  '1': #e2e4eb,
+  '2': #ccd0dc,
+  '3': #b3bacb,
+  '4': #9ba4ba,
+  '5': #828da9,
+  '6': #626e8e,
+  '7': #49526a,
+  '8': #303646,
+  '9': #191c24,
+);
+
+$kit-metal-0: map-get($kit-metal-list, '0');
+$kit-metal-1: map-get($kit-metal-list, '1');
+$kit-metal-2: map-get($kit-metal-list, '2');
+$kit-metal-3: map-get($kit-metal-list, '3');
+$kit-metal-4: map-get($kit-metal-list, '4');
+$kit-metal-5: map-get($kit-metal-list, '5');
+$kit-metal-6: map-get($kit-metal-list, '6');
+$kit-metal-7: map-get($kit-metal-list, '7');
+$kit-metal-8: map-get($kit-metal-list, '8');
+$kit-metal-9: map-get($kit-metal-list, '9');
+
+/**  Jade
+  *  ───────────────────────────────────
+  */
+
+$kit-jade-list: (
+  '0': #ebfbee,
+  '1': #d3f9d8,
+  '2': #b2f2bb,
+  '3': #8ce99a,
+  '4': #69db7c,
+  '5': #51cf66,
+  '6': #40c057,
+  '7': #37b24d,
+  '8': #2f9e44,
+  '9': #2b8a3e,
+);
+
+$kit-jade-0: map-get($kit-jade-list, '0');
+$kit-jade-1: map-get($kit-jade-list, '1');
+$kit-jade-2: map-get($kit-jade-list, '2');
+$kit-jade-3: map-get($kit-jade-list, '3');
+$kit-jade-4: map-get($kit-jade-list, '4');
+$kit-jade-5: map-get($kit-jade-list, '5');
+$kit-jade-6: map-get($kit-jade-list, '6');
+$kit-jade-7: map-get($kit-jade-list, '7');
+$kit-jade-8: map-get($kit-jade-list, '8');
+$kit-jade-9: map-get($kit-jade-list, '9');
+
+/**  Grape
+  *  ───────────────────────────────────
+  */
+
+$kit-grape-list: (
+  '0': #f8f0fc,
+  '1': #f3d9fa,
+  '2': #eebefa,
+  '3': #e599f7,
+  '4': #da77f2,
+  '5': #cc5de8,
+  '6': #be4bdb,
+  '7': #ae3ec9,
+  '8': #9c36b5,
+  '9': #862e9c,
+);
+
+$kit-grape-0: map-get($kit-grape-list, '0');
+$kit-grape-1: map-get($kit-grape-list, '1');
+$kit-grape-2: map-get($kit-grape-list, '2');
+$kit-grape-3: map-get($kit-grape-list, '3');
+$kit-grape-4: map-get($kit-grape-list, '4');
+$kit-grape-5: map-get($kit-grape-list, '5');
+$kit-grape-6: map-get($kit-grape-list, '6');
+$kit-grape-7: map-get($kit-grape-list, '7');
+$kit-grape-8: map-get($kit-grape-list, '8');
+$kit-grape-9: map-get($kit-grape-list, '9');
+
+/**  Orange
+  *  ───────────────────────────────────
+  */
+
+$kit-orange-list: (
+  '0': #fff4e6,
+  '1': #ffe8cc,
+  '2': #ffd8a8,
+  '3': #ffc078,
+  '4': #ffa94d,
+  '5': #ff922b,
+  '6': #fd7e14,
+  '7': #f76707,
+  '8': #e8590c,
+  '9': #d9480f,
+);
+
+$kit-orange-0: map-get($kit-orange-list, '0');
+$kit-orange-1: map-get($kit-orange-list, '1');
+$kit-orange-2: map-get($kit-orange-list, '2');
+$kit-orange-3: map-get($kit-orange-list, '3');
+$kit-orange-4: map-get($kit-orange-list, '4');
+$kit-orange-5: map-get($kit-orange-list, '5');
+$kit-orange-6: map-get($kit-orange-list, '6');
+$kit-orange-7: map-get($kit-orange-list, '7');
+$kit-orange-8: map-get($kit-orange-list, '8');
+$kit-orange-9: map-get($kit-orange-list, '9');

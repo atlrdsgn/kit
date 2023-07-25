@@ -25,11 +25,37 @@ const JUSTIFY_MAP = {
 } as const;
 
 const GAP_MAP = {
+  none: { gap: '0' },
   xs: { gap: kit.space.DPX },
-  sm: { gap: kit.space.EPX },
-  md: { gap: kit.space.FPX },
-  lg: { gap: kit.space.GPX },
-  xl: { gap: kit.space.IPX },
+  sm: { gap: kit.space.FPX },
+  md: { gap: kit.space.IPX },
+  lg: { gap: kit.space.KPX },
+  xl: { gap: kit.space.NPX },
+
+  1: { gap: '1px' },
+  2: { gap: '2px' },
+  3: { gap: '3px' },
+  4: { gap: '4px' },
+  5: { gap: '5px' },
+  6: { gap: '6px' },
+  7: { gap: '7px' },
+  8: { gap: '8px' },
+  9: { gap: '9px' },
+  10: { gap: '10px' },
+  11: { gap: '11px' },
+  12: { gap: '12px' },
+  13: { gap: '13px' },
+  14: { gap: '14px' },
+  15: { gap: '15px' },
+  16: { gap: '16px' },
+  17: { gap: '17px' },
+  18: { gap: '18px' },
+  19: { gap: '19px' },
+  20: { gap: '20px' },
+  21: { gap: '21px' },
+  22: { gap: '22px' },
+  23: { gap: '23px' },
+  24: { gap: '24px' },
 } as const;
 
 const WRAP_MAP = {

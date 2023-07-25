@@ -9,13 +9,13 @@ function DemoDropdown() {
       <Dropdown>
         <Dropdown.Trigger>Trigger</Dropdown.Trigger>
         <Dropdown.Content>
-          <Dropdown.Item>one</Dropdown.Item>
-          <Dropdown.Item>two</Dropdown.Item>
-          <Dropdown.Item>three</Dropdown.Item>
+          <Dropdown.Item>File</Dropdown.Item>
+          <Dropdown.Item>Save file</Dropdown.Item>
           <Dropdown.Separator />
-          <Dropdown.Item>four</Dropdown.Item>
-          <Dropdown.Item>five</Dropdown.Item>
-          <Dropdown.Item>six</Dropdown.Item>
+          <Dropdown.Item>User settings</Dropdown.Item>
+          <Dropdown.Item>Account</Dropdown.Item>
+          <Dropdown.Item>Contact</Dropdown.Item>
+          <Dropdown.Item>Logout</Dropdown.Item>
         </Dropdown.Content>
       </Dropdown>
     </ComponentWrapper>

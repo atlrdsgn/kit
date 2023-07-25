@@ -16,7 +16,7 @@ const TRIGGER_BASE = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  padding: '2px 10px',
+  padding: '4px 14px',
   borderRadius: kit.radii.XS,
 } as const;
 
@@ -27,19 +27,33 @@ export const popoverTrigger = style({
   cursor: 'pointer',
   position: 'relative',
   border: '1px solid transparent',
-  backgroundColor: kit.color.jade6,
-  color: kit.color.white,
+  backgroundColor: kit.color.carbon0,
+  color: kit.color.carbon8,
   transition: 'all 0.4s ease-in-out',
 
+  ':active': {},
+  ':disabled': {},
   ':focus': {
     outline: 'none',
   },
   ':hover': {
-    borderColor: kit.color.jade8,
-    backgroundColor: kit.color.jade7,
+    borderColor: kit.color.carbon2,
+    backgroundColor: kit.color.carbon1,
   },
-  ':active': {},
-  ':disabled': {},
+
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      borderColor: kit.color.carbon8,
+      backgroundColor: kit.color.carbon9,
+      color: kit.color.carbon0,
+
+      ':hover': {
+        borderColor: kit.color.carbon7,
+        backgroundColor: kit.color.carbon8,
+        color: kit.color.carbon0,
+      },
+    },
+  },
 
   selectors: {},
 });

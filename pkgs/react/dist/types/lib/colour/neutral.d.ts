@@ -13,6 +13,21 @@ export declare const carbon: {
     readonly carbon11: "rgba(0, 2, 3, 1)";
     readonly carbon12: "rgba(0, 2, 3, 1)";
 };
+export declare const grey: {
+    readonly grey0: "#fcfcfc";
+    readonly grey1: "#f8f8f8";
+    readonly grey2: "#f2f2f2";
+    readonly grey3: "#ededed";
+    readonly grey4: "#e7e7e7";
+    readonly grey5: "#e1e1e1";
+    readonly grey6: "#dddddd";
+    readonly grey7: "#c8c8c8";
+    readonly grey8: "#8f8f8f";
+    readonly grey9: "#858585";
+    readonly grey10: "#6f6f6f";
+    readonly grey11: "#161616";
+    readonly grey12: "#090909";
+};
 export declare const slate: {
     readonly slate0: "rgba(244, 244, 245, 1)";
     readonly slate1: "rgba(231, 233, 235, 1)";
@@ -30,6 +45,7 @@ export declare const slate: {
 };
 /**
  * @carbon
+ * @grey
  * @slate
  *
  * 1 / 12

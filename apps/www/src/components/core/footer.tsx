@@ -2,7 +2,7 @@
 
 import React from 'react';
 import content from '../../../web.config.json';
-import { Container, Text, Space, PassLink } from '@atlrdsgn/kit';
+import { Container, Text, Space, PassLink, Flex } from '@atlrdsgn/kit';
 
 function GlobalFooter() {
   const { index, footer } = content;
@@ -12,6 +12,24 @@ function GlobalFooter() {
       <Container
         width='medium'
         align='center'>
+        <Flex
+          justify='center'
+          gap='xl'>
+          <PassLink
+            font='mono'
+            href='/components'
+            size='xs'
+            color='carbon8'>
+            components →
+          </PassLink>
+          <PassLink
+            font='mono'
+            href='/colour'
+            size='xs'
+            color='carbon8'>
+            colour →
+          </PassLink>
+        </Flex>
         <Space size='sm' />
         <Text
           color='slate6'
