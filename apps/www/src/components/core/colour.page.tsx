@@ -14,16 +14,16 @@ function ColourPage({ children }: { children?: React.ReactNode }) {
           <Heading
             align='center'
             size='H2'
-            weight='semibold'
+            weight='medium'
             font='system'>
             Colour System
           </Heading>
           <Space size='sm' />
           <Text
-            color='jade7'
+            color='carbon4'
             align='left'
             size='lg'
-            weight='medium'
+            weight='normal'
             font='system'>
             The system has a set of 3 color palettes. We apply colors for
             components, backgrounds, shadows, borders, and content using these

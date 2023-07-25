@@ -117,6 +117,8 @@ export const DemoColour = () => {
           </Flex>
         </Section>
 
+        {/* <!-- Grape --> */}
+
         {/* <!-- NEUTRAL --> */}
         <Container
           width='medium'
@@ -189,6 +191,174 @@ export const DemoColour = () => {
             <ColourBox colour={'slate10'} />
             <ColourBox colour={'slate11'} />
             <ColourBox colour={'slate12'} />
+          </Flex>
+        </Section>
+
+        {/* <!-- grey --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-grey
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'grey0'} />
+            <ColourBox colour={'grey1'} />
+            <ColourBox colour={'grey2'} />
+            <ColourBox colour={'grey3'} />
+            <ColourBox colour={'grey4'} />
+            <ColourBox colour={'grey5'} />
+            <ColourBox colour={'grey6'} />
+            <ColourBox colour={'grey7'} />
+            <ColourBox colour={'grey8'} />
+            <ColourBox colour={'grey9'} />
+            <ColourBox colour={'grey10'} />
+            <ColourBox colour={'grey11'} />
+            <ColourBox colour={'grey12'} />
+          </Flex>
+        </Section>
+
+        {/* <!-- NEONS --> */}
+        <Container
+          width='medium'
+          align='start'
+          flush>
+          <Heading
+            align='left'
+            size='H3'
+            weight='semibold'
+            font='system'>
+            Neons
+          </Heading>
+        </Container>
+        {/* <!-- azure --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-azure
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'azure0'} />
+            <ColourBox colour={'azure1'} />
+            <ColourBox colour={'azure2'} />
+            <ColourBox colour={'azure3'} />
+            <ColourBox colour={'azure4'} />
+            <ColourBox colour={'azure5'} />
+            <ColourBox colour={'azure6'} />
+            <ColourBox colour={'azure7'} />
+            <ColourBox colour={'azure8'} />
+            <ColourBox colour={'azure9'} />
+            <ColourBox colour={'azure10'} />
+            <ColourBox colour={'azure11'} />
+            <ColourBox colour={'azure12'} />
+          </Flex>
+        </Section>
+
+        {/* <!-- cherry --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-cherry
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'cherry0'} />
+            <ColourBox colour={'cherry1'} />
+            <ColourBox colour={'cherry2'} />
+            <ColourBox colour={'cherry3'} />
+            <ColourBox colour={'cherry4'} />
+            <ColourBox colour={'cherry5'} />
+            <ColourBox colour={'cherry6'} />
+            <ColourBox colour={'cherry7'} />
+            <ColourBox colour={'cherry8'} />
+            <ColourBox colour={'cherry9'} />
+            <ColourBox colour={'cherry10'} />
+            <ColourBox colour={'cherry11'} />
+            <ColourBox colour={'cherry12'} />
+          </Flex>
+        </Section>
+
+        {/* <!-- lemon --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-lemon
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'lemon0'} />
+            <ColourBox colour={'lemon1'} />
+            <ColourBox colour={'lemon2'} />
+            <ColourBox colour={'lemon3'} />
+            <ColourBox colour={'lemon4'} />
+            <ColourBox colour={'lemon5'} />
+            <ColourBox colour={'lemon6'} />
+            <ColourBox colour={'lemon7'} />
+            <ColourBox colour={'lemon8'} />
+            <ColourBox colour={'lemon9'} />
+            <ColourBox colour={'lemon10'} />
+            <ColourBox colour={'lemon11'} />
+            <ColourBox colour={'lemon12'} />
+          </Flex>
+        </Section>
+
+        {/* <!-- lime --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-lime
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'lime0'} />
+            <ColourBox colour={'lime1'} />
+            <ColourBox colour={'lime2'} />
+            <ColourBox colour={'lime3'} />
+            <ColourBox colour={'lime4'} />
+            <ColourBox colour={'lime5'} />
+            <ColourBox colour={'lime6'} />
+            <ColourBox colour={'lime7'} />
+            <ColourBox colour={'lime8'} />
+            <ColourBox colour={'lime9'} />
+            <ColourBox colour={'lime10'} />
+            <ColourBox colour={'lime11'} />
+            <ColourBox colour={'lime12'} />
           </Flex>
         </Section>
       </Container>
