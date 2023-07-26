@@ -1,4 +1,3 @@
-import { kit } from '../../lib';
 /**
  * shadows
  *

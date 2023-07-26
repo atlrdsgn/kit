@@ -22,7 +22,7 @@ const btn = {
 
     HOVER: { background: `var(--carbon3, ${kit.color.carbon1})` },
     FOCUS: {
-      boxShadow: `0px 0px 0px 3px #ECECED, 0px 2px 4px 0px rgba(17, 12, 34, 0.12)`,
+      boxShadow: `0px 0px 0px 3.5px rgba(0, 0, 0, 0.20), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
     },
   },
   jade: {

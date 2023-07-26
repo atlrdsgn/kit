@@ -1,3 +1,4 @@
+export * from './badge';
 export * from './banner';
 export * from './button';
 export * from './canvas';
@@ -17,5 +18,6 @@ export * from './space';
 export * from './stack';
 export * from './switch';
 export * from './text';
+export * from './@shared';
 export * from './@utils/utils';
 //# sourceMappingURL=index.d.ts.map

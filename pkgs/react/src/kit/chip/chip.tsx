@@ -12,11 +12,12 @@ export const Chip: React.FC<ChipProps> = ({
   size = 'sm',
   shape = 'pill',
   variant = 'carbon',
+  removeShadow = false,
   ...rest
 }) => (
   <span
     {...rest}
-    className={clsx(className, chip({ size, shape, variant }))}>
+    className={clsx(className, chip({ size, shape, variant, removeShadow }))}>
     {children}
   </span>
 );

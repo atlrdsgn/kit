@@ -132,6 +132,12 @@ const VARIANT_COLOR_MAP = {
   },
 } as const;
 
+const PLEASE_REMOVE_SHADOW = {
+  true: {
+    boxShadow: `none !important`,
+  },
+} as const;
+
 /** --------------------------------------------------- */
 
 const size = styleVariants(
@@ -146,6 +152,10 @@ const size = styleVariants(
 
 const shape = styleVariants(SHAPE_MAP, ({ borderRadius }) => ({
   borderRadius,
+}));
+
+const removeShadow = styleVariants(PLEASE_REMOVE_SHADOW, ({ boxShadow }) => ({
+  boxShadow,
 }));
 
 const variant = styleVariants(VARIANT_COLOR_MAP, (variant) => ({
@@ -226,10 +236,17 @@ export type ChipVProps = keyof typeof variant;
 export type ChipVariantProps = RecipeVariants<typeof chip>;
 export const chip = recipe({
   base: CHIP_ROOT,
-  variants: { size, shape, variant },
+  variants: {
+    size,
+    shape,
+    variant,
+    //..
+    removeShadow,
+  },
   defaultVariants: {
     size: 'sm',
     shape: 'pill',
     variant: 'carbon',
+    removeShadow: false,
   },
 });

@@ -16,7 +16,7 @@ export declare const banner: RuntimeFn<{
         true: string[];
     };
     variant: Record<"one" | "two", string>;
-    shape: Record<"sharp" | "rounded" | "pill", string>;
+    shape: Record<"rounded" | "pill" | "sharp", string>;
 }>;
 export {};
 //# sourceMappingURL=banner.css.d.ts.map

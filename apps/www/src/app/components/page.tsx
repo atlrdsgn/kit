@@ -5,6 +5,7 @@ import DemoPopover from '@/components/react-kit/DemoPopover';
 import DemoDropdown from '@/components/react-kit/DemoDropdown';
 import DemoSelect from '@/components/react-kit/DemoSelect';
 import {
+  DemoBadge,
   DemoButton,
   DemoChip,
   DemoContainer,
@@ -22,6 +23,7 @@ const ComponentsIndex = () => {
         <DemoSection />
         <DemoContainer />
         <DemoChip />
+        <DemoBadge />
         <DemoButton />
         <DemoPopover />
         <DemoSwitch />
