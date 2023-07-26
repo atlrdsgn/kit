@@ -11,6 +11,7 @@ import {
   DemoContainer,
   DemoSection,
   DemoSwitch,
+  DemoTabSwitcher,
   DemoText,
 } from '@/components/react-kit';
 
@@ -27,6 +28,7 @@ const ComponentsIndex = () => {
         <DemoButton />
         <DemoPopover />
         <DemoSwitch />
+        <DemoTabSwitcher />
         <DemoSelect />
         <DemoDropdown />
 

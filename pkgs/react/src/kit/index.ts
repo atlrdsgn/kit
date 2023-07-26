@@ -19,6 +19,7 @@ export * from './select';
 export * from './space';
 export * from './stack';
 export * from './switch';
+export * from './tab-switcher';
 export * from './text';
 
 // @shared ..

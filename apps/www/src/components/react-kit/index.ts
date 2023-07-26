@@ -8,5 +8,6 @@ export * from './DemoSection';
 export * from './DemoText';
 export * from './DemoPopover';
 export * from './DemoSwitch';
+export * from './DemoTabSwitcher';
 
 export * from './colour/DemoColour';
