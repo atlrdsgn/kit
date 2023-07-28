@@ -16,7 +16,7 @@ const primitiveDeps = [
   '@radix-ui/react-switch',
   '@radix-ui/react-portal',
   '@radix-ui/react-popover',
-  '@radix-ui/react-menu',
+  '@radix-ui/react-menubar',
   '@radix-ui/react-tabs',
 ];
 
@@ -44,7 +44,7 @@ export default defineConfig({
           '@radix-ui/react-switch': 'SWI',
           '@radix-ui/react-portal': 'P',
           '@radix-ui/react-popover': 'POP',
-          '@radix-ui/react-menu': 'MENU',
+          '@radix-ui/react-menubar': 'MBAR',
           '@radix-ui/react-tabs': 'TAB',
         },
       },

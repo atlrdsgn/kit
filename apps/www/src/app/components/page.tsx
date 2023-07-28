@@ -4,6 +4,7 @@ import ComponentsPage from '@/components/core/components.page';
 import DemoPopover from '@/components/react-kit/DemoPopover';
 import DemoDropdown from '@/components/react-kit/DemoDropdown';
 import DemoSelect from '@/components/react-kit/DemoSelect';
+import DemoMenubar from '@/components/react-kit/DemoMenubar';
 import {
   DemoBadge,
   DemoButton,
@@ -31,6 +32,7 @@ const ComponentsIndex = () => {
         <DemoTabSwitcher />
         <DemoSelect />
         <DemoDropdown />
+        <DemoMenubar />
 
         <DemoText />
       </PageLayout>

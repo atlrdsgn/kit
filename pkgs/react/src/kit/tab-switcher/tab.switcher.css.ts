@@ -15,6 +15,10 @@ export const baseTabsLayout = style({
 
   backgroundColor: kit.color.carbon0,
 
+  '@media': {
+    '(prefers-color-scheme: dark)': {},
+  },
+
   selectors: {
     '&[data-orientation="vertical"]': {
       flexDirection: 'column',
@@ -27,7 +31,7 @@ export const baseTabsLayout = style({
 
 export const tabsList = style({
   display: 'flex',
-  width: '400px',
+  width: '320px',
   maxWidth: '400px',
 
   margin: 'auto',
@@ -37,7 +41,7 @@ export const tabsList = style({
 
   gap: 8,
 
-  backgroundColor: kit.color.carbon2,
+  backgroundColor: kit.color.carbon1,
   borderRadius: kit.radii.LG,
 
   selectors: {

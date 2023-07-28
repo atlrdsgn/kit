@@ -120,6 +120,9 @@ const colorConstants = colors.map((color) => color as Color)
 --------------------------------------------------
 --> */
 
+export const lightMode = 'light';
+export const darkMode = 'dark';
+
 const colorProperties = defineProperties({
   defaultCondition: 'light',
   conditions: {
@@ -162,7 +165,8 @@ export type RequiredResponsiveObject<Value> = Partial<
  */
 function mapValues(
   breakpoints: Record<string, number>,
-  callback: (bp: number) => { '@media'?: undefined } | { '@media': string },
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  _callback: (bp: number) => { '@media'?: undefined } | { '@media': string },
 ): Record<string, { '@media'?: undefined } | { '@media': string }> {
   const result: Record<
     string,

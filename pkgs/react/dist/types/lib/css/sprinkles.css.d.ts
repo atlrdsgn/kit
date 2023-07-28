@@ -857,6 +857,14 @@ declare const responsiveProperties: {
 } & {
     styles: {};
 };
+/**
+ * Non-responsive properties
+ *
+ * These properties are not responsive, meaning
+ * they do not change at different breakpoints.
+ */
+export declare const lightMode = "light";
+export declare const darkMode = "dark";
 export declare const sprinkles: ((props: {
     all?: ("unset" | {
         [x: string]: "unset" | undefined;

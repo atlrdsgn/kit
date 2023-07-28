@@ -9,6 +9,7 @@ export * from './dropdown';
 export * from './flex';
 export * from './grid';
 export * from './heading';
+export * from './menu-bar';
 export * from './pass-link';
 export * from './popover';
 export * from './rect';

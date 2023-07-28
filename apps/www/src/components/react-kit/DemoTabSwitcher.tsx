@@ -6,7 +6,9 @@ import ComponentWrapper from '../core/component.wrapper';
 export const DemoTabSwitcher = () => {
   return (
     <ComponentWrapper label='tab switcher'>
-      <TabSwitcher orientation='horizontal'>
+      <TabSwitcher
+        orientation='horizontal'
+        defaultValue='sw1'>
         <TabSwitcher.List>
           <TabSwitcher.Item value='sw1'>Item number one</TabSwitcher.Item>
           <TabSwitcher.Item value='sw2'>Item number two</TabSwitcher.Item>

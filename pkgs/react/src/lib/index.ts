@@ -23,6 +23,7 @@ export {
   mapResponsiveValue,
   mapColorValue,
   breakpoints,
+  blurz,
   colorModeStyle,
   type Atoms,
   type Sprinkles,
@@ -30,6 +31,9 @@ export {
   type RequiredResponsiveObject,
   type RequiredResponsiveValue,
   type OptionalResponsiveObject,
+  type Breakpoint,
+  type Blurz,
+  type BlurzTheme,
 } from './css';
 
 export {

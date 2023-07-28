@@ -64,7 +64,7 @@ const badgeRootLayout = style({
 
   paddingTop: 3,
   paddingBottom: 3,
-  paddingLeft: 4,
+  paddingLeft: 3,
   paddingRight: 10,
 
   borderRadius: kit.radii.PILL,
