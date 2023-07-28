@@ -3,37 +3,43 @@ import { recipe, type RecipeVariants } from '@vanilla-extract/recipes';
 import { kit } from '../../lib';
 
 const btn = {
-  primary: {
-    background: `var(--sapphire6, ${kit.color.sapphire5})`,
-    color: `var(--carbon0, ${kit.color.carbon0})`,
-    border: `var(--sapphire5, ${kit.color.sapphire5})`,
-    shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
-
-    HOVER: { background: `var(--sapphire5, ${kit.color.sapphire4})` },
-    FOCUS: {
-      boxShadow: `0px 0px 0px 3px #C2E2FF, 0px 2px 4px 0px rgba(17, 12, 34, 0.12)`,
-    },
-  },
-  secondary: {
+  carbon: {
     background: `var(--carbon2, ${kit.color.carbon2})`,
     color: `var(--carbon9, ${kit.color.carbon9})`,
     border: `var(--carbon3, ${kit.color.carbon2})`,
     shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
 
-    HOVER: { background: `var(--carbon3, ${kit.color.carbon1})` },
+    HOVER: { background: `var(--carbon3, ${kit.color.carbon1})`, shadow: `` },
     FOCUS: {
-      boxShadow: `0px 0px 0px 3.5px rgba(0, 0, 0, 0.20), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
+      shadow: `0px 0px 0px 3.5px rgba(0, 0, 0, 0.20), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
+    },
+  },
+  sapphire: {
+    background: `var(--sapphire6, ${kit.color.sapphire5})`,
+    color: `var(--carbon0, ${kit.color.carbon0})`,
+    border: `var(--sapphire5, ${kit.color.sapphire5})`,
+    shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
+
+    HOVER: {
+      background: `var(--sapphire5, ${kit.color.sapphire4})`,
+      shadow: ``,
+    },
+    FOCUS: {
+      shadow: `0px 0px 0px 3px #C2E2FF, 0px 2px 4px 0px rgba(17, 12, 34, 0.12)`,
     },
   },
   jade: {
-    background: `var(--kit-jade5, ${kit.color.jade5})`,
-    color: `var(--kit-carbon0, ${kit.color.carbon0})`,
-    border: `var(--kit-jade5, ${kit.color.jade5})`,
-    shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
+    background: kit.color.jade6,
+    color: kit.color.jade0,
+    border: kit.color.jade6,
+    shadow: `0px 1px 2px -1px rgba(64, 192, 87, 0.25)`,
 
-    HOVER: { background: `var(--kit-jade6, ${kit.color.jade4})` },
+    HOVER: {
+      background: kit.color.jade7,
+      shadow: `0px 1px 2px 0px rgba(64, 192, 87, 0.40)`,
+    },
     FOCUS: {
-      boxShadow: `0px 0px 0px 3px #C6F1DD, 0px 2px 4px 0px rgba(17, 12, 34, 0.12)`,
+      shadow: `0px 0px 0px 3.4px rgba(64, 192, 87, 0.40), 0px 1px 1px 0px rgba(0, 0, 0, 0.25)`,
     },
   },
 
@@ -41,7 +47,7 @@ const btn = {
 
   padding: {
     XSMALL: `4px 10px`,
-    SMALL: `4px 14px`,
+    SMALL: `6px 12px`,
     MEDIUM: `5px 12px`,
     LARGE: `6px 18px`,
   },
@@ -50,7 +56,7 @@ const btn = {
 
   radii: {
     XSMALL: `7px`,
-    SMALL: `9px`,
+    SMALL: `10px`,
     MEDIUM: `12px`,
     LARGE: `14px`,
   },
@@ -59,7 +65,7 @@ const btn = {
 
   border: {
     XSMALL: `1.5px solid`,
-    SMALL: `1.5px solid`,
+    SMALL: `1.2px solid`,
     MEDIUM: `2px solid`,
     LARGE: `2px solid`,
   },
@@ -99,23 +105,27 @@ const SIZE_MAP = {
 } as const;
 
 const COLOR_MAP = {
-  primary: {
-    backgroundColor: btn.primary.background,
-    borderColor: btn.primary.border,
-    color: btn.primary.color,
-    boxShadow: btn.primary.shadow,
+  sapphire: {
+    backgroundColor: btn.sapphire.background,
+    borderColor: btn.sapphire.border,
+    color: btn.sapphire.color,
+    boxShadow: btn.sapphire.shadow,
 
-    hoverBg: btn.primary.HOVER.background,
-    focusShadow: btn.primary.FOCUS.boxShadow,
+    hoverBg: btn.sapphire.HOVER.background,
+    hoverShadow: btn.sapphire.HOVER.shadow,
+
+    focusShadow: btn.sapphire.FOCUS.shadow,
   },
-  secondary: {
-    backgroundColor: btn.secondary.background,
-    borderColor: btn.secondary.border,
-    color: btn.secondary.color,
-    boxShadow: btn.secondary.shadow,
+  carbon: {
+    backgroundColor: btn.carbon.background,
+    borderColor: btn.carbon.border,
+    color: btn.carbon.color,
+    boxShadow: btn.carbon.shadow,
 
-    hoverBg: btn.secondary.HOVER.background,
-    focusShadow: btn.secondary.FOCUS.boxShadow,
+    hoverBg: btn.carbon.HOVER.background,
+    hoverShadow: btn.carbon.HOVER.shadow,
+
+    focusShadow: btn.carbon.FOCUS.shadow,
   },
   jade: {
     backgroundColor: btn.jade.background,
@@ -124,7 +134,9 @@ const COLOR_MAP = {
     boxShadow: btn.jade.shadow,
 
     hoverBg: btn.jade.HOVER.background,
-    focusShadow: btn.jade.FOCUS.boxShadow,
+    hoverShadow: btn.jade.HOVER.shadow,
+
+    focusShadow: btn.jade.FOCUS.shadow,
   },
 } as const;
 
@@ -207,7 +219,7 @@ export const button = recipe({
   variants: { size, variant, font },
   defaultVariants: {
     size: 'sm',
-    variant: 'primary',
+    variant: 'sapphire',
     font: 'system',
   },
 });

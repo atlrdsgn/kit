@@ -16,13 +16,13 @@ export const DemoButton = () => {
         <Button
           font='system'
           size='sm'
-          variant='primary'>
+          variant='sapphire'>
           Lorem ipsum
         </Button>
         <Button
           font='system'
           size='sm'
-          variant='secondary'>
+          variant='carbon'>
           Lorem ipsum
         </Button>
         <Button

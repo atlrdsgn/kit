@@ -16,7 +16,7 @@ export const Button = ({
   target = '_self',
   rel = 'noopener noreferrer',
   size = 'sm',
-  variant = 'primary',
+  variant = 'carbon',
   font = 'system',
   ...rest
 }: ButtonProps) => {

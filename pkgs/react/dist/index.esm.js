@@ -626,7 +626,7 @@ const xe = ({
   }
 );
 xe.displayName = "Banner";
-var _e = V({ defaultClassName: "_1lxtq9da _1lxtq9d9", variantClassNames: { size: { xs: "_1lxtq9d0", sm: "_1lxtq9d1", md: "_1lxtq9d2", lg: "_1lxtq9d3" }, variant: { primary: "_1lxtq9d4", secondary: "_1lxtq9d5", jade: "_1lxtq9d6" }, font: { system: "_1lxtq9d7", mono: "_1lxtq9d8" } }, defaultVariants: { size: "sm", variant: "primary", font: "system" }, compoundVariants: [] });
+var _e = V({ defaultClassName: "_1lxtq9da _1lxtq9d9", variantClassNames: { size: { xs: "_1lxtq9d0", sm: "_1lxtq9d1", md: "_1lxtq9d2", lg: "_1lxtq9d3" }, variant: { sapphire: "_1lxtq9d4", carbon: "_1lxtq9d5", jade: "_1lxtq9d6" }, font: { system: "_1lxtq9d7", mono: "_1lxtq9d8" } }, defaultVariants: { size: "sm", variant: "sapphire", font: "system" }, compoundVariants: [] });
 const we = ({
   children: o,
   type: i = "button",
@@ -636,7 +636,7 @@ const we = ({
   target: r = "_self",
   rel: t = "noopener noreferrer",
   size: l = "sm",
-  variant: g = "primary",
+  variant: g = "carbon",
   font: f = "system",
   ...m
 }) => {

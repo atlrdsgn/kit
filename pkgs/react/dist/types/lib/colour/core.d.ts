@@ -29,16 +29,16 @@ export declare const orange: {
     readonly orange12: "#2b291c";
 };
 export declare const sapphire: {
-    readonly sapphire0: "#f4f1f9";
-    readonly sapphire1: "#e7e1f4";
-    readonly sapphire2: "#dcdced";
-    readonly sapphire3: "#d1c4e9";
-    readonly sapphire4: "#b9a6de";
-    readonly sapphire5: "#a289d2";
-    readonly sapphire6: "#8b6bc7";
-    readonly sapphire7: "#a289d2";
-    readonly sapphire8: "#8b6bc7";
-    readonly sapphire9: "#7056a2";
+    readonly sapphire0: "#e0f1f6";
+    readonly sapphire1: "#c7dcee";
+    readonly sapphire2: "#afc0e5";
+    readonly sapphire3: "#989fdb";
+    readonly sapphire4: "#8b81d2";
+    readonly sapphire5: "#8b6bc7";
+    readonly sapphire6: "#675aa2";
+    readonly sapphire7: "#4a497e";
+    readonly sapphire8: "#363c5b";
+    readonly sapphire9: "#232a39";
     readonly sapphire10: "#2d2241";
     readonly sapphire11: "#20182d";
     readonly sapphire12: "#120d1a";
