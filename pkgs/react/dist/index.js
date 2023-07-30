@@ -1,5 +1,5 @@
 /*! 
-    AtelierKit© v0.4.3. 
+    AtelierKit© v0.4.4. 
     Copyright © 2023 atlrdsgn®. All rights reserved.
     
     see https://docs.atlrdsgn.com for more information.

@@ -8,7 +8,9 @@ export interface GridProps extends DivProps {
 }
 export declare const gridStyles: typeof styles;
 /**
- * Grid layout with with responsive defaults, but also fully customizable with standard CSS grid properties.
+ *
+ * Grid layout with with responsive defaults,
+ * but also fully customizable with standard CSS grid properties.
  */
 export declare const Grid: React.ForwardRefExoticComponent<Omit<GridProps, "ref"> & React.RefAttributes<HTMLDivElement>>;
 //# sourceMappingURL=grid.d.ts.map

@@ -38,6 +38,7 @@ export const wrapToFlexWrap = (
     ? typeof wrap === 'boolean'
       ? wrapToFlexWrapLookup[1]
       : mapResponsiveValue(
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           wrap as any,
           // Hack to convert boolean to number since Sprinkles does not support
           // boolean responsive keys

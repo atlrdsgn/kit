@@ -14,7 +14,9 @@ type Ref = HTMLDivElement;
 export const gridStyles = styles ?? {};
 
 /**
- * Grid layout with with responsive defaults, but also fully customizable with standard CSS grid properties.
+ *
+ * Grid layout with with responsive defaults,
+ * but also fully customizable with standard CSS grid properties.
  */
 export const Grid = React.forwardRef<Ref, GridProps>(function Split(
   {

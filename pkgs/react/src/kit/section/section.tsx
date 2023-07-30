@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import * as css from './section.css';
+import { section } from './section.css';
 import {
   // ..
   type SectionSize,
@@ -26,7 +26,7 @@ export const Section: React.FC<SectionProps> = ({
   return (
     <div
       {...rest}
-      className={clsx(className, css.section({ size }))}>
+      className={clsx(className, section({ size }))}>
       {children}
     </div>
   );

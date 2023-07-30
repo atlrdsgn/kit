@@ -1,5 +1,5 @@
 /*! 
-    AtelierKit© v0.4.3. 
+    AtelierKit© v0.4.4. 
     Copyright © 2023 atlrdsgn®. All rights reserved.
     
     see https://docs.atlrdsgn.com for more information.
@@ -2016,6 +2016,7 @@ const ii = {
   o,
   (i) => Ea[i]
 ) : void 0, Pa = (o) => o ? typeof o == "boolean" ? ii[1] : di(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   o,
   // Hack to convert boolean to number since Sprinkles does not support
   // boolean responsive keys

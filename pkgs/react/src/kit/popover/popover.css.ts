@@ -31,8 +31,6 @@ export const popoverTrigger = style({
   color: kit.color.carbon8,
   transition: 'all 0.4s ease-in-out',
 
-  ':active': {},
-  ':disabled': {},
   ':focus': {
     outline: 'none',
   },
@@ -74,6 +72,13 @@ export const popoverContent = style({
   boxShadow:
     'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
   willChange: 'transform, opacity',
+
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      backgroundColor: kit.color.carbon9,
+      color: kit.color.carbon0,
+    },
+  },
 
   ':focus': {
     outline: 'none',
