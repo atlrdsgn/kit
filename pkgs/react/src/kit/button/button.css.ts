@@ -1,142 +1,89 @@
 import { style, styleVariants } from '@vanilla-extract/css';
 import { recipe, type RecipeVariants } from '@vanilla-extract/recipes';
+import { buttonProperties as btnx } from './properties';
 import { kit } from '../../lib';
-
-const btn = {
-  carbon: {
-    background: `var(--carbon2, ${kit.color.carbon2})`,
-    color: `var(--carbon9, ${kit.color.carbon9})`,
-    border: `var(--carbon3, ${kit.color.carbon2})`,
-    shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
-
-    HOVER: { background: `var(--carbon3, ${kit.color.carbon1})`, shadow: `` },
-    FOCUS: {
-      shadow: `0px 0px 0px 3.5px rgba(0, 0, 0, 0.20), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
-    },
-  },
-  sapphire: {
-    background: `var(--sapphire6, ${kit.color.sapphire5})`,
-    color: `var(--carbon0, ${kit.color.carbon0})`,
-    border: `var(--sapphire5, ${kit.color.sapphire5})`,
-    shadow: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
-
-    HOVER: {
-      background: `var(--sapphire5, ${kit.color.sapphire4})`,
-      shadow: ``,
-    },
-    FOCUS: {
-      shadow: `0px 0px 0px 3px #C2E2FF, 0px 2px 4px 0px rgba(17, 12, 34, 0.12)`,
-    },
-  },
-  jade: {
-    background: kit.color.jade6,
-    color: kit.color.jade0,
-    border: kit.color.jade6,
-    shadow: `0px 1px 2px -1px rgba(64, 192, 87, 0.25)`,
-
-    HOVER: {
-      background: kit.color.jade7,
-      shadow: `0px 1px 2px 0px rgba(64, 192, 87, 0.40)`,
-    },
-    FOCUS: {
-      shadow: `0px 0px 0px 3.4px rgba(64, 192, 87, 0.40), 0px 1px 1px 0px rgba(0, 0, 0, 0.25)`,
-    },
-  },
-
-  // ...
-
-  padding: {
-    XSMALL: `4px 10px`,
-    SMALL: `6px 12px`,
-    MEDIUM: `5px 12px`,
-    LARGE: `6px 18px`,
-  },
-
-  // ...
-
-  radii: {
-    XSMALL: `7px`,
-    SMALL: `10px`,
-    MEDIUM: `12px`,
-    LARGE: `14px`,
-  },
-
-  // ...
-
-  border: {
-    XSMALL: `1.5px solid`,
-    SMALL: `1.2px solid`,
-    MEDIUM: `2px solid`,
-    LARGE: `2px solid`,
-  },
-} as const;
 
 /** ---------------------------------------------- */
 
 const SIZE_MAP = {
   xs: {
-    fontSize: kit.font.size.MINI,
-    lineHeight: kit.font.lineheight.MINI,
-    padding: btn.padding.XSMALL,
-    border: btn.border.XSMALL,
-    borderRadius: btn.radii.XSMALL,
+    fontSize: btnx.size.config.fontSize.XS,
+    lineHeight: btnx.size.config.lineHeight.XS,
+    padding: btnx.size.config.padding.XS,
+    border: btnx.size.config.borderWidth.XS,
+    borderRadius: btnx.size.config.borderRadius.XS,
   },
   sm: {
-    fontSize: kit.font.size.SM,
-    lineHeight: kit.font.lineheight.SM,
-    padding: btn.padding.SMALL,
-    border: btn.border.SMALL,
-    borderRadius: btn.radii.SMALL,
+    fontSize: btnx.size.config.fontSize.SM,
+    lineHeight: btnx.size.config.lineHeight.SM,
+    padding: btnx.size.config.padding.SM,
+    border: btnx.size.config.borderWidth.SM,
+    borderRadius: btnx.size.config.borderRadius.SM,
   },
   md: {
-    fontSize: kit.font.size.MD,
-    lineHeight: kit.font.lineheight.MD,
-    padding: btn.padding.MEDIUM,
-    border: btn.border.MEDIUM,
-    borderRadius: btn.radii.MEDIUM,
+    fontSize: btnx.size.config.fontSize.MD,
+    lineHeight: btnx.size.config.lineHeight.MD,
+    padding: btnx.size.config.padding.MD,
+    border: btnx.size.config.borderWidth.MD,
+    borderRadius: btnx.size.config.borderRadius.MD,
   },
   lg: {
-    fontSize: kit.font.size.LG,
-    lineHeight: kit.font.lineheight.LG,
-    padding: btn.padding.LARGE,
-    border: btn.border.LARGE,
-    borderRadius: btn.radii.LARGE,
+    fontSize: btnx.size.config.fontSize.LG,
+    lineHeight: btnx.size.config.lineHeight.LG,
+    padding: btnx.size.config.padding.LG,
+    border: btnx.size.config.borderWidth.LG,
+    borderRadius: btnx.size.config.borderRadius.LG,
   },
 } as const;
 
 const COLOR_MAP = {
-  sapphire: {
-    backgroundColor: btn.sapphire.background,
-    borderColor: btn.sapphire.border,
-    color: btn.sapphire.color,
-    boxShadow: btn.sapphire.shadow,
-
-    hoverBg: btn.sapphire.HOVER.background,
-    hoverShadow: btn.sapphire.HOVER.shadow,
-
-    focusShadow: btn.sapphire.FOCUS.shadow,
-  },
   carbon: {
-    backgroundColor: btn.carbon.background,
-    borderColor: btn.carbon.border,
-    color: btn.carbon.color,
-    boxShadow: btn.carbon.shadow,
-
-    hoverBg: btn.carbon.HOVER.background,
-    hoverShadow: btn.carbon.HOVER.shadow,
-
-    focusShadow: btn.carbon.FOCUS.shadow,
+    backgroundColor: btnx.color.config.background.CARBON,
+    color: btnx.color.config.color.CARBON,
+    borderColor: btnx.color.config.borderColor.CARBON,
+    boxShadow: btnx.color.config.boxShadow.CARBON,
+    H: {
+      backgroundColor: btnx.color.config.onHover.background.CARBON,
+      borderColor: btnx.color.config.borderColor.CARBON,
+      boxShadow: btnx.color.config.onHover.boxShadow.CARBON,
+    },
+    F: { boxShadow: btnx.color.config.onFocus.boxShadow.CARBON },
   },
   jade: {
-    backgroundColor: btn.jade.background,
-    borderColor: btn.jade.border,
-    color: btn.jade.color,
-    boxShadow: btn.jade.shadow,
-
-    hoverBg: btn.jade.HOVER.background,
-    hoverShadow: btn.jade.HOVER.shadow,
-
-    focusShadow: btn.jade.FOCUS.shadow,
+    backgroundColor: btnx.color.config.background.JADE,
+    color: btnx.color.config.color.JADE,
+    borderColor: btnx.color.config.borderColor.JADE,
+    boxShadow: btnx.color.config.boxShadow.JADE,
+    H: {
+      backgroundColor: btnx.color.config.onHover.background.JADE,
+      borderColor: btnx.color.config.borderColor.JADE,
+      boxShadow: btnx.color.config.onHover.boxShadow.JADE,
+    },
+    F: { boxShadow: btnx.color.config.onFocus.boxShadow.JADE },
+  },
+  orange: {
+    backgroundColor: btnx.color.config.background.ORANGE,
+    color: btnx.color.config.color.ORANGE,
+    borderColor: btnx.color.config.borderColor.ORANGE,
+    boxShadow: btnx.color.config.boxShadow.ORANGE,
+    H: {
+      backgroundColor: btnx.color.config.onHover.background.ORANGE,
+      borderColor: btnx.color.config.borderColor.ORANGE,
+      boxShadow: btnx.color.config.onHover.boxShadow.ORANGE,
+    },
+    F: { boxShadow: btnx.color.config.onFocus.boxShadow.ORANGE },
+  },
+  sapphire: {
+    backgroundColor: btnx.color.config.background.SAPPHIRE,
+    color: btnx.color.config.color.SAPPHIRE,
+    borderColor: btnx.color.config.borderColor.SAPPHIRE,
+    boxShadow: btnx.color.config.boxShadow.SAPPHIRE,
+    H: {
+      backgroundColor: btnx.color.config.onHover.background.SAPPHIRE,
+      borderColor: btnx.color.config.borderColor.SAPPHIRE,
+      boxShadow: btnx.color.config.onHover.boxShadow.SAPPHIRE,
+    },
+    F: { boxShadow: btnx.color.config.onFocus.boxShadow.SAPPHIRE },
   },
 } as const;
 
@@ -151,7 +98,7 @@ const size = styleVariants(SIZE_MAP, (value) => ({
   fontSize: value.fontSize,
   lineHeight: value.lineHeight,
   padding: value.padding,
-  border: value.border,
+  borderWidth: value.border,
   borderRadius: value.borderRadius,
 }));
 
@@ -162,11 +109,13 @@ const variant = styleVariants(COLOR_MAP, (value) => ({
   boxShadow: value.boxShadow,
 
   ':hover': {
-    backgroundColor: value.hoverBg,
+    backgroundColor: value.H.backgroundColor,
+    borderColor: value.H.borderColor,
+    boxShadow: value.H.boxShadow,
   },
 
   ':focus': {
-    boxShadow: value.focusShadow,
+    boxShadow: value.F.boxShadow,
   },
 }));
 
@@ -176,37 +125,9 @@ const font = styleVariants(FONT_MAP, (value) => ({
 
 /** --------------------------------------------- */
 
-const textStyle = {
-  cursor: 'pointer',
-  fontVariantNumeric: 'tabular-nums',
-  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-  userSelect: 'none',
-  fontWeight: kit.font.weight.MEDIUM,
-  textAlign: 'center',
-} as const;
-
-const BUTTON_BASE = style({
-  ...textStyle,
-
-  boxSizing: 'border-box',
-  outline: 0,
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center',
-  gap: '8px',
-  position: 'relative',
-  transition: 'all 0.2s ease-in-out',
-  willChange: 'color, backgroundColor, borderColor, boxShadow',
-
-  /*
-  ':hover': {},
-  ':focus': {},
-  ':active': {},
-  ':disabled': {},
-  */
-
-  selectors: {},
+const buttonBase = style({
+  ...btnx.core,
+  ...btnx.text,
 });
 
 /** -------------------------------------------- */
@@ -215,11 +136,11 @@ export type ButtonSize = keyof typeof size;
 export type ButtonVariant = keyof typeof variant;
 export type ButtonVariantProps = RecipeVariants<typeof button>;
 export const button = recipe({
-  base: BUTTON_BASE,
+  base: buttonBase,
   variants: { size, variant, font },
   defaultVariants: {
     size: 'sm',
-    variant: 'sapphire',
+    variant: 'carbon',
     font: 'system',
   },
 });

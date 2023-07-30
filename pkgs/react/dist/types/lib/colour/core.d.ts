@@ -14,19 +14,19 @@ export declare const jade: {
     readonly jade12: "#185f26";
 };
 export declare const orange: {
-    readonly orange0: "#ffffff";
-    readonly orange1: "#fff3ea";
-    readonly orange2: "#ffecd8";
-    readonly orange3: "#ffe0cc";
-    readonly orange4: "#ffd5b8";
-    readonly orange5: "#ffcba3";
-    readonly orange6: "#ffc185";
-    readonly orange7: "#ffb060";
-    readonly orange8: "#f49245";
-    readonly orange9: "#eb8c00";
-    readonly orange10: "#eb6e00";
-    readonly orange11: "#eb5800";
-    readonly orange12: "#2b291c";
+    readonly orange0: "#fff4e6";
+    readonly orange1: "#ffe8cc";
+    readonly orange2: "#ffd8a8";
+    readonly orange3: "#ffc078";
+    readonly orange4: "#ffa94d";
+    readonly orange5: "#ff922b";
+    readonly orange6: "#fd7e14";
+    readonly orange7: "#f76707";
+    readonly orange8: "#e8590c";
+    readonly orange9: "#d9480f";
+    readonly orange10: "#c93c1a";
+    readonly orange11: "#b53121";
+    readonly orange12: "#97291e";
 };
 export declare const sapphire: {
     readonly sapphire0: "#e0f1f6";
@@ -42,6 +42,21 @@ export declare const sapphire: {
     readonly sapphire10: "#2d2241";
     readonly sapphire11: "#20182d";
     readonly sapphire12: "#120d1a";
+};
+export declare const hyper: {
+    readonly fuchsia: {
+        readonly '50': "#fdf4ff";
+        readonly '100': "#fae8ff";
+        readonly '200': "#f5d0fe";
+        readonly '300': "#f0abfc";
+        readonly '400': "#e879f9";
+        readonly '500': "#d946ef";
+        readonly '600': "#c026d3";
+        readonly '700': "#a21caf";
+        readonly '800': "#86198f";
+        readonly '900': "#701a75";
+        readonly '950': "#4a044e";
+    };
 };
 /**
  * @jade

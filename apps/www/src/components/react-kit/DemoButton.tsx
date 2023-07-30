@@ -16,12 +16,6 @@ export const DemoButton = () => {
         <Button
           font='system'
           size='sm'
-          variant='sapphire'>
-          Lorem ipsum
-        </Button>
-        <Button
-          font='system'
-          size='sm'
           variant='carbon'>
           Lorem ipsum
         </Button>
@@ -29,6 +23,18 @@ export const DemoButton = () => {
           font='system'
           size='sm'
           variant='jade'>
+          Lorem ipsum
+        </Button>
+        <Button
+          font='system'
+          size='sm'
+          variant='orange'>
+          Lorem ipsum
+        </Button>
+        <Button
+          font='system'
+          size='sm'
+          variant='sapphire'>
           Lorem ipsum
         </Button>
       </Flex>

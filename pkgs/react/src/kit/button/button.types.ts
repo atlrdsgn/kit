@@ -20,7 +20,7 @@ export interface BASE_BUTTON_PROPS {
    * href = string = url
    * onClick = () => buttonProps.onClick
    */
-  as?: React.ElementType<any> | 'a' | 'button';
+  as?: React.ElementType<unknown> | 'a' | 'button';
   href?: string;
   onClick?: () => void;
 
