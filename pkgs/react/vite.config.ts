@@ -18,6 +18,7 @@ const primitiveDeps = [
   '@radix-ui/react-popover',
   '@radix-ui/react-menubar',
   '@radix-ui/react-tabs',
+  '@radix-ui/react-label',
 ];
 
 export default defineConfig({
@@ -46,6 +47,7 @@ export default defineConfig({
           '@radix-ui/react-popover': 'POP',
           '@radix-ui/react-menubar': 'MBAR',
           '@radix-ui/react-tabs': 'TAB',
+          '@radix-ui/react-label': 'LABL',
         },
       },
     },

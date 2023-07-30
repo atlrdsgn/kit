@@ -14,6 +14,7 @@ import {
   DemoSwitch,
   DemoTabSwitcher,
   DemoText,
+  DemoInput,
 } from '@/components/react-kit';
 
 const ComponentsIndex = () => {
@@ -35,6 +36,8 @@ const ComponentsIndex = () => {
         <DemoMenubar />
 
         <DemoText />
+
+        <DemoInput />
       </PageLayout>
     </>
   );

@@ -1,6 +1,44 @@
-import { styleVariants } from '@vanilla-extract/css';
+import { style, styleVariants } from '@vanilla-extract/css';
 import { recipe, type RecipeVariants } from '@vanilla-extract/recipes';
 import { inputProperties as inpx } from './input.properties';
+import { kit } from '../../lib';
+
+export const inputFlex = style({
+  boxSizing: 'border-box',
+  position: 'relative',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  justifyContent: 'center',
+  gap: '6px',
+  margin: 'auto',
+  height: 'auto',
+  width: '100%',
+  maxWidth: '245px',
+});
+
+export const inputLabel = style({
+  boxSizing: 'border-box',
+  fontVariantNumeric: 'tabular-nums',
+  position: 'relative',
+
+  fontFamily: kit.font.family.system,
+  fontSize: kit.font.size.XS,
+  fontWeight: kit.font.weight.MEDIUM,
+  lineHeight: kit.font.lineheight.XS,
+
+  color: kit.color.carbon6,
+  letterSpacing: 'normal',
+  textAlign: 'left',
+
+  marginLeft: '3px',
+  marginRight: '3px',
+  padding: '0px',
+});
+
+export const inputTypeNumber = style({
+  ...inpx.number,
+});
 
 /** ---------------------------------------------- */
 
@@ -35,12 +73,12 @@ const COLOR_MAP = {
     borderColor: inpx.variant.borderColor.CARBON,
     H: {
       backgroundColor: inpx.variant.onHover.backgroundColor.CARBON,
-      borderColor: inpx.variant.borderColor.CARBON,
+      borderColor: inpx.variant.onHover.borderColor.CARBON,
       boxShadow: inpx.variant.onHover.boxShadow.CARBON,
     },
     F: {
       backgroundColor: inpx.variant.onFocus.backgroundColor.CARBON,
-      borderColor: inpx.variant.borderColor.CARBON,
+      borderColor: inpx.variant.onFocus.borderColor.CARBON,
       boxShadow: inpx.variant.onFocus.boxShadow.CARBON,
     },
   },
@@ -50,12 +88,12 @@ const COLOR_MAP = {
     borderColor: inpx.variant.borderColor.JADE,
     H: {
       backgroundColor: inpx.variant.onHover.backgroundColor.JADE,
-      borderColor: inpx.variant.borderColor.JADE,
+      borderColor: inpx.variant.onHover.borderColor.JADE,
       boxShadow: inpx.variant.onHover.boxShadow.JADE,
     },
     F: {
       backgroundColor: inpx.variant.onFocus.backgroundColor.JADE,
-      borderColor: inpx.variant.borderColor.JADE,
+      borderColor: inpx.variant.onFocus.borderColor.JADE,
       boxShadow: inpx.variant.onFocus.boxShadow.JADE,
     },
   },
@@ -65,12 +103,12 @@ const COLOR_MAP = {
     borderColor: inpx.variant.borderColor.ORANGE,
     H: {
       backgroundColor: inpx.variant.onHover.backgroundColor.ORANGE,
-      borderColor: inpx.variant.borderColor.ORANGE,
+      borderColor: inpx.variant.onHover.borderColor.ORANGE,
       boxShadow: inpx.variant.onHover.boxShadow.ORANGE,
     },
     F: {
       backgroundColor: inpx.variant.onFocus.backgroundColor.ORANGE,
-      borderColor: inpx.variant.borderColor.ORANGE,
+      borderColor: inpx.variant.onFocus.borderColor.ORANGE,
       boxShadow: inpx.variant.onFocus.boxShadow.ORANGE,
     },
   },
@@ -80,18 +118,18 @@ const COLOR_MAP = {
     borderColor: inpx.variant.borderColor.SAPPHIRE,
     H: {
       backgroundColor: inpx.variant.onHover.backgroundColor.SAPPHIRE,
-      borderColor: inpx.variant.borderColor.SAPPHIRE,
+      borderColor: inpx.variant.onHover.borderColor.SAPPHIRE,
       boxShadow: inpx.variant.onHover.boxShadow.SAPPHIRE,
     },
     F: {
       backgroundColor: inpx.variant.onFocus.backgroundColor.SAPPHIRE,
-      borderColor: inpx.variant.borderColor.SAPPHIRE,
+      borderColor: inpx.variant.onFocus.borderColor.SAPPHIRE,
       boxShadow: inpx.variant.onFocus.boxShadow.SAPPHIRE,
     },
   },
 } as const;
 
-const size = styleVariants(SIZE_MAP, (value) => ({
+const inputSize = styleVariants(SIZE_MAP, (value) => ({
   fontSize: value.fontSize,
   lineHeight: value.lineHeight,
   padding: value.padding,
@@ -116,18 +154,35 @@ const variant = styleVariants(COLOR_MAP, (value) => ({
   },
 }));
 
+/** ------------------------------------------- */
+
+const coreInput = style({
+  ...inpx.core,
+
+  appearance: 'none',
+  borderStyle: 'solid',
+
+  '::placeholder': {
+    color: kit.color.carbon3,
+    fontFamily: kit.font.family.system,
+    fontWeight: kit.font.weight.REGULAR,
+  },
+});
+
 export const input = recipe({
-  base: inpx.core,
+  base: coreInput,
   variants: {
-    size,
+    inputSize,
     variant,
   },
   defaultVariants: {
-    size: 'sm',
+    inputSize: 'sm',
     variant: 'carbon',
   },
 });
 
 /** ---------------------------------------------- */
 
-export type InputVariants = RecipeVariants<typeof input>;
+export type InputVariantTypes = RecipeVariants<typeof input>;
+export type InputColorKeys = keyof typeof variant;
+export type InputSizeKeys = keyof typeof inputSize;

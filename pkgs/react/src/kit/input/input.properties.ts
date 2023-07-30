@@ -19,6 +19,7 @@ enum InputVariant {
 
 // shared input properties
 const sharedInputCSS = {
+  boxSizing: 'border-box',
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
@@ -26,11 +27,16 @@ const sharedInputCSS = {
   gap: '10px',
   width: '100%',
   maxWidth: '245px',
+  margin: 'auto',
 
   fontFamily: kit.font.family.system,
   fontWeight: kit.font.weight.REGULAR,
+} as const;
 
-  boxSizing: 'border-box',
+const typeNumber = {
+  ...sharedInputCSS,
+
+  fontVariantNumeric: 'tabular-nums',
 } as const;
 
 const inputSizeProperties = {
@@ -51,8 +57,8 @@ const inputSizeProperties = {
   },
   borderWidth: {
     [InputSize.XS]: '1.4px',
-    [InputSize.SM]: '1.4px',
-    [InputSize.MD]: '1.4px',
+    [InputSize.SM]: '1.6px',
+    [InputSize.MD]: '2px',
   },
   borderRadius: {
     [InputSize.XS]: '9px',
@@ -75,7 +81,7 @@ const inputColorProperties = {
     [InputVariant.SAPPHIRE]: kit.color.carbon9,
   },
   borderColor: {
-    [InputVariant.CARBON]: kit.color.carbon4,
+    [InputVariant.CARBON]: kit.color.carbon3,
     [InputVariant.JADE]: kit.color.carbon4,
     [InputVariant.ORANGE]: kit.color.carbon4,
     [InputVariant.SAPPHIRE]: kit.color.carbon4,
@@ -89,7 +95,7 @@ const inputColorProperties = {
       [InputVariant.SAPPHIRE]: kit.color.white,
     },
     borderColor: {
-      [InputVariant.CARBON]: kit.color.carbon4,
+      [InputVariant.CARBON]: kit.color.carbon3,
       [InputVariant.JADE]: kit.color.jade3,
       [InputVariant.ORANGE]: kit.color.orange3,
       [InputVariant.SAPPHIRE]: kit.color.sapphire2,
@@ -121,10 +127,43 @@ const inputColorProperties = {
       [InputVariant.SAPPHIRE]: `0px 0px 0px 4px rgba(74, 73, 126, 0.20), 0px 1px 2px 0px rgba(74, 73, 126, 0.40)`,
     },
   },
+
+  // '@media (prefers-color-scheme: dark)'
+  darkMode: {
+    backgroundColor: {
+      [InputVariant.CARBON]: kit.color.carbon9,
+      [InputVariant.JADE]: kit.color.carbon9,
+      [InputVariant.ORANGE]: kit.color.carbon9,
+      [InputVariant.SAPPHIRE]: kit.color.carbon9,
+    },
+    color: {
+      [InputVariant.CARBON]: kit.color.carbon3,
+      [InputVariant.JADE]: kit.color.carbon3,
+      [InputVariant.ORANGE]: kit.color.carbon3,
+      [InputVariant.SAPPHIRE]: kit.color.carbon3,
+    },
+    borderColor: {
+      [InputVariant.CARBON]: kit.color.carbon8,
+      [InputVariant.JADE]: kit.color.carbon8,
+      [InputVariant.ORANGE]: kit.color.carbon8,
+      [InputVariant.SAPPHIRE]: kit.color.carbon8,
+    },
+    onHover: {
+      backgroundColor: {},
+      borderColor: {},
+      boxShadow: {},
+    },
+    onFocus: {
+      backgroundColor: {},
+      borderColor: {},
+      boxShadow: {},
+    },
+  },
 } as const;
 
 export const inputProperties = {
   core: sharedInputCSS,
+  number: typeNumber,
   size: inputSizeProperties,
   variant: inputColorProperties,
 } as const;

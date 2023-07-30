@@ -10,6 +10,7 @@ export * from './dropdown';
 export * from './flex';
 export * from './grid';
 export * from './heading';
+export * from './input';
 export * from './menu-bar';
 export * from './pass-link';
 export * from './popover';
@@ -22,10 +23,8 @@ export * from './switch';
 export * from './tab-switcher';
 export * from './text';
 
-// @shared ..
-export * from './@shared';
 // Path: src/@shared/
+export * from './@shared';
 
-// @utils ..
-export * from './@utils/utils';
 // Path: src/@utils/
+export * from './@utils/utils';
