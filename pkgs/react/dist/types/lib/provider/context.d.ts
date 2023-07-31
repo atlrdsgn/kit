@@ -3,7 +3,7 @@ import { Context } from 'react';
 export type KitMode = 'light' | 'dark';
 export type KitContextValue = {
     theme: KitMode;
-    toggleTheme: any;
+    toggleTheme: () => void;
 };
 export declare const KitContext: Context<KitContextValue>;
 export declare const useTheme: () => KitContextValue;

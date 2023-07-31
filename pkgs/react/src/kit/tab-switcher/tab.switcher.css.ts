@@ -4,7 +4,7 @@ import { kit } from '../../lib';
 export const baseTabsLayout = style({
   display: 'flex',
   width: '100%',
-  maxWidth: '400px',
+  maxWidth: '380px',
 
   margin: 'auto',
   padding: 4,
@@ -16,7 +16,9 @@ export const baseTabsLayout = style({
   backgroundColor: kit.color.carbon0,
 
   '@media': {
-    '(prefers-color-scheme: dark)': {},
+    '(prefers-color-scheme: dark)': {
+      backgroundColor: kit.color.carbon9,
+    },
   },
 
   selectors: {

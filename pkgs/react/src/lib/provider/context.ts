@@ -4,12 +4,12 @@ export type KitMode = 'light' | 'dark';
 
 export type KitContextValue = {
   theme: KitMode;
-  toggleTheme: any;
+  toggleTheme: () => void;
 };
 
 export const KitContext = createContext<KitContextValue>({
   theme: 'light',
-  toggleTheme: null,
+  toggleTheme: () => {},
 });
 
 export const useTheme = (): KitContextValue => {

@@ -32,7 +32,7 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: [...peerDeps, ...primitiveDeps, 'react/jsx-runtime'],
+      external: [...peerDeps, ...primitiveDeps],
       output: {
         globals: {
           react: 'React',
