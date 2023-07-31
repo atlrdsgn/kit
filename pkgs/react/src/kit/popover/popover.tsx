@@ -4,6 +4,7 @@ import * as CSS from './popover.css';
 import clsx from 'clsx';
 
 const PopoverRoot = POP.Root;
+const PopoverAnchor = POP.Anchor;
 
 const PopoverTrigger = React.forwardRef<
   React.ElementRef<typeof POP.Trigger>,
@@ -32,7 +33,7 @@ const PopoverContent = React.forwardRef<
       sideOffset = 10,
       sticky = 'partial',
       side = 'bottom',
-      onInteractOutside,
+      onInteractOutside = () => {},
       ...props
     },
     forwardedRef,
@@ -43,9 +44,9 @@ const PopoverContent = React.forwardRef<
         ref={forwardedRef}
         align={align}
         sideOffset={sideOffset}
-        sticky={sticky}
+        sticky='partial'
         onInteractOutside={onInteractOutside}
-        side={side}
+        side='bottom'
         className={clsx(CSS.popoverContent, className)}>
         {children}
       </POP.Content>
@@ -77,20 +78,17 @@ export const Popover: React.FC<PopoverProps> & {
   Trigger: typeof PopoverTrigger;
   Content: typeof PopoverContent;
   //..
-  Anchor: typeof POP.Anchor;
-  Arrow: typeof POP.Arrow;
+  Anchor: typeof PopoverAnchor;
   Close: typeof PopoverClose;
 } = (props) => <PopoverRoot {...props} />;
 
 Popover.Trigger = PopoverTrigger;
 Popover.Content = PopoverContent;
 Popover.Anchor = POP.Anchor;
-Popover.Arrow = POP.Arrow;
 Popover.Close = PopoverClose;
 
 Popover.displayName = 'Popover';
 PopoverTrigger.displayName = 'Popover.Trigger';
 PopoverContent.displayName = 'Popover.Content';
 Popover.Anchor.displayName = 'Popover.Anchor';
-Popover.Arrow.displayName = 'Popover.Arrow';
 PopoverClose.displayName = 'Popover.Close';

@@ -1,20 +1,22 @@
 import React, { forwardRef } from 'react';
 import clsx from 'clsx';
 import { link } from './passlink.css';
-import type {
-  LinkColorProps,
-  LinkFontProps,
-  LinkSizeProps,
+import {
+  type LinkColorProps,
+  type LinkFontProps,
+  type LinkSizeProps,
+  type LinkWeightProps,
+  //..
+  type LinkVariantProps,
 } from './passlink.css';
-import PropTypes from 'prop-types';
 
 interface LinkElementProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   /**
    *
    *
    */
-  href?: string;
+  href: string;
   target?: '_self' | '_blank' | '_parent' | '_top' | string;
   /**
    *
@@ -25,43 +27,38 @@ interface LinkElementProps {
   size?: LinkSizeProps;
   variant?: LinkColorProps;
   font?: LinkFontProps;
+  weight?: LinkWeightProps;
 }
 
 export type PassLinkProps = LinkElementProps &
+  LinkVariantProps &
   React.HTMLAttributes<HTMLAnchorElement>;
 export const PassLink = forwardRef<HTMLAnchorElement, PassLinkProps>(
   (
     {
       children,
       className,
-      href,
-      variant,
+      href = '#',
+      variant = 'inherit',
       target = '_self',
       size = 'sm',
-      font = 'inherit',
+      font = 'system',
+      weight = 'normal',
       ...rest
     },
     forwardedRef,
-  ) => (
-    <a
-      ref={forwardedRef}
-      href={href}
-      target={target}
-      className={clsx(link({ size, variant, font }), className)}
-      {...rest}>
-      {children}
-    </a>
-  ),
+  ) => {
+    return (
+      <a
+        ref={forwardedRef}
+        href={href}
+        target={target}
+        className={clsx(className, link({ size, variant, font, weight }))}
+        {...rest}>
+        {children}
+      </a>
+    );
+  },
 );
 
 PassLink.displayName = 'PassLink';
-
-PassLink.propTypes = {
-  children: PropTypes.node.isRequired,
-  href: PropTypes.string,
-  target: PropTypes.oneOf(['_self', '_blank', '_parent', '_top']),
-  className: PropTypes.string,
-  size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', 'xxl']),
-  variant: PropTypes.oneOf(['primary', 'secondary', 'inherit']),
-  font: PropTypes.oneOf(['inherit', 'system', 'mono']),
-};

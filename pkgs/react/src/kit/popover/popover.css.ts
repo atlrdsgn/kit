@@ -26,59 +26,64 @@ export const popoverTrigger = style({
 
   cursor: 'pointer',
   position: 'relative',
-  border: '1px solid transparent',
+  transition: 'all 0.3s ease-in-out',
+
   backgroundColor: kit.color.carbon0,
   color: kit.color.carbon8,
-  transition: 'all 0.4s ease-in-out',
+  borderColor: kit.color.transparent,
+  borderWidth: '1px',
+  borderStyle: 'solid',
 
   ':focus': {
     outline: 'none',
   },
   ':hover': {
-    borderColor: kit.color.carbon2,
     backgroundColor: kit.color.carbon1,
+    color: kit.color.carbon9,
+    borderColor: kit.color.carbon2,
   },
 
   '@media': {
     '(prefers-color-scheme: dark)': {
-      borderColor: kit.color.carbon8,
       backgroundColor: kit.color.carbon9,
       color: kit.color.carbon0,
+      borderColor: kit.color.carbon8,
 
       ':hover': {
-        borderColor: kit.color.carbon7,
         backgroundColor: kit.color.carbon8,
         color: kit.color.carbon0,
+        borderColor: kit.color.carbon7,
       },
     },
   },
 
-  selectors: {},
+  selectors: {
+    '&[data-state="open"]': {
+      backgroundColor: kit.color.carbon0,
+      color: kit.color.carbon8,
+      borderColor: kit.color.transparent,
+    },
+  },
 });
 
 export const popoverContent = style({
   opacity: 1,
+  willChange: 'transform, opacity',
+  position: 'relative',
   boxSizing: 'border-box',
+  width: '100%',
+  maxWidth: '320px',
+  minWidth: `var(--radix-popover-trigger-width)`,
+  maxHeight: `var(--radix-popover-content-available-height)`,
+  minHeight: 'var(--radix-popover-trigger-height)',
+  borderRadius: kit.radii.MD,
+  backgroundColor: kit.color.white,
   paddingLeft: '20px',
   paddingRight: '20px',
   paddingTop: '10px',
   paddingBottom: '10px',
-  maxWidth: '320px',
-  minWidth: '160px',
-  width: '100%',
-  borderRadius: kit.radii.MD,
-  backgroundColor: kit.color.white,
-  color: 'inherit',
   boxShadow:
     'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
-  willChange: 'transform, opacity',
-
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon9,
-      color: kit.color.carbon0,
-    },
-  },
 
   ':focus': {
     outline: 'none',
@@ -87,16 +92,25 @@ export const popoverContent = style({
       'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
   },
 
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      backgroundColor: kit.color.carbon9,
+
+      ':focus': {
+        outline: 'none',
+        backgroundColor: kit.color.carbon9,
+        boxShadow:
+          'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
+      },
+    },
+  },
+
   selectors: {
     '&[data-state="open"][data-side="bottom"]': {
       animationName: `${SDF}`,
       animation: `${SDF} 400ms cubic-bezier(0.16, 1, 0.3, 1)`,
     },
   },
-});
-
-export const popoverArrow = style({
-  fill: kit.color.white,
 });
 
 export const popoverClose = style({

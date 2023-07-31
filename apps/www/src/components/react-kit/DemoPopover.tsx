@@ -11,8 +11,8 @@ export const DemoPopover = () => {
         <Popover.Content>
           <Text
             size='sm'
-            color='slate6'
-            weight='semibold'>
+            color='carbon6'
+            weight='medium'>
             Commodo laborum sunt et in non cupidatat proident dolor.
           </Text>
         </Popover.Content>

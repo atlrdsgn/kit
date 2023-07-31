@@ -3,8 +3,9 @@ export declare const slideFadeDown: string;
 export declare const slideFadeRight: string;
 export declare const slideFadeLeft: string;
 /** -------------------------------------------------------------------- */
-export declare const SUF: string;
 export declare const SDF: string;
+export declare const reverseSDF: string;
+export declare const SUF: string;
 export declare const SRF: string;
 export declare const SLF: string;
 /** ------------------------------------------------------- */

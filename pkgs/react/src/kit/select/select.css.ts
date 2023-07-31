@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { kit } from '../../lib';
-import { SDF, SUF, SRF, SLF, eighty } from '../@utils/keyframes.css';
+import { SDF, SUF, eighty } from '../@utils/keyframes.css';
 
 const TRGGR_PADDING_LEFT = '14px';
 const TRGGR_PADDING_RIGHT = '10px';
@@ -28,9 +28,11 @@ export const selectTrigger = style({
   lineHeight: kit.font.lineheight.MD,
 
   color: kit.color.carbon7,
-  border: `1.5px solid ${kit.color.carbon2}`,
-  borderRadius: TRGGR_RADII,
   backgroundColor: kit.color.white,
+  borderWidth: '1.5px',
+  borderStyle: 'solid',
+  borderColor: kit.color.carbon2,
+  borderRadius: TRGGR_RADII,
 
   paddingTop: 0,
   paddingBottom: 0,
@@ -40,7 +42,11 @@ export const selectTrigger = style({
   transition: 'all 0.2s ease-in-out',
 
   ':hover': { backgroundColor: kit.color.carbon0 },
-  ':focus': { boxShadow: `0 0 0 3px ${kit.color.sapphire3}` },
+  ':focus': {
+    outline: 'none',
+    borderColor: kit.color.sapphire2,
+    boxShadow: `0px 0px 0px 4px rgba(74, 73, 126, 0.20), 0px 1px 2px 0px rgba(74, 73, 126, 0.40)`,
+  },
 
   '@media': {
     '(prefers-color-scheme: dark)': {
@@ -49,6 +55,9 @@ export const selectTrigger = style({
       color: kit.color.carbon0,
 
       ':hover': { backgroundColor: kit.color.carbon8 },
+      ':focus': {
+        boxShadow: `0px 0px 0px 4px rgba(74, 73, 126, 0.40), 0px 1px 2px 0px rgba(74, 73, 126, 0.40)`,
+      },
     },
   },
 
@@ -107,18 +116,20 @@ export const selectContent = style({
     },
 
     '&[data-state="open"][data-side="bottom"]': {
-      animationName: `${SDF}`,
-      animation: `${SDF} 400ms cubic-bezier(0.16, 1, 0.3, 1)`,
+      animationName: SDF,
+      animationDuration: `400ms`,
+      animationTimingFunction: `cubic-bezier(0.16, 1, 0.3, 1)`,
     },
 
-    '&[data-state="closed"][data-side="bottom"]': {
-      animationName: `${SUF}`,
-      animation: `${SUF} 400ms cubic-bezier(0.16, 1, 0.3, 1)`,
+    '&[data-state="open"][data-side="top"]': {
+      animationName: SUF,
+      animationDuration: `400ms`,
+      animationTimingFunction: `cubic-bezier(0.16, 1, 0.3, 1)`,
     },
 
-    '&[data-side="top"]': { animationName: `${SDF}` },
-    '&[data-side="right"]': { animationName: `${SLF}` },
-    '&[data-side="left"]': { animationName: `${SRF}` },
+    '&[data-state="closed"][data-side="bottom"]': {},
+    '&[data-side="right"]': {},
+    '&[data-side="left"]': {},
   },
 });
 
@@ -218,14 +229,10 @@ export const selectIcon = style({
 
   selectors: {
     '&[data-state="open"]': {
-      animationName: `${eighty}`,
-      animationDuration: '400ms',
-      animation: `${eighty}`,
-    },
-    '&[data-state="closed"]': {
-      animationName: `${eighty}`,
-      animationDuration: '400ms',
-      animation: `${eighty}`,
+      animationName: eighty,
+      animationDuration: '300ms',
+      animationTimingFunction: 'ease-in-out',
+      transform: 'rotate(180deg)',
     },
   },
 });

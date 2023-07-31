@@ -23,10 +23,7 @@ const baseItem = {
   fontWeight: kit.font.weight.MEDIUM,
   lineHeight: kit.font.lineheight.MD,
   width: 'auto',
-  backgroundColor: kit.color.transparent,
-  color: kit.color.carbon8,
-  border: `1px solid ${kit.color.transparent}`,
-  transition: 'all 0.4s ease-in-out',
+  transition: 'all 0.3s ease-in-out',
 } as const;
 
 export const dropTrigger = style({
@@ -43,12 +40,22 @@ export const dropTrigger = style({
   paddingBottom: TRGGR_PADDING_BOTTOM,
   paddingTop: TRGGR_PADDING_TOP,
 
+  backgroundColor: kit.color.transparent,
+  color: kit.color.carbon8,
+  borderColor: kit.color.transparent,
+  borderWidth: '1px',
+  borderStyle: 'solid',
+
+  ':hover': {
+    backgroundColor: kit.color.carbon0,
+    color: kit.color.carbon8,
+    borderColor: kit.color.transparent,
+  },
   ':focus': {
     outline: 'none',
+    backgroundColor: kit.color.carbon0,
+    color: kit.color.carbon8,
     borderColor: kit.color.carbon2,
-  },
-  ':hover': {
-    backgroundColor: kit.color.carbon1,
   },
   ':active': {},
   ':disabled': {
@@ -60,7 +67,17 @@ export const dropTrigger = style({
     '(prefers-color-scheme: dark)': {
       backgroundColor: kit.color.carbon9,
       color: kit.color.carbon0,
-      borderColor: kit.color.carbon8,
+      borderColor: kit.color.carbon9,
+
+      ':focus': {
+        outline: 'none',
+        borderColor: kit.color.carbon7,
+      },
+      ':hover': {
+        backgroundColor: kit.color.carbon9,
+        color: kit.color.carbon0,
+        borderColor: kit.color.carbon8,
+      },
     },
   },
   selectors: {},
@@ -70,7 +87,6 @@ export const dropTrigger = style({
 export const dropContent = style({
   minWidth: `var(--radix-dropdown-menu-content-min-width)`,
   width: `var(--radix-dropdown-menu-trigger-width)`,
-
   maxHeight: `var(--radix-dropdown-menu-content-available-width)`,
 
   zIndex: kit.z.indice.MAX,
@@ -118,13 +134,21 @@ export const dropItem = style({
   borderRadius: ITEM_RADII,
   padding: '0 10px 0 11px',
 
-  ':focus': {
-    outline: 'none',
-    boxShadow: `rgba(0,0,0 .5) 0 2px 5px 0`,
-  },
+  borderWidth: '1px',
+  borderStyle: 'solid',
+  borderColor: kit.color.transparent,
+  backgroundColor: kit.color.transparent,
+  color: kit.color.carbon8,
 
   ':hover': {
     backgroundColor: kit.color.sapphire3,
+    color: kit.color.carbon9,
+    boxShadow: `rgba(0,0,0 .2) 0 1px 1px 0`,
+  },
+
+  ':focus': {
+    outline: 'none',
+    boxShadow: `rgba(0,0,0 .5) 0 2px 5px 0`,
   },
 
   ':disabled': {
@@ -133,19 +157,35 @@ export const dropItem = style({
     cursor: 'not-allowed',
   },
 
+  '@media': {
+    '(prefers-color-scheme: dark)': {
+      backgroundColor: kit.color.carbon9,
+      color: kit.color.carbon0,
+      borderWidth: '1px',
+      borderStyle: 'solid',
+      borderColor: kit.color.transparent,
+
+      ':hover': {
+        backgroundColor: kit.color.sapphire7,
+        color: kit.color.carbon0,
+        borderColor: kit.color.transparent,
+      },
+
+      ':focus': {
+        outline: 'none',
+        borderColor: kit.color.carbon8,
+        boxShadow: `rgba(0,0,0 .2) 0 2px 5px 0`,
+      },
+    },
+  },
+
   selectors: {
     '&[data-highlighted]': {
       backgroundColor: kit.color.sapphire4,
     },
   },
-
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon9,
-      color: kit.color.carbon0,
-    },
-  },
 });
+
 export const dropItemIndicate = style({});
 
 // group
@@ -156,7 +196,7 @@ export const dropLabel = style({});
 
 // separator
 export const dropSeparator = style({
-  height: '1px',
+  height: '2px',
   width: '100%',
   padding: 0,
   marginLeft: 0,

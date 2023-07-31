@@ -24,7 +24,30 @@ type TabsContentProps = {
 } & React.ComponentProps<typeof TAB.Content>;
 
 export interface TabSwitcherProps
-  extends React.ComponentProps<typeof TAB.Root> {}
+  extends React.ComponentProps<typeof TAB.Root> {
+  asChild?: boolean;
+  /**
+   * When automatic, tabs are activated when receiving focus.
+   * When manual, tabs are activated when clicked.
+   */
+  activationMode?: 'automatic' | 'manual';
+  /**
+   * The orientation of the tabs.
+   * @default 'horizontal'
+   */
+  orientation?: 'horizontal' | 'vertical';
+  /**
+   * The value of the tab that should be active
+   * when initially rendered. Use when you do not
+   * need to control the state of the tabs.
+   */
+  value?: string;
+  defaultValue?: string;
+  /**
+   * Event handler called when the value changes.
+   */
+  onValueChange?: (value: string) => void;
+}
 
 /** ----------------------------------------------------- */
 
@@ -114,7 +137,13 @@ export const TabSwitcher: React.FC<TabSwitcherProps> & {
   List: typeof TabsList;
   Item: typeof TabsItem;
   Content: typeof TabsContent;
-} = (props) => <TabsRoot {...props} />;
+} = (props) => (
+  <TabsRoot
+    {...props}
+    activationMode='automatic'
+    orientation='horizontal'
+  />
+);
 
 TabSwitcher.List = TabsList;
 TabSwitcher.Item = TabsItem;

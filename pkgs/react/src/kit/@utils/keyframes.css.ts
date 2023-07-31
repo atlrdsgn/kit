@@ -44,24 +44,31 @@ export const slideFadeLeft = style({
 
 /** -------------------------------------------------------------------- */
 
-export const SUF = keyframes({
-  // slide up fade
-  '0%': { opacity: 0, transform: 'translateY(2px)' },
-  '100%': { opacity: 1, transform: 'translateY(0)' },
-});
-
+// SLIDE DOWN FADE
 export const SDF = keyframes({
-  // slide down fade
   '0%': { opacity: 0, transform: 'translateY(-2px)' },
   '100%': { opacity: 1, transform: 'translateY(0)' },
 });
 
+export const reverseSDF = keyframes({
+  '0%': { opacity: 1, transform: 'translateY(-2px)' },
+  '100%': { opacity: 0, transform: 'translateY(0)' },
+});
+
+// SLIDE UP FADE
+export const SUF = keyframes({
+  '0%': { opacity: 0, transform: 'translateY(2px)' },
+  '100%': { opacity: 1, transform: 'translateY(0)' },
+});
+
+// SLIDE RIGHT FADE
 export const SRF = keyframes({
   // slide right fade
   '0%': { opacity: 0, transform: 'translateX(-2px)' },
   '100%': { opacity: 1, transform: 'translateX(0)' },
 });
 
+// SLIDE LEFT FADE
 export const SLF = keyframes({
   // slide left fade
   '0%': { opacity: 0, transform: 'translateX(2px)' },
@@ -71,12 +78,8 @@ export const SLF = keyframes({
 /** ------------------------------------------------------- */
 
 export const oneEighty = keyframes({
-  from: {
-    transform: `rotate(0deg)`,
-  },
-  to: {
-    transform: `rotate(180deg)`,
-  },
+  from: { transform: 'rotate(0deg)' },
+  to: { transform: 'rotate(180deg)' },
 });
 
 export const eighty = keyframes({
