@@ -30,7 +30,7 @@ const ops = [
   },
 ];
 
-function DemoSelect() {
+export const DemoSelect = () => {
   return (
     <ComponentWrapper label='select'>
       <Select>
@@ -49,6 +49,4 @@ function DemoSelect() {
       </Select>
     </ComponentWrapper>
   );
-}
-
-export default DemoSelect;
+};

@@ -3,7 +3,7 @@ import React from 'react';
 import { Menubar } from '@atlrdsgn/kit';
 import ComponentWrapper from '../core/component.wrapper';
 
-function DemoMenubar() {
+export const DemoMenubar = () => {
   return (
     <ComponentWrapper label='menubar'>
       <Menubar>
@@ -54,6 +54,4 @@ function DemoMenubar() {
       </Menubar>
     </ComponentWrapper>
   );
-}
-
-export default DemoMenubar;
+};

@@ -63,7 +63,7 @@ export default function RootLayout({
     <html
       lang='en'
       suppressHydrationWarning>
-      <body style={{ opacity: 1 }}>
+      <body>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

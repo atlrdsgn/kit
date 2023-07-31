@@ -11,4 +11,9 @@ export * from './DemoPopover';
 export * from './DemoSwitch';
 export * from './DemoTabSwitcher';
 
+export * from './DemoPopover';
+export * from './DemoSelect';
+export * from './DemoDropdown';
+export * from './DemoMenubar';
+
 export * from './colour/DemoColour';

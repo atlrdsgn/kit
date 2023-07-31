@@ -1,10 +1,6 @@
 import React from 'react';
 import { PageLayout } from '@/components/core';
 import ComponentsPage from '@/components/core/components.page';
-import DemoPopover from '@/components/react-kit/DemoPopover';
-import DemoDropdown from '@/components/react-kit/DemoDropdown';
-import DemoSelect from '@/components/react-kit/DemoSelect';
-import DemoMenubar from '@/components/react-kit/DemoMenubar';
 import {
   DemoBadge,
   DemoButton,
@@ -15,6 +11,10 @@ import {
   DemoTabSwitcher,
   DemoText,
   DemoInput,
+  DemoSelect,
+  DemoDropdown,
+  DemoMenubar,
+  DemoPopover,
 } from '@/components/react-kit';
 
 const ComponentsIndex = () => {

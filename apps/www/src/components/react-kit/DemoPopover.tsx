@@ -3,7 +3,7 @@ import React from 'react';
 import { Popover, Text } from '@atlrdsgn/kit';
 import ComponentWrapper from '../core/component.wrapper';
 
-function DemoPopover() {
+export const DemoPopover = () => {
   return (
     <ComponentWrapper label='popover'>
       <Popover>
@@ -19,6 +19,4 @@ function DemoPopover() {
       </Popover>
     </ComponentWrapper>
   );
-}
-
-export default DemoPopover;
+};

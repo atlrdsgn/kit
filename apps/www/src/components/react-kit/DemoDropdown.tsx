@@ -3,7 +3,7 @@ import React from 'react';
 import { Dropdown } from '@atlrdsgn/kit';
 import ComponentWrapper from '../core/component.wrapper';
 
-function DemoDropdown() {
+export const DemoDropdown = () => {
   return (
     <ComponentWrapper label='dropdown menu'>
       <Dropdown>
@@ -20,6 +20,4 @@ function DemoDropdown() {
       </Dropdown>
     </ComponentWrapper>
   );
-}
-
-export default DemoDropdown;
+};
