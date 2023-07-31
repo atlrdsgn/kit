@@ -22,7 +22,7 @@ const PopoverTrigger = React.forwardRef<
 
 const PopoverContent = React.forwardRef<
   React.ElementRef<typeof POP.Content>,
-  React.ComponentProps<typeof POP.Content>
+  React.ComponentPropsWithoutRef<typeof POP.Content>
 >(
   (
     {
