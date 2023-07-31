@@ -38,7 +38,5 @@ export {
 
 export {
   // hooks
-  useGoogleFont,
-  useThemeFont,
   useWindowSize,
 } from './hooks';
