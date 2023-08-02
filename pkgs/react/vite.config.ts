@@ -77,14 +77,17 @@ export default defineConfig({
     }),
     vanillaExtractPlugin({
       identifiers: 'short',
-      // emitCssInSsr: true,
+      emitCssInSsr: true,
     }),
     banner(`
-    AtelierKit© v${process.env.npm_package_version}. 
-    Copyright © 2023 atlrdsgn®. All rights reserved.
-    
-    see https://docs.atlrdsgn.com for more information.
-    @atlrdsgn/kit is licensed under the MIT License.
+    * @atlrdsgn/kit v${process.env.npm_package_version} 
+    * see https://kit.atlrdsgn.com for more information.
+    * see https://docs.atlrdsgn.com for further documentation.
+    * 
+    * This package is licensed under the MIT license.
+    *
+    * Copyright © 2023 atlrdsgn®. 
+    * All rights reserved.
     `),
   ],
 });

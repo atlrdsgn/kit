@@ -5,6 +5,7 @@
   "author": "chvndler",
   "license": "MIT",
   "scripts": {
+    "env:dev": "cross-env NODE_ENV=development",
     "build": "turbo build",
     "build:kit": "turbo build --filter=kit",
     "build:apps": "turbo build --filter='./apps/*'",

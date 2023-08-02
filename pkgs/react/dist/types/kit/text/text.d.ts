@@ -1,7 +1,6 @@
 import React from 'react';
 import type { TextFontVariants, TextSizeVariants, TextAlignVariants, TextWeightVariants, TextColorVariants, TextCasingVariants, TextVariantProps } from './text.css';
-interface BASE_TEXT_PROPS {
-    children?: React.ReactNode;
+interface TextElementProps {
     className?: string;
     font?: TextFontVariants;
     size?: TextSizeVariants;
@@ -10,8 +9,8 @@ interface BASE_TEXT_PROPS {
     color?: TextColorVariants;
     casing?: TextCasingVariants;
 }
-export type TextProps = BASE_TEXT_PROPS & TextVariantProps & React.HTMLAttributes<HTMLParagraphElement>;
-export declare const Text: React.ForwardRefExoticComponent<BASE_TEXT_PROPS & {
+export type TextProps = TextElementProps & TextVariantProps & React.HTMLAttributes<HTMLParagraphElement>;
+export declare const Text: React.ForwardRefExoticComponent<TextElementProps & {
     font?: "system" | "mono" | "inter" | undefined;
     size?: "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | undefined;
     weight?: "medium" | "black" | "bold" | "normal" | "superlite" | "lite" | "semibold" | "heavy" | undefined;

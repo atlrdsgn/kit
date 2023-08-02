@@ -12,8 +12,7 @@ import type {
   TextVariantProps,
 } from './text.css';
 
-interface BASE_TEXT_PROPS {
-  children?: React.ReactNode;
+interface TextElementProps {
   className?: string;
   font?: TextFontVariants;
   size?: TextSizeVariants;
@@ -23,13 +22,12 @@ interface BASE_TEXT_PROPS {
   casing?: TextCasingVariants;
 }
 
-export type TextProps = BASE_TEXT_PROPS &
+export type TextProps = TextElementProps &
   TextVariantProps &
   React.HTMLAttributes<HTMLParagraphElement>;
 export const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
   (
     {
-      children,
       className,
       font = 'inter',
       size = 'md',
@@ -43,14 +41,13 @@ export const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
   ) => {
     return (
       <p
+        {...props}
         ref={forwardedRef}
         className={clsx(
           className,
           text({ font, size, align, weight, color, casing }),
         )}
-        {...props}>
-        {children}
-      </p>
+      />
     );
   },
 );
