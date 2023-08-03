@@ -1,27 +1,11 @@
 {
+  "extends": "@atlrdsgn/tsconfig/next.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"],
   "compilerOptions": {
-    "allowJs": true,
+    "plugins": [{ "name": "next" }],
     "alwaysStrict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "lib": ["dom", "es2017"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmit": true,
     "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "strictNullChecks": false,
-    "target": "esnext",
-    "noUncheckedIndexedAccess": true,
-    "incremental": true,
     "baseUrl": ".",
     "paths": {
       "@/public/*": ["/public/*"],
@@ -30,7 +14,6 @@
       "@/components/*": ["./src/components/*"],
       "@/ts/*": ["./src/ts/*"],
       "@/scss/*": ["./src/scss/*"]
-    },
-    "plugins": [{ "name": "next" }]
+    }
   }
 }

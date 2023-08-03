@@ -6,15 +6,17 @@
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
       "dependsOn": ["^build"]
     },
-    "test": {
-      "outputs": ["coverage/**"],
-      "dependsOn": []
-    },
     "lint": {
-      "outputs": [],
-      "dependsOn": []
+      "dependsOn": ["^build"],
+      "inputs": [
+        "**/*.{js,jsx,ts,tsx}",
+        ".eslintignore",
+        ".eslintrc.js",
+        ".eslintrc"
+      ]
     },
     "dev": {
+      "dependsOn": ["^build"],
       "cache": false,
       "persistent": true
     },

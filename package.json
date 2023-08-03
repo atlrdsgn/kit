@@ -10,6 +10,7 @@
     "build:kit": "turbo build --filter=kit",
     "build:apps": "turbo build --filter='./apps/*'",
     "build:pkg": "turbo build --filter='./pkgs/*'",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "clean": "turbo clean && rm -rf node_modules",
     "pretty": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
@@ -17,6 +18,8 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
+    "eslint": "^8.45.0",
+    "eslint-config-atlrdsgn": "workspace:0.0.1",
     "prettier": "^3.0.0",
     "turbo": "^1.10.7"
   }

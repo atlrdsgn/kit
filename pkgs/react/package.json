@@ -27,9 +27,8 @@
   },
   "scripts": {
     "build": "vite build",
-    "rollup": "rollup --config --bundleConfigAsCjs",
     "build:types": "yarn tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
-    "lint": "eslint *.ts*",
+    "lint": "eslint . --ext .js,.ts,.tsx",
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf prod.package/*",
     "release": "npm publish --access public",
     "dev:release": "npm publish --access private",
@@ -52,11 +51,10 @@
     "clsx": "^2.0.0"
   },
   "devDependencies": {
+    "@atlrdsgn/tsconfig": "workspace:*",
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.1.0",
-    "@typescript-eslint/parser": "^6.1.0",
     "@vanilla-extract/css": "^1.12.0",
     "@vanilla-extract/css-utils": "^0.1.3",
     "@vanilla-extract/dynamic": "^2.0.3",
@@ -65,8 +63,7 @@
     "@vanilla-extract/vite-plugin": "^3.8.2",
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.45.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-config-atlrdsgn": "workspace:*",
     "prettier": "^3.0.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.4",

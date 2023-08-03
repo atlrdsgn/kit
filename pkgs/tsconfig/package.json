@@ -1,0 +1,9 @@
+{
+  "name": "@atlrdsgn/tsconfig",
+  "version": "0.4.6",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
