@@ -84,7 +84,7 @@ const border = {
 
 /** --------------------------------------------------- */
 
-const BASE_BANNER = style({
+const baseBanner = style({
   width: calc.subtract('100vw', GUTTER_WIDTH),
   maxWidth: '100%',
 
@@ -113,7 +113,7 @@ export type BannerBorderBoolean = typeof border;
 export type BannerVariant = typeof variant;
 export type BannerVariants = RecipeVariants<typeof banner>;
 export const banner = recipe({
-  base: BASE_BANNER,
+  base: baseBanner,
   variants: {
     size,
     border,

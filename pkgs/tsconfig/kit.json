@@ -10,9 +10,6 @@
     "declaration": true,
     "declarationMap": true,
     "verbatimModuleSyntax": true,
-    "rootDir": "src",
-    "outDir": "dist/types",
-    "sourceMap": true,
-    "noEmit": true
+    "sourceMap": true
   }
 }

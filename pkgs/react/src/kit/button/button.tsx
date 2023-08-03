@@ -30,7 +30,11 @@ export const Button = ({
   };
 
   if (href) {
-    // If href is provided, render an anchor element
+    /**
+     * href provided,
+     * render an anchor element.
+     * same styles.
+     */
     return (
       <a
         {...rest}
@@ -43,8 +47,10 @@ export const Button = ({
       </a>
     );
   } else {
-    // If href is not provided, render a button element
-
+    /**
+     * no href provided,
+     * render as button.
+     */
     return (
       <button
         {...rest}

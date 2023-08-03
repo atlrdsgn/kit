@@ -62,18 +62,13 @@ export default defineConfig({
       entryRoot: 'src',
       outDir: 'dist/types',
       staticImport: true,
-      /*
-      beforeWriteFile: (filePath, content) => ({
-        content,
-        filePath: filePath.replace('src', ''),
-      }),
-      */
       compilerOptions: {
+        composite: true,
         emitDeclarationOnly: true,
         noEmit: false,
       },
       include: ['src'],
-      exclude: [],
+      exclude: ['node_modules', 'dist', 'prod.package'],
     }),
     vanillaExtractPlugin({
       identifiers: 'short',

@@ -42,7 +42,7 @@ export const slideFadeLeft = style({
   animation: `${SLIDE_LEFT_FADE} 0.2s`,
 });
 
-/** -------------------------------------------------------------------- */
+/** ------------------- exports keyframes -------------------------- */
 
 // SLIDE DOWN FADE
 export const SDF = keyframes({

@@ -1,7 +1,23 @@
 import { kit } from '../../lib';
 
+export type KitMaps = typeof kitMaps;
+export type KitMapObjects = keyof KitMaps;
+
 export const kitMaps = {
   text: {
+    /**
+     *
+     * These are all common text styles.
+     * They align specific kit tokens with a particular style.
+     *
+     * For instance, using text.SIZE.[size] will yield a style object
+     * covering both the font size and line height.
+     *
+     * This is useful for keeping a style across multiple elements/components tight.
+     * We can also map our entire colour library to text.COLOUR.[colour[X]]. lovely.
+     *
+     * Further usage could be explored, this requires additional consideration.
+     */
     FAMILY: {
       system: { fontFamily: kit.font.family.system },
       inter: { fontFamily: kit.font.family.system },
@@ -68,5 +84,12 @@ export const kitMaps = {
     COLOUR: {
       ...kit.color,
     },
+  },
+
+  space: {
+    /**
+     *
+     * will include all spacing styles.
+     */
   },
 } as const;
