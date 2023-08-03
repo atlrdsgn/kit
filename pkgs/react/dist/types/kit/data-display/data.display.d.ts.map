@@ -1,1 +1,0 @@
-{"version":3,"file":"data.display.d.ts","sourceRoot":"","sources":["../../../../src/src/kit/data-display/data.display.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAG1B,KAAK,gBAAgB,GAAG;IACtB,KAAK,EAAE,KAAK,CAAC,SAAS,CAAC;IACvB,IAAI,CAAC,EAAE,KAAK,CAAC,SAAS,CAAC;IACvB,KAAK,EAAE,KAAK,CAAC,SAAS,CAAC;CACxB,CAAC;AAEF,eAAO,MAAM,WAAW,2BAA4B,gBAAgB,sBAoBnE,CAAC"}
