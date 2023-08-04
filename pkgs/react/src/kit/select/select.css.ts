@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { kit } from '../../lib';
-import { SDF, SUF, eighty } from '../@utils/keyframes.css';
+import { SDF, SUF, eighty } from '../@shared';
 
 const TRGGR_PADDING_LEFT = '14px';
 const TRGGR_PADDING_RIGHT = '10px';
@@ -229,10 +229,8 @@ export const selectIcon = style({
 
   selectors: {
     '&[data-state="open"]': {
+      animation: `${eighty} 300ms ease-in-out`,
       animationName: eighty,
-      animationDuration: '300ms',
-      animationTimingFunction: 'ease-in-out',
-      transform: 'rotate(180deg)',
     },
   },
 });

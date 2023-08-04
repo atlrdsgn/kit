@@ -16,9 +16,9 @@ module.exports = {
   },
   rules: {
     'no-unused-vars': 'off',
+    'no-console': 'warn',
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
-    'react-hooks/exhaustive-deps': 'warn',
 
     /**
      * typescript eslint rules.

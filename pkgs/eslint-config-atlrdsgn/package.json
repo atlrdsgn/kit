@@ -1,17 +1,17 @@
 {
   "name": "eslint-config-atlrdsgn",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "index.cjs",
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
     "eslint": "^8.45.0",
-    "eslint-config-next": "latest",
+    "eslint-config-next": "^13.4.12",
     "eslint-config-prettier": "^8.9.0",
-    "eslint-plugin-react": "^7.32.2",
     "eslint-config-turbo": "latest",
     "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "publishConfig": {

@@ -1,12 +1,12 @@
 module.exports = {
   root: true,
-  // This tells ESLint to load the config from the package `eslint-config-acme`
+  // → ESLint to load [eslint-config-atlrdsgn].
   extends: ['atlrdsgn'],
   settings: {
     react: { version: 'detect' },
     next: { rootDir: ['apps/*/'] },
   },
   rules: {
-    // Your project-specific rules
+    // all rules are @ the project level.
   },
 };

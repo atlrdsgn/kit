@@ -22,8 +22,4 @@ export * from './switch';
 export * from './tab-switcher';
 export * from './text';
 
-// Path: src/@shared/
 export * from './@shared';
-
-// Path: src/@utils/
-export * from './@utils/utils';

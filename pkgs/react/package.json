@@ -51,7 +51,7 @@
     "clsx": "^2.0.0"
   },
   "devDependencies": {
-    "@atlrdsgn/tsconfig": "workspace:*",
+    "@atlrdsgn/tsconfig": "workspace:0.4.7",
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
@@ -63,7 +63,7 @@
     "@vanilla-extract/vite-plugin": "^3.8.2",
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.45.0",
-    "eslint-config-atlrdsgn": "workspace:*",
+    "eslint-config-atlrdsgn": "workspace:0.0.1",
     "prettier": "^3.0.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.4",

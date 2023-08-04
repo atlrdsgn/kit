@@ -1,9 +1,29 @@
+// from './portal'
 export { Portal, type PortalProps } from './portal';
+
+// from './keyframes.css'
 export {
-  kitMaps,
-  //..
+  SDF,
+  SLF,
+  SUF,
+  SRF,
+  // ...
+  eighty,
+  oneEighty,
+  threeSixty,
+  slideFadeDown,
+  slideFadeLeft,
+  slideFadeRight,
+  slideFadeUp,
+} from './keyframes.css';
+
+// from './shadows'
+export { chipShadows, shadowLarge } from './shadows';
+
+// from './style.maps'
+export {
   type KitMaps,
   type KitMapObjects,
+  // ...
+  kitMaps,
 } from './style.maps';
-
-export { shadowLarge, chipShadows } from './shadows';
