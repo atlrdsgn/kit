@@ -1,12 +1,9 @@
 'use client';
 
 import React from 'react';
-import content from '../../../web.config.json';
 import { Container, Text, Space, PassLink, Flex } from '@atlrdsgn/kit';
 
 function GlobalFooter() {
-  const { index, footer } = content;
-
   return (
     <footer className='footer'>
       <Container
@@ -18,29 +15,32 @@ function GlobalFooter() {
           <PassLink
             font='mono'
             href='/components'
-            size='xs'
+            size='sm'
             color='carbon8'>
             components →
           </PassLink>
           <PassLink
             font='mono'
             href='/colour'
-            size='xs'
+            size='sm'
             color='carbon8'>
             colour →
           </PassLink>
         </Flex>
-        <Space size='sm' />
-        <Text
-          color='slate6'
-          size='lg'
-          align='center'
-          weight='medium'
-          font='inter'>
-          {index.subtitle}
-          <br />
-          {index.line2}
-        </Text>
+
+        <Space size='xl' />
+        <Container width='small'>
+          <Text
+            color='slate6'
+            size='lg'
+            align='center'
+            weight='medium'
+            font='inter'>
+            We are currently updating a few components, and documentation will
+            be back online soon.
+          </Text>
+        </Container>
+
         <Space size='md' />
         <Text
           color='slate8'
@@ -48,14 +48,13 @@ function GlobalFooter() {
           align='center'
           weight='normal'
           font='inter'>
-          {footer.copyright}
+          Copyright © 2023
         </Text>
-
         <Text
           color='slate8'
           size='xs'
           align='center'
-          weight='normal'
+          weight='medium'
           font='inter'>
           powered by{' '}
           <PassLink
