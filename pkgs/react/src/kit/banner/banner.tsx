@@ -29,8 +29,8 @@ export const Banner: React.FC<BannerProps> = ({
   children,
   className,
   size,
-  variant,
-  border,
+  variant = 'carbon',
+  border = false,
   ...rest
 }) => {
   return (

@@ -10,16 +10,19 @@ const GUTTER_WIDTH = '28px';
 
 const SIZE_MAP = {
   small: {
+    padding: '2px 8px',
     height: SM_HEIGHT,
     fontSize: kit.font.size.XS,
     lineHeight: kit.font.lineheight.XS,
   },
   medium: {
+    padding: '4px 12px',
     height: MD_HEIGHT,
     fontSize: kit.font.size.SM,
     lineHeight: kit.font.lineheight.SM,
   },
   large: {
+    padding: '6px 16px',
     height: LG_HEIGHT,
     fontSize: kit.font.size.MD,
     lineHeight: kit.font.lineheight.MD,
@@ -27,33 +30,33 @@ const SIZE_MAP = {
 } as const;
 
 const SHAPE_MAP = {
-  sharp: {
-    borderRadius: '0px',
-  },
-  rounded: {
-    borderRadius: '6px',
-  },
-  pill: {
-    borderRadius: '9999px',
-  },
+  sharp: { borderRadius: '0px' },
+  rounded: { borderRadius: '6px' },
+  pill: { borderRadius: '9999px' },
 } as const;
 
 const COLOR_VARIANTS = {
-  one: {
-    backgroundColor: kit.color.slate2,
-    color: kit.color.slate10,
-    borderColor: kit.color.slate4,
+  carbon: {
+    backgroundColor: kit.color.carbon0,
+    color: kit.color.carbon8,
+    borderColor: kit.color.carbon3,
   },
-  two: {
+  sapphire: {
     backgroundColor: kit.color.sapphire3,
     color: kit.color.sapphire10,
-    borderColor: kit.color.sapphire5,
+    borderColor: kit.color.sapphire4,
+  },
+  jade: {
+    backgroundColor: kit.color.jade3,
+    color: kit.color.jade10,
+    borderColor: kit.color.jade4,
   },
 } as const;
 
 /** ----------------- variants ---------------------- */
 
 const size = styleVariants(SIZE_MAP, (value) => ({
+  padding: value.padding,
   height: value.height,
   fontSize: value.fontSize,
   lineHeight: value.lineHeight,
@@ -108,9 +111,9 @@ const baseBanner = style({
 });
 
 /** ------------------------------------------------------- */
-export type BannerSize = typeof size;
-export type BannerBorderBoolean = typeof border;
-export type BannerVariant = typeof variant;
+export type BannerSize = keyof typeof size;
+export type BannerBorderBoolean = keyof typeof border;
+export type BannerVariant = keyof typeof variant;
 export type BannerVariants = RecipeVariants<typeof banner>;
 export const banner = recipe({
   base: baseBanner,
@@ -124,7 +127,7 @@ export const banner = recipe({
   defaultVariants: {
     size: 'medium',
     border: false,
-    variant: 'one',
+    variant: 'carbon',
     shape: 'rounded',
   },
 });

@@ -17,7 +17,6 @@ export {
 } from './provider';
 
 export {
-  // css
   atoms,
   sprinkles,
   mapResponsiveValue,
@@ -25,6 +24,7 @@ export {
   breakpoints,
   blurz,
   colorModeStyle,
+  // types
   type Atoms,
   type Sprinkles,
   type OptionalResponsiveValue,
