@@ -10,7 +10,7 @@
     "clean": "rm -rf node_modules && rm -rf .next"
   },
   "dependencies": {
-    "@atlrdsgn/kit": "workspace:0.4.7",
+    "@atlrdsgn/kit": "workspace:0.4.8",
     "clsx": "^2.0.0",
     "inter-ui": "^3.19.3",
     "next": "^13.4.4",

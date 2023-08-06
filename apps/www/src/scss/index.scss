@@ -42,6 +42,8 @@
   }
 }
 
+@import './normalize';
+
 *,
 *:active,
 *:focus {
@@ -75,7 +77,7 @@ body {
 }
 
 body.inspect * {
-  outline: 0.5px dashed var(--inspect-color) !important;
+  outline: 0.5px dashed var(--inspect) !important;
 }
 
 body:not(.user-is-tabbing) button:focus,
