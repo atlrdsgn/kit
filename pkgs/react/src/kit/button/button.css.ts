@@ -115,6 +115,7 @@ const variant = styleVariants(COLOR_MAP, (value) => ({
   },
 
   ':focus': {
+    outline: `-webkit-focus-ring-color auto 1px`,
     boxShadow: value.F.boxShadow,
   },
 }));

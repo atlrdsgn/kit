@@ -312,6 +312,20 @@ export const themeVars = createThemeContract({
     lemon11: null,
     lemon12: null,
 
+    hyper0: null,
+    hyper1: null,
+    hyper2: null,
+    hyper3: null,
+    hyper4: null,
+    hyper5: null,
+    hyper6: null,
+    hyper7: null,
+    hyper8: null,
+    hyper9: null,
+    hyper10: null,
+    hyper11: null,
+    hyper12: null,
+
     /*
   // core
   ...jade,

@@ -1,0 +1,31 @@
+export const sapphire = {
+  sapphire0: '#e0f1f6',
+  sapphire1: '#c7dcee',
+  sapphire2: '#afc0e5',
+  sapphire3: '#989fdb',
+  sapphire4: '#8b81d2',
+  sapphire5: '#8b6bc7',
+  sapphire6: '#675aa2',
+  sapphire7: '#4a497e',
+  sapphire8: '#363c5b',
+  sapphire9: '#232a39',
+  sapphire10: '#2d2241',
+  sapphire11: '#20182d',
+  sapphire12: '#120d1a',
+} as const;
+
+export const sapphireDark = {
+  sapphire0: '#120d1a',
+  sapphire1: '#20182d',
+  sapphire2: '#2d2241',
+  sapphire3: '#232a39',
+  sapphire4: '#363c5b',
+  sapphire5: '#4a497e',
+  sapphire6: '#675aa2',
+  sapphire7: '#8b6bc7',
+  sapphire8: '#8b81d2',
+  sapphire9: '#989fdb',
+  sapphire10: '#afc0e5',
+  sapphire11: '#c7dcee',
+  sapphire12: '#e0f1f6',
+} as const;

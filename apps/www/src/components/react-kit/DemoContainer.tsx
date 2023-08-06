@@ -7,7 +7,10 @@ export const DemoContainer = () => {
     <Section size='vw'>
       <Container
         width='small'
-        style={{ borderBottom: '1px solid #DDDDDD', marginBottom: '10px' }}>
+        style={{
+          borderBottom: '1px solid rgba(28, 29, 32, 0.24)',
+          marginBottom: '10px',
+        }}>
         <Flex
           direction='row'
           justify='between'
@@ -30,7 +33,10 @@ export const DemoContainer = () => {
 
       <Container
         width='medium'
-        style={{ borderBottom: '1px solid #DDDDDD', marginBottom: '10px' }}>
+        style={{
+          borderBottom: '1px solid rgba(28, 29, 32, 0.24)',
+          marginBottom: '10px',
+        }}>
         <Flex
           direction='row'
           justify='between'
@@ -53,7 +59,10 @@ export const DemoContainer = () => {
 
       <Container
         width='large'
-        style={{ borderBottom: '1px solid #DDDDDD', marginBottom: '10px' }}>
+        style={{
+          borderBottom: '1px solid rgba(28, 29, 32, 0.24)',
+          marginBottom: '10px',
+        }}>
         <Flex
           direction='row'
           justify='between'
@@ -76,7 +85,10 @@ export const DemoContainer = () => {
 
       <Container
         width='xlarge'
-        style={{ borderBottom: '1px solid #DDDDDD', marginBottom: '10px' }}>
+        style={{
+          borderBottom: '1px solid rgba(28, 29, 32, 0.24)',
+          marginBottom: '10px',
+        }}>
         <Flex
           direction='row'
           justify='between'
@@ -99,7 +111,10 @@ export const DemoContainer = () => {
 
       <Container
         width='full'
-        style={{ borderBottom: '1px solid #DDDDDD', marginBottom: '10px' }}>
+        style={{
+          borderBottom: '1px solid rgba(28, 29, 32, 0.24)',
+          marginBottom: '10px',
+        }}>
         <Flex
           direction='row'
           justify='between'

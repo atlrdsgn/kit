@@ -62,11 +62,28 @@ export const lime = {
   lime12: '#008000',
 } as const;
 
+export const hyper = {
+  hyper0: '#ffffff',
+  hyper1: '#fdf4ff',
+  hyper2: '#fae8ff',
+  hyper3: '#f5d0fe',
+  hyper4: '#f0abfc',
+  hyper5: '#e879f9',
+  hyper6: '#d946ef',
+  hyper7: '#c026d3',
+  hyper8: '#a21caf',
+  hyper9: '#86198f',
+  hyper10: '#701a75',
+  hyper11: '#4a044e',
+  hyper12: '#000000',
+} as const;
+
 /**
  * @azure
  * @cherry
  * @lemon
  * @lime
+ * @hyper
  *
  * 1 / 12
  */

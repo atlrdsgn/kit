@@ -1,1 +1,7 @@
-export { type KitColours, kitColour, darkKitColour } from './system';
+export {
+  kitColour,
+  darkKitColour,
+  // ..
+  type KitColours,
+  type DarkKitColours,
+} from './system';

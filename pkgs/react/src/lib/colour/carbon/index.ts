@@ -1,0 +1,31 @@
+export const carbon = {
+  carbon0: 'rgba(246, 248, 250, 1)',
+  carbon1: 'rgba(223, 233, 233, 1)',
+  carbon2: 'rgba(200, 210, 210, 1)',
+  carbon3: 'rgba(174, 184, 184, 1)',
+  carbon4: 'rgba(149, 159, 159, 1)',
+  carbon5: 'rgba(109, 119, 119, 1)',
+  carbon6: 'rgba(88, 100, 100, 1)',
+  carbon7: 'rgba(60, 70, 70, 1)',
+  carbon8: 'rgba(45, 55, 55, 1)',
+  carbon9: 'rgba(13, 17, 17, 1)',
+  carbon10: 'rgba(0, 2, 3, 1)',
+  carbon11: 'rgba(0, 2, 3, 1)',
+  carbon12: 'rgba(0, 2, 3, 1)',
+} as const;
+
+export const carbonDark = {
+  carbon0: 'rgba(0, 2, 3, 1)',
+  carbon1: 'rgba(0, 2, 3, 1)',
+  carbon2: 'rgba(0, 2, 3, 1)',
+  carbon3: 'rgba(13, 17, 17, 1)',
+  carbon4: 'rgba(45, 55, 55, 1)',
+  carbon5: 'rgba(60, 70, 70, 1)',
+  carbon6: 'rgba(88, 100, 100, 1)',
+  carbon7: 'rgba(109, 119, 119, 1)',
+  carbon8: 'rgba(149, 159, 159, 1)',
+  carbon9: 'rgba(174, 184, 184, 1)',
+  carbon10: 'rgba(200, 210, 210, 1)',
+  carbon11: 'rgba(223, 233, 233, 1)',
+  carbon12: 'rgba(246, 248, 250, 1)',
+} as const;

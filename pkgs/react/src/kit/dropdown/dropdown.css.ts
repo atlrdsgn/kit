@@ -71,6 +71,8 @@ export const dropTrigger = style({
 
       ':focus': {
         outline: 'none',
+        backgroundColor: kit.color.carbon9,
+        color: kit.color.carbon2,
         borderColor: kit.color.carbon7,
       },
       ':hover': {
@@ -85,9 +87,19 @@ export const dropTrigger = style({
 
 // content
 export const dropContent = style({
-  minWidth: `var(--radix-dropdown-menu-content-min-width)`,
+  /**
+   *
+   * css variables from radix.
+   *
+   * --radix-dropdown-menu-content-transform-origin
+   * --radix-dropdown-menu-content-available-width
+   * --radix-dropdown-menu-content-available-height
+   * --radix-dropdown-menu-trigger-width
+   * --radix-dropdown-menu-trigger-height
+   */
+  maxWidth: '220px',
+  // minWidth: `var(--radix-dropdown-menu-content-available-width)`,
   width: `var(--radix-dropdown-menu-trigger-width)`,
-  maxHeight: `var(--radix-dropdown-menu-content-available-width)`,
 
   zIndex: kit.z.indice.MAX,
   opacity: 1,
@@ -97,7 +109,6 @@ export const dropContent = style({
   gap: '2px',
   margin: 'auto',
   padding: '6px',
-  maxWidth: '220px',
   borderRadius: CONTENT_RADII,
   backgroundColor: kit.color.white,
   color: 'inherit',
@@ -128,6 +139,9 @@ export const dropContent = style({
 // item
 export const dropItem = style({
   ...baseItem,
+
+  height: 'auto',
+  maxHeight: `var(--radix-dropdown-menu-trigger-height)`,
 
   textAlign: 'left',
   textDecoration: 'none',

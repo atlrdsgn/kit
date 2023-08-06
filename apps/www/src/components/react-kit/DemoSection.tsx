@@ -7,7 +7,10 @@ export const DemoSection = () => {
     <Section size='vw'>
       <Section
         size='sm'
-        style={{ backgroundColor: '#DDDDDD', marginBottom: '10px' }}>
+        style={{
+          backgroundColor: 'rgba(28, 29, 32, 0.24)',
+          marginBottom: '10px',
+        }}>
         <Text
           size='sm'
           weight='medium'
@@ -19,7 +22,10 @@ export const DemoSection = () => {
 
       <Section
         size='md'
-        style={{ backgroundColor: '#DDDDDD', marginBottom: '10px' }}>
+        style={{
+          backgroundColor: 'rgba(28, 29, 32, 0.24)',
+          marginBottom: '10px',
+        }}>
         <Text
           size='sm'
           weight='medium'
@@ -31,7 +37,10 @@ export const DemoSection = () => {
 
       <Section
         size='lg'
-        style={{ backgroundColor: '#DDDDDD', marginBottom: '10px' }}>
+        style={{
+          backgroundColor: 'rgba(28, 29, 32, 0.24)',
+          marginBottom: '10px',
+        }}>
         <Text
           size='sm'
           weight='medium'
@@ -43,7 +52,10 @@ export const DemoSection = () => {
 
       <Section
         size='vw'
-        style={{ backgroundColor: '#DDDDDD', marginBottom: '10px' }}>
+        style={{
+          backgroundColor: 'rgba(28, 29, 32, 0.24)',
+          marginBottom: '10px',
+        }}>
         <Text
           size='sm'
           weight='medium'

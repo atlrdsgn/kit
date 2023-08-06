@@ -1,0 +1,31 @@
+export const orange = {
+  orange0: '#fff4e6',
+  orange1: '#ffe8cc',
+  orange2: '#ffd8a8',
+  orange3: '#ffc078',
+  orange4: '#ffa94d',
+  orange5: '#ff922b',
+  orange6: '#fd7e14',
+  orange7: '#f76707',
+  orange8: '#e8590c',
+  orange9: '#d9480f',
+  orange10: '#c93c1a',
+  orange11: '#b53121',
+  orange12: '#97291e',
+} as const;
+
+export const orangeDark = {
+  orange0: '#97291e',
+  orange1: '#b53121',
+  orange2: '#c93c1a',
+  orange3: '#d9480f',
+  orange4: '#e8590c',
+  orange5: '#f76707',
+  orange6: '#fd7e14',
+  orange7: '#ff922b',
+  orange8: '#ffa94d',
+  orange9: '#ffc078',
+  orange10: '#ffd8a8',
+  orange11: '#ffe8cc',
+  orange12: '#fff4e6',
+} as const;
