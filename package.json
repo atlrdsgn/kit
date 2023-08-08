@@ -2,6 +2,7 @@
   "name": "kit",
   "description": "an ever– expanding library of React components by @atlrdsgn",
   "private": true,
+  "packageManager": "pnpm@8.6.12",
   "author": "chvndler",
   "license": "MIT",
   "scripts": {

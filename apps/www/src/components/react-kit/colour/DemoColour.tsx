@@ -2,10 +2,16 @@
 import React from 'react';
 import { Container, Section, Flex, Space, Text, Heading } from '@atlrdsgn/kit';
 import { ColourBox } from './ColourBox';
+import { ThemeSwitch } from './ThemeSwitch';
 
 export const DemoColour = () => {
   return (
     <Section>
+      <Container
+        width='small'
+        align='center'>
+        <ThemeSwitch />
+      </Container>
       <Space size='lg' />
       <Container
         width='medium'

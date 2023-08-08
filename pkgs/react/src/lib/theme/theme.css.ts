@@ -170,3 +170,8 @@ export const DARK = {
     ...darkModeColors,
   },
 };
+
+export type Theme = typeof BASE;
+export type BaseThemeColour = keyof typeof lightModeColors;
+export type DarkThemeColour = keyof typeof darkModeColors;
+export type ThemeColour = BaseThemeColour | DarkThemeColour;

@@ -327,16 +327,13 @@ export const themeVars = createThemeContract({
     hyper12: null,
 
     /*
-  // core
   ...jade,
   ...sapphire,
   ...orange,
 
-  // neutrals
   ...carbon,
   ...slate,
 
-  // neon
   ...azure,
   ...cherry,
   ...lime,

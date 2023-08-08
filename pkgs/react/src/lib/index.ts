@@ -4,15 +4,23 @@ export {
   themes,
   type Kit,
   type Themes,
-} from './theme/kit.css';
+  // ..
+  type Theme,
+  type BaseThemeColour,
+  type DarkThemeColour,
+  type ThemeColour,
+  type ColorTypes,
+} from './theme';
 
 export {
   // provider
   useTheme,
   KitContext,
   KitProvider,
+  ExtendedKitProvider,
   type KitProviderProps,
   type KitContextValue,
+  type ExtendedKitProps,
   type KitMode,
 } from './provider';
 

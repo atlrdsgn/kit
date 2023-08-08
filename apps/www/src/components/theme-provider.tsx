@@ -8,7 +8,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     <Theme
       enableSystem
       attribute='class'>
-      <KitProvider>{children}</KitProvider>
+      <KitProvider background='carbon0'>{children}</KitProvider>
     </Theme>
   );
 };

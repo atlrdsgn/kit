@@ -1,38 +1,43 @@
 import React, { useState } from 'react';
 import { type KitMode, KitContext } from './context';
+import { type ThemeColour } from '../theme/theme.css';
+import { kitColour, darkKitColour } from '../colour';
 import { themes } from '../theme/kit.css';
 import { colorModeStyle, type CSSProps } from '../css/mode';
 import { style } from '@vanilla-extract/css';
 import clsx from 'clsx';
 
-export interface baseProviderProps {
+interface BaseKitProps {
   children: React.ReactNode;
   className?: string;
   defaultTheme?: KitMode;
-  lightMode?: CSSProps; // Add this prop for light mode styles
-  darkMode?: CSSProps; // Add this prop for dark mode styles
+  lightMode?: CSSProps;
+  darkMode?: CSSProps;
+  background?: ThemeColour;
 }
 
-export type KitProviderProps = baseProviderProps &
+export type ExtendedKitProps = BaseKitProps &
   React.HTMLAttributes<HTMLDivElement>;
 
-export const AlternateKitProvider: React.FC<KitProviderProps> = ({
+export const ExtendedKitProvider: React.FC<ExtendedKitProps> = ({
   children,
   className,
   defaultTheme = 'light',
   lightMode,
   darkMode,
-}: React.PropsWithChildren<KitProviderProps>) => {
+  background = 'white',
+}: React.PropsWithChildren<ExtendedKitProps>) => {
   const [kitTheme, setTheme] = useState<KitMode>(defaultTheme);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
-  const Mode = kitTheme === 'light' ? themes.dark : themes.light;
+  const Mode = kitTheme === 'light' ? themes.light : themes.dark;
+  const appColor =
+    kitTheme === 'light' ? kitColour[background] : darkKitColour[background];
 
-  // Generate the light and dark mode styles using colorModeStyle
-  const styles = style({
+  const themeStyles = style({
     ...colorModeStyle({
       lightMode,
       darkMode,
@@ -41,7 +46,9 @@ export const AlternateKitProvider: React.FC<KitProviderProps> = ({
 
   return (
     <KitContext.Provider value={{ theme: kitTheme, toggleTheme }}>
-      <div className={clsx(`${themes.base} ${Mode}`, styles, className)}>
+      <div
+        className={clsx(`${themes.base} ${Mode}`, themeStyles, className)}
+        style={{ backgroundColor: appColor }}>
         {children}
       </div>
     </KitContext.Provider>

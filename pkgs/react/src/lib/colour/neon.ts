@@ -14,6 +14,19 @@ export const azure = {
   azure12: '#0044cc',
 } as const;
 
+export const blue = {
+  azure0: '#e7f5ff',
+  azure1: '#d0ebff',
+  azure2: '#a5d8ff',
+  azure3: '#74c0fc',
+  azure4: '#4dabf7',
+  azure5: '#339af0',
+  azure6: '#228be6',
+  azure7: '#1c7ed6',
+  azure8: '#1971c2',
+  azure9: '#1864ab',
+} as const;
+
 export const cherry = {
   cherry0: '#fff0f0',
   cherry1: '#ffcccc',

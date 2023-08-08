@@ -22,7 +22,7 @@ export const kitColour = {
   ...grey,
   ...slate,
 
-  // neon
+  // rest
   ...azure,
   ...cherry,
   ...lime,
@@ -46,7 +46,7 @@ export const darkKitColour = {
   ...greyDark,
   ...slateDark,
 
-  // neon
+  // rest
   ...azure,
   ...cherry,
   ...lime,
@@ -56,3 +56,5 @@ export const darkKitColour = {
 
 export type KitColours = typeof kitColour;
 export type DarkKitColours = typeof darkKitColour;
+
+export type KitColour = keyof KitColours;
