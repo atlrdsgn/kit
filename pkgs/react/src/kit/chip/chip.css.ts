@@ -175,6 +175,7 @@ const variant = styleVariants(VARIANT_COLOR_MAP, (variant) => ({
     boxShadow: variant.onFocus.boxShadow,
   },
 
+  /*
   '@media': {
     '(prefers-color-scheme: dark)': {
       backgroundColor: variant.darkMode.backgroundColor,
@@ -190,6 +191,7 @@ const variant = styleVariants(VARIANT_COLOR_MAP, (variant) => ({
       },
     },
   },
+  */
 }));
 
 /** --------------------------------------------------- */
@@ -215,8 +217,6 @@ const CHIP_ROOT = style({
   fontVariantNumeric: 'tabular-nums',
   gap: '4px',
   maxWidth: 'fit-content',
-
-  '@media': {},
 
   selectors: {
     '&::before': {

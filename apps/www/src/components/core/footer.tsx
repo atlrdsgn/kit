@@ -13,18 +13,20 @@ function GlobalFooter() {
           justify='center'
           gap='xl'>
           <PassLink
-            font='mono'
+            font='system'
             href='/components'
             size='sm'
-            color='carbon8'>
-            components →
+            weight='bold'
+            variant='carbon'>
+            Components →
           </PassLink>
           <PassLink
-            font='mono'
+            font='system'
             href='/colour'
             size='sm'
-            color='carbon8'>
-            colour →
+            weight='normal'
+            variant='carbon'>
+            Colour →
           </PassLink>
         </Flex>
 

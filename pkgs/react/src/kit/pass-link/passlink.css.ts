@@ -79,18 +79,16 @@ export const baseLink = style({
   backgroundColor: 'transparent',
   margin: 0,
   padding: 0,
-  fontWeight: kit.font.weight.MEDIUM,
-  color: kit.color.current,
   // ...
   transition: 'all 0.2s ease-in-out',
 
   ':hover': {
     cursor: 'pointer',
+    textDecoration: 'none',
   },
 
   ':focus': {
     outline: 'none',
-    textDecoration: 'underline',
   },
 
   ':disabled': {

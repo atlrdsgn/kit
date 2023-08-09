@@ -1,4 +1,3 @@
-
 import type { AppProps } from 'next/app';
 import type { NextComponentType, NextPageContext } from 'next';
 

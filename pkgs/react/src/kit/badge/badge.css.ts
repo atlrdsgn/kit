@@ -24,8 +24,6 @@ const COLOR_MAP = {
     onFocus: {
       boxShadow: `0px 0px 0px 3.5px rgba(0, 0, 0, 0.20), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
     },
-
-    onDark: {},
   },
 } as const;
 

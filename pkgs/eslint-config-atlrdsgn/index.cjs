@@ -7,14 +7,14 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
-    'plugin:react-hooks/recommended',
   ],
-  plugins: ['@typescript-eslint', 'prettier', 'react', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'prettier', 'react'],
   settings: {
     react: { version: 'detect' },
     next: { rootDir: ['apps/*/'] },
   },
   rules: {
+    'no-html-link-for-pages': 'off',
     'no-unused-vars': 'off',
     'no-console': 'warn',
     'react/react-in-jsx-scope': 'off',

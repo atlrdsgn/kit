@@ -8,7 +8,7 @@ type Component = {
   name: string;
 };
 
-export const ComponentList = () => () => {
+export const ComponentList = () => {
   const [components, setComponents] = useState<Component[]>([]);
 
   useEffect(() => {

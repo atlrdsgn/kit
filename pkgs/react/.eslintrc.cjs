@@ -17,10 +17,8 @@ module.exports = {
    * not 100% sure if these need to be set,
    * because we are extending the atlrdsgn config
    * which already has these set.
+   *
+   * They in fact do not need to be set.
    */
-  rules: {
-    '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/no-explicit-any': 'warn',
-    '@typescript-eslint/no-var-requires': 'warn',
-  },
+  rules: {},
 };
