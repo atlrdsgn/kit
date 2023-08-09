@@ -10,7 +10,6 @@ import path from 'path';
 
 const peerDeps = Object.keys(peerDependencies);
 const primitiveDeps = [
-  'clsx',
   '@radix-ui/react-dropdown-menu',
   '@radix-ui/react-select',
   '@radix-ui/react-switch',
@@ -19,6 +18,8 @@ const primitiveDeps = [
   '@radix-ui/react-menubar',
   '@radix-ui/react-tabs',
   '@radix-ui/react-label',
+  '@radix-ui/react-slot',
+  'clsx',
 ];
 
 export default defineConfig({
@@ -35,10 +36,10 @@ export default defineConfig({
       external: [...peerDeps, ...primitiveDeps],
       output: {
         globals: {
+          clsx: 'clsx',
           react: 'React',
           'react-dom': 'ReactDom',
           'react/jsx-runtime': 'jsxRuntime',
-          clsx: 'clsx',
 
           '@radix-ui/react-dropdown-menu': 'DROP',
           '@radix-ui/react-select': 'SLCT',
@@ -48,6 +49,7 @@ export default defineConfig({
           '@radix-ui/react-menubar': 'MBAR',
           '@radix-ui/react-tabs': 'TAB',
           '@radix-ui/react-label': 'LABL',
+          '@radix-ui/react-slot': 'SLOT',
         },
       },
     },

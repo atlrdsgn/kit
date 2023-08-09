@@ -1,6 +1,3 @@
-// from './portal'
-export { Portal, type PortalProps } from './portal';
-
 // from './keyframes.css'
 export {
   SDF,

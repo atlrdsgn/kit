@@ -17,10 +17,8 @@ export {
   useTheme,
   KitContext,
   KitProvider,
-  ExtendedKitProvider,
   type KitProviderProps,
   type KitContextValue,
-  type ExtendedKitProps,
   type KitMode,
 } from './provider';
 

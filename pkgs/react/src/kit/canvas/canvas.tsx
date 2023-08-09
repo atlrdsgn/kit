@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import clsx from 'clsx';
 import { canvasWithGrid } from './canvas.grid.css';
 import {
@@ -52,10 +52,14 @@ export type CanvasWithGridProps = BaseCanvasProps &
 export const CanvasWithGrid = React.forwardRef<
   HTMLCanvasElement,
   CanvasWithGridProps
->(({ className, z = 'default', ...rest }, forwardedRef) => {
+>(({ className, ...rest }: CanvasWithGridProps, forwardedRef) => {
+  const canvasRef = forwardedRef as React.RefObject<HTMLCanvasElement>;
+
   useEffect(() => {
-    const canvas = forwardedRef.current;
+    const canvas = canvasRef.current;
+
     if (!canvas) return;
+
     const context = canvas.getContext('2d');
     if (!context) return;
 
@@ -70,17 +74,17 @@ export const CanvasWithGrid = React.forwardRef<
         ctx.lineTo(ctx.canvas.width, y);
       }
 
-      ctx.strokeStyle = '#ddd'; // Change this color to suit your design
+      ctx.strokeStyle = '#ddd';
       ctx.stroke();
     };
 
     drawGrid(context);
-  }, []);
+  }, [canvasRef]); // Use canvasRef instead of forwardedRef
 
   return (
     <canvas
       ref={forwardedRef}
-      className={clsx(className, canvasWithGrid}
+      className={clsx(className, canvasWithGrid)}
       {...rest}
     />
   );
@@ -88,3 +92,4 @@ export const CanvasWithGrid = React.forwardRef<
 
 Canvas.displayName = 'Canvas';
 CanvasBlur.displayName = 'CanvasBlur';
+CanvasWithGrid.displayName = 'CanvasWithGrid';

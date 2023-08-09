@@ -1,21 +1,25 @@
 'use client';
-import React from 'react';
-import { Switch, Flex, useTheme } from '@atlrdsgn/kit';
 
-export const ThemeSwitch = () => {
+import React, { useCallback } from 'react';
+import { Button, Flex, useTheme, type KitMode } from '@atlrdsgn/kit';
+
+export const ThemeSwitch: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
-  const isDarkTheme = theme === 'dark';
 
-  // Handle theme switching when the switch is toggled
-  const handleSwitchChange = (checked: boolean) => {
-    if (checked) {
-      // Set the theme to 'dark' if the switch is checked
-      toggleTheme();
+  const handleSwitchChange = useCallback(() => {
+    let nextTheme: KitMode;
+
+    if (theme === 'light') {
+      nextTheme = 'dark';
+    } else if (theme === 'dark') {
+      nextTheme = 'system';
     } else {
-      // Set the theme to 'light' if the switch is unchecked
-      toggleTheme();
+      nextTheme = 'light';
     }
-  };
+
+    toggleTheme(nextTheme);
+    // Considering toggleTheme now accepts theme mode as argument.
+  }, [theme, toggleTheme]);
 
   return (
     <Flex
@@ -25,13 +29,14 @@ export const ThemeSwitch = () => {
       gap={'xs'}
       wrap={'wrap'}
       style={{ marginBottom: '20px', marginTop: '20px' }}>
-      <Switch
-        size='small'
-        checked={isDarkTheme} // Set the checked state based on the theme mode
-        onCheckedChange={handleSwitchChange} // Call handleSwitchChange when the switch is changed
-      >
-        <Switch.Toggle />
-      </Switch>
+      <Button
+        variant='carbon'
+        size='sm'
+        onClick={handleSwitchChange}>
+        Switch to{' '}
+        {theme === 'light' ? 'dark' : theme === 'dark' ? 'system' : 'light'}{' '}
+        mode
+      </Button>
     </Flex>
   );
 };
