@@ -1,4 +1,5 @@
 import { kit } from '../../lib';
+import { sharedShadows as kitShadow } from '../@shared';
 
 // enum for size variants
 enum ButtonSize {
@@ -91,8 +92,8 @@ const buttonColorProperties = {
   background: {
     [ButtonColor.CARBON]: kit.color.carbon0,
     [ButtonColor.JADE]: kit.color.jade6,
-    [ButtonColor.ORANGE]: kit.color.orange5,
-    [ButtonColor.SAPPHIRE]: kit.color.sapphire5,
+    [ButtonColor.ORANGE]: kit.color.orange4,
+    [ButtonColor.SAPPHIRE]: kit.color.sapphire4,
     [ButtonColor.GHOST]: 'transparent',
   },
   color: {
@@ -106,31 +107,38 @@ const buttonColorProperties = {
     [ButtonColor.CARBON]: kit.color.carbon2,
     [ButtonColor.JADE]: kit.color.jade6,
     [ButtonColor.ORANGE]: kit.color.orange4,
-    [ButtonColor.SAPPHIRE]: kit.color.sapphire5,
+    [ButtonColor.SAPPHIRE]: kit.color.sapphire4,
     [ButtonColor.GHOST]: kit.color.carbon2,
   },
   boxShadow: {
     [ButtonColor.CARBON]: `0px 1px 2px -1px rgba(173, 181, 189, 0.25)`,
-    [ButtonColor.JADE]: `0px 1px 2px -1px rgba(64, 192, 87, 0.25)`,
-    [ButtonColor.ORANGE]: `0px 1px 2px -1px rgba(255, 191, 0, 0.25)`,
-    [ButtonColor.SAPPHIRE]: `0px 1px 2px -1px rgba(17, 12, 34, 0.12)`,
-    [ButtonColor.GHOST]: `0px 1px 2px -1px rgba(173, 181, 189, 0.25)`,
+    [ButtonColor.JADE]: kitShadow.MINI,
+    [ButtonColor.ORANGE]: kitShadow.MINI,
+    [ButtonColor.SAPPHIRE]: kitShadow.MINI,
+    [ButtonColor.GHOST]: kitShadow.MINI,
   },
 
   // hover properties
   onHover: {
     background: {
       [ButtonColor.CARBON]: kit.color.carbon1,
-      [ButtonColor.JADE]: kit.color.jade7,
-      [ButtonColor.ORANGE]: kit.color.orange6,
-      [ButtonColor.SAPPHIRE]: kit.color.sapphire6,
+      [ButtonColor.JADE]: kit.color.jade6,
+      [ButtonColor.ORANGE]: kit.color.orange4,
+      [ButtonColor.SAPPHIRE]: kit.color.sapphire4,
       [ButtonColor.GHOST]: kit.color.transparent,
+    },
+    borderColor: {
+      [ButtonColor.CARBON]: kit.color.carbon2,
+      [ButtonColor.JADE]: kit.color.jade7,
+      [ButtonColor.ORANGE]: kit.color.orange5,
+      [ButtonColor.SAPPHIRE]: kit.color.sapphire5,
+      [ButtonColor.GHOST]: kit.color.carbon2,
     },
     boxShadow: {
       [ButtonColor.CARBON]: `0px 1px 2px 0px rgba(173, 181, 189, 0.40)`,
-      [ButtonColor.JADE]: `0px 1px 2px 0px rgba(64, 192, 87, 0.40)`,
-      [ButtonColor.ORANGE]: `0px 1px 2px 0px rgba(255, 191, 0, 0.40)`,
-      [ButtonColor.SAPPHIRE]: `0px 1px 2px 0px rgba(17, 12, 34, 0.40)`,
+      [ButtonColor.JADE]: `0px 2px 2px 0px rgba(64, 192, 87, 0.40)`,
+      [ButtonColor.ORANGE]: `0px 2px 2px 0px rgba(255, 191, 0, 0.40)`,
+      [ButtonColor.SAPPHIRE]: `0px 2px 2px 0px rgba(17, 12, 34, 0.40)`,
       [ButtonColor.GHOST]: `0px 1px 2px 0px rgba(173, 181, 189, 0.40)`,
     },
   },
@@ -139,9 +147,9 @@ const buttonColorProperties = {
   onFocus: {
     boxShadow: {
       [ButtonColor.CARBON]: `0px 0px 0px 3.5px rgba(173, 181, 189, 0.35), 0px 1px 2px 0px #ADB5BD`,
-      [ButtonColor.JADE]: `0px 0px 0px 3.5px rgba(64, 192, 87, 0.40), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
-      [ButtonColor.ORANGE]: `0px 0px 0px 3.5px rgba(253, 126, 20, 0.40), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
-      [ButtonColor.SAPPHIRE]: `0px 0px 0px 3.5px rgba(103, 90, 162, 0.40), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
+      [ButtonColor.JADE]: `0px 0px 0px 3.5px rgba(64, 192, 87, 0.40), 0px 1px 1px 0px rgba(166, 166, 166, 0.30)`,
+      [ButtonColor.ORANGE]: `0px 0px 0px 3.5px rgba(253, 126, 20, 0.40), 0px 1px 1px 0px rgba(163, 163, 163, 0.30)`,
+      [ButtonColor.SAPPHIRE]: `0px 0px 0px 3.5px rgba(103, 90, 162, 0.40), 0px 1px 1px 0px rgba(140, 140, 140, 0.30)`,
       [ButtonColor.GHOST]: `0px 0px 0px 3.5px rgba(173, 181, 189, 0.35), 0px 1px 2px 0px #ADB5BD`,
     },
   },

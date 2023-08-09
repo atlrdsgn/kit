@@ -28,7 +28,7 @@ export const BackgroundImage = ({
         width={1920}
         height={1080}
         style={{
-          zIndex: 1,
+          zIndex: 0,
           position: 'relative',
           objectFit: 'cover',
           width: '100vw',

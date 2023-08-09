@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Container, Text, Space, PassLink, Flex } from '@atlrdsgn/kit';
+import { Container, Text, Space, Button, PassLink, Flex } from '@atlrdsgn/kit';
 
 function GlobalFooter() {
   return (
@@ -12,14 +12,14 @@ function GlobalFooter() {
         <Flex
           justify='center'
           gap='xl'>
-          <PassLink
-            font='system'
+          <Button
+            target='_self'
             href='/components'
+            font='system'
             size='sm'
-            weight='bold'
             variant='carbon'>
             Components →
-          </PassLink>
+          </Button>
           <PassLink
             font='system'
             href='/colour'

@@ -15,7 +15,7 @@ export {
 } from './keyframes.css';
 
 // from './shadows'
-export { chipShadows, shadowLarge } from './shadows';
+export { sharedShadows, chipShadows, shadowLarge } from './shadows';
 
 // from './style.maps'
 export {

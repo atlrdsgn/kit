@@ -26,7 +26,7 @@ function HomePage() {
           <KitLogo
             className='kitLogo logo'
             width={'180'}
-            height={'37'}
+            height={'80'}
           />
         </div>
       </Canvas>

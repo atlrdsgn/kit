@@ -1,4 +1,3 @@
-import React from 'react';
 import type { IconProps } from '../types';
 
 export const ArrowDownIcon = ({
@@ -18,6 +17,66 @@ export const ArrowDownIcon = ({
         fill={color}
         fillRule='evenodd'
         clipRule='evenodd'
+      />
+    </svg>
+  );
+};
+
+export const ArrowLeftIcon = ({
+  color = 'currentColor',
+  ...props
+}: IconProps) => {
+  return (
+    <svg
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      {...props}>
+      <path
+        d='M6 11.5H18'
+        stroke={color}
+        stroke-width='2'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
+      <path
+        d='M10.5 7L6 11.5L10.5 16'
+        stroke={color}
+        stroke-width='2'
+        stroke-linecap='round'
+        stroke-linejoin='bevel'
+      />
+    </svg>
+  );
+};
+
+export const ArrowRightIcon = ({
+  color = 'currentColor',
+  ...props
+}: IconProps) => {
+  return (
+    <svg
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      {...props}>
+      <path
+        d='M18 11.5L6 11.5'
+        stroke={color}
+        stroke-width='2'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
+      <path
+        d='M13.5 16L18 11.5L13.5 7'
+        stroke={color}
+        stroke-width='2'
+        stroke-linecap='round'
+        stroke-linejoin='bevel'
       />
     </svg>
   );

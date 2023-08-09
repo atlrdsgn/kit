@@ -13,13 +13,46 @@ const SIZE_MAP = {
   },
 } as const;
 
-const COLOR_MAP = {
-  primary: {
+const APPEARANCE_COLOR_MAP = {
+  carbon: {
     backgroundColor: kit.color.carbon0,
     color: kit.color.carbon8,
     border: `1px solid ${kit.color.transparent}`,
     onHover: {
       borderColor: kit.color.carbon1,
+    },
+    onFocus: {
+      boxShadow: `0px 0px 0px 3.5px rgba(0, 0, 0, 0.20), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
+    },
+  },
+  jade: {
+    backgroundColor: kit.color.jade0,
+    color: kit.color.jade8,
+    border: `1px solid ${kit.color.transparent}`,
+    onHover: {
+      borderColor: kit.color.jade1,
+    },
+    onFocus: {
+      boxShadow: `0px 0px 0px 3.5px rgba(0, 0, 0, 0.20), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
+    },
+  },
+  sapphire: {
+    backgroundColor: kit.color.sapphire0,
+    color: kit.color.sapphire8,
+    border: `1px solid ${kit.color.transparent}`,
+    onHover: {
+      borderColor: kit.color.sapphire1,
+    },
+    onFocus: {
+      boxShadow: `0px 0px 0px 3.5px rgba(0, 0, 0, 0.20), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
+    },
+  },
+  orange: {
+    backgroundColor: kit.color.orange0,
+    color: kit.color.orange8,
+    border: `1px solid ${kit.color.transparent}`,
+    onHover: {
+      borderColor: kit.color.orange1,
     },
     onFocus: {
       boxShadow: `0px 0px 0px 3.5px rgba(0, 0, 0, 0.20), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
@@ -32,7 +65,7 @@ const size = styleVariants(SIZE_MAP, (value) => ({
   lineHeight: value.lineHeight,
 }));
 
-const variant = styleVariants(COLOR_MAP, (value) => ({
+const variant = styleVariants(APPEARANCE_COLOR_MAP, (value) => ({
   backgroundColor: value.backgroundColor,
   color: value.color,
   border: value.border,
@@ -97,6 +130,6 @@ export const badge = recipe({
   },
   defaultVariants: {
     size: 'small',
-    variant: 'primary',
+    variant: 'carbon',
   },
 });

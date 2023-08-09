@@ -67,7 +67,7 @@ export type BadgeProps = BaseBadgeProps & BadgeVariantProps;
 
 const BadgeRoot = React.forwardRef<HTMLDivElement, BadgeProps>(
   (
-    { variant = 'primary', size = 'small', className, ...rest },
+    { variant = 'carbon', size = 'small', className, ...rest },
     forwardedRef,
   ) => {
     return (

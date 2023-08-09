@@ -11,7 +11,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
       enableSystem
       attribute='class'>
     */}
-      <KitProvider background='white'>{children}</KitProvider>
+      <KitProvider background='transparent'>{children}</KitProvider>
     </>
   );
 };

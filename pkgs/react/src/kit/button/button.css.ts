@@ -44,7 +44,7 @@ const COLOR_MAP = {
     boxShadow: btnx.color.config.boxShadow.CARBON,
     H: {
       backgroundColor: btnx.color.config.onHover.background.CARBON,
-      borderColor: btnx.color.config.borderColor.CARBON,
+      borderColor: btnx.color.config.onHover.borderColor.CARBON,
       boxShadow: btnx.color.config.onHover.boxShadow.CARBON,
     },
     F: { boxShadow: btnx.color.config.onFocus.boxShadow.CARBON },
@@ -56,7 +56,7 @@ const COLOR_MAP = {
     boxShadow: btnx.color.config.boxShadow.JADE,
     H: {
       backgroundColor: btnx.color.config.onHover.background.JADE,
-      borderColor: btnx.color.config.borderColor.JADE,
+      borderColor: btnx.color.config.onHover.borderColor.JADE,
       boxShadow: btnx.color.config.onHover.boxShadow.JADE,
     },
     F: { boxShadow: btnx.color.config.onFocus.boxShadow.JADE },
@@ -68,7 +68,7 @@ const COLOR_MAP = {
     boxShadow: btnx.color.config.boxShadow.ORANGE,
     H: {
       backgroundColor: btnx.color.config.onHover.background.ORANGE,
-      borderColor: btnx.color.config.borderColor.ORANGE,
+      borderColor: btnx.color.config.onHover.borderColor.ORANGE,
       boxShadow: btnx.color.config.onHover.boxShadow.ORANGE,
     },
     F: { boxShadow: btnx.color.config.onFocus.boxShadow.ORANGE },
@@ -80,7 +80,7 @@ const COLOR_MAP = {
     boxShadow: btnx.color.config.boxShadow.SAPPHIRE,
     H: {
       backgroundColor: btnx.color.config.onHover.background.SAPPHIRE,
-      borderColor: btnx.color.config.borderColor.SAPPHIRE,
+      borderColor: btnx.color.config.onHover.borderColor.SAPPHIRE,
       boxShadow: btnx.color.config.onHover.boxShadow.SAPPHIRE,
     },
     F: { boxShadow: btnx.color.config.onFocus.boxShadow.SAPPHIRE },
@@ -92,7 +92,7 @@ const COLOR_MAP = {
     boxShadow: btnx.color.config.boxShadow.GHOST,
     H: {
       backgroundColor: btnx.color.config.onHover.background.GHOST,
-      borderColor: btnx.color.config.borderColor.GHOST,
+      borderColor: btnx.color.config.onHover.borderColor.GHOST,
       boxShadow: btnx.color.config.onHover.boxShadow.GHOST,
     },
     F: { boxShadow: btnx.color.config.onFocus.boxShadow.GHOST },

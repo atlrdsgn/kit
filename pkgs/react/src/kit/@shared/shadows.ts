@@ -54,3 +54,9 @@ export const chipShadows = {
     focus: `0px 1px 2px rgba(${SLATE_RGB_5}, 0.3), 0px 0px 1px 3px rgba(${SLATE_RGB_3}, 0.4)`, // 0px 1px 2px, 0px 0px 1px 3px
   },
 } as const;
+
+export const sharedShadows = {
+  MINI: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
+  SM: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
+  MD: `0px 3px 6px rgba(149, 157, 165, 0.15)`,
+} as const;
