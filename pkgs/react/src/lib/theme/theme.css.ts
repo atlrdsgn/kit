@@ -53,20 +53,20 @@ export const theme = {
        * (not values, but keys)
        *
        */
-      MINI: '0.875rem', // 14px
-      XS: '1rem', // 16px
-      SM: '1.25rem', // 20px
-      MD: '1.5rem', // 24px
-      LG: '1.75rem', // 28px
-      XL: '1.75rem', // 28px
-      XXL: '2rem', // 32px
-      ['3XL']: '2.25rem', // 36px
-      ['4XL']: '2.5rem', // 40px
-      ['5XL']: '1', // 1
-      ['6XL']: '1', // 1
-      ['7XL']: '1', // 1
-      ['8XL']: '1', // 1
-      ['9XL']: '1', // 1
+      MINI: '14px',
+      XS: '16px',
+      SM: '20px',
+      MD: '24px',
+      LG: '28px',
+      XL: '28px',
+      XXL: '32px',
+      ['3XL']: '36px',
+      ['4XL']: '40px',
+      ['5XL']: '42px',
+      ['6XL']: '44px',
+      ['7XL']: '46px',
+      ['8XL']: '48px',
+      ['9XL']: '50px',
     },
     weight: {
       SUPRLITE: '100',

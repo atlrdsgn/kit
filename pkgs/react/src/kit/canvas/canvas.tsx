@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import clsx from 'clsx';
-
+import { canvasWithGrid } from './canvas.grid.css';
 import {
   type CanvasVariantProps,
   type CanvasZVariants,
@@ -45,6 +45,46 @@ export const CanvasBlur = React.forwardRef<HTMLDivElement, CanvasBlurProps>(
     );
   },
 );
+
+export type CanvasWithGridProps = BaseCanvasProps &
+  React.HTMLAttributes<HTMLCanvasElement>;
+
+export const CanvasWithGrid = React.forwardRef<
+  HTMLCanvasElement,
+  CanvasWithGridProps
+>(({ className, z = 'default', ...rest }, forwardedRef) => {
+  useEffect(() => {
+    const canvas = forwardedRef.current;
+    if (!canvas) return;
+    const context = canvas.getContext('2d');
+    if (!context) return;
+
+    const drawGrid = (ctx: CanvasRenderingContext2D, gridSize = 10) => {
+      for (let x = 0; x <= ctx.canvas.width; x += gridSize) {
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, ctx.canvas.height);
+      }
+
+      for (let y = 0; y <= ctx.canvas.height; y += gridSize) {
+        ctx.moveTo(0, y);
+        ctx.lineTo(ctx.canvas.width, y);
+      }
+
+      ctx.strokeStyle = '#ddd'; // Change this color to suit your design
+      ctx.stroke();
+    };
+
+    drawGrid(context);
+  }, []);
+
+  return (
+    <canvas
+      ref={forwardedRef}
+      className={clsx(className, canvasWithGrid}
+      {...rest}
+    />
+  );
+});
 
 Canvas.displayName = 'Canvas';
 CanvasBlur.displayName = 'CanvasBlur';
