@@ -85,6 +85,18 @@ const COLOR_MAP = {
     },
     F: { boxShadow: btnx.color.config.onFocus.boxShadow.SAPPHIRE },
   },
+  ghost: {
+    backgroundColor: btnx.color.config.background.GHOST,
+    color: btnx.color.config.color.GHOST,
+    borderColor: btnx.color.config.borderColor.GHOST,
+    boxShadow: btnx.color.config.boxShadow.GHOST,
+    H: {
+      backgroundColor: btnx.color.config.onHover.background.GHOST,
+      borderColor: btnx.color.config.borderColor.GHOST,
+      boxShadow: btnx.color.config.onHover.boxShadow.GHOST,
+    },
+    F: { boxShadow: btnx.color.config.onFocus.boxShadow.GHOST },
+  },
 } as const;
 
 const FONT_MAP = {

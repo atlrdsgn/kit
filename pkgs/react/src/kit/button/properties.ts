@@ -14,6 +14,7 @@ enum ButtonColor {
   JADE = 'JADE',
   ORANGE = 'ORANGE',
   SAPPHIRE = 'SAPPHIRE',
+  GHOST = 'GHOST',
 }
 
 // button css globals
@@ -92,24 +93,28 @@ const buttonColorProperties = {
     [ButtonColor.JADE]: kit.color.jade6,
     [ButtonColor.ORANGE]: kit.color.orange5,
     [ButtonColor.SAPPHIRE]: kit.color.sapphire5,
+    [ButtonColor.GHOST]: 'transparent',
   },
   color: {
     [ButtonColor.CARBON]: kit.color.carbon8,
     [ButtonColor.JADE]: kit.color.jade0,
     [ButtonColor.ORANGE]: kit.color.orange0,
     [ButtonColor.SAPPHIRE]: kit.color.sapphire0,
+    [ButtonColor.GHOST]: kit.color.carbon1,
   },
   borderColor: {
     [ButtonColor.CARBON]: kit.color.carbon2,
     [ButtonColor.JADE]: kit.color.jade6,
     [ButtonColor.ORANGE]: kit.color.orange4,
     [ButtonColor.SAPPHIRE]: kit.color.sapphire5,
+    [ButtonColor.GHOST]: kit.color.carbon2,
   },
   boxShadow: {
     [ButtonColor.CARBON]: `0px 1px 2px -1px rgba(173, 181, 189, 0.25)`,
     [ButtonColor.JADE]: `0px 1px 2px -1px rgba(64, 192, 87, 0.25)`,
     [ButtonColor.ORANGE]: `0px 1px 2px -1px rgba(255, 191, 0, 0.25)`,
     [ButtonColor.SAPPHIRE]: `0px 1px 2px -1px rgba(17, 12, 34, 0.12)`,
+    [ButtonColor.GHOST]: `0px 1px 2px -1px rgba(173, 181, 189, 0.25)`,
   },
 
   // hover properties
@@ -119,12 +124,14 @@ const buttonColorProperties = {
       [ButtonColor.JADE]: kit.color.jade7,
       [ButtonColor.ORANGE]: kit.color.orange6,
       [ButtonColor.SAPPHIRE]: kit.color.sapphire6,
+      [ButtonColor.GHOST]: kit.color.transparent,
     },
     boxShadow: {
       [ButtonColor.CARBON]: `0px 1px 2px 0px rgba(173, 181, 189, 0.40)`,
       [ButtonColor.JADE]: `0px 1px 2px 0px rgba(64, 192, 87, 0.40)`,
       [ButtonColor.ORANGE]: `0px 1px 2px 0px rgba(255, 191, 0, 0.40)`,
       [ButtonColor.SAPPHIRE]: `0px 1px 2px 0px rgba(17, 12, 34, 0.40)`,
+      [ButtonColor.GHOST]: `0px 1px 2px 0px rgba(173, 181, 189, 0.40)`,
     },
   },
 
@@ -135,6 +142,7 @@ const buttonColorProperties = {
       [ButtonColor.JADE]: `0px 0px 0px 3.5px rgba(64, 192, 87, 0.40), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
       [ButtonColor.ORANGE]: `0px 0px 0px 3.5px rgba(253, 126, 20, 0.40), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
       [ButtonColor.SAPPHIRE]: `0px 0px 0px 3.5px rgba(103, 90, 162, 0.40), 0px 1px 2px 0px rgba(0, 0, 0, 0.25)`,
+      [ButtonColor.GHOST]: `0px 0px 0px 3.5px rgba(173, 181, 189, 0.35), 0px 1px 2px 0px #ADB5BD`,
     },
   },
 } as const;

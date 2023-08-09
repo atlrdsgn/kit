@@ -1,19 +1,43 @@
 {
   "extends": "@atlrdsgn/tsconfig/next.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
   "compilerOptions": {
-    "plugins": [{ "name": "next" }],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "jsx": "preserve",
     "alwaysStrict": true,
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "@/public/*": ["/public/*"],
-      "@/lib/*": ["./src/lib/*"],
-      "@/*": ["./src/*"],
-      "@/components/*": ["./src/components/*"],
-      "@/ts/*": ["./src/ts/*"],
-      "@/scss/*": ["./src/scss/*"]
+      "@/public/*": [
+        "/public/*"
+      ],
+      "@/lib/*": [
+        "./src/lib/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "@/ts/*": [
+        "./src/ts/*"
+      ],
+      "@/scss/*": [
+        "./src/scss/*"
+      ]
     }
   }
 }
