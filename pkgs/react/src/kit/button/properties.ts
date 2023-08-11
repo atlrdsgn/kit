@@ -92,7 +92,7 @@ const buttonColorProperties = {
   background: {
     [ButtonColor.CARBON]: kit.color.carbon0,
     [ButtonColor.JADE]: kit.color.jade6,
-    [ButtonColor.ORANGE]: kit.color.orange4,
+    [ButtonColor.ORANGE]: kit.color.orange8,
     [ButtonColor.SAPPHIRE]: kit.color.sapphire4,
     [ButtonColor.GHOST]: 'transparent',
   },
@@ -106,7 +106,7 @@ const buttonColorProperties = {
   borderColor: {
     [ButtonColor.CARBON]: kit.color.carbon2,
     [ButtonColor.JADE]: kit.color.jade6,
-    [ButtonColor.ORANGE]: kit.color.orange4,
+    [ButtonColor.ORANGE]: kit.color.orange8,
     [ButtonColor.SAPPHIRE]: kit.color.sapphire4,
     [ButtonColor.GHOST]: kit.color.carbon2,
   },
@@ -123,14 +123,14 @@ const buttonColorProperties = {
     background: {
       [ButtonColor.CARBON]: kit.color.carbon1,
       [ButtonColor.JADE]: kit.color.jade6,
-      [ButtonColor.ORANGE]: kit.color.orange4,
+      [ButtonColor.ORANGE]: kit.color.orange8,
       [ButtonColor.SAPPHIRE]: kit.color.sapphire4,
       [ButtonColor.GHOST]: kit.color.transparent,
     },
     borderColor: {
       [ButtonColor.CARBON]: kit.color.carbon2,
       [ButtonColor.JADE]: kit.color.jade7,
-      [ButtonColor.ORANGE]: kit.color.orange5,
+      [ButtonColor.ORANGE]: kit.color.orange9,
       [ButtonColor.SAPPHIRE]: kit.color.sapphire5,
       [ButtonColor.GHOST]: kit.color.carbon2,
     },
