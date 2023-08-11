@@ -25,6 +25,7 @@ dist-ssr
 
 *.log
 *.local
+*.log.*
 
 .env
 .cache
