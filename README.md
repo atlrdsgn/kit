@@ -1,7 +1,7 @@
 # `ATELIERKIT®`
 
 <a href="https://docs.atlrdsgn.com">
-  <img width="1080" alt="atelierkit" src="https://cdn.atlrdsgn.com/assets/github/atlrdsgn/kit.jpg">
+  <img width="1080" alt="atelierkit" src="https://cdn.atlrdsgn.com/assets/github/atlrdsgn/kit-cover.jpg">
 </a>
 
 An ever– expanding library of [React](https://reactjs.org/) components, primitives, and tools.
