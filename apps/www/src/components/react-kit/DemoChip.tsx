@@ -15,20 +15,20 @@ export const DemoChip = () => {
         style={{ marginBottom: '20px', marginTop: '20px' }}>
         <Chip
           size={'xs'}
-          variant={'slate'}
+          variant={'carbon'}
           shape={'pill'}>
-          xs chip
+          Extra small chip
         </Chip>
         <Chip
           size={'sm'}
-          variant={'slate'}
+          variant={'carbon'}
           shape={'pill'}>
           Small chip
         </Chip>
         <Chip
           size={'md'}
-          variant={'slate'}
-          shape={'pill'}>
+          variant={'carbon'}
+          shape={'rounded'}>
           Medium chip
         </Chip>
       </Flex>
@@ -44,7 +44,7 @@ export const DemoChip = () => {
           size='xs'
           variant='jade'
           shape='pill'>
-          xs chip
+          Extra small chip
         </Chip>
         <Chip
           size='sm'
@@ -69,19 +69,19 @@ export const DemoChip = () => {
         style={{ marginBottom: '20px', marginTop: '20px' }}>
         <Chip
           size='xs'
-          variant='carbon'
+          variant='orange'
           shape='pill'>
-          xs chip
+          Extra small chip
         </Chip>
         <Chip
           size='sm'
-          variant='carbon'
+          variant='orange'
           shape='pill'>
           Small chip
         </Chip>
         <Chip
           size='md'
-          variant='carbon'
+          variant='orange'
           shape='pill'>
           Medium chip
         </Chip>

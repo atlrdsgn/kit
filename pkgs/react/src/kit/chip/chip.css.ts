@@ -30,7 +30,7 @@ const SIZE_MAP = {
 
 const SHAPE_MAP = {
   rounded: {
-    borderRadius: `${BORDER_RADIUS_MEDIUM} !important`,
+    borderRadius: `${BORDER_RADIUS_SMALL} !important`,
   },
   pill: {
     borderRadius: '50px !important',
@@ -55,49 +55,6 @@ const VARIANT_COLOR_MAP = {
     onFocus: {
       boxShadow: chipShadows.primary.focus,
     },
-    darkMode: {
-      backgroundColor: kit.color.carbon8,
-      border: `1px solid ${kit.color.carbon7}`,
-      color: kit.color.carbon3,
-      boxShadow: chipShadows.primary.initial,
-      onHover: {
-        backgroundColor: kit.color.carbon8,
-        border: `1px solid ${kit.color.carbon6}`,
-        color: kit.color.carbon3,
-        boxShadow: chipShadows.primary.hover,
-      },
-    },
-  },
-  /**
-   *
-   * @slate
-   */
-  slate: {
-    backgroundColor: kit.color.slate1,
-    border: `1px solid ${kit.color.slate3}`,
-    color: kit.color.slate5,
-    boxShadow: chipShadows.primary.initial,
-    onHover: {
-      backgroundColor: kit.color.slate1,
-      border: `1px solid ${kit.color.slate4}`,
-      color: kit.color.slate5,
-      boxShadow: chipShadows.primary.hover,
-    },
-    onFocus: {
-      boxShadow: chipShadows.primary.focus,
-    },
-    darkMode: {
-      backgroundColor: kit.color.slate8,
-      border: `1px solid ${kit.color.slate7}`,
-      color: kit.color.slate3,
-      boxShadow: chipShadows.primary.initial,
-      onHover: {
-        backgroundColor: kit.color.slate8,
-        border: `1px solid ${kit.color.slate6}`,
-        color: kit.color.slate3,
-        boxShadow: chipShadows.primary.hover,
-      },
-    },
   },
   /**
    *
@@ -117,17 +74,24 @@ const VARIANT_COLOR_MAP = {
     onFocus: {
       boxShadow: chipShadows.primary.focus,
     },
-    darkMode: {
-      backgroundColor: kit.color.jade8,
-      border: `1px solid ${kit.color.jade7}`,
-      color: kit.color.jade3,
-      boxShadow: chipShadows.primary.initial,
-      onHover: {
-        backgroundColor: kit.color.jade8,
-        border: `1px solid ${kit.color.jade6}`,
-        color: kit.color.jade3,
-        boxShadow: chipShadows.primary.hover,
-      },
+  },
+  /**
+   *
+   * @orange
+   */
+  orange: {
+    backgroundColor: kit.color.orange3,
+    border: `1px solid ${kit.color.orange4}`,
+    color: kit.color.slate5,
+    boxShadow: chipShadows.primary.initial,
+    onHover: {
+      backgroundColor: kit.color.orange3,
+      border: `1px solid ${kit.color.orange4}`,
+      color: kit.color.orange9,
+      boxShadow: chipShadows.primary.hover,
+    },
+    onFocus: {
+      boxShadow: chipShadows.primary.focus,
     },
   },
 } as const;
@@ -174,24 +138,6 @@ const variant = styleVariants(VARIANT_COLOR_MAP, (variant) => ({
   ':focus': {
     boxShadow: variant.onFocus.boxShadow,
   },
-
-  /*
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: variant.darkMode.backgroundColor,
-      border: variant.darkMode.border,
-      color: variant.darkMode.color,
-      boxShadow: variant.darkMode.boxShadow,
-
-      ':hover': {
-        backgroundColor: variant.darkMode.onHover.backgroundColor,
-        border: variant.darkMode.onHover.border,
-        color: variant.darkMode.onHover.color,
-        boxShadow: variant.darkMode.onHover.boxShadow,
-      },
-    },
-  },
-  */
 }));
 
 /** --------------------------------------------------- */

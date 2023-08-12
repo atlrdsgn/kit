@@ -1,5 +1,5 @@
 import { kitColour, darkKitColour } from '../colour';
-import type { ColorTypes } from './vars.css';
+import { type ColorTypes } from './vars.css';
 
 export const theme = {
   media: {

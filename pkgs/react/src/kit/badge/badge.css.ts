@@ -65,7 +65,7 @@ const size = styleVariants(SIZE_MAP, (value) => ({
   lineHeight: value.lineHeight,
 }));
 
-const variant = styleVariants(APPEARANCE_COLOR_MAP, (value) => ({
+const appearance = styleVariants(APPEARANCE_COLOR_MAP, (value) => ({
   backgroundColor: value.backgroundColor,
   color: value.color,
   border: value.border,
@@ -94,14 +94,11 @@ const badgeRootLayout = style({
   justifyContent: 'center',
   gap: '8px',
   margin: 'auto',
-
   paddingTop: 3,
   paddingBottom: 3,
   paddingLeft: 3,
   paddingRight: 10,
-
   borderRadius: kit.radii.PILL,
-
   mixBlendMode: 'multiply',
 
   ':hover': {
@@ -120,16 +117,16 @@ export const badgeContent = style({
 });
 
 export type BadgeSizeVariants = keyof typeof size;
-export type BadgeColorVariants = keyof typeof variant;
+export type BadgeColorVariants = keyof typeof appearance;
 export type BadgeVariantProps = RecipeVariants<typeof badge>;
 export const badge = recipe({
   base: badgeRootLayout,
   variants: {
     size,
-    variant,
+    appearance,
   },
   defaultVariants: {
     size: 'small',
-    variant: 'carbon',
+    appearance: 'carbon',
   },
 });

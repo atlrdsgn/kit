@@ -2,14 +2,12 @@ import React from 'react';
 import * as KitChip from '../chip/chip';
 import * as CSS from './badge.css';
 import clsx from 'clsx';
+import { BadgeIcon } from './badge.icons';
 import {
   type BadgeVariantProps,
   type BadgeSizeVariants,
   type BadgeColorVariants,
 } from './badge.css';
-
-// icon
-import { BadgeIcon } from './badge.icons';
 
 /**
  *
@@ -59,7 +57,7 @@ export const BadgeContent = React.forwardRef<
 
 // root
 interface BaseBadgeProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: BadgeColorVariants;
+  appearance?: BadgeColorVariants;
   size?: BadgeSizeVariants;
 }
 
@@ -67,14 +65,14 @@ export type BadgeProps = BaseBadgeProps & BadgeVariantProps;
 
 const BadgeRoot = React.forwardRef<HTMLDivElement, BadgeProps>(
   (
-    { variant = 'carbon', size = 'small', className, ...rest },
+    { appearance = 'carbon', size = 'small', className, ...rest },
     forwardedRef,
   ) => {
     return (
       <div
         {...rest}
         ref={forwardedRef}
-        className={clsx(CSS.badge({ size, variant }), className)}
+        className={clsx(CSS.badge({ size, appearance }), className)}
       />
     );
   },

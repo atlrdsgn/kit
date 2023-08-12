@@ -25,8 +25,8 @@ function HomePage() {
         <div className='center'>
           <KitLogo
             className='kitLogo logo'
-            width={'180'}
-            height={'80'}
+            width={'120'}
+            height={'75'}
           />
         </div>
       </Canvas>
