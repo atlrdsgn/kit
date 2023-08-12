@@ -212,6 +212,19 @@ export const themeVars = createThemeContract({
     orange11: null,
     orange12: null,
 
+    mauve1: null,
+    mauve2: null,
+    mauve3: null,
+    mauve4: null,
+    mauve5: null,
+    mauve6: null,
+    mauve7: null,
+    mauve8: null,
+    mauve9: null,
+    mauve10: null,
+    mauve11: null,
+    mauve12: null,
+
     // neutrals
     carbon0: null,
     carbon1: null,

@@ -51,6 +51,11 @@ const COLOR_VARIANTS = {
     color: kit.color.jade10,
     borderColor: kit.color.jade4,
   },
+  mauve: {
+    backgroundColor: kit.color.mauve9,
+    color: kit.color.mauve11,
+    borderColor: kit.color.mauve10,
+  },
 } as const;
 
 /** ----------------- variants ---------------------- */

@@ -5,6 +5,7 @@ import { grey, greyDark } from './grey';
 import { sapphire, sapphireDark } from './sapphire';
 import { slate, slateDark } from './slate';
 import { orange, orangeDark } from './orange';
+import { mauve, mauveDark } from './mauve/mauve';
 
 export const kitColour = {
   transparent: 'transparent',
@@ -16,6 +17,7 @@ export const kitColour = {
   ...jade,
   ...sapphire,
   ...orange,
+  ...mauve,
 
   // neutrals
   ...carbon,
@@ -40,6 +42,7 @@ export const darkKitColour = {
   ...jadeDark,
   ...sapphireDark,
   ...orangeDark,
+  ...mauveDark,
 
   // neutrals
   ...carbonDark,

@@ -8,7 +8,7 @@ export const DemoBadge = () => {
     <ComponentWrapper label='badge'>
       <Badge
         size='small'
-        variant='jade'>
+        appearance='jade'>
         <Badge.Label
           size='xs'
           variant='jade'>

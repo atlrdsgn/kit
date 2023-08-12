@@ -5,7 +5,7 @@ import ComponentWrapper from '../core/component.wrapper';
 
 export const DemoInput = () => {
   return (
-    <ComponentWrapper label='switch'>
+    <ComponentWrapper label='input'>
       <Flex
         direction={'row'}
         align={'center'}

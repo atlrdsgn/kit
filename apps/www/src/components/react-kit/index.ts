@@ -1,4 +1,5 @@
 export * from './DemoBadge';
+export * from './DemoBanner';
 export * from './DemoButton';
 export * from './DemoChip';
 export * from './DemoContainer';
