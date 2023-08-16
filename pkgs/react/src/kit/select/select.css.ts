@@ -4,7 +4,7 @@ import { SDF, SUF, eighty } from '../@shared';
 
 const TRGGR_PADDING_LEFT = '14px';
 const TRGGR_PADDING_RIGHT = '10px';
-const TRGGR_RADII = kit.radii.XS;
+const TRGGR_RADII = kit.radii.SM;
 const CONTENT_RADII = kit.radii.LG;
 const ITEM_RADII = kit.radii.XS;
 

@@ -12,7 +12,9 @@ export type Atoms = Sprinkles & {
 export const atoms = ({ reset, ...rest }: Atoms) => {
   const sprinklesClasses = sprinkles(rest);
 
-  const resetClass = reset ? [styleRes.base, styleRes.element[reset]] : null;
+  const resetClass = reset
+    ? [styleRes.base, styleRes.element[reset as keyof typeof styleRes.element]]
+    : null;
 
   return clsx(resetClass, sprinklesClasses);
 };

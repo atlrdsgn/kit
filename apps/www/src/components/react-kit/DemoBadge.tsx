@@ -8,10 +8,10 @@ export const DemoBadge = () => {
     <ComponentWrapper label='badge'>
       <Badge
         size='small'
-        appearance='jade'>
+        appearance='carbon'>
         <Badge.Label
           size='xs'
-          variant='jade'>
+          variant='carbon'>
           Label
         </Badge.Label>
         <Badge.Content content='Sint velit irure officia lorem ipsum.' />

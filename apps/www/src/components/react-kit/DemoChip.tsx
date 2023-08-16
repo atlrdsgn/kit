@@ -26,6 +26,7 @@ export const DemoChip = () => {
           Small chip
         </Chip>
         <Chip
+          removeShadow
           size={'md'}
           variant={'carbon'}
           shape={'rounded'}>

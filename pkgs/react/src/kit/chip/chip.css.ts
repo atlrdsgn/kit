@@ -82,7 +82,7 @@ const VARIANT_COLOR_MAP = {
   orange: {
     backgroundColor: kit.color.orange3,
     border: `1px solid ${kit.color.orange4}`,
-    color: kit.color.slate5,
+    color: kit.color.orange8,
     boxShadow: chipShadows.primary.initial,
     onHover: {
       backgroundColor: kit.color.orange3,

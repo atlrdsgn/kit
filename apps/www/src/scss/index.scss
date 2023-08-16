@@ -3,7 +3,7 @@
 
 :root {
   --pure-white: #fff;
-  --pure-black: #000;
+  --pure-black: #121212;
   --athens-gray: #fcfaf9;
   --shark-gray: #121212;
   --inspect: #f00;
@@ -72,6 +72,8 @@ html {
 
 html,
 body {
+  background-color: var(--pure-white) !important;
+  color: var(--pure-black) !important;
   font-family: var(--font-inter) !important;
 }
 
@@ -123,13 +125,6 @@ body:not(.user-is-tabbing) textarea:focus {
   -webkit-text-fill-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  .component-wrapper {
-    box-shadow: inset 0 0 0 1.4px #212326 !important;
-    background-color: #1d1d1d !important;
-  }
-}
-
 @supports (font-variation-settings: normal) {
   html {
     font-family: 'Inter var', 'system-ui', sans-serif;
@@ -149,8 +144,6 @@ body {
   scroll-behavior: smooth;
   padding: 0;
   margin: auto;
-
-  // margin-left: var(--aside-width) !important;
 }
 
 .component-wrapper {

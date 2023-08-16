@@ -15,9 +15,9 @@ export const carbon = {
 } as const;
 
 export const carbonDark = {
-  carbon0: 'rgba(0, 2, 3, 1)',
-  carbon1: 'rgba(0, 2, 3, 1)',
-  carbon2: 'rgba(0, 2, 3, 1)',
+  carbon0: carbon.carbon9,
+  carbon1: carbon.carbon8,
+  carbon2: carbon.carbon7,
   carbon3: 'rgba(13, 17, 17, 1)',
   carbon4: 'rgba(45, 55, 55, 1)',
   carbon5: 'rgba(60, 70, 70, 1)',

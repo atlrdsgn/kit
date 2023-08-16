@@ -63,25 +63,7 @@ export const dropTrigger = style({
     WebkitFilter: 'saturate(0.2) opacity(0.5)',
     cursor: 'not-allowed',
   },
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon9,
-      color: kit.color.carbon0,
-      borderColor: kit.color.carbon9,
 
-      ':focus': {
-        outline: 'none',
-        backgroundColor: kit.color.carbon9,
-        color: kit.color.carbon2,
-        borderColor: kit.color.carbon7,
-      },
-      ':hover': {
-        backgroundColor: kit.color.carbon9,
-        color: kit.color.carbon0,
-        borderColor: kit.color.carbon8,
-      },
-    },
-  },
   selectors: {},
 });
 
@@ -98,7 +80,6 @@ export const dropContent = style({
    * --radix-dropdown-menu-trigger-height
    */
   maxWidth: '220px',
-  // minWidth: `var(--radix-dropdown-menu-content-available-width)`,
   width: `var(--radix-dropdown-menu-trigger-width)`,
 
   zIndex: kit.z.indice.MAX,
@@ -120,12 +101,6 @@ export const dropContent = style({
     outline: 'none',
     boxShadow:
       'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
-  },
-
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon9,
-    },
   },
 
   selectors: {
@@ -171,6 +146,7 @@ export const dropItem = style({
     cursor: 'not-allowed',
   },
 
+  /*
   '@media': {
     '(prefers-color-scheme: dark)': {
       backgroundColor: kit.color.carbon9,
@@ -192,7 +168,7 @@ export const dropItem = style({
       },
     },
   },
-
+*/
   selectors: {
     '&[data-highlighted]': {
       backgroundColor: kit.color.sapphire4,
@@ -221,10 +197,6 @@ export const dropSeparator = style({
   justifyContent: 'center',
 
   backgroundColor: kit.color.carbon1,
-
-  '@media': {
-    '(prefers-color-scheme: dark)': { backgroundColor: kit.color.carbon8 },
-  },
 });
 
 // sub-menu
