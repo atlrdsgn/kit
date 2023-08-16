@@ -1,10 +1,12 @@
 import React from 'react';
 import { button } from './button.css';
+import { motion, type MotionProps } from 'framer-motion';
 import { type BASE_BUTTON_PROPS } from './button.types';
 import { type ButtonVariantProps } from './button.css';
 
 type ButtonElementProps = BASE_BUTTON_PROPS &
   ButtonVariantProps &
+  MotionProps &
   React.ButtonHTMLAttributes<HTMLButtonElement> &
   React.AnchorHTMLAttributes<HTMLAnchorElement>;
 export type ButtonProps = ButtonElementProps;
@@ -29,6 +31,12 @@ export const Button = ({
     onClick(event);
   };
 
+  const motionVariants = {
+    hover: {
+      scale: 1.02, // You can adjust the scale factor as needed
+    },
+  };
+
   if (href) {
     /**
      * href provided,
@@ -36,15 +44,17 @@ export const Button = ({
      * same styles.
      */
     return (
-      <a
+      <motion.a
         {...rest}
         href={href}
         target={target}
         rel={rel}
         onClick={onClick}
+        variants={motionVariants}
+        whileHover='hover'
         className={button({ size, variant, font })}>
         {children}
-      </a>
+      </motion.a>
     );
   } else {
     /**
@@ -52,13 +62,15 @@ export const Button = ({
      * render as button.
      */
     return (
-      <button
+      <motion.button
         {...rest}
         type={type}
+        variants={motionVariants}
+        whileHover='hover'
         className={button({ size, variant, font })}
         onClick={handleClick}>
         {children}
-      </button>
+      </motion.button>
     );
   }
 };

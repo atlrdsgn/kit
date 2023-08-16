@@ -1,6 +1,7 @@
 import React from 'react';
 
 export type AllOrNone<T> = T | { [K in keyof T]?: never };
+export type MaybePromise<TType> = Promise<TType> | TType;
 
 /*
  * Disallow string from React.ReactNode

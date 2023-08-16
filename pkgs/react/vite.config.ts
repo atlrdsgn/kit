@@ -20,6 +20,7 @@ const primitiveDeps = [
   '@radix-ui/react-label',
   '@radix-ui/react-slot',
   'clsx',
+  'framer-motion',
 ];
 
 export default defineConfig({
@@ -36,6 +37,7 @@ export default defineConfig({
       external: [...peerDeps, ...primitiveDeps],
       output: {
         globals: {
+          motion: 'framer-motion',
           clsx: 'clsx',
           react: 'React',
           'react-dom': 'ReactDom',
