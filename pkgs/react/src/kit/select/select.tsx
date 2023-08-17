@@ -1,7 +1,7 @@
 import React from 'react';
 import * as SLCT from '@radix-ui/react-select';
 import * as CSS from './select.css';
-// import { Portal } from '../@shared';
+
 import {
   ArrowDownIcon,
   IndicateIcon,
@@ -9,8 +9,6 @@ import {
   SmallArrowUpIcon,
 } from '../svg.icons';
 import clsx from 'clsx';
-
-// const SelectPortal = Portal;
 
 const SelectGroup = SLCT.Group;
 const SelectValue = SLCT.Value;
