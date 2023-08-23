@@ -2,11 +2,14 @@
   "name": "kit",
   "description": "an ever– expanding library of React components by @atlrdsgn",
   "private": true,
-  "packageManager": "pnpm@8.6.12",
   "author": "chvndler",
   "license": "MIT",
+  "workspaces": [
+    "docs",
+    "apps/*",
+    "pkgs/*"
+  ],
   "scripts": {
-    "env:dev": "cross-env NODE_ENV=development",
     "build": "turbo build",
     "build:kit": "turbo build --filter=kit",
     "build:apps": "turbo build --filter='./apps/*'",
@@ -20,7 +23,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "eslint": "^8.45.0",
-    "eslint-config-atlrdsgn": "workspace:0.0.1",
+    "eslint-config-atlrdsgn": "*",
     "prettier": "^3.0.0",
     "turbo": "^1.10.7"
   }
