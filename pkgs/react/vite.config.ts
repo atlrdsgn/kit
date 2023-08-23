@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite';
 // import { peerDependencies } from './package.json';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
+import { resolve } from 'path';
 
 import react from '@vitejs/plugin-react';
 import zipPack from 'vite-plugin-zip-pack';
 import banner from 'vite-plugin-banner';
 import dts from 'vite-plugin-dts';
-import path from 'path';
 
 // const peerDeps = Object.keys(peerDependencies);
 
@@ -26,15 +26,22 @@ const primitiveDeps = [
   'framer-motion',
 ];
 
+/** @type {import('vite').UserConfig} */
 export default defineConfig({
+  optimizeDeps: {
+    include: ['linked-dep'],
+  },
   build: {
     target: 'esnext',
     sourcemap: true,
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
+      entry: resolve(__dirname, 'src/index.ts'),
       name: 'kit',
       fileName: (format) => (format === 'es' ? 'index.esm.js' : 'index.js'),
       formats: ['es', 'cjs'],
+    },
+    commonjsOptions: {
+      include: [/linked-dep/, /node_modules/],
     },
     rollupOptions: {
       external: [...peerDeps, ...primitiveDeps],
