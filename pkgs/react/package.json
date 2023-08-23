@@ -33,7 +33,7 @@
     "release": "npm publish --access public",
     "dev:release": "npm publish --access private",
     "npm:login": "npm login --registry=https://npm.pkg.github.com --scope=@atlrdsgn",
-    "pretty": "prettier --write src/**/*.{ts,tsx,js,jsx,json,css,md}"
+    "pretty": "prettier --write src/**/*.{ts,tsx,json,md}"
   },
   "peerDependencies": {
     "react": "^18.2.0",

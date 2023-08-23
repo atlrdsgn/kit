@@ -1,4 +1,4 @@
-let storedTheme: string | null =
+const storedTheme: string | null =
   localStorage.getItem('theme') ||
   (window.matchMedia('(prefers-color-scheme: dark)').matches
     ? 'dark'
@@ -7,7 +7,7 @@ if (storedTheme)
   document.documentElement.setAttribute('data-theme', storedTheme);
 
 function toggleDarkMode(): void {
-  let currentTheme: string | null =
+  const currentTheme: string | null =
     document.documentElement.getAttribute('data-theme');
   let targetTheme: string = 'light';
 
@@ -24,7 +24,7 @@ function toggleDarkMode(): void {
       toggle.classList.add('from-rose-500', 'to-fuchsia-500');
     }
   }
-  console.debug('toggleDarkMode', targetTheme);
+
   document.documentElement.setAttribute('data-theme', targetTheme);
   localStorage.setItem('theme', targetTheme);
   if (toggle) {

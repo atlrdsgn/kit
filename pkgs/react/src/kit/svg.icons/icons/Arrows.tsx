@@ -37,16 +37,16 @@ export const ArrowLeftIcon = ({
       <path
         d='M6 11.5H18'
         stroke={color}
-        stroke-width='2'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M10.5 7L6 11.5L10.5 16'
         stroke={color}
-        stroke-width='2'
-        stroke-linecap='round'
-        stroke-linejoin='bevel'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='bevel'
       />
     </svg>
   );
@@ -67,16 +67,16 @@ export const ArrowRightIcon = ({
       <path
         d='M18 11.5L6 11.5'
         stroke={color}
-        stroke-width='2'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M13.5 16L18 11.5L13.5 7'
         stroke={color}
-        stroke-width='2'
-        stroke-linecap='round'
-        stroke-linejoin='bevel'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='bevel'
       />
     </svg>
   );

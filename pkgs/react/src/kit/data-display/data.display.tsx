@@ -26,6 +26,8 @@ const DataLabelComponent = React.forwardRef<
   );
 });
 
+DataLabelComponent.displayName = 'DataLabel';
+
 /** ------------- Root ------------ */
 
 export type DataDisplayProps = {

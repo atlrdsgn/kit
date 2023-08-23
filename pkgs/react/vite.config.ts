@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import { peerDependencies } from './package.json';
+// import { peerDependencies } from './package.json';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 
 import react from '@vitejs/plugin-react';
@@ -8,7 +8,10 @@ import banner from 'vite-plugin-banner';
 import dts from 'vite-plugin-dts';
 import path from 'path';
 
-const peerDeps = Object.keys(peerDependencies);
+// const peerDeps = Object.keys(peerDependencies);
+
+const peerDeps = ['react', 'react-dom', 'react/jsx-runtime'];
+
 const primitiveDeps = [
   '@radix-ui/react-dropdown-menu',
   '@radix-ui/react-select',
@@ -76,7 +79,7 @@ export default defineConfig({
     }),
     vanillaExtractPlugin({
       identifiers: 'short',
-      emitCssInSsr: true,
+      // emitCssInSsr: true,
     }),
     banner(`
     * @atlrdsgn/kit v${process.env.npm_package_version} 

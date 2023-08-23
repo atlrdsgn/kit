@@ -4,7 +4,7 @@ module.exports = {
   env: { node: true, browser: true },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: latest, // Allows for the parsing of modern ECMAScript features
+    ecmaVersion: 2021, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports and exports
     ecmaFeatures: {
       jsx: true, // allows for the parsing of JSX

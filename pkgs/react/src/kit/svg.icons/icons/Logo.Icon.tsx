@@ -23,9 +23,9 @@ export const ATLRIcon = ({
         d='M9.6 20H14.4C18.4 20 20 18.4 20 14.4V9.6C20 5.6 18.4 4 14.4 4H9.6C5.6 4 4 5.6 4 9.6V14.4C4 18.4 5.6 20 9.6 20Z'
         fill='#495057'
         stroke='#495057'
-        stroke-width='1.8'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='1.8'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
         d='M9.87434 9.14285L6.28577 14.8571H9.34862L9.88577 13.9429H14.0572L14.5829 14.8571H17.7143L14.1258 9.14285H9.87434ZM10.6515 12.6171L11.9772 10.3543L13.2801 12.6171H10.6515Z'

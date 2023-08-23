@@ -22,3 +22,5 @@ export const Slot = React.forwardRef<
     </SLOT.Root>
   </>
 ));
+
+Slot.displayName = 'Slot';

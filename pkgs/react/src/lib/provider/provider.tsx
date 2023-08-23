@@ -34,7 +34,7 @@ export const KitProvider: React.FC<KitProviderProps> = ({
     const systemPrefMediaQuery = window.matchMedia(
       '(prefers-color-scheme: dark)',
     );
-    const systemPreferenceListener = (event: { matches: any }) => {
+    const systemPreferenceListener = (event: { matches: boolean }) => {
       if (kitTheme === 'system') setTheme(event.matches ? 'dark' : 'light');
     };
 
