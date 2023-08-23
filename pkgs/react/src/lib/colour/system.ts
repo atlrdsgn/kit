@@ -1,11 +1,11 @@
 import { azure, cherry, lime, lemon, hyper } from './neon';
-import { carbon, carbonDark } from './carbon';
-import { jade, jadeDark } from './jade';
-import { grey, greyDark } from './grey';
-import { sapphire, sapphireDark } from './sapphire';
-import { slate, slateDark } from './slate';
-import { orange, orangeDark } from './orange';
-import { mauve, mauveDark } from './mauve/mauve';
+import { carbon } from './carbon';
+import { jade } from './jade';
+import { grey } from './grey';
+import { sapphire } from './sapphire';
+import { slate } from './slate';
+import { orange } from './orange';
+import { mauve } from './mauve/mauve';
 
 export const kitColour = {
   transparent: 'transparent',
@@ -39,15 +39,15 @@ export const darkKitColour = {
   black: '#000000',
 
   // core
-  ...jadeDark,
-  ...sapphireDark,
-  ...orangeDark,
-  ...mauveDark,
+  ...jade,
+  ...sapphire,
+  ...orange,
+  ...mauve,
 
   // neutrals
-  ...carbonDark,
-  ...greyDark,
-  ...slateDark,
+  ...carbon,
+  ...grey,
+  ...slate,
 
   // rest
   ...azure,
