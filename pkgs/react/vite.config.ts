@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import { resolve } from 'path';
 
-// import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react';
 import zipPack from 'vite-plugin-zip-pack';
 import banner from 'vite-plugin-banner';
 import dts from 'vite-plugin-dts';
@@ -59,6 +59,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    react(),
     dts({
       entryRoot: 'src',
       outDir: 'dist/types',
