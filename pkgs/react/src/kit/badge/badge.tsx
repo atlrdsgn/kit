@@ -28,7 +28,7 @@ const BadgeLabel: React.FC<LabelProps> = (props) => {
     <KitChip.Chip
       size='xs'
       shape='pill'
-      variant='slate'
+      variant='carbon'
       removeShadow
       {...props}
     />

@@ -1,18 +1,16 @@
 import { defineConfig } from 'vite';
-// import { peerDependencies } from './package.json';
+
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import { resolve } from 'path';
 
-import react from '@vitejs/plugin-react';
+// import react from '@vitejs/plugin-react';
 import zipPack from 'vite-plugin-zip-pack';
 import banner from 'vite-plugin-banner';
 import dts from 'vite-plugin-dts';
 
-// const peerDeps = Object.keys(peerDependencies);
-
-const peerDeps = ['react', 'react-dom', 'react/jsx-runtime'];
-
 const primitiveDeps = [
+  'react',
+  'react-dom',
   '@radix-ui/react-dropdown-menu',
   '@radix-ui/react-select',
   '@radix-ui/react-switch',
@@ -28,9 +26,6 @@ const primitiveDeps = [
 
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
-  optimizeDeps: {
-    include: ['linked-dep'],
-  },
   build: {
     target: 'esnext',
     sourcemap: true,
@@ -40,11 +35,8 @@ export default defineConfig({
       fileName: (format) => (format === 'es' ? 'index.esm.js' : 'index.js'),
       formats: ['es', 'cjs'],
     },
-    commonjsOptions: {
-      include: [/linked-dep/, /node_modules/],
-    },
     rollupOptions: {
-      external: [...peerDeps, ...primitiveDeps],
+      external: [...primitiveDeps],
       output: {
         globals: {
           motion: 'framer-motion',
@@ -67,11 +59,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    react(),
-    zipPack({
-      outDir: 'prod.package',
-      outFileName: `kit.[${process.env.npm_package_version}].zip`,
-    }),
     dts({
       entryRoot: 'src',
       outDir: 'dist/types',
@@ -98,5 +85,10 @@ export default defineConfig({
     * Copyright © 2023 atlrdsgn®. 
     * All rights reserved.
     `),
+
+    zipPack({
+      outDir: 'prod.package',
+      outFileName: `kit.[${process.env.npm_package_version}].zip`,
+    }),
   ],
 });

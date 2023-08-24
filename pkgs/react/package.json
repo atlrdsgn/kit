@@ -35,10 +35,6 @@
     "npm:login": "npm login --registry=https://npm.pkg.github.com --scope=@atlrdsgn",
     "pretty": "prettier --write src/**/*.{ts,tsx,json,md}"
   },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.0.5",
     "@radix-ui/react-label": "^2.0.2",
@@ -50,7 +46,9 @@
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tabs": "^1.0.4",
     "clsx": "^2.0.0",
-    "framer-motion": "^10.16.0"
+    "framer-motion": "^10.16.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@atlrdsgn/tsconfig": "*",
