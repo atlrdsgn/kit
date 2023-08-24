@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   root: true,
   // → ESLint to load [eslint-config-atlrdsgn].
