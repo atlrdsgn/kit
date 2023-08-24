@@ -9,8 +9,6 @@ import banner from 'vite-plugin-banner';
 import dts from 'vite-plugin-dts';
 
 const primitiveDeps = [
-  'react',
-  'react-dom',
   '@radix-ui/react-dropdown-menu',
   '@radix-ui/react-select',
   '@radix-ui/react-switch',
@@ -20,7 +18,6 @@ const primitiveDeps = [
   '@radix-ui/react-tabs',
   '@radix-ui/react-label',
   '@radix-ui/react-slot',
-  'clsx',
   'framer-motion',
 ];
 
@@ -36,15 +33,19 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: [...primitiveDeps],
+      external: [
+        'clsx',
+        'react',
+        'react-dom',
+        'react/jsx-runtime',
+        ...primitiveDeps,
+      ],
       output: {
         globals: {
-          motion: 'framer-motion',
           clsx: 'clsx',
           react: 'React',
           'react-dom': 'ReactDom',
           'react/jsx-runtime': 'jsxRuntime',
-
           '@radix-ui/react-dropdown-menu': 'DROP',
           '@radix-ui/react-select': 'SLCT',
           '@radix-ui/react-switch': 'SWI',
