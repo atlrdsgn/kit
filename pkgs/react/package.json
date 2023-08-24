@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
+  "sideEffects": false,
   "files": [
-    "dist"
+    "dist/**"
   ],
   "exports": {
     ".": {
@@ -29,7 +30,7 @@
     "build": "vite build",
     "build:types": "yarn tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
     "lint": "eslint . --ext .js,.ts,.tsx",
-    "clean": "rm -rf node_modules && rm -rf dist && rm -rf prod.package/*",
+    "clean": "rm -rf node_modules && rm -rf dist && rm -rf prod.package/* && rm -rf .turbo",
     "release": "npm publish --access public",
     "dev:release": "npm publish --access private",
     "npm:login": "npm login --registry=https://npm.pkg.github.com --scope=@atlrdsgn",
@@ -51,7 +52,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@atlrdsgn/tsconfig": "*",
+    "@atlrdsgn/tsconfig": "workspace:*",
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
@@ -63,7 +64,7 @@
     "@vanilla-extract/vite-plugin": "^3.8.2",
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.45.0",
-    "eslint-config-atlrdsgn": "*",
+    "eslint-config-atlrdsgn": "workspace:*",
     "prettier": "^3.0.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.4",

@@ -4,6 +4,9 @@
   "exclude": ["node_modules", "dist", "prod.package", "build"],
   "compilerOptions": {
     "rootDir": ".",
-    "outDir": "dist/types"
+    "outDir": "dist/types",
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   }
 }
