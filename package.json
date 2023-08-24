@@ -4,6 +4,7 @@
   "private": true,
   "author": "chvndler",
   "license": "MIT",
+  "packageManager": "pnpm@8.6.12",
   "workspaces": [
     "docs",
     "apps/*",
