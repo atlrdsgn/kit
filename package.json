@@ -4,7 +4,11 @@
   "private": true,
   "author": "chvndler",
   "license": "MIT",
-  "packageManager": "pnpm@8.6.12",
+  "packageManager": "yarn@3.6.2",
+  "workspaces": [
+    "apps/*",
+    "pkgs/*"
+  ],
   "scripts": {
     "build": "turbo run build",
     "build:kit": "turbo run build --filter=kit",
