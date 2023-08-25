@@ -2,11 +2,14 @@ import { defineConfig } from 'vite';
 
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import { resolve } from 'path';
+import { peerDependencies } from './package.json';
 
 import react from '@vitejs/plugin-react';
 import zipPack from 'vite-plugin-zip-pack';
 import banner from 'vite-plugin-banner';
 import dts from 'vite-plugin-dts';
+
+const peerDeps = Object.keys(peerDependencies);
 
 const primitiveDeps = [
   '@radix-ui/react-dropdown-menu',
@@ -33,19 +36,10 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: [
-        'clsx',
-        'react',
-        'react-dom',
-        'react/jsx-runtime',
-        ...primitiveDeps,
-      ],
+      external: [...peerDeps, ...primitiveDeps],
       output: {
         globals: {
           clsx: 'clsx',
-          react: 'React',
-          'react-dom': 'ReactDom',
-          'react/jsx-runtime': 'jsxRuntime',
           '@radix-ui/react-dropdown-menu': 'DROP',
           '@radix-ui/react-select': 'SLCT',
           '@radix-ui/react-switch': 'SWI',
@@ -60,7 +54,10 @@ export default defineConfig({
     },
   },
   plugins: [
-    react(),
+    react({
+      include: '**/*.{ts,tsx}', // include all .jsx and .tsx files
+      exclude: 'node_modules/**', // exclude all files in node_modules
+    }),
     dts({
       entryRoot: 'src',
       outDir: 'dist/types',

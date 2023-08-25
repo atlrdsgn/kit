@@ -28,6 +28,7 @@
   },
   "scripts": {
     "build": "vite build",
+    "pnpify": "pnpm dlx @yarnpkg/pnpify --sdk vscode",
     "build:types": "yarn tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
     "lint": "eslint . --ext .js,.ts,.tsx",
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf prod.package/* && rm -rf .turbo",
@@ -35,6 +36,11 @@
     "dev:release": "npm publish --access private",
     "npm:login": "npm login --registry=https://npm.pkg.github.com --scope=@atlrdsgn",
     "pretty": "prettier --write src/**/*.{ts,tsx,json,md}"
+  },
+  "peerDependencies": {
+    "clsx": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.0.5",
@@ -48,10 +54,7 @@
     "@radix-ui/react-tabs": "^1.0.4",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "clsx": "^2.0.0",
-    "framer-motion": "^10.16.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "framer-motion": "^10.16.1"
   },
   "devDependencies": {
     "@atlrdsgn/tsconfig": "workspace:*",
@@ -65,6 +68,7 @@
     "@vitejs/plugin-react": "^4.0.4",
     "eslint": "^8.47.0",
     "eslint-config-atlrdsgn": "workspace:*",
+    "pnp-webpack-plugin": "^1.7.0",
     "prettier": "^3.0.2",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
