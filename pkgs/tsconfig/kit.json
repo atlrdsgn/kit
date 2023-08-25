@@ -3,7 +3,7 @@
   "display": "kit-config",
   "extends": "./base.json",
   "compilerOptions": {
-    "jsx": "react-jsx",
+    "jsx": "react",
     "lib": ["esnext", "dom", "dom.iterable"],
     "module": "esnext",
     "target": "es6",

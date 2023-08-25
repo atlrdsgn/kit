@@ -3,6 +3,7 @@
   "include": ["src", "."],
   "exclude": ["node_modules", "dist", "prod.package", "build"],
   "compilerOptions": {
+    "jsx": "react",
     "rootDir": ".",
     "outDir": "dist/types",
     "isolatedModules": true,
