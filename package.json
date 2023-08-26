@@ -8,6 +8,9 @@
     "pkgs",
     "apps"
   ],
+  "installConfig": {
+    "pnp": true
+  },
   "scripts": {
     "build": "turbo run build",
     "build:kit": "turbo run build --filter=kit",
@@ -22,7 +25,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "eslint": "^8.47.0",
-    "eslint-config-atlrdsgn": "workspace:*",
+    "eslint-config-atlrdsgn": "*",
     "prettier": "^3.0.2",
     "turbo": "^1.10.13"
   }

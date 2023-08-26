@@ -10,7 +10,7 @@
     "clean": "rm -rf node_modules && rm -rf .next"
   },
   "dependencies": {
-    "@atlrdsgn/kit": "workspace:*",
+    "@atlrdsgn/kit": "*",
     "clsx": "^2.0.0",
     "inter-ui": "^3.19.3",
     "next": "^13.4.19",
@@ -21,11 +21,11 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
-    "@atlrdsgn/tsconfig": "workspace:*",
+    "@atlrdsgn/tsconfig": "*",
     "@types/node": "^20.5.6",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "eslint-config-atlrdsgn": "workspace:*",
+    "eslint-config-atlrdsgn": "*",
     "prettier": "^3.0.2",
     "typescript": "^5.2.2"
   }
