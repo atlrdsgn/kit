@@ -1,6 +1,6 @@
 import React from 'react';
 import { text } from './text.css';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 
 import type {
   TextFontVariants,

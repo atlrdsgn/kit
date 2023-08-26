@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useMemo } from 'react';
 import * as LABL from '@radix-ui/react-label';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import { input, inputLabel, inputFlex, inputTypeNumber } from './input.css';
 import { type InputProps } from './input.types';
 

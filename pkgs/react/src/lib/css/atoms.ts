@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 
 import * as styleRes from './reset.css';
 import { type Sprinkles, sprinkles } from './sprinkles.css';

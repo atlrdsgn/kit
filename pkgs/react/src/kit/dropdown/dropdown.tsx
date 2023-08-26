@@ -1,7 +1,7 @@
 import React from 'react';
 import * as DROP from '@radix-ui/react-dropdown-menu';
 import * as CSS from './dropdown.css';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 
 const DropdownRoot = DROP.Root;
 const DropdownGroup = DROP.Group;

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as TAB from '@radix-ui/react-tabs';
 import * as CSS from './tab.switcher.css';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 
 type TabsListProps = {
   children: React.ReactNode;

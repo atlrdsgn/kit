@@ -1,6 +1,6 @@
 import React from 'react';
 import * as LABL from '@radix-ui/react-label';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import * as CSS from './data.display.css';
 import { Stack } from '../stack';
 

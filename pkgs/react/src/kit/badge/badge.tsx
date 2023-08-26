@@ -1,7 +1,7 @@
 import React from 'react';
 import * as KitChip from '../chip/chip';
 import * as CSS from './badge.css';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import { BadgeIcon } from './badge.icons';
 import {
   type BadgeVariantProps,

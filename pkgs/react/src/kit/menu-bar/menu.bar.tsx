@@ -1,7 +1,7 @@
 import React from 'react';
 import * as MBAR from '@radix-ui/react-menubar';
 import * as CSS from './menu.bar.css';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 
 const MenubarCollection = MBAR.Menu;
 const MenubarSeparator = MBAR.Separator;

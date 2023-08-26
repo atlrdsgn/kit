@@ -1,6 +1,6 @@
 import React from 'react';
 import * as CSS from './card.css';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 
 import { type CardHeadingLevels, type CardHeaderVariants } from './card.css';
 

@@ -2,27 +2,10 @@ import { defineConfig } from 'vite';
 
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import { resolve } from 'path';
-import { peerDependencies } from './package.json';
 
-import react from '@vitejs/plugin-react';
-import zipPack from 'vite-plugin-zip-pack';
+// import zipPack from 'vite-plugin-zip-pack';
 import banner from 'vite-plugin-banner';
 import dts from 'vite-plugin-dts';
-
-const peerDeps = Object.keys(peerDependencies);
-
-const primitiveDeps = [
-  '@radix-ui/react-dropdown-menu',
-  '@radix-ui/react-select',
-  '@radix-ui/react-switch',
-  '@radix-ui/react-portal',
-  '@radix-ui/react-popover',
-  '@radix-ui/react-menubar',
-  '@radix-ui/react-tabs',
-  '@radix-ui/react-label',
-  '@radix-ui/react-slot',
-  'framer-motion',
-];
 
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
@@ -36,10 +19,28 @@ export default defineConfig({
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
-      external: [...peerDeps, ...primitiveDeps],
+      external: [
+        'clsx',
+        'react',
+        'react-dom',
+        'react/jsx-runtime',
+        '@radix-ui/react-dropdown-menu',
+        '@radix-ui/react-select',
+        '@radix-ui/react-switch',
+        '@radix-ui/react-portal',
+        '@radix-ui/react-popover',
+        '@radix-ui/react-menubar',
+        '@radix-ui/react-tabs',
+        '@radix-ui/react-label',
+        '@radix-ui/react-slot',
+        'framer-motion',
+      ],
       output: {
         globals: {
           clsx: 'clsx',
+          react: 'react',
+          'react-dom': 'ReactDOM',
+          'react/jsx-runtime': 'jsxRuntime',
           '@radix-ui/react-dropdown-menu': 'DROP',
           '@radix-ui/react-select': 'SLCT',
           '@radix-ui/react-switch': 'SWI',
@@ -49,15 +50,12 @@ export default defineConfig({
           '@radix-ui/react-tabs': 'TAB',
           '@radix-ui/react-label': 'LABL',
           '@radix-ui/react-slot': 'SLOT',
+          'framer-motion': 'motion',
         },
       },
     },
   },
   plugins: [
-    react({
-      include: '**/*.{ts,tsx}', // include all .jsx and .tsx files
-      exclude: 'node_modules/**', // exclude all files in node_modules
-    }),
     dts({
       entryRoot: 'src',
       outDir: 'dist/types',
@@ -85,9 +83,11 @@ export default defineConfig({
     * All rights reserved.
     `),
 
+    /*
     zipPack({
       outDir: 'prod.package',
       outFileName: `kit.[${process.env.npm_package_version}].zip`,
     }),
+    */
   ],
 });
