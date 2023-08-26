@@ -5,7 +5,11 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
-  "sideEffects": false,
+  "sideEffects": [
+    "src/lib/css/*",
+    "src/lib/theme/**/*",
+    "*.css.ts"
+  ],
   "files": [
     "dist/**"
   ],
@@ -17,10 +21,6 @@
     "./css": {
       "import": "./dist/style.css",
       "require": "./dist/style.css"
-    },
-    "./types": {
-      "import": "./dist/types/index.d.ts",
-      "require": "./dist/types/index.d.ts"
     }
   },
   "publishConfig": {
@@ -37,6 +37,10 @@
     "npm:login": "npm login --registry=https://npm.pkg.github.com --scope=@atlrdsgn",
     "pretty": "prettier --write src/**/*.{ts,tsx,json,md}"
   },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.0.5",
     "@radix-ui/react-label": "^2.0.2",
@@ -47,31 +51,32 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tabs": "^1.0.4",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "clsx": "^2.0.0",
-    "framer-motion": "^10.16.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@atlrdsgn/tsconfig": "workspace:*",
-    "@types/node": "^20.5.6",
     "@vanilla-extract/css": "^1.13.0",
     "@vanilla-extract/css-utils": "^0.1.3",
     "@vanilla-extract/dynamic": "^2.0.3",
     "@vanilla-extract/recipes": "^0.5.0",
     "@vanilla-extract/sprinkles": "^1.6.1",
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.16.1"
+  },
+  "devDependencies": {
+    "@atlrdsgn/tsconfig": "workspace:*",
+    "@types/node": "^20.5.6",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
     "@vanilla-extract/vite-plugin": "^3.9.0",
     "eslint": "^8.47.0",
     "eslint-config-atlrdsgn": "workspace:*",
     "pnp-webpack-plugin": "^1.7.0",
     "prettier": "^3.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vite-plugin-banner": "^0.7.0",
     "vite-plugin-dts": "^3.3.0",
-    "vite-plugin-zip-pack": "^1.0.6"
+    "vite-plugin-zip-pack": "^1.0.6",
+    "vite-tsconfig-paths": "^4.2.0"
   },
   "keywords": [],
   "author": "chvndler",

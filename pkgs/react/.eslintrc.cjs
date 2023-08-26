@@ -4,13 +4,12 @@ module.exports = {
   env: { node: true, browser: true },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2021,
+    ecmaVersion: 8,
     sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
+    ecmaFeatures: {},
     project: './tsconfig.json',
     warnOnUnsupportedTypeScriptVersion: true,
   },
+  plugins: ['@typescript-eslint', 'import', 'react', 'jest'],
   rules: {},
 };

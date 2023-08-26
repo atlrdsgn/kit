@@ -3,11 +3,15 @@
   "include": ["src", "."],
   "exclude": ["node_modules", "dist", "prod.package", "build"],
   "compilerOptions": {
-    "jsx": "react",
+    "baseUrl": "./",
+    "jsx": "react-jsx",
     "rootDir": ".",
-    "outDir": "dist/types",
+    "outDir": "./dist/types",
     "isolatedModules": true,
     "moduleResolution": "node",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "declaration": true,
+    "declarationMap": true
   }
 }

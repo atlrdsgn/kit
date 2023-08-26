@@ -1,19 +1,20 @@
 import { defineConfig } from 'vite';
-
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
-import { resolve } from 'path';
 
-// import zipPack from 'vite-plugin-zip-pack';
+import pkg from './package.json';
+import tsconfigPaths from 'vite-tsconfig-paths';
 import banner from 'vite-plugin-banner';
 import dts from 'vite-plugin-dts';
 
-/** @type {import('vite').UserConfig} */
+const npm_package_version = pkg.version;
+const peers = Object.keys(pkg.peerDependencies);
+
 export default defineConfig({
   build: {
     target: 'esnext',
     sourcemap: true,
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: 'src/index.ts',
       name: 'kit',
       fileName: (format) => (format === 'es' ? 'index.esm.js' : 'index.js'),
       formats: ['es', 'cjs'],
@@ -21,8 +22,7 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'clsx',
-        'react',
-        'react-dom',
+        ...peers,
         'react/jsx-runtime',
         '@radix-ui/react-dropdown-menu',
         '@radix-ui/react-select',
@@ -56,24 +56,29 @@ export default defineConfig({
     },
   },
   plugins: [
+    tsconfigPaths(),
     dts({
       entryRoot: 'src',
       outDir: 'dist/types',
       staticImport: true,
       compilerOptions: {
+        baseUrl: './src/',
         composite: true,
         emitDeclarationOnly: true,
         noEmit: false,
       },
+      beforeWriteFile: (filePath, content) => ({
+        content,
+        filePath: filePath.replace('src', ''),
+      }),
       include: ['src'],
       exclude: ['node_modules', 'dist', 'prod.package'],
     }),
     vanillaExtractPlugin({
       identifiers: 'short',
-      // emitCssInSsr: true,
     }),
     banner(`
-    * @atlrdsgn/kit v${process.env.npm_package_version} 
+    * @atlrdsgn/kit v${npm_package_version} 
     * see https://kit.atlrdsgn.com for more information.
     * see https://docs.atlrdsgn.com for further documentation.
     * 
@@ -82,12 +87,5 @@ export default defineConfig({
     * Copyright © 2023 atlrdsgn®. 
     * All rights reserved.
     `),
-
-    /*
-    zipPack({
-      outDir: 'prod.package',
-      outFileName: `kit.[${process.env.npm_package_version}].zip`,
-    }),
-    */
   ],
 });

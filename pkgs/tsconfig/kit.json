@@ -3,12 +3,9 @@
   "display": "kit-config",
   "extends": "./base.json",
   "compilerOptions": {
-    "jsx": "react",
-    "lib": ["esnext", "dom", "dom.iterable"],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
-    "target": "es6",
-    "declaration": true,
-    "declarationMap": true,
+    "target": "esnext",
     "verbatimModuleSyntax": true,
     "sourceMap": true
   }

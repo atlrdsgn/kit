@@ -4,6 +4,10 @@
   "private": true,
   "author": "chvndler",
   "license": "MIT",
+  "workspaces": [
+    "pkgs",
+    "apps"
+  ],
   "scripts": {
     "build": "turbo run build",
     "build:kit": "turbo run build --filter=kit",
