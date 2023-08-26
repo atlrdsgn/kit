@@ -5,12 +5,9 @@
   "author": "chvndler",
   "license": "MIT",
   "workspaces": [
-    "pkgs",
-    "apps"
+    "pkgs/*",
+    "apps/*"
   ],
-  "installConfig": {
-    "pnp": true
-  },
   "scripts": {
     "build": "turbo run build",
     "build:kit": "turbo run build --filter=kit",
@@ -21,6 +18,10 @@
     "pretty": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
