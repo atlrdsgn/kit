@@ -1,13 +1,14 @@
 {
   "name": "kit",
   "description": "an ever– expanding library of React components by @atlrdsgn",
+  "packageManager": "yarn@3.6.3",
   "private": true,
-  "author": "chvndler",
-  "license": "MIT",
   "workspaces": [
     "pkgs/*",
     "apps/*"
   ],
+  "author": "chvndler",
+  "license": "MIT",
   "scripts": {
     "build": "turbo run build",
     "build:kit": "turbo run build --filter=kit",

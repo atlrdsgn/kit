@@ -7,7 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
   ],
-  plugins: ['@typescript-eslint', 'prettier', 'react'],
+  plugins: ['@typescript-eslint', 'prettier', 'react', 'turbo'],
   settings: {
     react: { version: 'detect' },
     next: { rootDir: ['apps/*/'] },

@@ -21,6 +21,21 @@ export const BackgroundImage = ({
 }: BackgroundProps) => {
   return (
     <CanvasLockup>
+      <div
+        className=''
+        style={{
+          zIndex: 1,
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          overflow: 'hidden',
+          backgroundColor: 'transparent',
+          backdropFilter: 'blur(10px)',
+          WebkitBackdropFilter: 'blur(10px)',
+        }}
+      />
       <Image
         {...rest}
         src={src}

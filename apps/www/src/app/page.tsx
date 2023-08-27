@@ -1,7 +1,7 @@
 import React from 'react';
 import { HomePage, GlobalFooter, PageLayout } from '@/components/core';
 
-const AppIndex = () => {
+export default function AppIndex() {
   return (
     <>
       <PageLayout type={'Standard'}>
@@ -10,6 +10,4 @@ const AppIndex = () => {
       </PageLayout>
     </>
   );
-};
-
-export default AppIndex;
+}
