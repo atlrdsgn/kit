@@ -18,7 +18,7 @@ An ever– expanding library of [React](https://reactjs.org/) components, primit
 
 ### Getting started and using atelierkit
 
-#### 1. **Install**
+### 1. **Install**
 
 To get started, add `@atlrdsgn/kit` to your dependencies.
 
@@ -27,16 +27,16 @@ yarn add @atlrdsgn/kit
 ```
 
 ```pnpm
-pnpm install --save @atlrdsgn/kit
+pnpm add @atlrdsgn/kit
 ```
 
 ```npm
-npm install --save @atlrdsgn/kit
+npm install @atlrdsgn/kit
 ```
 
 ---
 
-#### 2. **Wrap your app**
+### 2. **Wrap your app**
 
 **Import the `.css` file**, and _wrap your application_.
 
@@ -100,7 +100,7 @@ export default function RootLayout({
 
 ---
 
-#### 3. **Usage**
+### 3. **Usage**
 
 Build smaller components using individual primitives and elements.
 
