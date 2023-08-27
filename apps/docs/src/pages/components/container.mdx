@@ -1,8 +1,8 @@
-import { Space } from '@/components/space';
+import { Space } from '@/components/ui';
 
 ### Container
 
-Aliqua ut id quis Lorem ipsum et anim.
+A layout helper component that allows you to center and limit the width of content, often used as a wrapper element.
 
 #### Usage
 
@@ -16,25 +16,17 @@ import { Container } from '@atlrdsgn/kit';
 
 <Space></Space>
 
-{' '}
-<iframe
-  src='https://codesandbox.io/embed/kit-text-dsrgwv?fontsize=12&hidenavigation=1&theme=light&view=preview'
-  style={{
-    height: '300px',
-    width: '100%',
-    border: '2px solid blue',
-    borderRadius: '12px',
-    overflow: 'hidden',
-  }}
-  title='kit.popover'
-  allow='accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking'
-  sandbox='allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts'></iframe>
+```tsx
+we will add CodeSandbox here
+```
 
 ---
 
 #### Properties
 
-| Name  | Type     | Default | Description               |
-| :---- | -------- | ------- | ------------------------- |
-| width | `string` | `sm`    | The object for fontSize.  |
-| align | `string` | `left`  | `left`, `center`, `right` |
+| Name   | Type      | Default | Description                             |
+| :----- | --------- | ------- | --------------------------------------- |
+| width  | `string`  | `sm`    | The object for fontSize.                |
+| align  | `string`  | `left`  | `left`, `center`, `right`               |
+| border | `boolean` | `false` | An optional border around the component |
+| flush  | `boolean` | `false` | a no padding option                     |
