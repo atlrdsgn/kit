@@ -15,7 +15,7 @@
     "build:www": "turbo run build --filter=apps/www",
     "build:docs": "turbo run build --filter=apps/docs",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "reset": "rm -rf node_modules && rm -rf yarn.lock && yarn cache clean && yarn install",
+    "reset": "rm -rf node_modules && rm -rf .yarn/ && rm -rf yarn.lock && yarn cache clean && yarn install",
     "clean": "turbo run clean",
     "pretti": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
