@@ -8,11 +8,17 @@ An ever– expanding library of [React](https://reactjs.org/) components, primit
 
 ---
 
-## Getting started and using atelierkit
+**Note**: This monorepo holds the source code for the following packages.
 
----
+1. `@atlrdsgn/kit`
+2. website [`apps/www`]
+3. docs [`apps/docs`]
+4. `@atlrdsgn/tsconfig`– private
+5. `eslint-config-['atlrdsgn']`– private
 
-### 1. **Install**
+### Getting started and using atelierkit
+
+#### 1. **Install**
 
 To get started, add `@atlrdsgn/kit` to your dependencies.
 
@@ -30,9 +36,9 @@ npm install --save @atlrdsgn/kit
 
 ---
 
-### 2. **Wrap your app**
+#### 2. **Wrap your app**
 
-**Import `.css` file**, and _wrap your app_.
+**Import the `.css` file**, and _wrap your application_.
 
 You need to wrap your app with the `KitProvider` context so that the .css file is available to all components.
 
@@ -51,11 +57,52 @@ export default function App({ Component, pageProps }) {
 }
 ```
 
+if you are using **Next.js** app directory you may need to create your own provider component, you can do that by creating a new component called `theme-provider.tsx` and adding the following code.
+
+```tsx
+'use client';
+
+import { KitProvider } from '@atlrdsgn/kit';
+
+const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <>
+      <KitProvider>{children}</KitProvider>
+    </>
+  );
+};
+
+export default ThemeProvider;
+```
+
+import your theme-provider component into your `app/layout.tsx` file.
+
+```tsx
+import React from 'react';
+import { ThemeProvider } from '@/components/theme-provider';
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html
+      lang='en'
+      suppressHydrationWarning>
+      <body>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
+    </html>
+  );
+}
+```
+
 ---
 
-### 3. **Usage**
+#### 3. **Usage**
 
-Build smaller components using individual primitives.
+Build smaller components using individual primitives and elements.
 
 ```tsx
 import React from 'react';
@@ -78,6 +125,6 @@ export const DefaultExample = () => (
 );
 ```
 
-#### You can view full documentation at [docs.atlrdsgn.com](https://docs.atlrdsgn.com)
+##### You can view full documentation at [docs.atlrdsgn.com](https://docs.atlrdsgn.com)
 
-`© 2023 atlrdsgn®`
+##### `© 2023 atlrdsgn®`

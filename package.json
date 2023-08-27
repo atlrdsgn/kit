@@ -11,12 +11,13 @@
   "license": "MIT",
   "scripts": {
     "build": "turbo run build",
-    "build:kit": "turbo run build --filter=kit",
-    "build:apps": "turbo build --filter='./apps/*'",
-    "build:pkg": "turbo build --filter='./pkgs/*'",
+    "build:kit": "turbo run build --filter=pkgs/*",
+    "build:www": "turbo run build --filter=apps/www",
+    "build:docs": "turbo run build --filter=apps/docs",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "clean": "turbo clean && rm -rf node_modules",
-    "pretty": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "reset": "rm -rf node_modules && yarn cache clean && yarn install",
+    "clean": "turbo run clean",
+    "pretti": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version"
   },
