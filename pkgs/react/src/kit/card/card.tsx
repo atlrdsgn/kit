@@ -1,6 +1,7 @@
 import React from 'react';
 import * as CSS from './card.css';
 import { clsx } from 'clsx';
+import { createKitClass } from '../../lib';
 
 import { type CardHeadingLevels, type CardHeaderVariants } from './card.css';
 
@@ -14,7 +15,7 @@ export type CardProps = CardInterfaceProps &
 
 const CardContainer = React.forwardRef<HTMLDivElement, CardProps>(
   ({ className, children, ...rest }, ref) => {
-    const stx = clsx(CSS.cardContainer, className);
+    const stx = createKitClass(CSS.cardContainer, className);
 
     return (
       <div
@@ -33,7 +34,7 @@ CardContainer.displayName = 'Card';
 
 const CardContent = React.forwardRef<HTMLParagraphElement, CardProps>(
   ({ className, children, ...rest }, ref) => {
-    const stx = clsx(CSS.cardContent, className);
+    const stx = createKitClass(CSS.cardContent, className);
 
     return (
       <p

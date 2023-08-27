@@ -6,35 +6,25 @@ const SIZE_MAP = {
   sm: {
     paddingTop: kit.space.GPX,
     paddingBottom: kit.space.GPX,
-    paddingLeft: kit.space.ZERO,
-    paddingRight: kit.space.ZERO,
   },
   md: {
     paddingTop: kit.space.MPX,
     paddingBottom: kit.space.MPX,
-    paddingLeft: kit.space.ZERO,
-    paddingRight: kit.space.ZERO,
   },
   lg: {
     paddingTop: kit.space.SPX,
     paddingBottom: kit.space.SPX,
-    paddingLeft: kit.space.ZERO,
-    paddingRight: kit.space.ZERO,
   },
   vw: {
     paddingTop: kit.space.KPX,
     paddingBottom: kit.space.KPX,
-    paddingLeft: kit.space.ZERO,
-    paddingRight: kit.space.ZERO,
   },
-} as const;
+};
 
 const size = {
   ...styleVariants(SIZE_MAP, (value) => ({
     paddingTop: value.paddingTop,
     paddingBottom: value.paddingBottom,
-    paddingLeft: value.paddingLeft,
-    paddingRight: value.paddingRight,
   })),
 };
 

@@ -26,18 +26,7 @@ export const baseTabsLayout = style({
     color: kit.color.carbon8,
   },
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon9,
-      color: kit.color.carbon0,
-
-      ':focus': {
-        outline: 'none',
-        backgroundColor: kit.color.carbon9,
-        color: kit.color.carbon0,
-      },
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&[data-orientation="vertical"]': {
@@ -71,16 +60,7 @@ export const tabsList = style({
     outline: 'none',
   },
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon9,
-      color: kit.color.carbon2,
-
-      ':focus': {
-        outline: 'none',
-      },
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&[data-orientation="vertical"]': {
@@ -142,27 +122,7 @@ export const tabsItem = style({
     backgroundColor: kit.color.carbon2,
   },
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon8,
-      color: kit.color.carbon0,
-
-      ':active': {
-        backgroundColor: kit.color.carbon8,
-        color: kit.color.carbon0,
-      },
-
-      ':hover': {
-        backgroundColor: kit.color.carbon7,
-        color: kit.color.carbon0,
-      },
-
-      ':focus': {
-        backgroundColor: kit.color.carbon8,
-        color: kit.color.carbon0,
-      },
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&[data-state="active"]': {
@@ -170,25 +130,14 @@ export const tabsItem = style({
       color: kit.color.carbon8,
       boxShadow: `0px 2px 4px -2px rgba(17, 12, 34, 0.12)`,
 
-      '@media': {
-        '(prefers-color-scheme: dark)': {
-          backgroundColor: kit.color.carbon7,
-          color: kit.color.carbon0,
-          boxShadow: `0px 2px 4px -2px rgba(17, 12, 34, 0.35)`,
-        },
-      },
+      '@media': {},
     },
 
     '&[data-state="inactive"]': {
       backgroundColor: kit.color.transparent,
       color: kit.color.carbon9,
 
-      '@media': {
-        '(prefers-color-scheme: dark)': {
-          backgroundColor: kit.color.transparent,
-          color: kit.color.carbon2,
-        },
-      },
+      '@media': {},
     },
 
     /** -------------------------- *
@@ -222,12 +171,7 @@ export const tabsContent = style({
   color: kit.color.carbon8,
   backgroundColor: kit.color.transparent,
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      color: kit.color.carbon2,
-      backgroundColor: kit.color.transparent,
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&[data-state="active"][data-orientation="horizontal"]': {

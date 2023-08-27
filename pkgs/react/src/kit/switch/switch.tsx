@@ -2,7 +2,6 @@ import React, { forwardRef, type ElementRef } from 'react';
 import * as SWI from '@radix-ui/react-switch';
 import { switchToggle, switchRoot } from './switch.css';
 import clsx from 'clsx';
-
 import {
   type SwitchRootVariantProps,
   type SwitchToggleVariantProps,
@@ -63,6 +62,7 @@ interface BASE_SWITCH_PROPS {
 export type SwitchProps = BASE_SWITCH_PROPS &
   SwitchRootVariantProps &
   React.ComponentProps<typeof SWI.Root>;
+
 const SwitchRootComponent: React.FC<SwitchProps> = ({
   className,
   asChild,

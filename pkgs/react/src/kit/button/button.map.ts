@@ -1,25 +1,10 @@
 import { kit } from '../../lib';
+import { ButtonSizes, ButtonColor } from './button.utils';
 import { sharedShadows as kitShadow } from '../@shared';
 
-// enum for size variants
-enum ButtonSize {
-  XS = 'XS',
-  SM = 'SM',
-  MD = 'MD',
-  LG = 'LG',
-}
-
-// enum for color variants
-enum ButtonColor {
-  CARBON = 'CARBON',
-  JADE = 'JADE',
-  ORANGE = 'ORANGE',
-  SAPPHIRE = 'SAPPHIRE',
-  GHOST = 'GHOST',
-}
-
 // button css globals
-export const sharedCSS = {
+const sharedCSS = {
+  textRendering: 'optimizeLegibility',
   fontVariantNumeric: 'tabular-nums',
   boxSizing: 'border-box',
   display: 'flex',
@@ -31,72 +16,68 @@ export const sharedCSS = {
   transition: 'all 0.2s ease-in-out',
   willChange: 'color, backgroundColor',
   cursor: 'pointer',
-
   borderStyle: 'solid',
 
+  // text properties
+  userSelect: 'none',
+  fontWeight: kit.font.weight.MEDIUM,
+  textAlign: 'center',
+  whiteSpace: 'nowrap',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+
+  // shared non-standard properties
   WebkitUserSelect: 'none',
-  // WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
   MozUserSelect: 'none',
   MozTapHighlightColor: 'rgba(0,0,0,0)',
 } as const;
 
 // Button padding and border properties
 const buttonSizeProperties = {
-  padding: {
-    [ButtonSize.XS]: '4px 11px',
-    [ButtonSize.SM]: '6px 12px',
-    [ButtonSize.MD]: '6px 14px',
-    [ButtonSize.LG]: '8px 18px',
-  },
-  borderWidth: {
-    [ButtonSize.XS]: '1px',
-    [ButtonSize.SM]: '1px',
-    [ButtonSize.MD]: '1px',
-    [ButtonSize.LG]: '2px',
-  },
-  borderRadius: {
-    [ButtonSize.XS]: '7px',
-    [ButtonSize.SM]: '10px',
-    [ButtonSize.MD]: '12px',
-    [ButtonSize.LG]: '14px',
-  },
-} as const;
-
-// Button text properties
-const buttonTextProperties = {
   fontSize: {
-    [ButtonSize.XS]: kit.font.size.XS,
-    [ButtonSize.SM]: kit.font.size.SM,
-    [ButtonSize.MD]: kit.font.size.MD,
-    [ButtonSize.LG]: kit.font.size.LG,
+    [ButtonSizes.XS]: kit.font.size.XS,
+    [ButtonSizes.SM]: kit.font.size.SM,
+    [ButtonSizes.MD]: kit.font.size.MD,
+    [ButtonSizes.LG]: kit.font.size.LG,
   },
   lineHeight: {
-    [ButtonSize.XS]: kit.font.lineheight.XS,
-    [ButtonSize.SM]: kit.font.lineheight.SM,
-    [ButtonSize.MD]: kit.font.lineheight.MD,
-    [ButtonSize.LG]: kit.font.lineheight.LG,
+    [ButtonSizes.XS]: kit.font.lineheight.XS,
+    [ButtonSizes.SM]: kit.font.lineheight.SM,
+    [ButtonSizes.MD]: kit.font.lineheight.MD,
+    [ButtonSizes.LG]: kit.font.lineheight.LG,
   },
-
-  // shared common text properties
-  common: {
-    userSelect: 'none',
-    fontWeight: kit.font.weight.MEDIUM,
-    textAlign: 'center',
-    whiteSpace: 'nowrap',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
+  padding: {
+    [ButtonSizes.XS]: '4px 11px',
+    [ButtonSizes.SM]: '6px 12px',
+    [ButtonSizes.MD]: '6px 14px',
+    [ButtonSizes.LG]: '8px 18px',
+  },
+  borderWidth: {
+    [ButtonSizes.XS]: '1px',
+    [ButtonSizes.SM]: '1px',
+    [ButtonSizes.MD]: '1px',
+    [ButtonSizes.LG]: '2px',
+  },
+  borderRadius: {
+    [ButtonSizes.XS]: '7px',
+    [ButtonSizes.SM]: '10px',
+    [ButtonSizes.MD]: '12px',
+    [ButtonSizes.LG]: '14px',
   },
 } as const;
 
 const buttonColorProperties = {
   background: {
+    // background color
     [ButtonColor.CARBON]: kit.color.carbon0,
     [ButtonColor.JADE]: kit.color.jade6,
-    [ButtonColor.ORANGE]: kit.color.orange8,
-    [ButtonColor.SAPPHIRE]: kit.color.sapphire4,
+    [ButtonColor.ORANGE]: kit.color.orange6,
+    [ButtonColor.SAPPHIRE]: kit.color.sapphire6,
     [ButtonColor.GHOST]: 'transparent',
   },
   color: {
+    // text color
     [ButtonColor.CARBON]: kit.color.carbon8,
     [ButtonColor.JADE]: kit.color.jade0,
     [ButtonColor.ORANGE]: kit.color.orange0,
@@ -104,13 +85,15 @@ const buttonColorProperties = {
     [ButtonColor.GHOST]: kit.color.carbon1,
   },
   borderColor: {
+    // border color
     [ButtonColor.CARBON]: kit.color.carbon2,
     [ButtonColor.JADE]: kit.color.jade6,
-    [ButtonColor.ORANGE]: kit.color.orange8,
-    [ButtonColor.SAPPHIRE]: kit.color.sapphire4,
+    [ButtonColor.ORANGE]: kit.color.orange6,
+    [ButtonColor.SAPPHIRE]: kit.color.sapphire6,
     [ButtonColor.GHOST]: kit.color.carbon2,
   },
   boxShadow: {
+    // box shadow– initial.
     [ButtonColor.CARBON]: `0px 1px 2px -1px rgba(173, 181, 189, 0.25)`,
     [ButtonColor.JADE]: kitShadow.MINI,
     [ButtonColor.ORANGE]: kitShadow.MINI,
@@ -121,24 +104,27 @@ const buttonColorProperties = {
   // hover properties
   onHover: {
     background: {
-      [ButtonColor.CARBON]: kit.color.carbon1,
+      // background color– on hover.
+      [ButtonColor.CARBON]: kit.color.carbon0,
       [ButtonColor.JADE]: kit.color.jade6,
-      [ButtonColor.ORANGE]: kit.color.orange8,
-      [ButtonColor.SAPPHIRE]: kit.color.sapphire4,
+      [ButtonColor.ORANGE]: kit.color.orange6,
+      [ButtonColor.SAPPHIRE]: kit.color.sapphire6,
       [ButtonColor.GHOST]: kit.color.transparent,
     },
     borderColor: {
+      // border color– on hover.
       [ButtonColor.CARBON]: kit.color.carbon2,
-      [ButtonColor.JADE]: kit.color.jade7,
-      [ButtonColor.ORANGE]: kit.color.orange9,
-      [ButtonColor.SAPPHIRE]: kit.color.sapphire5,
+      [ButtonColor.JADE]: kit.color.jade6,
+      [ButtonColor.ORANGE]: kit.color.orange6,
+      [ButtonColor.SAPPHIRE]: kit.color.sapphire6,
       [ButtonColor.GHOST]: kit.color.carbon2,
     },
     boxShadow: {
+      // box shadow– on hover.
       [ButtonColor.CARBON]: `0px 1px 2px 0px rgba(173, 181, 189, 0.40)`,
-      [ButtonColor.JADE]: `0px 2px 2px 0px rgba(64, 192, 87, 0.40)`,
-      [ButtonColor.ORANGE]: `0px 2px 2px 0px rgba(255, 191, 0, 0.40)`,
-      [ButtonColor.SAPPHIRE]: `0px 2px 2px 0px rgba(17, 12, 34, 0.40)`,
+      [ButtonColor.JADE]: `0px 1px 2px 0px rgba(173, 181, 189, 0.40)`,
+      [ButtonColor.ORANGE]: `0px 1px 2px 0px rgba(173, 181, 189, 0.40)`,
+      [ButtonColor.SAPPHIRE]: `0px 1px 2px 0px rgba(173, 181, 189, 0.40)`,
       [ButtonColor.GHOST]: `0px 1px 2px 0px rgba(173, 181, 189, 0.40)`,
     },
   },
@@ -146,6 +132,7 @@ const buttonColorProperties = {
   // focus properties
   onFocus: {
     boxShadow: {
+      // box shadow– on focus.
       [ButtonColor.CARBON]: `0px 0px 0px 3.5px rgba(173, 181, 189, 0.35), 0px 1px 2px 0px #ADB5BD`,
       [ButtonColor.JADE]: `0px 0px 0px 3.5px rgba(64, 192, 87, 0.40), 0px 1px 1px 0px rgba(166, 166, 166, 0.30)`,
       [ButtonColor.ORANGE]: `0px 0px 0px 3.5px rgba(253, 126, 20, 0.40), 0px 1px 1px 0px rgba(163, 163, 163, 0.30)`,
@@ -158,12 +145,8 @@ const buttonColorProperties = {
 // Combined button styles
 export const buttonProperties = {
   core: sharedCSS,
-  text: buttonTextProperties.common,
   size: {
-    config: {
-      ...buttonSizeProperties,
-      ...buttonTextProperties,
-    },
+    config: buttonSizeProperties,
   },
   color: {
     config: buttonColorProperties,
@@ -172,8 +155,8 @@ export const buttonProperties = {
 
 export type CSSButtonProperties = keyof typeof buttonProperties;
 
-export type ButtonSizes = keyof typeof ButtonSize;
-export type VariantColors = keyof typeof ButtonColor;
+export type CSSButtonSizes = keyof typeof ButtonSizes;
+export type CSSVariantColors = keyof typeof ButtonColor;
 export type CSSButtonSizeProperties = keyof typeof buttonProperties.size.config;
 export type CSSButtonColorProperties =
   keyof typeof buttonProperties.color.config;

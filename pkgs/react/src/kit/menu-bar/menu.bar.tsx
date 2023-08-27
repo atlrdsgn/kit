@@ -1,7 +1,7 @@
 import React from 'react';
 import * as MBAR from '@radix-ui/react-menubar';
 import * as CSS from './menu.bar.css';
-import { clsx } from 'clsx';
+import { createKitClass } from '../../lib';
 
 const MenubarCollection = MBAR.Menu;
 const MenubarSeparator = MBAR.Separator;
@@ -16,7 +16,7 @@ const MenubarRoot = React.forwardRef<
     <MBAR.Root
       {...props}
       ref={ref}
-      className={clsx(CSS.menuLayout, className)}
+      className={createKitClass(CSS.menuLayout, className)}
     />
   );
 });
@@ -31,7 +31,7 @@ const MenubarTrigger = React.forwardRef<
       {...props}
       ref={ref}
       asChild={asChild}
-      className={clsx(CSS.menuTrigger, className)}
+      className={createKitClass(CSS.menuTrigger, className)}
     />
   );
 });
@@ -84,7 +84,7 @@ const MenubarContent = React.forwardRef<
         align={align}
         alignOffset={alignOffset}
         sticky={sticky}
-        className={clsx(CSS.menuContent, className)}
+        className={createKitClass(CSS.menuContent, className)}
       />
     );
   },
@@ -99,7 +99,7 @@ const MenubarItem = React.forwardRef<
     <MBAR.Item
       {...props}
       ref={ref}
-      className={clsx(CSS.menuItem, className)}
+      className={createKitClass(CSS.menuItem, className)}
     />
   );
 });

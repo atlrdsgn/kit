@@ -1,7 +1,7 @@
 import React from 'react';
-import type { ButtonSize, ButtonVariant } from './button.css';
+import { type ButtonSize, type ButtonVariant } from './button.css';
 
-export interface BASE_BUTTON_PROPS {
+export interface BaseButtonProps {
   children: React.ReactNode;
   /**
    *

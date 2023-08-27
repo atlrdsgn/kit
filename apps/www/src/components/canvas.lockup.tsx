@@ -2,19 +2,20 @@
 
 import React from 'react';
 
-function CanvasLockup({ children }: { children: React.ReactNode }) {
+function Lockup({ children }: { children: React.ReactNode }) {
   return (
     <div
+      id='lockup'
       style={{
-        zIndex: 1,
         position: 'relative',
         width: '100vw',
         height: '100vh',
         overflow: 'hidden',
+        zIndex: 0,
       }}>
       {children}
     </div>
   );
 }
 
-export default CanvasLockup;
+export default Lockup;

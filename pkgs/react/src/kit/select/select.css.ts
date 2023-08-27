@@ -44,22 +44,11 @@ export const selectTrigger = style({
   ':hover': { backgroundColor: kit.color.carbon0 },
   ':focus': {
     outline: 'none',
-    borderColor: kit.color.sapphire2,
+    borderColor: kit.color.sapphire5,
     boxShadow: `0px 0px 0px 4px rgba(74, 73, 126, 0.20), 0px 1px 2px 0px rgba(74, 73, 126, 0.40)`,
   },
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      borderColor: kit.color.carbon8,
-      backgroundColor: kit.color.carbon9,
-      color: kit.color.carbon0,
-
-      ':hover': { backgroundColor: kit.color.carbon8 },
-      ':focus': {
-        boxShadow: `0px 0px 0px 4px rgba(74, 73, 126, 0.40), 0px 1px 2px 0px rgba(74, 73, 126, 0.40)`,
-      },
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&[data-placeholder]': {
@@ -102,13 +91,7 @@ export const selectContent = style({
   paddingRight: '6px',
   boxShadow: '0px 16px 20px -8px rgba(17, 12, 34, 0.10)',
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      borderColor: kit.color.carbon8,
-      backgroundColor: kit.color.carbon9,
-      color: kit.color.carbon0,
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&::-webkit-scrollbar': {
@@ -150,11 +133,7 @@ export const selectItemText = style({
   color: kit.color.carbon8,
   ...SLCT_TEXT_STX,
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      color: kit.color.carbon0,
-    },
-  },
+  '@media': {},
 });
 
 export const selectItem = style({

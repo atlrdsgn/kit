@@ -43,19 +43,7 @@ export const popoverTrigger = style({
     borderColor: kit.color.carbon2,
   },
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon9,
-      color: kit.color.carbon0,
-      borderColor: kit.color.carbon8,
-
-      ':hover': {
-        backgroundColor: kit.color.carbon8,
-        color: kit.color.carbon0,
-        borderColor: kit.color.carbon7,
-      },
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&[data-state="open"]': {
@@ -92,18 +80,7 @@ export const popoverContent = style({
       'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
   },
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon9,
-
-      ':focus': {
-        outline: 'none',
-        backgroundColor: kit.color.carbon9,
-        boxShadow:
-          'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
-      },
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&[data-state="open"][data-side="bottom"]': {

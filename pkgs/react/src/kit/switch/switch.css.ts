@@ -63,20 +63,7 @@ const BASE_ROOT = style({
     },
   },
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon9,
-
-      ':focus': {
-        outline: 'none',
-        boxShadow: `0 0 0.4px 1.4px ${kit.color.slate8}`,
-      },
-
-      selectors: {
-        '&[data-state="checked"]': { backgroundColor: kit.color.carbon8 },
-      },
-    },
-  },
+  '@media': {},
 });
 
 const BASE_TOGGLE = style({
@@ -89,17 +76,7 @@ const BASE_TOGGLE = style({
     },
   },
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.carbon6,
-
-      selectors: {
-        '&[data-state="checked"]': {
-          backgroundColor: kit.color.sapphire5,
-        },
-      },
-    },
-  },
+  '@media': {},
 });
 
 /** --------------- toggle variant properties ----------------- */

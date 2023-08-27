@@ -5,7 +5,7 @@ import { grey } from './grey';
 import { sapphire } from './sapphire';
 import { slate } from './slate';
 import { orange } from './orange';
-import { mauve } from './mauve/mauve';
+import { mauve } from './mauve';
 
 export const kitColour = {
   transparent: 'transparent',

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import CanvasLockup from '../canvas.lockup';
+import Lockup from '../canvas.lockup';
 
 export type BackgroundProps = {
   className?: string;
@@ -20,7 +20,7 @@ export const BackgroundImage = ({
   ...rest
 }: BackgroundProps) => {
   return (
-    <CanvasLockup>
+    <Lockup>
       <div
         className=''
         style={{
@@ -32,8 +32,8 @@ export const BackgroundImage = ({
           height: '100vh',
           overflow: 'hidden',
           backgroundColor: 'transparent',
-          backdropFilter: 'blur(10px)',
-          WebkitBackdropFilter: 'blur(10px)',
+          backdropFilter: 'blur(10px) saturate(180%)',
+          WebkitBackdropFilter: 'blur(10px) saturate(180%)',
         }}
       />
       <Image
@@ -54,6 +54,6 @@ export const BackgroundImage = ({
           ...style,
         }}
       />
-    </CanvasLockup>
+    </Lockup>
   );
 };

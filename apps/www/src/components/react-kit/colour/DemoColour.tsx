@@ -2,16 +2,10 @@
 import React from 'react';
 import { Container, Section, Flex, Space, Text, Heading } from '@atlrdsgn/kit';
 import { ColourBox } from './ColourBox';
-import { ThemeSwitch } from './ThemeSwitch';
 
 export const DemoColour = () => {
   return (
     <Section>
-      <Container
-        width='small'
-        align='center'>
-        <ThemeSwitch />
-      </Container>
       <Space size='lg' />
       <Container
         width='medium'
@@ -30,36 +24,6 @@ export const DemoColour = () => {
             Core
           </Heading>
         </Container>
-        {/* <!-- sapphire --> */}
-        <Section>
-          <Text
-            size='xs'
-            weight='medium'
-            font='mono'>
-            .kit-sapphire
-          </Text>
-          <Flex
-            direction={'row'}
-            align={'center'}
-            justify={'start'}
-            gap={'xs'}
-            wrap={'wrap'}
-            style={{ marginBottom: '10px', marginTop: '10px' }}>
-            <ColourBox colour={'sapphire0'} />
-            <ColourBox colour={'sapphire1'} />
-            <ColourBox colour={'sapphire2'} />
-            <ColourBox colour={'sapphire3'} />
-            <ColourBox colour={'sapphire4'} />
-            <ColourBox colour={'sapphire5'} />
-            <ColourBox colour={'sapphire6'} />
-            <ColourBox colour={'sapphire7'} />
-            <ColourBox colour={'sapphire8'} />
-            <ColourBox colour={'sapphire9'} />
-            <ColourBox colour={'sapphire10'} />
-            <ColourBox colour={'sapphire11'} />
-            <ColourBox colour={'sapphire12'} />
-          </Flex>
-        </Section>
 
         {/* <!-- Jade --> */}
         <Section>
@@ -89,6 +53,37 @@ export const DemoColour = () => {
             <ColourBox colour={'jade10'} />
             <ColourBox colour={'jade11'} />
             <ColourBox colour={'jade12'} />
+          </Flex>
+        </Section>
+
+        {/* <!-- sapphire --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-sapphire
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'sapphire0'} />
+            <ColourBox colour={'sapphire1'} />
+            <ColourBox colour={'sapphire2'} />
+            <ColourBox colour={'sapphire3'} />
+            <ColourBox colour={'sapphire4'} />
+            <ColourBox colour={'sapphire5'} />
+            <ColourBox colour={'sapphire6'} />
+            <ColourBox colour={'sapphire7'} />
+            <ColourBox colour={'sapphire8'} />
+            <ColourBox colour={'sapphire9'} />
+            <ColourBox colour={'sapphire10'} />
+            <ColourBox colour={'sapphire11'} />
+            <ColourBox colour={'sapphire12'} />
           </Flex>
         </Section>
 
@@ -231,6 +226,36 @@ export const DemoColour = () => {
           </Flex>
         </Section>
 
+        {/* <!-- mauve --> */}
+        <Section>
+          <Text
+            size='xs'
+            weight='medium'
+            font='mono'>
+            .kit-mauve
+          </Text>
+          <Flex
+            direction={'row'}
+            align={'center'}
+            justify={'start'}
+            gap={'xs'}
+            wrap={'wrap'}
+            style={{ marginBottom: '10px', marginTop: '10px' }}>
+            <ColourBox colour={'mauve1'} />
+            <ColourBox colour={'mauve2'} />
+            <ColourBox colour={'mauve3'} />
+            <ColourBox colour={'mauve4'} />
+            <ColourBox colour={'mauve5'} />
+            <ColourBox colour={'mauve6'} />
+            <ColourBox colour={'mauve7'} />
+            <ColourBox colour={'mauve8'} />
+            <ColourBox colour={'mauve9'} />
+            <ColourBox colour={'mauve10'} />
+            <ColourBox colour={'mauve11'} />
+            <ColourBox colour={'mauve12'} />
+          </Flex>
+        </Section>
+
         {/* <!-- NEONS --> */}
         <Container
           width='medium'
@@ -275,37 +300,6 @@ export const DemoColour = () => {
           </Flex>
         </Section>
 
-        {/* <!-- cherry --> */}
-        <Section>
-          <Text
-            size='xs'
-            weight='medium'
-            font='mono'>
-            .kit-cherry
-          </Text>
-          <Flex
-            direction={'row'}
-            align={'center'}
-            justify={'start'}
-            gap={'xs'}
-            wrap={'wrap'}
-            style={{ marginBottom: '10px', marginTop: '10px' }}>
-            <ColourBox colour={'cherry0'} />
-            <ColourBox colour={'cherry1'} />
-            <ColourBox colour={'cherry2'} />
-            <ColourBox colour={'cherry3'} />
-            <ColourBox colour={'cherry4'} />
-            <ColourBox colour={'cherry5'} />
-            <ColourBox colour={'cherry6'} />
-            <ColourBox colour={'cherry7'} />
-            <ColourBox colour={'cherry8'} />
-            <ColourBox colour={'cherry9'} />
-            <ColourBox colour={'cherry10'} />
-            <ColourBox colour={'cherry11'} />
-            <ColourBox colour={'cherry12'} />
-          </Flex>
-        </Section>
-
         {/* <!-- lemon --> */}
         <Section>
           <Text
@@ -334,37 +328,6 @@ export const DemoColour = () => {
             <ColourBox colour={'lemon10'} />
             <ColourBox colour={'lemon11'} />
             <ColourBox colour={'lemon12'} />
-          </Flex>
-        </Section>
-
-        {/* <!-- lime --> */}
-        <Section>
-          <Text
-            size='xs'
-            weight='medium'
-            font='mono'>
-            .kit-lime
-          </Text>
-          <Flex
-            direction={'row'}
-            align={'center'}
-            justify={'start'}
-            gap={'xs'}
-            wrap={'wrap'}
-            style={{ marginBottom: '10px', marginTop: '10px' }}>
-            <ColourBox colour={'lime0'} />
-            <ColourBox colour={'lime1'} />
-            <ColourBox colour={'lime2'} />
-            <ColourBox colour={'lime3'} />
-            <ColourBox colour={'lime4'} />
-            <ColourBox colour={'lime5'} />
-            <ColourBox colour={'lime6'} />
-            <ColourBox colour={'lime7'} />
-            <ColourBox colour={'lime8'} />
-            <ColourBox colour={'lime9'} />
-            <ColourBox colour={'lime10'} />
-            <ColourBox colour={'lime11'} />
-            <ColourBox colour={'lime12'} />
           </Flex>
         </Section>
       </Container>

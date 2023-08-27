@@ -1,6 +1,6 @@
 import { style, styleVariants } from '@vanilla-extract/css';
 import { recipe, type RecipeVariants } from '@vanilla-extract/recipes';
-import { buttonProperties as btnx } from './properties';
+import { buttonProperties as btnx } from './button.map';
 import { kit } from '../../lib';
 
 /** ---------------------------------------------- */
@@ -140,7 +140,6 @@ const font = styleVariants(FONT_MAP, (value) => ({
 
 const buttonBase = style({
   ...btnx.core,
-  ...btnx.text,
 });
 
 /** -------------------------------------------- */

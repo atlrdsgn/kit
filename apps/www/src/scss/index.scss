@@ -27,8 +27,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --pure-white: #121212;
-    --pure-black: #fff;
+    --pure-white: #fff;
+    --pure-black: #121212;
     --athens-gray: #212326;
     --shark-gray: #f5f5f8;
     --volt-blue: #9e87c5;
@@ -146,6 +146,10 @@ body {
   margin: auto;
 }
 
+.center {
+  z-index: 10 !important;
+}
+
 .component-wrapper {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
@@ -200,11 +204,6 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
-  .component-wrapper {
-    box-shadow: inset 0 0 0 1.4px #212326 !important;
-    background-color: #1d1d1d !important;
-  }
-
   .kitLogo {
     filter: invert(1);
   }

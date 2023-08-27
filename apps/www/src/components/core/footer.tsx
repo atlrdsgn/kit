@@ -3,7 +3,7 @@
 import React from 'react';
 import { Container, Text, Space, Button, PassLink, Flex } from '@atlrdsgn/kit';
 
-function GlobalFooter() {
+function PageFooter() {
   return (
     <footer className='footer'>
       <Container
@@ -11,7 +11,7 @@ function GlobalFooter() {
         align='center'>
         <Flex
           justify='center'
-          gap='xl'>
+          gap='md'>
           <Button
             target='_self'
             href='/components'
@@ -24,16 +24,16 @@ function GlobalFooter() {
             font='system'
             href='/colour'
             size='sm'
-            weight='normal'
+            weight='semibold'
             variant='carbon'>
             Colour →
           </PassLink>
         </Flex>
 
-        <Space size='xl' />
+        <Space size='md' />
         <Container width='small'>
           <Text
-            color='slate6'
+            color='carbon6'
             size='lg'
             align='center'
             weight='medium'
@@ -43,9 +43,9 @@ function GlobalFooter() {
           </Text>
         </Container>
 
-        <Space size='md' />
+        <Space size='sm' />
         <Text
-          color='slate8'
+          color='carbon4'
           size='xs'
           align='center'
           weight='normal'
@@ -53,7 +53,7 @@ function GlobalFooter() {
           Copyright © 2023
         </Text>
         <Text
-          color='slate8'
+          color='carbon4'
           size='xs'
           align='center'
           weight='medium'
@@ -72,4 +72,4 @@ function GlobalFooter() {
   );
 }
 
-export default GlobalFooter;
+export default PageFooter;

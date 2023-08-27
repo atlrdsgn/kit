@@ -1,12 +1,8 @@
 import React, { useEffect } from 'react';
-import { clsx } from 'clsx';
+import * as CSS from './canvas.css';
+import { createKitClass } from '../../lib';
 import { canvasWithGrid } from './canvas.grid.css';
-import {
-  type CanvasVariantProps,
-  type CanvasZVariants,
-  canvas,
-  canvasBlur,
-} from './canvas.css';
+import { type CanvasVariantProps, type CanvasZVariants } from './canvas.css';
 
 interface BaseCanvasProps {
   children: React.ReactNode;
@@ -23,7 +19,7 @@ export const Canvas = React.forwardRef<HTMLDivElement, CanvasProps>(
     return (
       <div
         ref={forwardedRef}
-        className={clsx(className, canvas({ z }))}
+        className={createKitClass(CSS.canvas({ z }), className)}
         {...rest}>
         {children}
       </div>
@@ -38,7 +34,7 @@ export const CanvasBlur = React.forwardRef<HTMLDivElement, CanvasBlurProps>(
     return (
       <div
         ref={forwardedRef}
-        className={clsx(className, canvasBlur)}
+        className={createKitClass(CSS.canvasBlur, className)}
         {...rest}>
         {children}
       </div>
@@ -84,7 +80,7 @@ export const CanvasWithGrid = React.forwardRef<
   return (
     <canvas
       ref={forwardedRef}
-      className={clsx(className, canvasWithGrid)}
+      className={createKitClass(canvasWithGrid, className)}
       {...rest}
     />
   );

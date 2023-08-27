@@ -24,12 +24,7 @@ export const menuLayout = style({
 
   boxShadow: `rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px`,
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      color: kit.color.carbon1,
-      backgroundColor: kit.color.carbon9,
-    },
-  },
+  '@media': {},
 });
 
 /** ------------------------------------ *
@@ -57,17 +52,7 @@ export const menuTrigger = style({
   },
   ':focus': {},
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      color: kit.color.carbon1,
-      backgroundColor: kit.color.transparent,
-
-      ':hover': {
-        color: kit.color.carbon0,
-        backgroundColor: kit.color.carbon8,
-      },
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&[data-highlighted]': {
@@ -108,13 +93,7 @@ export const menuContent = style({
   WebkitBackdropFilter: blurz.theme.light.MEDIUM.WebkitBackdropFilter,
   backgroundColor: blurz.theme.light.MEDIUM.backgroundColor,
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backdropFilter: blurz.theme.dark.MEDIUM.backdropFilter,
-      WebkitBackdropFilter: blurz.theme.dark.MEDIUM.WebkitBackdropFilter,
-      backgroundColor: blurz.theme.dark.MEDIUM.backgroundColor,
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&[data-state="open"][data-side="bottom"]': {
@@ -159,17 +138,7 @@ export const menuItem = style({
     cursor: 'not-allowed',
   },
 
-  '@media': {
-    '(prefers-color-scheme: dark)': {
-      backgroundColor: kit.color.transparent,
-      color: kit.color.carbon0,
-
-      ':hover': {
-        backgroundColor: kit.color.sapphire8,
-        border: `1px solid ${kit.color.sapphire8}`,
-      },
-    },
-  },
+  '@media': {},
 
   selectors: {
     '&[data-highlighted]': {

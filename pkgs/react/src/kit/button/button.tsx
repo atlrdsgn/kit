@@ -1,10 +1,10 @@
 import React from 'react';
-import { button } from './button.css';
+import * as CSS from './button.css';
 import { motion, type MotionProps } from 'framer-motion';
-import { type BASE_BUTTON_PROPS } from './button.types';
+import { type BaseButtonProps } from './button.types';
 import { type ButtonVariantProps } from './button.css';
 
-type ButtonElementProps = BASE_BUTTON_PROPS &
+type ButtonElementProps = BaseButtonProps &
   ButtonVariantProps &
   MotionProps &
   React.ButtonHTMLAttributes<HTMLButtonElement> &
@@ -52,7 +52,7 @@ export const Button = ({
         onClick={onClick}
         variants={motionVariants}
         whileHover='hover'
-        className={button({ size, variant, font })}>
+        className={CSS.button({ size, variant, font })}>
         {children}
       </motion.a>
     );
@@ -67,7 +67,7 @@ export const Button = ({
         type={type}
         variants={motionVariants}
         whileHover='hover'
-        className={button({ size, variant, font })}
+        className={CSS.button({ size, variant, font })}
         onClick={handleClick}>
         {children}
       </motion.button>

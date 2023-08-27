@@ -46,3 +46,6 @@ export {
   // hooks
   useWindowSize,
 } from './hooks';
+
+export { composeRefs, useComposedRefs } from './utils/use-composed-refs';
+export { createKitClass } from './utils/create-kit-class';

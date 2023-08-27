@@ -21,10 +21,6 @@
     "changeset": "changeset",
     "version-packages": "changeset version"
   },
-  "peerDependencies": {
-    "react": "*",
-    "react-dom": "*"
-  },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "eslint": "^8.47.0",
