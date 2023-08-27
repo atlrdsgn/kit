@@ -7,11 +7,6 @@
       "env": ["NEXT_PUBLIC_SITE_URL"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
-    "www#build": {
-      "dependsOn": ["^build"],
-      "env": ["NEXT_PUBLIC_SITE_URL"],
-      "outputs": [".next/**", "!.next/cache/**"]
-    },
     "dev": {
       "dependsOn": ["^build"],
       "cache": false,
