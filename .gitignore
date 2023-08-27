@@ -26,3 +26,7 @@ public/dist
 *.pid
 *.seed
 *.local
+
+
+# Experimental
+yarn.lock
