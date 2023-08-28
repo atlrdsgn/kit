@@ -30,9 +30,7 @@ export const constants = {
     justifyContent: 'center',
     gap: 2,
     margin: 'auto',
-    paddingLeft: 3,
-    paddingRight: 3,
-    paddingTop: 3,
+    padding: 3,
     paddingBottom: 8,
   },
 

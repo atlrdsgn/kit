@@ -16,6 +16,7 @@ import {
   DemoMenubar,
   DemoPopover,
   DemoBanner,
+  DemoTip,
 } from '@/components/react-kit';
 
 const ComponentsIndex = () => {
@@ -31,6 +32,7 @@ const ComponentsIndex = () => {
         <DemoBanner />
         <DemoButton />
         <DemoPopover />
+        <DemoTip />
         <DemoSwitch />
         <DemoTabSwitcher />
         <DemoSelect />

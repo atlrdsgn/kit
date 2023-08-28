@@ -3,11 +3,7 @@ import { SDF } from '../@shared';
 import { blurz, kit } from '../../lib';
 import { constants } from './constant.properties';
 
-/** ----------------------------------------------------- */
-
-/** ------------------------------------ *
- * @root
- * ------------------------------------ */
+// root
 export const menuLayout = style({
   // .. menubar[menu]
   display: 'flex',
@@ -27,9 +23,7 @@ export const menuLayout = style({
   '@media': {},
 });
 
-/** ------------------------------------ *
- * @trigger
- * ------------------------------------ */
+// trigger
 export const menuTrigger = style({
   // layout
   ...constants.MENU_TRIGGER_BASE,
@@ -68,9 +62,7 @@ export const menuTrigger = style({
 
 export const menuSubTrigger = style({});
 
-/** ------------------------------------- *
- * @content
- ---------------------------------------- */
+// content
 export const menuContent = style({
   ...constants.MENU_CONTENT_BASE,
   borderRadius: constants.CONTENT_RADII,
@@ -83,12 +75,6 @@ export const menuContent = style({
   boxShadow:
     'rgba(0, 0, 0, 0.08) 0px 0px 0px 1px, 0px 16px 20px -8px rgba(17, 12, 34, 0.10)',
 
-  /**
-   *
-   * bg (or) w/ backdrop-filter
-   */
-  // backgroundColor: kit.color.carbon0,
-  // ...blurz.theme.light.MEDIUM,
   backdropFilter: blurz.theme.light.MEDIUM.backdropFilter,
   WebkitBackdropFilter: blurz.theme.light.MEDIUM.WebkitBackdropFilter,
   backgroundColor: blurz.theme.light.MEDIUM.backgroundColor,
@@ -113,9 +99,7 @@ export const menuSubItem = style({
   ...constants.MENU_ITEM_BASE,
 });
 
-/** ------------------------------------- *
- * @item
- * ------------------------------------- */
+// item
 export const menuItem = style({
   ...constants.MENU_ITEM_BASE,
 

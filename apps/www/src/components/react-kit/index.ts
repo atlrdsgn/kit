@@ -11,6 +11,7 @@ export * from './DemoText';
 export * from './DemoPopover';
 export * from './DemoSwitch';
 export * from './DemoTabSwitcher';
+export * from './DemoTip';
 
 export * from './DemoPopover';
 export * from './DemoSelect';

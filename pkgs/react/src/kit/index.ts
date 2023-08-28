@@ -22,6 +22,7 @@ export * from './stack';
 export * from './switch';
 export * from './tab-switcher';
 export * from './text';
+export * from './tip';
 
 export * from './@shared';
 export * from './@utils';
