@@ -3,6 +3,10 @@
   "version": "0.4.8",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "release": "npm publish --access public",
+    "npm:login": "npm login --registry=https://npm.pkg.github.com --scope=@atlrdsgn"
+  },
   "publishConfig": {
     "access": "public"
   }
