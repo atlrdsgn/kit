@@ -3,11 +3,17 @@ import * as CSS from './card.css';
 import { clsx } from 'clsx';
 import { createKitClass } from '../../lib';
 
-import { type CardHeadingLevels, type CardHeaderVariants } from './card.css';
+import {
+  type CardHeadingLevels,
+  type CardShadowVariantProps,
+  type CardHeaderVariantProps,
+  type CardShadowVariants,
+} from './card.css';
 
 interface CardInterfaceProps {
   className?: string;
   children?: React.ReactNode;
+  shadow?: CardShadowVariants;
 }
 
 export type CardProps = CardInterfaceProps &
@@ -32,17 +38,22 @@ CardContainer.displayName = 'Card';
 
 /** ----------------------------- */
 
-const CardContent = React.forwardRef<HTMLParagraphElement, CardProps>(
-  ({ className, children, ...rest }, ref) => {
-    const stx = createKitClass(CSS.cardContent, className);
+type CardContentProps = {
+  className?: string;
+  children?: React.ReactNode;
+  shadow?: CardShadowVariants;
+} & React.HTMLAttributes<HTMLDivElement> &
+  CardShadowVariantProps;
 
+const CardContent = React.forwardRef<HTMLDivElement, CardContentProps>(
+  ({ className, children, shadow = 'sm', ...rest }, ref) => {
     return (
-      <p
+      <div
         ref={ref}
-        className={stx}
+        className={createKitClass(CSS.cardContent({ shadow }), className)}
         {...rest}>
         {children}
-      </p>
+      </div>
     );
   },
 );
@@ -53,7 +64,7 @@ CardContent.displayName = 'CardContent';
 export type CardHeaderProps =
   // ..
   CardInterfaceProps &
-    CardHeaderVariants & {
+    CardHeaderVariantProps & {
       level?: CardHeadingLevels;
     } & React.HTMLAttributes<HTMLHeadingElement>;
 

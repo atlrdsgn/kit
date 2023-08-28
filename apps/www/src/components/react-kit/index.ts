@@ -1,6 +1,7 @@
 export * from './DemoBadge';
 export * from './DemoBanner';
 export * from './DemoButton';
+export * from './DemoCard';
 export * from './DemoChip';
 export * from './DemoContainer';
 export * from './DemoStack';

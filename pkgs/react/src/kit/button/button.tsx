@@ -33,7 +33,7 @@ export const Button = ({
 
   const motionVariants = {
     hover: {
-      scale: 1.01, // You can adjust the scale factor as needed
+      scale: 1.01,
     },
   };
 

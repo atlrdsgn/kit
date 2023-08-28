@@ -11,5 +11,7 @@ module.exports = {
     warnOnUnsupportedTypeScriptVersion: true,
   },
   plugins: ['@typescript-eslint', 'import', 'react', 'jest'],
-  rules: {},
+  rules: {
+    // rules are handled by `eslint-config-atlrdsgn`
+  },
 };

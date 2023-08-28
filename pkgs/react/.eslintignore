@@ -1,6 +1,6 @@
 .eslintrc.cjs
-prod.package
+.turbo
+
 dist
 node_modules
-.turbo
 vite.config.ts
