@@ -1,12 +1,11 @@
 'use client';
 
 import React from 'react';
-import content from '../../../web.config.json';
-import { Container, Section, Text, Heading, Space } from '@atlrdsgn/kit';
+
+import { KitLogo } from './kit.svg';
+import { Container, Section, Text, Space } from '@atlrdsgn/kit';
 
 function ComponentsPage({ children }: { children?: React.ReactNode }) {
-  const { components } = content;
-
   return (
     <>
       <Section>
@@ -14,21 +13,33 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
         <Container
           width='small'
           align='center'>
-          <Heading
-            align='center'
-            size='H2'
-            weight='semibold'
-            font='system'>
-            {components.introduction}
-          </Heading>
-          <Space size='sm' />
+          <KitLogo
+            className='kitLogo logo'
+            width={'80'}
+            height={'55'}
+            style={{
+              zIndex: 11,
+            }}
+          />
+
           <Text
-            color='jade7'
+            color='carbon2'
+            align='center'
+            size='xs'
+            weight='bold'
+            font='mono'
+            casing='uppercase'>
+            rooted in subtractive design.
+          </Text>
+          <Space size='lg' />
+          <Text
+            color='sapphire6'
             align='center'
             size='lg'
-            weight='medium'
+            weight='semibold'
             font='system'>
-            {components.subtitle}
+            Atelier® Kit is an ever– expanding library of React components,
+            primitives, and tools.
           </Text>
         </Container>
 

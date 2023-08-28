@@ -1,5 +1,7 @@
 import React from 'react';
 import { PageLayout } from '@/components/core';
+import { PageHeader } from '@/components/core';
+
 import ComponentsPage from '@/components/core/components.page';
 import {
   DemoBadge,
@@ -23,6 +25,7 @@ const ComponentsIndex = () => {
   return (
     <>
       <PageLayout type={'Standard'}>
+        <PageHeader />
         <ComponentsPage />
 
         <DemoSection />

@@ -88,6 +88,23 @@ body:not(.user-is-tabbing) textarea:focus {
   outline: none;
 }
 
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding-right: 14px;
+  padding-left: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 100 !important;
+  background-color: transparent !important;
+  backdrop-filter: blur(10px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+  border-bottom: 1px solid #dddddd;
+}
+
 .footer {
   color: inherit;
   z-index: 80 !important;

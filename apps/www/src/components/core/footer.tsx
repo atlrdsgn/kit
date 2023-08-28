@@ -16,14 +16,14 @@ function PageFooter() {
             target='_self'
             href='/components'
             font='system'
-            size='sm'
+            size='xs'
             variant='carbon'>
             Components →
           </Button>
           <PassLink
             font='system'
             href='/colour'
-            size='sm'
+            size='xs'
             weight='semibold'
             variant='carbon'>
             Colour →
@@ -31,15 +31,16 @@ function PageFooter() {
         </Flex>
 
         <Space size='md' />
-        <Container width='small'>
+        <Container
+          width='small'
+          align='center'>
           <Text
             color='carbon6'
             size='lg'
             align='center'
             weight='medium'
             font='inter'>
-            We are currently updating a few components, and documentation will
-            be back online soon.
+            This website is in– development.
           </Text>
         </Container>
 
