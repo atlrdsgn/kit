@@ -6,7 +6,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import banner from 'vite-plugin-banner';
 import dts from 'vite-plugin-dts';
 
-const npm_package_version = pkg.version;
+const npmv = pkg.version;
 const peers = Object.keys(pkg.peerDependencies);
 
 export default defineConfig({
@@ -25,7 +25,7 @@ export default defineConfig({
         '@radix-ui/react-label',
         '@radix-ui/react-menubar',
         '@radix-ui/react-popover',
-        '@radix-ui/react-porta',
+        '@radix-ui/react-portal',
         '@radix-ui/react-select',
         '@radix-ui/react-slot',
         '@radix-ui/react-switch',
@@ -42,7 +42,7 @@ export default defineConfig({
           '@radix-ui/react-label': 'LABL',
           '@radix-ui/react-menubar': 'MBAR',
           '@radix-ui/react-popover': 'POP',
-          '@radix-ui/react-porta': 'P',
+          '@radix-ui/react-portal': 'P',
           '@radix-ui/react-select': 'SLCT',
           '@radix-ui/react-slot': 'SLOT',
           '@radix-ui/react-switch': 'SWI',
@@ -74,13 +74,13 @@ export default defineConfig({
         filePath: filePath.replace('src', ''),
       }),
       include: ['src'],
-      exclude: ['node_modules', 'dist', 'prod.package'],
+      exclude: ['node_modules', 'dist'],
     }),
     vanillaExtractPlugin({
       identifiers: 'short',
     }),
     banner(`
-    * @atlrdsgn/kit v${npm_package_version} 
+    * @atlrdsgn/kit v${npmv} 
     * see https://kit.atlrdsgn.com for more information.
     * see https://docs.atlrdsgn.com for further documentation.
     * 

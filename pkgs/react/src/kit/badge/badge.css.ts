@@ -119,6 +119,7 @@ export const badgeContent = style({
 export type BadgeSizeVariants = keyof typeof size;
 export type BadgeColorVariants = keyof typeof appearance;
 export type BadgeVariantProps = RecipeVariants<typeof badge>;
+
 export const badge = recipe({
   base: badgeRootLayout,
   variants: {

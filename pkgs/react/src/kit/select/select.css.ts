@@ -18,9 +18,9 @@ export const selectTrigger = style({
   justifyContent: 'space-between',
   verticalAlign: 'middle',
   height: '34px',
-  minWidth: 140,
+  minWidth: 200,
   maxWidth: 280,
-  width: 200,
+  width: '100%',
 
   fontFamily: kit.font.family.system,
   fontSize: kit.font.size.SM,
