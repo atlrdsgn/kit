@@ -1,11 +1,11 @@
 import React from 'react';
-import { HomePage, PageFooter, PageLayout } from '@/components/core';
+import { CoverPageTwo, PageFooter, PageLayout } from '@/components/core';
 
 export default function AppIndex() {
   return (
     <>
       <PageLayout type={'Standard'}>
-        <HomePage />
+        <CoverPageTwo />
         <PageFooter />
       </PageLayout>
     </>

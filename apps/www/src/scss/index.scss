@@ -13,12 +13,13 @@
   --font-inter: 'Inter', 'system-ui', sans-serif;
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0883ff82 55deg,
-    #54d7ff7e 120deg,
-    #0073ffb5 160deg,
+    #ff971a33 0deg,
+    /* subtle orange at very low opacity */ #ff7d0d82 55deg,
+    /* orange with higher opacity */ #ffaa547e 120deg,
+    /* lighter orange, slightly reduced opacity */ #ff6600e0 160deg,
     transparent 360deg
   );
+
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
@@ -100,8 +101,8 @@ body:not(.user-is-tabbing) textarea:focus {
   padding-bottom: 10px;
   z-index: 100 !important;
   background-color: transparent !important;
-  backdrop-filter: blur(10px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(10px) saturate(180%) !important;
+  backdrop-filter: blur(10px) saturate(220%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(220%) !important;
   border-bottom: 1px solid #dddddd;
 }
 
@@ -154,7 +155,6 @@ html.fonts-loaded body {
 
 body {
   transition: opacity #{$duration / 6 + 's'} ease-in !important;
-
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -180,7 +180,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   position: fixed;
   bottom: 30px;
   left: 0;
