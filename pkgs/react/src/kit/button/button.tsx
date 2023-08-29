@@ -1,8 +1,8 @@
 import React from 'react';
 import * as CSS from './button.css';
 import { motion, type MotionProps } from 'framer-motion';
-import { type BaseButtonProps } from './button.types';
-import { type ButtonVariantProps } from './button.css';
+import type { BaseButtonProps } from './button.types';
+import type { ButtonVariantProps } from './button.css';
 
 type ButtonElementProps = BaseButtonProps &
   ButtonVariantProps &

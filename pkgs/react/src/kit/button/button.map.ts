@@ -74,7 +74,7 @@ const buttonColorProperties = {
     [ButtonColor.JADE]: kit.color.jade6,
     [ButtonColor.ORANGE]: kit.color.orange6,
     [ButtonColor.SAPPHIRE]: kit.color.sapphire6,
-    [ButtonColor.GHOST]: 'transparent',
+    [ButtonColor.GHOST]: kit.color.transparent,
   },
   color: {
     // text color

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useMemo } from 'react';
 import * as LABL from '@radix-ui/react-label';
 import { clsx } from 'clsx';
 import { input, inputLabel, inputFlex, inputTypeNumber } from './input.css';
-import { type InputProps } from './input.types';
+import type { InputProps } from './input.types';
 
 const InputBase: React.FC<InputProps> = ({
   className,

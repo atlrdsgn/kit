@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { type KitMode, KitContext } from './context';
-import { type ThemeColour } from '../theme';
+import type { ThemeColour } from '../theme';
 import { kitColour, darkKitColour } from '../colour';
 import { themes } from '../theme/kit.css';
 

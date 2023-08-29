@@ -1,11 +1,11 @@
 import React from 'react';
 import { clsx } from 'clsx';
 import * as css from './banner.css';
-import {
-  type BannerSize,
-  type BannerVariant,
-  type BannerVariants,
-  type BannerBorderBoolean,
+import type {
+  BannerSize,
+  BannerVariant,
+  BannerVariants,
+  BannerBorderBoolean,
 } from './banner.css';
 
 interface BaseBannerProps {

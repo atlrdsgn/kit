@@ -2,12 +2,11 @@ import React from 'react';
 import * as CSS from './card.css';
 import { clsx } from 'clsx';
 import { createKitClass } from '../../lib';
-
-import {
-  type CardHeadingLevels,
-  type CardShadowVariantProps,
-  type CardHeaderVariantProps,
-  type CardShadowVariants,
+import type {
+  CardHeadingLevels,
+  CardShadowVariantProps,
+  CardHeaderVariantProps,
+  CardShadowVariants,
 } from './card.css';
 
 interface CardInterfaceProps {

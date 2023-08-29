@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import * as CSS from './canvas.css';
 import { createKitClass } from '../../lib';
 import { canvasWithGrid } from './canvas.grid.css';
-import { type CanvasVariantProps, type CanvasZVariants } from './canvas.css';
+import type { CanvasVariantProps, CanvasZVariants } from './canvas.css';
 
 interface BaseCanvasProps {
   children: React.ReactNode;

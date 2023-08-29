@@ -1,13 +1,13 @@
 import React, { forwardRef } from 'react';
 import clsx from 'clsx';
 import { link } from './passlink.css';
-import {
-  type LinkColorProps,
-  type LinkFontProps,
-  type LinkSizeProps,
-  type LinkWeightProps,
+import type {
+  LinkColorProps,
+  LinkFontProps,
+  LinkSizeProps,
+  LinkWeightProps,
   //..
-  type LinkVariantProps,
+  LinkVariantProps,
 } from './passlink.css';
 
 interface LinkElementProps {

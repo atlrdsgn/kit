@@ -1,13 +1,13 @@
 import React from 'react';
 import { clsx } from 'clsx';
 import { container } from './container.css';
-import {
+import type {
   // ..
-  type ContainerAlignment,
-  type ContainerBorder,
-  type ContainerFlush,
-  type ContainerVariantProps,
-  type ContainerWidth,
+  ContainerAlignment,
+  ContainerBorder,
+  ContainerFlush,
+  ContainerVariantProps,
+  ContainerWidth,
 } from './container.css';
 
 export type ContainerProps = ContainerVariantProps &
