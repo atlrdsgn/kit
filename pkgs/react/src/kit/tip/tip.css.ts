@@ -97,3 +97,20 @@ export const tooltipContent = style({
     },
   },
 });
+
+export const tooltipIcon = style({
+  // text styles
+  textAlign: 'center',
+  height: '100%',
+  width: '100%',
+  margin: 'auto',
+
+  // layout styles
+  fontVariantNumeric: 'tabular-nums',
+  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  padding: 0,
+  borderRadius: kit.radii.XS,
+});

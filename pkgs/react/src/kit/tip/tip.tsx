@@ -3,6 +3,12 @@ import * as TIP from '@radix-ui/react-tooltip';
 import * as CSS from './tip.css';
 import { createKitClass } from '../../lib';
 
+import {
+  IconWrapper,
+  type SVGIconProps,
+  type SVGIconVariants,
+} from '../../lib/icons';
+
 /**
  * TODO:
  * an idea here would be to render the popover
@@ -150,10 +156,29 @@ const TipContent = React.forwardRef<
   },
 );
 
+const TipIcon: React.FC<SVGIconProps> = ({
+  className,
+  icon,
+  color = 'currentColor',
+  ...props
+}) => {
+  const classes = createKitClass(CSS.tooltipIcon, className);
+  const variant = icon as SVGIconVariants;
+  return (
+    <IconWrapper
+      size={24}
+      color={color}
+      className={classes}
+      icon={variant}
+      {...props}
+    />
+  );
+};
 // exports
 export const Tip: React.FC<TipProps> & {
   Trigger: typeof TipTrigger;
   Content: typeof TipContent;
+  Icon: typeof TipIcon;
   //..
   Portal: typeof TipPortal;
 } = (props) => <TipRoot {...props} />;
@@ -162,10 +187,12 @@ Tip.displayName = 'Tip';
 
 Tip.Trigger = TipTrigger;
 Tip.Content = TipContent;
+Tip.Icon = TipIcon;
 Tip.Portal = TipPortal;
 
 TipTrigger.displayName = 'Tip.Trigger';
 TipContent.displayName = 'Tip.Content';
+TipIcon.displayName = 'Tip.Icon';
 TipPortal.displayName = 'Tip.Portal';
 
 export type { TipProps };

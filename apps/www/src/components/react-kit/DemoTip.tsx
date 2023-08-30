@@ -7,7 +7,9 @@ export const DemoTip = () => {
   return (
     <ComponentWrapper label='tip'>
       <Tip>
-        <Tip.Trigger>Tip Trigger</Tip.Trigger>
+        <Tip.Trigger>
+          <Tip.Icon icon='ExpandFilled.Icon' />
+        </Tip.Trigger>
         <Tip.Content>
           <Text
             size='sm'
