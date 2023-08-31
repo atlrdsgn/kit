@@ -22,3 +22,5 @@ export const ExpandOutlinedIcon = ({
     </svg>
   );
 };
+
+export default ExpandOutlinedIcon;

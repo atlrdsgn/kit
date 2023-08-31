@@ -1,6 +1,6 @@
 {
   "name": "@atlrdsgn/kit",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "an ever– expanding library of React components, primitives, and tools",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -30,6 +30,7 @@
     "build": "vite build",
     "build:types": "yarn tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
     "lint": "eslint . --ext .js,.ts,.tsx",
+    "empty": "rm -rf dist",
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo",
     "release": "npm publish --access public",
     "dev:release": "npm publish --access private",

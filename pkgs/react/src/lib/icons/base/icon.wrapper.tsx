@@ -1,10 +1,10 @@
-import { ARCubeIcon } from './tools/ARCube';
-import { CursorIcon } from './tools/Cursor';
-import { ExpandFilledIcon } from './tools/ExpandFilled';
-import { ExpandOutlinedIcon } from './tools/ExpandOutlined';
-import { LinkedIcon } from './tools/Linked';
+import { ARCubeIcon } from '../tools/ARCube';
+import { CursorIcon } from '../tools/Cursor';
+import { ExpandFilledIcon } from '../tools/ExpandFilled';
+import { ExpandOutlinedIcon } from '../tools/ExpandOutlined';
+import { LinkedIcon } from '../tools/Linked';
 
-import type { IconMap, SVGIconProps } from './types';
+import type { IconMap, SVGIconProps } from '../types';
 
 export const IconMapping: IconMap = {
   'ARCube.Icon': ARCubeIcon,

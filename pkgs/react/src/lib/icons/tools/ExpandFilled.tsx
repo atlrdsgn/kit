@@ -22,3 +22,5 @@ export const ExpandFilledIcon = ({
     </svg>
   );
 };
+
+export default ExpandFilledIcon;

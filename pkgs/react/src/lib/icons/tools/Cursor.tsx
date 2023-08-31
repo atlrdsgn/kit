@@ -29,3 +29,5 @@ export const CursorIcon = ({
     </svg>
   );
 };
+
+export default CursorIcon;

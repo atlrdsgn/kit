@@ -24,3 +24,5 @@ export const LinkedIcon = ({
     </svg>
   );
 };
+
+export default LinkedIcon;

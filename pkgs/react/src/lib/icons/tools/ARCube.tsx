@@ -33,3 +33,5 @@ export const ARCubeIcon = ({
     </svg>
   );
 };
+
+export default ARCubeIcon;
