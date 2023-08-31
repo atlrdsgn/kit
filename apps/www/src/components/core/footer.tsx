@@ -28,6 +28,14 @@ function PageFooter() {
             variant='carbon'>
             Colour →
           </PassLink>
+          <PassLink
+            font='system'
+            href='/icons'
+            size='xs'
+            weight='semibold'
+            variant='carbon'>
+            Icons →
+          </PassLink>
         </Flex>
 
         <Space size='md' />

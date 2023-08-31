@@ -43,6 +43,19 @@ export {
 } from './css';
 
 export {
+  KitIcon,
+  IconWrapper,
+  // types
+  type KitIconComponent,
+  type IconElement,
+  type SVGKit,
+  type SVGVariants,
+  type IconProps,
+  type SVGIconProps,
+  type SVGIconVariants,
+} from './icons';
+
+export {
   // hooks
   useWindowSize,
 } from './hooks';

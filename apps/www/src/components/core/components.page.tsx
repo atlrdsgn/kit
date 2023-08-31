@@ -26,17 +26,17 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
             color='carbon2'
             align='center'
             size='xs'
-            weight='bold'
-            font='mono'
-            casing='uppercase'>
-            rooted in subtractive design.
+            weight='medium'
+            font='system'
+            casing='none'>
+            Rooted in subtractive design.
           </Text>
           <Space size='lg' />
           <Text
             color='sapphire6'
             align='center'
             size='lg'
-            weight='semibold'
+            weight='medium'
             font='system'>
             Atelier® Kit is an ever– expanding library of React components,
             primitives, and tools.

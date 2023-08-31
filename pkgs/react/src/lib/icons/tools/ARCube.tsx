@@ -3,7 +3,7 @@ import type { IconProps } from '../types';
 export const ARCubeIcon = ({
   className,
   color = 'currentColor',
-  size = 16,
+  size = 24,
   ...props
 }: IconProps) => {
   return (
@@ -11,24 +11,104 @@ export const ARCubeIcon = ({
       className={className}
       width={size}
       height={size}
-      viewBox='0 0 16 16'
+      viewBox='0 0 24 24'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
       {...props}>
-      <circle
-        cx='8'
-        cy='8'
-        r='6'
-        fill={color}
-        fillOpacity='0.2'
+      <path
+        d='M13.2935 9.99243L11.6276 10.8553'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
-        d='M8 15C11.8617 15 15 11.8617 15 8C15 4.13833 11.8617 1 8 1C4.13833 1 1 4.13833 1 8C1 11.8617 4.13833 15 8 15ZM8 2.16667C11.2142 2.16667 13.8333 4.78583 13.8333 8C13.8333 11.2142 11.2142 13.8333 8 13.8333C4.78583 13.8333 2.16667 11.2142 2.16667 8C2.16667 4.78583 4.78583 2.16667 8 2.16667Z'
-        fill={color}
+        d='M11.6276 10.8553L9.94977 9.99243'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
-        d='M12.1417 5.90584L11.3192 5.08334L6.78091 9.62167L4.73925 7.58L3.91675 8.4025L6.78091 11.2725L12.1417 5.90584Z'
-        fill={color}
+        d='M11.6276 10.9631V13.1084'
+        stroke={color}
+        strokeWidth='1.1'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M18.1832 7.41559L16.5054 8.27849'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M18.2671 7.37973L16.5892 6.52881'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M18.3151 7.41559V9.56086'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M5 7.34368L6.66588 6.48077'
+        stroke={color}
+        strokeWidth='0.8'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M5.13177 7.57147L6.79766 8.42239'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M5 7.49963V9.64491'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M11.6276 19.1368L9.94977 18.2739'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M11.6276 19.1368L13.2935 18.2739'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M11.6276 19.1367V16.9915'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M16.6372 16.5001L18.3151 15.6492V13.5039'
+        stroke={color}
+        strokeWidth='1.2'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M13.2935 4.85092L11.6276 4L9.94977 4.85092H13.2935Z'
+        fill='black'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M6.66588 16.5001L5 15.6492V13.5039L6.66588 16.5001Z'
+        fill='black'
+        stroke={color}
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
     </svg>
   );

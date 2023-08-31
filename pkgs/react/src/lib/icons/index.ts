@@ -1,7 +1,14 @@
 // types
 export type { IconProps, SVGIconProps, SVGIconVariants } from './types';
+export type {
+  KitIconComponent,
+  IconElement,
+  // ..
+  SVGKit,
+  SVGVariants,
+} from './base';
 
-export { KitIcon, DynamicKitIcon, IconWrapper } from './base';
+export { KitIcon, IconWrapper } from './base';
 
 // tools
 export { ARCubeIcon } from './tools/ARCube';

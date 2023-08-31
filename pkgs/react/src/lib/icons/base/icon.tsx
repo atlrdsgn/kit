@@ -4,19 +4,28 @@ import { ExpandFilledIcon } from '../tools/ExpandFilled';
 import { ExpandOutlinedIcon } from '../tools/ExpandOutlined';
 import { LinkedIcon } from '../tools/Linked';
 
-export type SVGVariants =
+/**
+ *
+ * Example usage:
+ * import { KitIcon } from '...';
+ * <KitIcon icon="ARCube.Icon" color="#000" size={24} />
+ *
+ *
+ */
+
+type SVGVariants =
   | 'ARCube.Icon'
   | 'Cursor.Icon'
   | 'ExpandFilled.Icon'
   | 'ExpandOutlined.Icon'
   | 'Linked.Icon';
 
-type SVGKit = {
+interface SVGKit {
   icon: SVGVariants;
   color?: string;
   size?: number;
   className?: string;
-};
+}
 
 interface IconSync {
   'ARCube.Icon': React.FC<SVGKit>;
@@ -26,7 +35,7 @@ interface IconSync {
   'Linked.Icon': React.FC<SVGKit>;
 }
 
-export const IconMap: IconSync = {
+const IconMap: IconSync = {
   'ARCube.Icon': ARCubeIcon,
   'Cursor.Icon': CursorIcon,
   'ExpandFilled.Icon': ExpandFilledIcon,
@@ -58,11 +67,9 @@ export const KitIcon: React.FC<SVGKit> = ({
   );
 };
 
-/**
- *
- * Example usage:
- * import { KitIcon } from '...';
- * <KitIcon icon="ARCube.Icon" color="#000" size={24} />
- *
- *
- */
+export default KitIcon;
+
+export type IconElement = React.ReactElement<SVGKit>;
+export type KitIconComponent = typeof KitIcon;
+
+export type { SVGKit, SVGVariants };
