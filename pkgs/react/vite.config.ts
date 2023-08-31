@@ -60,6 +60,16 @@ export default defineConfig({
   plugins: [
     tsconfigPaths(),
     dts({
+      /**
+       *
+       * searches for `src` directories inside
+       * the project and replaces it with the
+       * contents of that directory.
+       */
+      beforeWriteFile: (filePath, content) => ({
+        content,
+        filePath: filePath.replace('src', ''),
+      }),
       entryRoot: 'src',
       outDir: 'dist/types',
       staticImport: true,
@@ -69,14 +79,11 @@ export default defineConfig({
         emitDeclarationOnly: true,
         noEmit: false,
       },
-      beforeWriteFile: (filePath, content) => ({
-        content,
-        filePath: filePath.replace('src', ''),
-      }),
       include: ['src'],
       exclude: ['node_modules', 'dist'],
     }),
     vanillaExtractPlugin({
+      // options are `debug` and `short`
       identifiers: 'short',
     }),
     banner(`

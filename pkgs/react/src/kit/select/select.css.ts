@@ -19,7 +19,7 @@ export const selectTrigger = style({
   verticalAlign: 'middle',
   height: '34px',
   minWidth: 200,
-  maxWidth: 280,
+  maxWidth: 240,
   width: '100%',
 
   fontFamily: kit.font.family.system,

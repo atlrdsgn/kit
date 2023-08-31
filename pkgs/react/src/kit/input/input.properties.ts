@@ -26,7 +26,6 @@ const sharedInputCSS = {
   justifyContent: 'center',
   gap: '10px',
   width: '100%',
-  maxWidth: '245px',
   margin: 'auto',
 
   fontFamily: kit.font.family.system,

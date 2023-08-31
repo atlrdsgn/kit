@@ -3,11 +3,7 @@ import * as TIP from '@radix-ui/react-tooltip';
 import * as CSS from './tip.css';
 import { createKitClass } from '../../lib';
 
-import {
-  IconWrapper,
-  type SVGIconProps,
-  type SVGIconVariants,
-} from '../../lib/icons';
+import { KitIcon, type SVGKit, type SVGVariants } from '../../lib/icons';
 
 /**
  * TODO:
@@ -156,16 +152,16 @@ const TipContent = React.forwardRef<
   },
 );
 
-const TipIcon: React.FC<SVGIconProps> = ({
+const TipIcon: React.FC<SVGKit> = ({
   className,
   icon,
   color = 'currentColor',
   ...props
 }) => {
   const classes = createKitClass(CSS.tooltipIcon, className);
-  const variant = icon as SVGIconVariants;
+  const variant = icon as SVGVariants;
   return (
-    <IconWrapper
+    <KitIcon
       size={24}
       color={color}
       className={classes}

@@ -8,11 +8,4 @@ export type {
   SVGVariants,
 } from './base';
 
-export { KitIcon, IconWrapper } from './base';
-
-// tools
-export { ARCubeIcon } from './tools/ARCube';
-export { CursorIcon } from './tools/Cursor';
-export { ExpandFilledIcon } from './tools/ExpandFilled';
-export { ExpandOutlinedIcon } from './tools/ExpandOutlined';
-export { LinkedIcon } from './tools/Linked';
+export { KitIcon } from './base';

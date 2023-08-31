@@ -44,7 +44,6 @@ export {
 
 export {
   KitIcon,
-  IconWrapper,
   // types
   type KitIconComponent,
   type IconElement,

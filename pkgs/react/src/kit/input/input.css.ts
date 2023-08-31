@@ -14,7 +14,6 @@ export const inputFlex = style({
   margin: 'auto',
   height: 'auto',
   width: '100%',
-  maxWidth: '245px',
 });
 
 export const inputLabel = style({

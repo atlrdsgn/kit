@@ -1,8 +1,11 @@
-import { ARCubeIcon } from '../tools/ARCube';
-import { CursorIcon } from '../tools/Cursor';
-import { ExpandFilledIcon } from '../tools/ExpandFilled';
-import { ExpandOutlinedIcon } from '../tools/ExpandOutlined';
-import { LinkedIcon } from '../tools/Linked';
+import { GlobeBlobIcon } from './misc/globe-blobe';
+import { ARCubeIcon } from './tools/ar-cube';
+import { ArrowSortIcon } from './tools/arrow-sort';
+import { CursorIcon } from './tools/cursor';
+import { ExpandFilledIcon } from './tools/expand-filled';
+import { ExpandOutlinedIcon } from './tools/expand-outlined';
+import { LinkedIcon } from './tools/linked';
+import { SpellCheckIcon } from './tools/spell-check';
 
 /**
  *
@@ -14,11 +17,17 @@ import { LinkedIcon } from '../tools/Linked';
  */
 
 type SVGVariants =
+  // tools
   | 'ARCube.Icon'
+  | 'ArrowSort.Icon'
   | 'Cursor.Icon'
   | 'ExpandFilled.Icon'
   | 'ExpandOutlined.Icon'
-  | 'Linked.Icon';
+  | 'Linked.Icon'
+  | 'SpellCheck.Icon'
+
+  // misc.
+  | 'GlobeBlob.Icon';
 
 interface SVGKit {
   icon: SVGVariants;
@@ -28,19 +37,31 @@ interface SVGKit {
 }
 
 interface IconSync {
+  // tools
   'ARCube.Icon': React.FC<SVGKit>;
+  'ArrowSort.Icon': React.FC<SVGKit>;
   'Cursor.Icon': React.FC<SVGKit>;
   'ExpandFilled.Icon': React.FC<SVGKit>;
   'ExpandOutlined.Icon': React.FC<SVGKit>;
   'Linked.Icon': React.FC<SVGKit>;
+  'SpellCheck.Icon': React.FC<SVGKit>;
+
+  // misc.
+  'GlobeBlob.Icon': React.FC<SVGKit>;
 }
 
 const IconMap: IconSync = {
+  // tools
   'ARCube.Icon': ARCubeIcon,
+  'ArrowSort.Icon': ArrowSortIcon,
   'Cursor.Icon': CursorIcon,
   'ExpandFilled.Icon': ExpandFilledIcon,
   'ExpandOutlined.Icon': ExpandOutlinedIcon,
   'Linked.Icon': LinkedIcon,
+  'SpellCheck.Icon': SpellCheckIcon,
+
+  // misc.
+  'GlobeBlob.Icon': GlobeBlobIcon,
 };
 
 export const KitIcon: React.FC<SVGKit> = ({

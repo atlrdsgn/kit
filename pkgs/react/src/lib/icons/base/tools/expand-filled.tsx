@@ -1,6 +1,6 @@
-import type { IconProps } from '../types';
+import type { IconProps } from '../../types';
 
-export const ExpandOutlinedIcon = ({
+export const ExpandFilledIcon = ({
   className,
   color = 'currentColor',
   size = 24,
@@ -23,4 +23,4 @@ export const ExpandOutlinedIcon = ({
   );
 };
 
-export default ExpandOutlinedIcon;
+export default ExpandFilledIcon;
