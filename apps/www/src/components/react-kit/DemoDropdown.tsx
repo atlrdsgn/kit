@@ -7,7 +7,7 @@ export const DemoDropdown = () => {
   return (
     <ComponentWrapper label='dropdown menu'>
       <Dropdown>
-        <Dropdown.Trigger>Trigger</Dropdown.Trigger>
+        <Dropdown.Trigger>Open Menu</Dropdown.Trigger>
         <Dropdown.Content>
           <Dropdown.Item>File</Dropdown.Item>
           <Dropdown.Item>Save file</Dropdown.Item>

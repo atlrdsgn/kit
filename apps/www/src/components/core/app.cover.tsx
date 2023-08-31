@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { Canvas, Text } from '@atlrdsgn/kit';
-import { KitLogo } from '../kit.svg';
-import { BackgroundImage } from '../background.img';
+import { KitLogo } from './kit.svg';
+import { BackgroundImage } from './background.img';
 
-export const CoverPageOne = () => {
+function AppCoverPage() {
   return (
     <>
       <Canvas z='normal'>
@@ -47,4 +47,6 @@ export const CoverPageOne = () => {
       />
     </>
   );
-};
+}
+
+export default AppCoverPage;

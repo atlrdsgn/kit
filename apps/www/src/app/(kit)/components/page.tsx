@@ -43,10 +43,9 @@ const ComponentsIndex = () => {
         <DemoSelect />
         <DemoDropdown />
         <DemoMenubar />
+        <DemoInput />
 
         <DemoText />
-
-        <DemoInput />
       </PageLayout>
     </>
   );

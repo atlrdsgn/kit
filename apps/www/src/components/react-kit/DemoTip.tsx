@@ -12,10 +12,11 @@ export const DemoTip = () => {
         </Tip.Trigger>
         <Tip.Content>
           <Text
-            size='sm'
+            align='center'
+            size='xs'
             color='carbon6'
             weight='medium'>
-            Commodo adipisicing laborum laboris laboris.
+            Tip Component
           </Text>
         </Tip.Content>
       </Tip>

@@ -1,20 +1,21 @@
 'use client';
 
-import React from 'react';
+import * as React from 'react';
 import { useAppStore } from './use-app-store';
 
 export const useFontsLoaded = () => {
   React.useEffect(() => {
-    const maxWaitTime = 1400; // tweak this as needed.
+    const maxWaitTime = 1500; // tweak this as needed.
+
     const timeout = window.setTimeout(() => {
       onReady();
     }, maxWaitTime);
 
-    const onReady = () => {
+    function onReady() {
       window.clearTimeout(timeout);
       useAppStore.setState({ fontsLoaded: true });
       document.documentElement.classList.add('fonts-loaded');
-    };
+    }
 
     try {
       document.fonts.ready

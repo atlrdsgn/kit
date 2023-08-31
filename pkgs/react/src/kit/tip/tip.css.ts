@@ -24,8 +24,13 @@ const baseTrigger = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  padding: '4px 14px',
+  padding: '4px',
   borderRadius: kit.radii.XS,
+
+  height: 'auto',
+  width: 'auto',
+  margin: 'auto',
+  maxHeight: '38px',
 } as const;
 
 export const tooltipTrigger = style({
@@ -66,7 +71,7 @@ export const tooltipContent = style({
   boxSizing: 'border-box',
   width: '100%',
   maxWidth: '320px',
-  minWidth: `var(--radix-tooltip-trigger-width)`,
+  minWidth: `140px`,
   maxHeight: `var(--radix-tooltip-content-available-height)`,
   minHeight: 'var(--radix-tooltip-trigger-height)',
   borderRadius: kit.radii.MD,
@@ -99,18 +104,15 @@ export const tooltipContent = style({
 });
 
 export const tooltipIcon = style({
-  // text styles
-  textAlign: 'center',
-  height: '100%',
-  width: '100%',
-  margin: 'auto',
-
-  // layout styles
-  fontVariantNumeric: 'tabular-nums',
-  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   padding: 0,
+  height: 'auto',
+  width: 'auto',
+  margin: 'auto',
+
+  fontVariantNumeric: 'tabular-nums',
+  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
   borderRadius: kit.radii.XS,
 });

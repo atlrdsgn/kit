@@ -14,10 +14,11 @@ export const DemoText = () => {
           gap={'xs'}
           wrap={'wrap'}
           style={{ marginBottom: '20px', marginTop: '20px' }}>
-          <Heading size='H3'>Lorem Ipsum</Heading>
+          <Heading size='H2'>Lorem Ipsum</Heading>
           <Text
             size='sm'
-            weight='normal'>
+            weight='medium'
+            color='carbon7'>
             Consequat quis dolor fugiat ullamco elit tempor excepteur ea sunt.
             Id ad excepteur magna do et in proident nulla. Culpa enim quis
             pariatur reprehenderit irure. Aliquip qui est mollit officia.

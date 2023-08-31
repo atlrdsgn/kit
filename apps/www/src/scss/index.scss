@@ -60,6 +60,10 @@
   min-height: 100vh;
 }
 
+html.fonts-loaded body {
+  opacity: 1 !important;
+}
+
 html {
   line-height: 1.5;
   box-sizing: border-box;
