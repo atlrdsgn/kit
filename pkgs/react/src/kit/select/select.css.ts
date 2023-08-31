@@ -174,8 +174,8 @@ export const selectItem = style({
 
   selectors: {
     '&[data-highlighted]': {
-      backgroundColor: kit.color.sapphire4,
-      color: kit.color.carbon0,
+      backgroundColor: kit.color.jade5,
+      color: kit.color.jade0,
     },
   },
 });
@@ -189,6 +189,10 @@ export const selectIndicate = style({
 
   // icon color
   color: kit.color.sapphire5,
+
+  ':active': {
+    color: kit.color.sapphire0,
+  },
 
   selectors: {
     '&[data-highlighted]': {
