@@ -31,9 +31,9 @@ export const BackgroundImage = ({
           width: '100vw',
           height: '100vh',
           overflow: 'hidden',
-          backgroundColor: 'transparent',
-          backdropFilter: 'blur(10px) saturate(180%)',
-          WebkitBackdropFilter: 'blur(10px) saturate(180%)',
+          backgroundColor: '',
+          // backdropFilter: 'blur(10px) saturate(180%)',
+          // WebkitBackdropFilter: 'blur(10px) saturate(180%)',
         }}
       />
       <Image

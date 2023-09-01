@@ -22,14 +22,6 @@ function PageFooter() {
           </Button>
           <PassLink
             font='system'
-            href='/colour'
-            size='xs'
-            weight='semibold'
-            variant='carbon'>
-            Colour →
-          </PassLink>
-          <PassLink
-            font='system'
             href='/icons'
             size='xs'
             weight='semibold'

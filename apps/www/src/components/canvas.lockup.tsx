@@ -7,6 +7,9 @@ function Lockup({ children }: { children: React.ReactNode }) {
     <div
       id='lockup'
       style={{
+        backgroundImage:
+          'linear-gradient(to bottom right, #1C1C1C 0%, black 100%)',
+        backgroundColor: '#333',
         position: 'relative',
         width: '100vw',
         height: '100vh',
