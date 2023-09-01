@@ -2,8 +2,7 @@
 
 import React from 'react';
 import { Canvas, Text } from '@atlrdsgn/kit';
-import { KitLogo } from './kit.svg';
-import { BackgroundImage } from './background.img';
+import { CoverLogo } from '../svg/cover-logo';
 
 function AppCoverPage() {
   return (
@@ -19,32 +18,23 @@ function AppCoverPage() {
             gap: '10px',
             zIndex: 10,
           }}>
-          <KitLogo
-            className='kitLogo logo'
-            width={'120'}
-            height={'75'}
-            style={{
-              zIndex: 11,
-            }}
+          <CoverLogo
+            width='230'
+            height='29'
           />
 
-          <div>
+          <div style={{}}>
             <Text
+              align='center'
               size='sm'
               weight='medium'
-              font='mono'
-              color='carbon6'>
-              yarn add @atlrdsgn/kit
+              font='system'
+              color='carbon7'>
+              Rooted in subtractive design.
             </Text>
           </div>
         </div>
       </Canvas>
-
-      <BackgroundImage
-        alt='kit loop'
-        src='/kit.loop.svg'
-        style={{}}
-      />
     </>
   );
 }

@@ -2,6 +2,9 @@
 @import './helpers';
 
 :root {
+  --app-navbar-bg: rgba(245, 245, 245, 0.6);
+  --app-navbar-shadow: rgba(48, 49, 51, 0.05) 0px 0px 1px 0px,
+    rgba(48, 49, 51, 0.1) 0px 1px 2px 0px;
   --pure-white: #fff;
   --pure-black: #121212;
   --athens-gray: #fcfaf9;
@@ -14,9 +17,9 @@
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #ff971a33 0deg,
-    /* subtle orange at very low opacity */ #ff7d0d82 55deg,
-    /* orange with higher opacity */ #ffaa547e 120deg,
-    /* lighter orange, slightly reduced opacity */ #ff6600e0 160deg,
+    #ff7d0d82 55deg,
+    #ffaa547e 120deg,
+    #ff6600e0 160deg,
     transparent 360deg
   );
 
@@ -93,21 +96,31 @@ body:not(.user-is-tabbing) textarea:focus {
   outline: none;
 }
 
-.app-header {
+.app-navbar {
   position: fixed;
-  top: 0;
+  top: 10px;
   left: 0;
   width: 100%;
   height: auto;
-  padding-right: 14px;
-  padding-left: 14px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 0.5rem;
   z-index: 100 !important;
-  background-color: transparent !important;
-  backdrop-filter: blur(10px) saturate(220%) !important;
-  -webkit-backdrop-filter: blur(10px) saturate(220%) !important;
-  border-bottom: 1px solid #dddddd;
+
+  .nav-wrapper {
+    padding-top: 0.7rem !important;
+    padding-bottom: 0.7rem !important;
+    background-color: var(--app-navbar-bg) !important;
+    border-radius: 12px !important;
+    backdrop-filter: blur(8px) saturate(160%) !important;
+    -webkit-backdrop-filter: blur(8px) saturate(160%) !important;
+
+    box-shadow: var(--app-navbar-shadow) !important;
+
+    /*
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      */
+  }
 }
 
 .footer {
@@ -174,9 +187,9 @@ body {
 .component-wrapper {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
-  box-shadow: inset 0 0 0 1.4px #dddddd;
+  box-shadow: inset 0 0 0 1.4px #f1f1f1;
   background-color: #f7f7f7;
-  border-radius: 12px !important;
+  border-radius: 14px !important;
 }
 
 footer {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageLayout } from '@/components/core';
-import { PageHeader } from '@/components/core';
+import { AppNavbar } from '@/components/navigation';
 
 import ComponentsPage from '@/components/core/components.page';
 import {
@@ -26,7 +26,7 @@ const ComponentsIndex = () => {
   return (
     <>
       <PageLayout type={'Standard'}>
-        <PageHeader />
+        <AppNavbar />
         <ComponentsPage />
 
         <DemoSection />
