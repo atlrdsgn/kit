@@ -44,6 +44,24 @@ const slideFadeLeft = style({
 
 /** ------------------- exports keyframes -------------------------- */
 
+// SLIDE ENTER
+const SLIDE_ENTER = keyframes({
+  '0%': { transform: 'translateX(calc(100% + var(--viewport-padding)))' },
+  '100%': { transform: 'translateX(0)' },
+});
+
+// HIDE AWAY
+const HIDE_AWAY = keyframes({
+  '0%': { opacity: 1 },
+  '100%': { opacity: 0 },
+});
+
+// SWIPE AWAY
+const SWIPE_AWAY = keyframes({
+  '0%': { transform: 'translateX(var(--radix-toast-swipe-end-x))' },
+  '100%': { transform: 'translateX(calc(100% + var(--viewport-padding)))' },
+});
+
 const oneEighty = keyframes({
   from: { transform: 'rotate(0deg)' },
   to: { transform: 'rotate(180deg)' },
@@ -92,6 +110,10 @@ export {
   slideFadeDown,
   slideFadeRight,
   slideFadeLeft,
+  // ..
+  SLIDE_ENTER,
+  HIDE_AWAY,
+  SWIPE_AWAY,
   // ..
   SDF,
   SUF,

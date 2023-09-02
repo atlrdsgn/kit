@@ -1,5 +1,9 @@
 // from './keyframes.css'
 export {
+  SLIDE_ENTER,
+  HIDE_AWAY,
+  SWIPE_AWAY,
+  // ..
   SDF,
   SLF,
   SUF,
