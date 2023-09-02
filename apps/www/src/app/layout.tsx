@@ -1,9 +1,12 @@
 import '@/scss/index.scss';
 import '@atlrdsgn/kit/css';
 
+import { MonaSans, fontClassName } from '@/lib/fonts';
+import { clsx } from 'clsx';
+import { AppHooks } from './hooks';
+
 import { type Metadata } from 'next';
 import ThemeProvider from '@/components/theme-provider';
-import { AppHooks } from './hooks';
 
 const siteURL = 'https://kit.atlrdsgn.com';
 
@@ -64,7 +67,9 @@ export default function RootLayout({
     <html
       lang='en'
       suppressHydrationWarning>
-      <body style={{ opacity: 0 }}>
+      <body
+        className={clsx(fontClassName, MonaSans.variable, 'sans-serif')}
+        style={{ opacity: 0 }}>
         <ThemeProvider>{children}</ThemeProvider>
         <AppHooks />
       </body>

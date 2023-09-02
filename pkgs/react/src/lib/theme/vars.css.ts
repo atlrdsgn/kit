@@ -23,6 +23,7 @@ export const themeVars = createThemeContract({
     family: {
       system: 'font-system',
       mono: 'font-mono',
+      take: 'font-take-on',
     },
     heading: {
       H1: 'font-heading-h1',

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { PassLink, Flex, Container } from '@atlrdsgn/kit';
-import { KitLogo } from '../core/kit.svg';
+import { KitLogo } from '@/components/svg/kit.svg';
 
 const repo = 'https://github.com/atlrdsgn/kit';
 
@@ -19,7 +19,7 @@ function AppNavbar() {
           gap='sm'>
           <KitLogo
             width='40'
-            height='auto'
+            height='16'
           />
 
           <div>

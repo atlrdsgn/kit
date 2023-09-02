@@ -36,7 +36,7 @@ function PageFooter() {
           align='center'>
           <Text
             color='carbon6'
-            size='lg'
+            size='xl'
             align='center'
             weight='medium'
             font='inter'>

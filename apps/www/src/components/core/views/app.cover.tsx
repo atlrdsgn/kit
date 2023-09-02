@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Canvas, Text } from '@atlrdsgn/kit';
-import { CoverLogo } from '../svg/cover-logo';
+import { CoverLogo } from '../../svg/cover-logo';
 
 function AppCoverPage() {
   return (
@@ -25,10 +25,11 @@ function AppCoverPage() {
 
           <div style={{}}>
             <Text
+              className='take'
               align='center'
               size='sm'
+              casing='lowercase'
               weight='medium'
-              font='system'
               color='carbon7'>
               Rooted in subtractive design.
             </Text>

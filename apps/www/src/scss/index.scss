@@ -2,6 +2,7 @@
 @import './helpers';
 
 :root {
+  --font-mona-sans: 'Mona Sans', 'system-ui', sans-serif;
   --app-navbar-bg: rgba(245, 245, 245, 0.6);
   --app-navbar-shadow: rgba(48, 49, 51, 0.05) 0px 0px 1px 0px,
     rgba(48, 49, 51, 0.1) 0px 1px 2px 0px;
@@ -27,6 +28,9 @@
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
   );
+
+  --golden-ratio: $golden-ratio;
+  --reciprocal-golden-ratio: $reciprocal-golden-ratio;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -94,6 +98,14 @@ body:not(.user-is-tabbing) input:focus,
 body:not(.user-is-tabbing) select:focus,
 body:not(.user-is-tabbing) textarea:focus {
   outline: none;
+}
+
+.take {
+  font-family: var(--font-mona-sans) !important;
+  // font-stretch: initial;
+  font-stretch: 110%;
+  font-feature-settings: 'tnum';
+  font-weight: initial;
 }
 
 .app-navbar {

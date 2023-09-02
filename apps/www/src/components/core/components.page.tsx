@@ -2,17 +2,18 @@
 
 import React from 'react';
 
-import { KitLogo } from './kit.svg';
+// import { KitLogo } from '@/components/svg/kit.svg';
 import { Container, Section, Text, Space } from '@atlrdsgn/kit';
 
 function ComponentsPage({ children }: { children?: React.ReactNode }) {
   return (
     <>
-      <Section>
+      <Section style={{ marginTop: '60px' }}>
         <Space size='xxl' />
         <Container
           width='small'
           align='center'>
+          {/* <!-- Hold logo
           <KitLogo
             className='kitLogo logo'
             width={'80'}
@@ -21,7 +22,18 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
               zIndex: 11,
             }}
           />
+          --> */}
 
+          <Text
+            color='carbon7'
+            align='center'
+            size='xxl'
+            weight='medium'
+            casing='none'
+            className='take'>
+            yarn add @atlrdsgn/kit
+          </Text>
+          <Space size='sm' />
           <Text
             color='carbon2'
             align='center'
@@ -29,9 +41,9 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
             weight='medium'
             font='system'
             casing='none'>
-            Rooted in subtractive design.
+            Edit on CodeSandbox →
           </Text>
-          <Space size='lg' />
+          <Space size='xl' />
           <Text
             color='sapphire6'
             align='center'

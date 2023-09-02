@@ -17,8 +17,9 @@ export const theme = {
 
   font: {
     family: {
-      system: `'-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif'`,
+      system: `'Inter', '-apple-system', BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif`,
       mono: `'SF Mono', monospace`,
+      take: ``,
     },
     heading: {
       H1: '2.25rem', // 36px

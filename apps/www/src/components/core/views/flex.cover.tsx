@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Canvas, Container, Flex, Text } from '@atlrdsgn/kit';
-import { KitLogo } from '../kit.svg';
+import { KitLogo } from '@/components/svg/kit.svg';
 import { BackgroundImage } from '../background.img';
 
 function FlexCoverPage() {
