@@ -169,7 +169,6 @@ export const themeVars = createThemeContract({
     current: null,
     white: null,
     black: null,
-
     // core
     jade0: null,
     jade1: null,
@@ -184,7 +183,6 @@ export const themeVars = createThemeContract({
     jade10: null,
     jade11: null,
     jade12: null,
-
     sapphire0: null,
     sapphire1: null,
     sapphire2: null,
@@ -198,7 +196,6 @@ export const themeVars = createThemeContract({
     sapphire10: null,
     sapphire11: null,
     sapphire12: null,
-
     orange0: null,
     orange1: null,
     orange2: null,
@@ -212,7 +209,6 @@ export const themeVars = createThemeContract({
     orange10: null,
     orange11: null,
     orange12: null,
-
     mauve1: null,
     mauve2: null,
     mauve3: null,
@@ -225,8 +221,33 @@ export const themeVars = createThemeContract({
     mauve10: null,
     mauve11: null,
     mauve12: null,
-
     // neutrals
+    whiteA0: null,
+    whiteA1: null,
+    whiteA2: null,
+    whiteA3: null,
+    whiteA4: null,
+    whiteA5: null,
+    whiteA6: null,
+    whiteA7: null,
+    whiteA8: null,
+    whiteA9: null,
+    whiteA10: null,
+    whiteA11: null,
+    whiteA12: null,
+    blackA0: null,
+    blackA1: null,
+    blackA2: null,
+    blackA3: null,
+    blackA4: null,
+    blackA5: null,
+    blackA6: null,
+    blackA7: null,
+    blackA8: null,
+    blackA9: null,
+    blackA10: null,
+    blackA11: null,
+    blackA12: null,
     carbon0: null,
     carbon1: null,
     carbon2: null,
@@ -240,7 +261,6 @@ export const themeVars = createThemeContract({
     carbon10: null,
     carbon11: null,
     carbon12: null,
-
     grey0: null,
     grey1: null,
     grey2: null,
@@ -254,7 +274,6 @@ export const themeVars = createThemeContract({
     grey10: null,
     grey11: null,
     grey12: null,
-
     slate0: null,
     slate1: null,
     slate2: null,
@@ -268,7 +287,6 @@ export const themeVars = createThemeContract({
     slate10: null,
     slate11: null,
     slate12: null,
-
     // neon
     azure0: null,
     azure1: null,
@@ -283,7 +301,6 @@ export const themeVars = createThemeContract({
     azure10: null,
     azure11: null,
     azure12: null,
-
     cherry0: null,
     cherry1: null,
     cherry2: null,
@@ -297,7 +314,6 @@ export const themeVars = createThemeContract({
     cherry10: null,
     cherry11: null,
     cherry12: null,
-
     lime0: null,
     lime1: null,
     lime2: null,
@@ -311,7 +327,6 @@ export const themeVars = createThemeContract({
     lime10: null,
     lime11: null,
     lime12: null,
-
     lemon0: null,
     lemon1: null,
     lemon2: null,
@@ -325,7 +340,6 @@ export const themeVars = createThemeContract({
     lemon10: null,
     lemon11: null,
     lemon12: null,
-
     hyper0: null,
     hyper1: null,
     hyper2: null,

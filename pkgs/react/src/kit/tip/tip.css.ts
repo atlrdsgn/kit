@@ -1,5 +1,6 @@
 import { style } from '@vanilla-extract/css';
 import { SUF } from '../@shared';
+import { shadows, kitFilterBlur } from '../@shared';
 import { kit } from '../../lib';
 
 /*
@@ -65,7 +66,7 @@ export const tooltipTrigger = style({
 });
 
 export const tooltipContent = style({
-  opacity: 1,
+  zIndex: kit.z.indice.TOP,
   willChange: 'transform, opacity',
   position: 'relative',
   boxSizing: 'border-box',
@@ -75,13 +76,15 @@ export const tooltipContent = style({
   maxHeight: `var(--radix-tooltip-content-available-height)`,
   minHeight: 'var(--radix-tooltip-trigger-height)',
   borderRadius: kit.radii.MD,
-  backgroundColor: kit.color.white,
+  backgroundColor: kit.color.whiteA6,
   paddingLeft: '20px',
   paddingRight: '20px',
   paddingTop: '10px',
   paddingBottom: '10px',
-  boxShadow:
-    'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
+  boxShadow: shadows.XS,
+  // boxShadow: 'rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px',
+
+  ...kitFilterBlur.MD,
 
   ':focus': {
     outline: 'none',

@@ -57,6 +57,9 @@ export const chipShadows = {
 
 export const sharedShadows = {
   MINI: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
+  XS: `rgba(48, 49, 51, 0.05) 0px 0px 1px 0px, rgba(48, 49, 51, 0.1) 0px 1px 2px 0px`,
   SM: `0px 1px 0px 0px rgba(27, 31, 35, 0.10)`,
   MD: `0px 3px 6px rgba(149, 157, 165, 0.15)`,
 } as const;
+
+export const shadows = sharedShadows;

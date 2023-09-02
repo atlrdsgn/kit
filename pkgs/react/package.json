@@ -1,6 +1,6 @@
 {
   "name": "@atlrdsgn/kit",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "an ever– expanding library of React components, primitives, and tools",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

@@ -15,7 +15,8 @@ export {
 } from './keyframes.css';
 
 // from './shadows'
-export { sharedShadows, chipShadows, shadowLarge } from './shadows';
+export { sharedShadows, shadows, chipShadows, shadowLarge } from './shadows';
+export { kitFilterBlur } from './filter-tools';
 
 // from './style.maps'
 export {

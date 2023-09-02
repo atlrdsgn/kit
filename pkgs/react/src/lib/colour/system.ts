@@ -6,6 +6,7 @@ import { sapphire } from './sapphire';
 import { slate } from './slate';
 import { orange } from './orange';
 import { mauve } from './mauve';
+import { blackAlpha, whiteAlpha } from './alphas';
 
 export const kitColour = {
   transparent: 'transparent',
@@ -20,6 +21,8 @@ export const kitColour = {
   ...mauve,
 
   // neutrals
+  ...whiteAlpha,
+  ...blackAlpha,
   ...carbon,
   ...grey,
   ...slate,
@@ -45,6 +48,8 @@ export const darkKitColour = {
   ...mauve,
 
   // neutrals
+  ...whiteAlpha,
+  ...blackAlpha,
   ...carbon,
   ...grey,
   ...slate,
