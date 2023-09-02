@@ -2,8 +2,8 @@ import React from 'react';
 import * as TIP from '@radix-ui/react-tooltip';
 import * as CSS from './tip.css';
 import { createKitClass } from '../../lib';
-
-import { KitIcon, type SVGKit, type SVGVariants } from '../../lib/icons';
+import { KitIcon } from '../../lib/icons';
+import type { SVGKit, SVGVariants } from '../../lib/icons';
 
 /**
  * TODO:

@@ -10,13 +10,6 @@
     "title": "Changelog",
     "type": "page"
   },
-  "about": {
-    "title": "About",
-    "display": "hidden",
-    "theme": {
-      "layout": "raw"
-    }
-  },
   "contact": {
     "title": "Contact",
     "type": "page",
