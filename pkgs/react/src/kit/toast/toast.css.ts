@@ -24,11 +24,10 @@ export const toastViewport = style({
   flexDirection: 'column',
   padding: '25px',
   gap: '10px',
-  width: '390px',
-  maxWidth: '100vw',
+  maxWidth: '400px',
   margin: 0,
   listStyle: 'none',
-  zIndex: 2147483647,
+  zIndex: kit.z.indice.MAX,
   outline: 'none',
   selectors: {
     '&[data-state="open"]': {},
@@ -37,15 +36,19 @@ export const toastViewport = style({
 
 export const toastRoot = style({
   backgroundColor: kit.color.whiteA6,
-  borderRadius: '6px',
+  borderRadius: kit.radii.MD,
+  border: `1px solid ${kit.color.carbon1}`,
   boxShadow:
     'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
   padding: '15px',
-  display: 'grid',
-  gridTemplateAreas: '"title action" "description action"',
-  gridTemplateColumns: 'auto max-content',
+  display: 'flex',
+  flexDirection: 'column',
   columnGap: '15px',
   alignItems: 'center',
+  justifyContent: 'space-between',
+  height: 'max-content',
+  width: '100%',
+  margin: 'auto',
 
   selectors: {
     '&[data-state="open"]': {
@@ -72,6 +75,52 @@ export const toastRoot = style({
   },
 });
 
-export const toastAction = style({});
+export const toastTitle = style({
+  // using this as a wrapper for [Heading]..
+  textAlign: 'left',
+  marginBottom: 5,
+});
 
-export const toastClose = style({});
+export const toastDescription = style({
+  // using this as a wrapper for [Text]..
+  textAlign: 'left',
+  marginBottom: 5,
+});
+
+export const toastAction = style({
+  position: 'relative',
+  display: 'flex',
+  alignItems: 'flex-start',
+  justifyContent: 'flex-start',
+  margin: 'auto',
+  paddingLeft: '10px',
+  paddingRight: '10px',
+  paddingTop: '5px',
+  paddingBottom: '5px',
+
+  backgroundColor: kit.color.jade5,
+  color: kit.color.jade1,
+  borderRadius: kit.radii.SM,
+});
+
+export const toastClose = style({
+  // dismiss button
+  boxSizing: 'border-box',
+  cursor: 'pointer',
+  position: 'absolute',
+  top: 8,
+  right: 8,
+
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  margin: 'auto',
+  paddingLeft: '10px',
+  paddingRight: '10px',
+  paddingTop: '5px',
+  paddingBottom: '5px',
+
+  backgroundColor: kit.color.carbon0,
+  color: kit.color.carbon8,
+  borderRadius: kit.radii.SM,
+});

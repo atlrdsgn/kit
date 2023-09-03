@@ -2,6 +2,8 @@ import React from 'react';
 import * as TST from '@radix-ui/react-toast';
 import * as CSS from './toast.css';
 import { createKitClass } from '../../lib';
+import { Heading } from '../heading';
+import { Text } from '../text';
 
 type ToastVPProps = React.ComponentProps<typeof TST.Viewport> & {
   className?: string;
@@ -59,7 +61,7 @@ interface ToastRootProps {
   forceMount?: boolean;
 }
 
-type ToastProps = ToastRootProps &
+export type ToastProps = ToastRootProps &
   ToastProviderProps &
   ToastVPProps &
   React.ComponentProps<typeof TST.Root>;
@@ -74,7 +76,7 @@ const ToastRoot = React.forwardRef<
     asChild,
     type = 'foreground',
     duration = 5000,
-    defaultOpen = true,
+    defaultOpen,
     open,
     onOpenChange,
     onEscapeKeyDown,
@@ -127,6 +129,51 @@ const ToastRoot = React.forwardRef<
   );
 });
 
+type ToastTitleProps = React.HTMLAttributes<HTMLDivElement> & {
+  className?: string;
+  children: React.ReactNode;
+};
+
+const ToastTitle: React.FC<ToastTitleProps> = ({
+  children,
+  className,
+  ...props
+}) => (
+  <div
+    {...props}
+    className={createKitClass(CSS.toastTitle, className)}>
+    <Heading
+      size='H3'
+      weight='semibold'
+      align='left'>
+      {children}
+    </Heading>
+  </div>
+);
+
+type ToastDescriptionProps = React.HTMLAttributes<HTMLParagraphElement> & {
+  className?: string;
+  children: React.ReactNode;
+};
+
+const ToastDescription: React.FC<ToastDescriptionProps> = ({
+  children,
+  className,
+  ...props
+}) => (
+  <TST.Description
+    {...props}
+    className={createKitClass(CSS.toastDescription, className)}>
+    <Text
+      size='sm'
+      color='current'
+      weight='medium'
+      align='left'>
+      {children}
+    </Text>
+  </TST.Description>
+);
+
 // action
 const ToastAction = React.forwardRef<
   React.ElementRef<typeof TST.Action>,
@@ -163,20 +210,23 @@ const ToastClose = React.forwardRef<
 /** ----------------- exports --- */
 
 export const Toast: React.FC<ToastProps> & {
-  Title: typeof TST.Title;
-  Description: typeof TST.Description;
+  Title: typeof ToastTitle;
+  Description: typeof ToastDescription;
   //..
   Action: typeof ToastAction;
   Close: typeof ToastClose;
 } = (props) => <ToastRoot {...props} />;
 
-Toast.Title = TST.Title;
-Toast.Description = TST.Description;
+Toast.Title = ToastTitle;
+Toast.Description = ToastDescription;
 Toast.Action = ToastAction;
 Toast.Close = ToastClose;
 
 Toast.displayName = 'Toast';
 Toast.Title.displayName = 'Toast.Title';
 Toast.Description.displayName = 'Toast.Description';
+
+ToastTitle.displayName = 'Toast.Title';
+ToastDescription.displayName = 'Toast.Description';
 ToastAction.displayName = 'Toast.Action';
 ToastClose.displayName = 'Toast.Close';

@@ -3,12 +3,8 @@ import { PageLayout } from '@/components/core';
 import { AppNavbar } from '@/components/navigation';
 
 import ComponentsPage from '@/components/core/components.page';
-import {
-  DemoBadge,
-  DemoTabSwitcher,
-  DemoSelect,
-  DemoTip,
-} from '@/components/react-kit';
+import KitBadge from '@/components/docs/badge';
+import KitToast from '@/components/docs/toast';
 
 const ComponentsIndex = () => {
   return (
@@ -17,10 +13,8 @@ const ComponentsIndex = () => {
         <AppNavbar />
         <ComponentsPage />
 
-        <DemoBadge />
-        <DemoTip />
-        <DemoTabSwitcher />
-        <DemoSelect />
+        <KitBadge />
+        <KitToast />
       </PageLayout>
     </>
   );

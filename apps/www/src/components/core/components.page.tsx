@@ -3,7 +3,7 @@
 import React from 'react';
 
 // import { KitLogo } from '@/components/svg/kit.svg';
-import { Container, Section, Text, Space } from '@atlrdsgn/kit';
+import { Badge, Container, Section, Text, Space } from '@atlrdsgn/kit';
 
 function ComponentsPage({ children }: { children?: React.ReactNode }) {
   return (
@@ -13,16 +13,17 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
         <Container
           width='small'
           align='center'>
-          {/* <!-- Hold logo
-          <KitLogo
-            className='kitLogo logo'
-            width={'80'}
-            height={'55'}
-            style={{
-              zIndex: 11,
-            }}
-          />
-          --> */}
+          <Badge
+            size='small'
+            appearance='carbon'>
+            <Badge.Label
+              size='xs'
+              variant='carbon'>
+              Install
+            </Badge.Label>
+            <Badge.Content content='Looking for the official docs?' />
+            <Badge.Icon svg='Small.Arrow.Right.Icon' />
+          </Badge>
 
           <Text
             color='carbon7'
