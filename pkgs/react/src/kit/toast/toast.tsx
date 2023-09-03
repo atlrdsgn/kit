@@ -4,6 +4,7 @@ import * as CSS from './toast.css';
 import { createKitClass } from '../../lib';
 import { Heading } from '../heading';
 import { Text } from '../text';
+import { KitIcon } from '../../lib';
 
 type ToastVPProps = React.ComponentProps<typeof TST.Viewport> & {
   className?: string;
@@ -185,8 +186,8 @@ const ToastAction = React.forwardRef<
       ref={ref}
       asChild={asChild}
       altText={altText}
-      className={createKitClass(CSS.toastAction, className)}>
-      {children}
+      className={createKitClass(CSS.toastActionWrapper, className)}>
+      <span className={CSS.toastAction}>{children}</span>
     </TST.Action>
   );
 });
@@ -195,14 +196,17 @@ const ToastAction = React.forwardRef<
 const ToastClose = React.forwardRef<
   React.ElementRef<typeof TST.Close>,
   React.ComponentProps<typeof TST.Close>
->(({ children, className, asChild, ...props }, ref) => {
+>(({ className, asChild, ...props }, ref) => {
   return (
     <TST.Close
       {...props}
       ref={ref}
       asChild={asChild}
       className={createKitClass(CSS.toastClose, className)}>
-      {children}
+      <KitIcon
+        icon='Close.Icon'
+        size={18}
+      />
     </TST.Close>
   );
 });

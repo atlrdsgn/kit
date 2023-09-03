@@ -15,6 +15,10 @@ import { HIDE_AWAY, SLIDE_ENTER, SWIPE_AWAY } from '../@shared';
  *
  */
 
+const ROOT_SPACE = {
+  padding: '18px',
+} as const;
+
 export const toastViewport = style({
   // --viewport-padding: 25px;
   position: 'fixed',
@@ -36,17 +40,17 @@ export const toastViewport = style({
 
 export const toastRoot = style({
   backgroundColor: kit.color.whiteA6,
-  borderRadius: kit.radii.MD,
+  borderRadius: kit.radii.SM,
   border: `1px solid ${kit.color.carbon1}`,
   boxShadow:
     'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
-  padding: '15px',
   display: 'flex',
   flexDirection: 'column',
-  columnGap: '15px',
-  alignItems: 'center',
-  justifyContent: 'flex-start',
-  height: 'max-content',
+  gap: '0.375rem', // 6px
+  alignItems: 'flex-start',
+
+  padding: ROOT_SPACE.padding,
+  height: 'auto',
   width: '100%',
   margin: 'auto',
 
@@ -78,29 +82,66 @@ export const toastRoot = style({
 export const toastTitle = style({
   // using this as a wrapper for [Heading]..
   textAlign: 'left',
-  marginBottom: 5,
 });
 
 export const toastDescription = style({
   // using this as a wrapper for [Text]..
   textAlign: 'left',
-  marginBottom: 5,
 });
 
-export const toastAction = style({
+export const toastActionWrapper = style({
+  // wraps the action button(s)
   position: 'relative',
   display: 'flex',
+  flexDirection: 'row',
+  marginTop: 20,
   alignItems: 'flex-start',
-  justifyContent: 'flex-start',
-  margin: 'auto',
-  paddingLeft: '10px',
-  paddingRight: '10px',
-  paddingTop: '5px',
-  paddingBottom: '5px',
+  gap: '0.5rem',
 
-  backgroundColor: kit.color.jade5,
-  color: kit.color.jade1,
-  borderRadius: kit.radii.SM,
+  width: '100%',
+  backgroundColor: 'transparent',
+  border: 'none',
+  outline: 'none',
+});
+
+const actionButtonCore = {
+  textRendering: 'optimizeLegibility',
+  fontVariantNumeric: 'tabular-nums',
+  boxSizing: 'border-box',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  position: 'relative',
+  gap: '4px',
+  transition: 'all 0.2s ease-in-out',
+  willChange: 'color, backgroundColor',
+  cursor: 'pointer',
+  borderStyle: 'solid',
+
+  // text properties
+  userSelect: 'none',
+  fontWeight: kit.font.weight.MEDIUM,
+  textAlign: 'center',
+  whiteSpace: 'nowrap',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+
+  // shared non-standard properties
+  WebkitUserSelect: 'none',
+  WebkitTapHighlightColor: 'rgba(0,0,0,0)',
+  MozUserSelect: 'none',
+  MozTapHighlightColor: 'rgba(0,0,0,0)',
+} as const;
+
+export const toastAction = style({
+  ...actionButtonCore,
+  // the presentation of the action button(s)
+
+  backgroundColor: kit.color.carbon2,
+  borderRadius: kit.radii.DF,
+
+  color: kit.color.sapphire7,
 });
 
 export const toastClose = style({
@@ -108,19 +149,17 @@ export const toastClose = style({
   boxSizing: 'border-box',
   cursor: 'pointer',
   position: 'absolute',
-  top: 8,
-  right: 8,
+  top: '0',
+  right: '0',
+  padding: '8px',
+  marginRight: '14px',
+  marginTop: '14px',
+  border: 'none',
 
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  margin: 0,
-  paddingLeft: '10px',
-  paddingRight: '10px',
-  paddingTop: '10px',
-  paddingBottom: '10px',
-
-  backgroundColor: kit.color.carbon0,
-  color: kit.color.carbon8,
-  borderRadius: kit.radii.SM,
+  backgroundColor: kit.color.carbon2,
+  color: kit.color.orange6,
+  ':hover': {
+    backgroundColor: kit.color.carbon3,
+    color: kit.color.orange7,
+  },
 });
