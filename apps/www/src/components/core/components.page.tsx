@@ -3,7 +3,14 @@
 import React from 'react';
 
 // import { KitLogo } from '@/components/svg/kit.svg';
-import { Badge, Container, Section, Text, Space } from '@atlrdsgn/kit';
+import {
+  Badge,
+  Container,
+  Section,
+  PassLink,
+  Text,
+  Space,
+} from '@atlrdsgn/kit';
 
 function ComponentsPage({ children }: { children?: React.ReactNode }) {
   return (
@@ -21,10 +28,11 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
               variant='carbon'>
               Install
             </Badge.Label>
-            <Badge.Content content='Looking for the official docs?' />
+            <Badge.Content content='Looking for the official docs' />
             <Badge.Icon svg='Small.Arrow.Right.Icon' />
           </Badge>
 
+          <Space size='lg' />
           <Text
             color='carbon7'
             align='center'
@@ -35,15 +43,15 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
             yarn add @atlrdsgn/kit
           </Text>
           <Space size='sm' />
-          <Text
-            color='carbon2'
-            align='center'
-            size='xs'
+          <PassLink
+            href='https://kit.atlrdsgn.com'
+            target='_blank'
+            variant='orange'
+            size='sm'
             weight='medium'
-            font='system'
-            casing='none'>
+            font='system'>
             Edit on CodeSandbox →
-          </Text>
+          </PassLink>
           <Space size='xl' />
           <Text
             color='sapphire6'

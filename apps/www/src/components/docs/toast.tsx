@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Button, Toast } from '@atlrdsgn/kit';
+import { Button, KitIcon, Toast } from '@atlrdsgn/kit';
 import ComponentWrapper from '../core/component.wrapper';
 
 export const KitToast = () => {
@@ -31,13 +31,17 @@ const ToastCompressed = () => {
       </Button>
       {isOpen && (
         <Toast label='kit-toast'>
-          <Toast.Close>Close</Toast.Close>
+          <Toast.Close>
+            <KitIcon
+              icon='Close.Icon'
+              size={24}
+            />
+          </Toast.Close>
 
           <Toast.Title>Toast Title</Toast.Title>
           <Toast.Description>
             Adipisicing quis culpa proident ex.
           </Toast.Description>
-          <Toast.Action altText='dismiss'>Dismiss</Toast.Action>
           <Toast.Action altText='accept'>Accept</Toast.Action>
         </Toast>
       )}

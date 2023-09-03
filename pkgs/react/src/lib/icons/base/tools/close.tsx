@@ -1,6 +1,6 @@
-import type { IconProps } from '../types';
+import type { IconProps } from '../../types';
 
-export const TemplateIcon = ({
+export const CloseIcon = ({
   className,
   color = 'currentColor',
   size = 24,
@@ -22,3 +22,5 @@ export const TemplateIcon = ({
     </svg>
   );
 };
+
+export default CloseIcon;

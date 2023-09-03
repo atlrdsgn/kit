@@ -4,7 +4,6 @@ import { AppNavbar } from '@/components/navigation';
 
 import ComponentsPage from '@/components/core/components.page';
 import KitBadge from '@/components/docs/badge';
-import KitToast from '@/components/docs/toast';
 
 const ComponentsIndex = () => {
   return (
@@ -14,7 +13,6 @@ const ComponentsIndex = () => {
         <ComponentsPage />
 
         <KitBadge />
-        <KitToast />
       </PageLayout>
     </>
   );
