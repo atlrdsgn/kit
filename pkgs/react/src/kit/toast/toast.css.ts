@@ -138,6 +138,11 @@ export const toastAction = style({
   ...actionButtonCore,
   // the presentation of the action button(s)
 
+  paddingLeft: '12px',
+  paddingRight: '12px',
+  paddingTop: '4px',
+  paddingBottom: '4px',
+
   backgroundColor: kit.color.carbon2,
   borderRadius: kit.radii.DF,
 

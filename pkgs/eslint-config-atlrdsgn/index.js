@@ -1,13 +1,13 @@
 module.exports = {
   extends: [
-    'turbo',
+    // 'turbo',
     'prettier',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
   ],
-  plugins: ['@typescript-eslint', 'prettier', 'react', 'turbo'],
+  plugins: ['@typescript-eslint', 'prettier', 'react'],
   settings: {
     react: { version: 'detect' },
     next: { rootDir: ['apps/*/'] },

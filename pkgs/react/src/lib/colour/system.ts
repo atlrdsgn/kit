@@ -1,7 +1,7 @@
-import { azure, cherry, lime, lemon, hyper } from './neon';
+import { azure, lime, hyper } from './neon';
 import { carbon } from './carbon';
 import { jade } from './jade';
-import { grey } from './grey';
+
 import { sapphire } from './sapphire';
 import { slate } from './slate';
 import { orange } from './orange';
@@ -24,14 +24,11 @@ export const kitColour = {
   ...whiteAlpha,
   ...blackAlpha,
   ...carbon,
-  ...grey,
   ...slate,
 
   // rest
   ...azure,
-  ...cherry,
   ...lime,
-  ...lemon,
   ...hyper,
 } as const;
 
@@ -51,14 +48,11 @@ export const darkKitColour = {
   ...whiteAlpha,
   ...blackAlpha,
   ...carbon,
-  ...grey,
   ...slate,
 
   // rest
   ...azure,
-  ...cherry,
   ...lime,
-  ...lemon,
   ...hyper,
 } as const;
 

@@ -226,9 +226,12 @@ Toast.Description = ToastDescription;
 Toast.Action = ToastAction;
 Toast.Close = ToastClose;
 
+ToastRoot.displayName = 'Toast';
 Toast.displayName = 'Toast';
 Toast.Title.displayName = 'Toast.Title';
 Toast.Description.displayName = 'Toast.Description';
+Toast.Action.displayName = 'Toast.Action';
+Toast.Close.displayName = 'Toast.Close';
 
 ToastTitle.displayName = 'Toast.Title';
 ToastDescription.displayName = 'Toast.Description';

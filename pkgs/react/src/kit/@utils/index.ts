@@ -7,3 +7,5 @@ export {
   type EmptyObject,
   type Optional,
 } from './types';
+
+export { isError } from './error';

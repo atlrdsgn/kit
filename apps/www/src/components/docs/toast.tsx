@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Button, Toast } from '@atlrdsgn/kit';
+import { Button, Flex, Toast } from '@atlrdsgn/kit';
 import ComponentWrapper from '../core/component.wrapper';
 
 export const KitToast = () => {
@@ -27,7 +27,13 @@ export const KitToast = () => {
             <Toast.Description>
               Adipisicing quis culpa proident ex.
             </Toast.Description>
-            <Toast.Action altText='accept'>Accept</Toast.Action>
+
+            <Flex
+              direction='row'
+              gap='sm'>
+              <Toast.Action altText='accept'>Accept</Toast.Action>
+              <Toast.Action altText='dismiss'>Dismiss</Toast.Action>
+            </Flex>
 
             <Toast.Close />
           </Toast>

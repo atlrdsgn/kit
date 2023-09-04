@@ -1,7 +1,8 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
 import { useCopyToClipboard } from 'usehooks-ts';
 import * as CSS from './copy.cmd.css';
 import { createKitClass } from '../../lib';
+import { isError } from '../@utils';
 
 export type CopyCommandProps = {
   className?: string;
@@ -22,13 +23,19 @@ const CopyTrigger: React.FC<TriggerProps> = ({
    * useCopyToClipboard hook
    * see more: https://usehooks-ts.com/react-hook/use-copy-to-clipboard
    */
+  const [error, setError] = useState<string | null>(null);
+
   const [value, copy] = useCopyToClipboard();
 
   const copyClick = useCallback(async () => {
     try {
       await copy(copytext);
     } catch (err) {
-      console.error('Failed to copy text: ', err);
+      if (isError(err)) {
+        setError(`Failed to copy text: ${err.message}`);
+      } else {
+        setError('An unexpected error occurred.');
+      }
     }
   }, [copytext, copy]);
 
@@ -38,6 +45,8 @@ const CopyTrigger: React.FC<TriggerProps> = ({
       onClick={copyClick}
       className={createKitClass(CSS.copyTrigger, className)}>
       {value ? 'Copied' : 'Copy'}
+
+      {error && <span className='error'>{error}</span>}
     </button>
   );
 };

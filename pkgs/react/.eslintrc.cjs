@@ -10,7 +10,7 @@ module.exports = {
     project: './tsconfig.json',
     warnOnUnsupportedTypeScriptVersion: true,
   },
-  plugins: ['@typescript-eslint', 'import', 'react', 'jest'],
+  plugins: ['@typescript-eslint', 'import', 'react'],
   rules: {
     // rules are handled by `eslint-config-atlrdsgn`
   },
