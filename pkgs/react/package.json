@@ -84,7 +84,7 @@
     "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vite-plugin-banner": "^0.7.0",
-    "vite-plugin-dts": "^3.3.0",
+    "vite-plugin-dts": "^3.5.3",
     "vite-plugin-zip-pack": "^1.0.6",
     "vite-tsconfig-paths": "^4.2.0"
   },
