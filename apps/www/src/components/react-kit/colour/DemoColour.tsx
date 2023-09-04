@@ -195,37 +195,6 @@ export const DemoColour = () => {
           </Flex>
         </Section>
 
-        {/* <!-- grey --> */}
-        <Section>
-          <Text
-            size='xs'
-            weight='medium'
-            font='mono'>
-            .kit-grey
-          </Text>
-          <Flex
-            direction={'row'}
-            align={'center'}
-            justify={'start'}
-            gap={'xs'}
-            wrap={'wrap'}
-            style={{ marginBottom: '10px', marginTop: '10px' }}>
-            <ColourBox colour={'grey0'} />
-            <ColourBox colour={'grey1'} />
-            <ColourBox colour={'grey2'} />
-            <ColourBox colour={'grey3'} />
-            <ColourBox colour={'grey4'} />
-            <ColourBox colour={'grey5'} />
-            <ColourBox colour={'grey6'} />
-            <ColourBox colour={'grey7'} />
-            <ColourBox colour={'grey8'} />
-            <ColourBox colour={'grey9'} />
-            <ColourBox colour={'grey10'} />
-            <ColourBox colour={'grey11'} />
-            <ColourBox colour={'grey12'} />
-          </Flex>
-        </Section>
-
         {/* <!-- mauve --> */}
         <Section>
           <Text
@@ -297,37 +266,6 @@ export const DemoColour = () => {
             <ColourBox colour={'azure10'} />
             <ColourBox colour={'azure11'} />
             <ColourBox colour={'azure12'} />
-          </Flex>
-        </Section>
-
-        {/* <!-- lemon --> */}
-        <Section>
-          <Text
-            size='xs'
-            weight='medium'
-            font='mono'>
-            .kit-lemon
-          </Text>
-          <Flex
-            direction={'row'}
-            align={'center'}
-            justify={'start'}
-            gap={'xs'}
-            wrap={'wrap'}
-            style={{ marginBottom: '10px', marginTop: '10px' }}>
-            <ColourBox colour={'lemon0'} />
-            <ColourBox colour={'lemon1'} />
-            <ColourBox colour={'lemon2'} />
-            <ColourBox colour={'lemon3'} />
-            <ColourBox colour={'lemon4'} />
-            <ColourBox colour={'lemon5'} />
-            <ColourBox colour={'lemon6'} />
-            <ColourBox colour={'lemon7'} />
-            <ColourBox colour={'lemon8'} />
-            <ColourBox colour={'lemon9'} />
-            <ColourBox colour={'lemon10'} />
-            <ColourBox colour={'lemon11'} />
-            <ColourBox colour={'lemon12'} />
           </Flex>
         </Section>
       </Container>
