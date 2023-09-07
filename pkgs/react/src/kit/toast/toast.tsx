@@ -52,7 +52,9 @@ interface ToastRootProps {
   duration?: number;
   defaultOpen?: boolean;
   open?: boolean;
-  onOpenChange?: () => void;
+  onOpenChange?: (() => void) | ((open: boolean) => void);
+
+  // onOpenChange?: () => void;
   onEscapeKeyDown?: () => void;
   onPause?: () => void;
   onResume?: () => void;
@@ -144,7 +146,7 @@ const ToastTitle: React.FC<ToastTitleProps> = ({
     {...props}
     className={createKitClass(CSS.toastTitle, className)}>
     <Heading
-      size='H3'
+      size='H4'
       weight='semibold'
       align='left'>
       {children}
@@ -166,7 +168,7 @@ const ToastDescription: React.FC<ToastDescriptionProps> = ({
     {...props}
     className={createKitClass(CSS.toastDescription, className)}>
     <Text
-      size='sm'
+      size='xs'
       color='current'
       weight='medium'
       align='left'>
@@ -237,3 +239,6 @@ ToastTitle.displayName = 'Toast.Title';
 ToastDescription.displayName = 'Toast.Description';
 ToastAction.displayName = 'Toast.Action';
 ToastClose.displayName = 'Toast.Close';
+
+export type ToastActionElement = React.ReactElement<typeof ToastAction>;
+export type ToastPrimitive = React.ComponentProps<typeof Toast>;
