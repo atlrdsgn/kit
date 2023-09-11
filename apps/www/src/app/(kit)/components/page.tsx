@@ -5,6 +5,7 @@ import { AppNavbar } from '@/components/navigation';
 import ComponentsPage from '@/components/core/components.page';
 import KitBadge from '@/components/docs/badge';
 import KitButton from '@/components/docs/button';
+import KitSelect from '@/components/docs/select';
 
 const ComponentsIndex = () => {
   return (
@@ -15,6 +16,7 @@ const ComponentsIndex = () => {
 
         <KitBadge />
         <KitButton />
+        <KitSelect />
       </PageLayout>
     </>
   );
