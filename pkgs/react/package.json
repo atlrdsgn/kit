@@ -2,16 +2,13 @@
   "name": "@atlrdsgn/kit",
   "version": "0.5.3",
   "description": "an ever– expanding library of React components, primitives, and tools",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/types/index.d.ts",
+  "keywords": [],
+  "license": "MIT",
+  "author": "chvndler",
   "sideEffects": [
     "src/lib/css/*",
     "src/lib/theme/*",
     "*.css.ts"
-  ],
-  "files": [
-    "dist/**"
   ],
   "exports": {
     ".": {
@@ -23,23 +20,22 @@
       "require": "./dist/style.css"
     }
   },
-  "publishConfig": {
-    "access": "public"
-  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
     "build": "vite build",
     "build:types": "yarn tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
-    "lint": "eslint . --ext .js,.ts,.tsx",
-    "empty": "rm -rf dist",
     "clean": "rm -rf node_modules && rm -rf dist && rm -rf .turbo",
-    "release": "npm publish --access public",
     "dev:release": "npm publish --access private",
+    "empty": "rm -rf dist",
+    "lint": "eslint . --ext .js,.ts,.tsx",
     "npm:login": "npm login --registry=https://npm.pkg.github.com --scope=@atlrdsgn",
-    "pretti": "prettier --write src/**/*.{ts,tsx,json,md}"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "pretti": "prettier --write src/**/*.{ts,tsx,json,md}",
+    "release": "npm publish --access public"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.0.5",
@@ -88,7 +84,11 @@
     "vite-plugin-zip-pack": "^1.0.6",
     "vite-tsconfig-paths": "^4.2.1"
   },
-  "keywords": [],
-  "author": "chvndler",
-  "license": "MIT"
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
