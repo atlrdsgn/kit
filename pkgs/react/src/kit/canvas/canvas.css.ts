@@ -36,35 +36,6 @@ const baseCanvas = style({
   left: '50%',
 });
 
-export const canvasBlur = style({
-  all: 'unset',
-  boxSizing: 'border-box',
-  backgroundColor: kit.color.transparent,
-  display: 'flex',
-  flexDirection: 'column',
-
-  height: '100vh',
-  width: '100vw',
-  minHeight: '100vh',
-  minWidth: '100vw',
-
-  padding: '0',
-  margin: '0',
-
-  filter: 'blur(12px)',
-  backdropFilter: 'blur(12px)',
-  WebkitBackdropFilter: 'blur(12px)',
-
-  position: 'fixed',
-  top: '0',
-  left: '0',
-  zIndex: '1',
-
-  justifyContent: 'center',
-  alignItems: 'center',
-  alignContent: 'center',
-});
-
 /** ------------------------------ */
 
 export type CanvasVariantProps = RecipeVariants<typeof canvas>;

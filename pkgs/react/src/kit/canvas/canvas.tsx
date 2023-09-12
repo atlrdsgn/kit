@@ -27,21 +27,6 @@ export const Canvas = React.forwardRef<HTMLDivElement, CanvasProps>(
   },
 );
 
-export type CanvasBlurProps = Omit<BaseCanvasProps, 'z'>;
-
-export const CanvasBlur = React.forwardRef<HTMLDivElement, CanvasBlurProps>(
-  ({ children, className, ...rest }, forwardedRef) => {
-    return (
-      <div
-        ref={forwardedRef}
-        className={createKitClass(CSS.canvasBlur, className)}
-        {...rest}>
-        {children}
-      </div>
-    );
-  },
-);
-
 export type CanvasWithGridProps = BaseCanvasProps &
   React.HTMLAttributes<HTMLCanvasElement>;
 
@@ -87,5 +72,4 @@ export const CanvasWithGrid = React.forwardRef<
 });
 
 Canvas.displayName = 'Canvas';
-CanvasBlur.displayName = 'CanvasBlur';
 CanvasWithGrid.displayName = 'CanvasWithGrid';
