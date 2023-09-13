@@ -7,6 +7,7 @@ import KitBadge from '@/components/docs/badge';
 import KitButton from '@/components/docs/button';
 import KitSelect from '@/components/docs/select';
 import KitToast from '@/components/docs/toast';
+import KitCopyCommand from '@/components/docs/copy-cmd';
 
 const ComponentsIndex = () => {
   return (
@@ -19,6 +20,7 @@ const ComponentsIndex = () => {
         <KitButton />
         <KitToast />
         <KitSelect />
+        <KitCopyCommand />
       </PageLayout>
     </>
   );

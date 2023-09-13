@@ -20,6 +20,7 @@ function AppNavbar() {
           <KitLogo
             width='40'
             height='16'
+            style={{ color: `#9C518B !important`, paddingTop: `2px` }}
           />
 
           <div>

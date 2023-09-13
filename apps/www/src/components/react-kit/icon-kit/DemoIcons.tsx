@@ -5,7 +5,7 @@ import { Container, Section, Flex, Space, KitIcon } from '@atlrdsgn/kit';
 export const DemoIcons = () => {
   return (
     <Section>
-      <Space size='lg' />
+      <Space size='xxl' />
       <Container
         width='medium'
         align='center'>

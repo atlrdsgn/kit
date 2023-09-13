@@ -70,8 +70,10 @@ export const CopyCommand: React.FC<CopyCommandProps> & {
   Trigger: typeof CopyTrigger;
 } = ({ className, copytext }) => (
   <div className={createKitClass(CSS.fieldRoot, className)}>
-    <CopyCommand.Text copytext={copytext} />
-    <CopyCommand.Trigger copytext={copytext} />
+    <div className={createKitClass(CSS.backplate, className)}>
+      <CopyCommand.Text copytext={copytext} />
+      <CopyCommand.Trigger copytext={copytext} />
+    </div>
   </div>
 );
 

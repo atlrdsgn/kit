@@ -8,6 +8,7 @@ const IconsIndex = () => {
     <>
       <PageLayout type={'Standard'}>
         <AppNavbar />
+
         <DemoIcons />
       </PageLayout>
     </>

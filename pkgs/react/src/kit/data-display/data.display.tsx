@@ -7,7 +7,6 @@ import { Stack } from '../stack';
 type DataLabelProps = React.HTMLAttributes<HTMLLabelElement> & {
   htmlFor: string;
   label?: React.ReactNode;
-  children?: React.ReactNode;
 } & React.ComponentPropsWithRef<typeof LABL.Root>;
 export type InputLabelProps = DataLabelProps;
 const DataLabelComponent = React.forwardRef<
@@ -45,11 +44,11 @@ export const DataDisplay = ({
 }: DataDisplayProps) => {
   return (
     <Stack
-      direction={'vertical'}
-      align={'flex-start'}>
-      <DataLabelComponent htmlFor={'label'}>{label}</DataLabelComponent>
+      direction='vertical'
+      align='flex-start'>
+      <DataLabelComponent htmlFor='label'>{label}</DataLabelComponent>
       <h3 className={clsx(className, CSS.dataValue)}>{value}</h3>
-      {meta !== undefined && <p>{meta}</p>}
+      {meta && <p>{meta}</p>}
     </Stack>
   );
 };
