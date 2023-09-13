@@ -20,7 +20,6 @@ const ROOT_SPACE = {
 } as const;
 
 export const toastViewport = style({
-  // --viewport-padding: 25px;
   position: 'fixed',
   bottom: 0,
   right: 0,
@@ -87,6 +86,15 @@ export const toastTitle = style({
 export const toastDescription = style({
   // using this as a wrapper for [Text]..
   textAlign: 'left',
+});
+
+export const toastContent = style({
+  // wraps the title and description
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '0.375rem', // 6px
+  alignItems: 'flex-start',
+  width: '100%',
 });
 
 export const toastActionWrapper = style({

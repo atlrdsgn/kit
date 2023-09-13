@@ -1,11 +1,16 @@
 'use client';
 
-import React, { useState } from 'react';
-import { Button, Flex, Toast } from '@atlrdsgn/kit';
+import React, { useState, useRef, useEffect } from 'react';
+import { Button, Toast } from '@atlrdsgn/kit';
 import ComponentWrapper from '../core/component.wrapper';
 
 export const KitToast = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const timerRef = useRef(0);
+
+  useEffect(() => {
+    return () => clearTimeout(timerRef.current);
+  }, []);
 
   const showToast = () => {
     setIsOpen(true);
@@ -20,25 +25,18 @@ export const KitToast = () => {
         Show Toast
       </Button>
 
-      {isOpen && (
-        <>
-          <Toast label='kit-toast'>
-            <Toast.Title>Toast Title</Toast.Title>
-            <Toast.Description>
-              Adipisicing quis culpa proident ex.
-            </Toast.Description>
+      <>
+        <Toast
+          label='kit-toast'
+          open={isOpen}
+          onOpenChange={setIsOpen}>
+          <Toast.Description>
+            Adipisicing quis culpa proident ex.
+          </Toast.Description>
 
-            <Flex
-              direction='row'
-              gap='sm'>
-              <Toast.Action altText='accept'>Accept</Toast.Action>
-              <Toast.Action altText='dismiss'>Dismiss</Toast.Action>
-            </Flex>
-
-            <Toast.Close />
-          </Toast>
-        </>
-      )}
+          <Toast.Close />
+        </Toast>
+      </>
     </ComponentWrapper>
   );
 };

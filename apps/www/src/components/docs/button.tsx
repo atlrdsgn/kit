@@ -10,7 +10,7 @@ export const KitButton = () => {
       <Stack direction='horizontal'>
         <Button
           size='sm'
-          variant='sapphire'>
+          variant='jade'>
           Small button
         </Button>
         <Button

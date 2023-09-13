@@ -6,6 +6,7 @@ import ComponentsPage from '@/components/core/components.page';
 import KitBadge from '@/components/docs/badge';
 import KitButton from '@/components/docs/button';
 import KitSelect from '@/components/docs/select';
+import KitToast from '@/components/docs/toast';
 
 const ComponentsIndex = () => {
   return (
@@ -16,6 +17,7 @@ const ComponentsIndex = () => {
 
         <KitBadge />
         <KitButton />
+        <KitToast />
         <KitSelect />
       </PageLayout>
     </>
