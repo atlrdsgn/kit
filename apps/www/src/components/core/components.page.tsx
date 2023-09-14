@@ -34,26 +34,6 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
 
           <Space size='lg' />
           <Text
-            color='carbon7'
-            align='center'
-            size='xxl'
-            weight='medium'
-            casing='none'
-            className='take'>
-            yarn add @atlrdsgn/kit
-          </Text>
-          <Space size='sm' />
-          <PassLink
-            href='https://kit.atlrdsgn.com'
-            target='_blank'
-            variant='orange'
-            size='sm'
-            weight='medium'
-            font='system'>
-            Edit on CodeSandbox →
-          </PassLink>
-          <Space size='xl' />
-          <Text
             color='sapphire6'
             align='center'
             size='lg'
@@ -62,6 +42,17 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
             Atelier® Kit is an ever– expanding library of React components,
             primitives, and tools.
           </Text>
+
+          <Space size='xl' />
+          <PassLink
+            href='https://kit.atlrdsgn.com'
+            target='_blank'
+            variant='orange'
+            size='sm'
+            weight='medium'
+            font='mono'>
+            yarn add @atlrdsgn/kit
+          </PassLink>
         </Container>
 
         <Space size='xxl' />
