@@ -27,7 +27,7 @@ export const toastViewport = style({
   flexDirection: 'column',
   padding: '25px',
   gap: '10px',
-  maxWidth: '400px',
+  maxWidth: '600px',
   margin: 0,
   listStyle: 'none',
   zIndex: kit.z.indice.MAX,
@@ -44,8 +44,9 @@ export const toastRoot = style({
   boxShadow:
     'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
   display: 'flex',
-  flexDirection: 'column',
-  gap: '0.375rem', // 6px
+  flexDirection: 'row',
+  gap: '1rem', // 6px
+  justifyContent: 'space-between',
   alignItems: 'flex-start',
 
   padding: ROOT_SPACE.padding,
@@ -159,11 +160,9 @@ export const toastAction = style({
 
 export const toastClose = style({
   // dismiss button
+  position: 'relative',
   boxSizing: 'border-box',
   cursor: 'pointer',
-  position: 'absolute',
-  top: '0',
-  right: '0',
   padding: '8px',
   marginRight: '14px',
   marginTop: '14px',

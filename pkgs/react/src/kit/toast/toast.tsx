@@ -194,6 +194,23 @@ const ToastAction = React.forwardRef<
   );
 });
 
+type ToastContentProps = React.HTMLAttributes<HTMLDivElement> & {
+  className?: string;
+  children: React.ReactNode;
+};
+
+const ToastContent: React.FC<ToastContentProps> = ({
+  children,
+  className,
+  ...props
+}) => (
+  <div
+    {...props}
+    className={createKitClass(CSS.toastContent, className)}>
+    {children}
+  </div>
+);
+
 // close
 const ToastClose = React.forwardRef<
   React.ElementRef<typeof TST.Close>,
@@ -218,6 +235,7 @@ const ToastClose = React.forwardRef<
 export const Toast: React.FC<ToastProps> & {
   Title: typeof ToastTitle;
   Description: typeof ToastDescription;
+  Content: typeof ToastContent;
   //..
   Action: typeof ToastAction;
   Close: typeof ToastClose;
@@ -225,6 +243,7 @@ export const Toast: React.FC<ToastProps> & {
 
 Toast.Title = ToastTitle;
 Toast.Description = ToastDescription;
+Toast.Content = ToastContent;
 Toast.Action = ToastAction;
 Toast.Close = ToastClose;
 
@@ -233,11 +252,13 @@ Toast.displayName = 'Toast';
 Toast.Title.displayName = 'Toast.Title';
 Toast.Description.displayName = 'Toast.Description';
 Toast.Action.displayName = 'Toast.Action';
+Toast.Content.displayName = 'Toast.Content';
 Toast.Close.displayName = 'Toast.Close';
 
 ToastTitle.displayName = 'Toast.Title';
 ToastDescription.displayName = 'Toast.Description';
 ToastAction.displayName = 'Toast.Action';
+ToastContent.displayName = 'Toast.Content';
 ToastClose.displayName = 'Toast.Close';
 
 export type ToastActionElement = React.ReactElement<typeof ToastAction>;

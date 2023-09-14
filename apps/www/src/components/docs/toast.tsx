@@ -30,11 +30,13 @@ export const KitToast = () => {
           label='kit-toast'
           open={isOpen}
           onOpenChange={setIsOpen}>
-          <Toast.Description>
-            Adipisicing quis culpa proident ex.
-          </Toast.Description>
+          <Toast.Content>
+            <Toast.Description>
+              Adipisicing quis culpa proident ex.
+            </Toast.Description>
 
-          <Toast.Close />
+            <Toast.Close />
+          </Toast.Content>
         </Toast>
       </>
     </ComponentWrapper>
