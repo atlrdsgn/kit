@@ -125,7 +125,7 @@ export const DefaultExample = () => (
 );
 ```
 
-##### CodeSandbox Links
+##### CodeSandbox Link(s)
 
 - `next.kit`: [Edit on CodeSandbox →](https://codesandbox.io/p/sandbox/next-kit-tr8cv9)
 - `react.kit.ts`: [Edit on CodeSandbox →](https://codesandbox.io/p/sandbox/atelierkit-react-ts-zzpzcl)
