@@ -23,8 +23,6 @@ export const toastViewport = style({
   position: 'fixed',
   bottom: 0,
   right: 0,
-  display: 'flex',
-  flexDirection: 'column',
   padding: '25px',
   gap: '10px',
   maxWidth: '600px',
@@ -33,7 +31,13 @@ export const toastViewport = style({
   zIndex: kit.z.indice.MAX,
   outline: 'none',
   selectors: {
-    '&[data-state="open"]': {},
+    '&[data-state="open"]': {
+      gap: '10px',
+      maxWidth: '600px',
+      margin: 0,
+      listStyle: 'none',
+      zIndex: kit.z.indice.MAX,
+    },
   },
 });
 
