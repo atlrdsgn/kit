@@ -6,6 +6,10 @@
 
 An ever– expanding library of [React](https://reactjs.org/) components, primitives, and tools.
 
+Atelier® Kit is a set of React components and hooks that are used for various projects.
+The components are built using Radix UI primitives and are designed to be used with React.
+The design system contains a custom theme, custom components and custom hooks.
+
 ---
 
 **Note**: This monorepo holds the source code for the following packages.
