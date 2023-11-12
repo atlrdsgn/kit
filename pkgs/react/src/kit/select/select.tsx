@@ -2,8 +2,9 @@ import React from 'react';
 import * as SLCT from '@radix-ui/react-select';
 import * as CSS from './select.css';
 
+import { KitIcon } from 'src/lib';
+
 import {
-  ArrowDownIcon,
   IndicateIcon,
   SmallArrowDownIcon,
   SmallArrowUpIcon,
@@ -25,7 +26,7 @@ const SelectIcon = React.forwardRef<
     ref={forwardedRef}
     asChild={asChild}
     className={clsx(CSS.selectIcon, className)}>
-    <ArrowDownIcon />
+    <KitIcon icon='ArrowSortMd.Icon' />
   </SLCT.Icon>
 ));
 

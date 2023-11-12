@@ -24,7 +24,6 @@ const CopyTrigger: React.FC<TriggerProps> = ({
    * see more: https://usehooks-ts.com/react-hook/use-copy-to-clipboard
    */
   const [error, setError] = useState<string | null>(null);
-
   const [value, copy] = useCopyToClipboard();
 
   const copyClick = useCallback(async () => {

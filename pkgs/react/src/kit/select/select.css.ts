@@ -40,6 +40,7 @@ export const selectTrigger = style({
   paddingRight: TRGGR_PADDING_RIGHT,
 
   transition: 'all 0.2s ease-in-out',
+  boxShadow: '0px 1px 2px 0px rgba(134, 142, 150, 0.25)',
 
   ':hover': { backgroundColor: kit.color.carbon0 },
   ':focus': {
@@ -174,8 +175,8 @@ export const selectItem = style({
 
   selectors: {
     '&[data-highlighted]': {
-      backgroundColor: kit.color.jade5,
-      color: kit.color.jade0,
+      backgroundColor: kit.color.sapphire5,
+      color: kit.color.sapphire0,
     },
   },
 });
@@ -188,15 +189,15 @@ export const selectIndicate = style({
   height: '16px',
 
   // icon color
-  color: kit.color.sapphire5,
+  color: kit.color.carbon5,
 
   ':active': {
-    color: kit.color.sapphire0,
+    color: kit.color.carbon0,
   },
 
   selectors: {
     '&[data-highlighted]': {
-      color: kit.color.sapphire0,
+      color: kit.color.carbon0,
     },
   },
 });

@@ -1,6 +1,7 @@
 import { GlobeBlobIcon } from './misc/globe-blobe';
 import { ARCubeIcon } from './tools/ar-cube';
 import { ArrowSortIcon } from './tools/arrow-sort';
+import { ArrowSortMdIcon } from './tools/arrow-sort-md';
 import CloseIcon from './tools/close';
 import { CursorIcon } from './tools/cursor';
 import { ExpandFilledIcon } from './tools/expand-filled';
@@ -21,6 +22,7 @@ type SVGVariants =
   // tools
   | 'ARCube.Icon'
   | 'ArrowSort.Icon'
+  | 'ArrowSortMd.Icon'
   | 'Close.Icon'
   | 'Cursor.Icon'
   | 'ExpandFilled.Icon'
@@ -42,6 +44,7 @@ interface IconSync {
   // tools
   'ARCube.Icon': React.FC<SVGKit>;
   'ArrowSort.Icon': React.FC<SVGKit>;
+  'ArrowSortMd.Icon': React.FC<SVGKit>;
   'Close.Icon': React.FC<SVGKit>;
   'Cursor.Icon': React.FC<SVGKit>;
   'ExpandFilled.Icon': React.FC<SVGKit>;
@@ -57,6 +60,7 @@ const IconMap: IconSync = {
   // tools
   'ARCube.Icon': ARCubeIcon,
   'ArrowSort.Icon': ArrowSortIcon,
+  'ArrowSortMd.Icon': ArrowSortMdIcon,
   'Close.Icon': CloseIcon,
   'Cursor.Icon': CursorIcon,
   'ExpandFilled.Icon': ExpandFilledIcon,

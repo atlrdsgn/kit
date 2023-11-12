@@ -7590,7 +7590,7 @@ __metadata:
     clsx: ^2.0.0
     eslint-config-atlrdsgn: "*"
     inter-ui: ^3.19.3
-    next: ^14.0.1
+    next: ^14.0.2
     next-themes: ^0.2.1
     prettier: ^3.0.3
     react: ^18.2.0
@@ -8976,7 +8976,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:^14.0.1":
+"next@npm:^14.0.1, next@npm:^14.0.2":
   version: 14.0.2
   resolution: "next@npm:14.0.2"
   dependencies:

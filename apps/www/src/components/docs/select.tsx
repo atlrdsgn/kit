@@ -34,7 +34,7 @@ const KitSelect = () => {
   return (
     <ComponentWrapper label='select'>
       <Select>
-        <Select.Trigger placeholder='Select a component.' />
+        <Select.Trigger placeholder='Select a component...' />
         <Select.Content>
           {/* <!--- Map the values to the options --> */}
           {ops.map((options) => (
