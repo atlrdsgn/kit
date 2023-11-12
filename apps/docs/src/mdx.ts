@@ -1,15 +1,25 @@
 import { useMDXComponents as originalUseMDXComponents } from '@mdx-js/react';
-import type { Components } from '@mdx-js/react/lib';
+import type { ComponentType } from 'react';
+import {
+  createElement,
+  DetailedHTMLProps,
+  ImgHTMLAttributes,
+  RefAttributes,
+} from 'react';
 import Image, { type ImageProps } from 'next/image';
-import { createElement } from 'react';
 
-const DEFAULT_COMPONENTS = {
-  img: (props) =>
-    createElement(
-      typeof props.src === 'object' ? Image : 'img',
-      props as ImageProps,
-    ),
-} satisfies Components;
+// Define custom components for MDX
+const DEFAULT_COMPONENTS: Record<string, ComponentType<any>> = {
+  img: (
+    props: ImageProps &
+      ImgHTMLAttributes<HTMLImageElement> &
+      RefAttributes<HTMLImageElement>,
+  ) => {
+    // Conditionally use Next.js Image or standard img tag
+    const Component = typeof props.src === 'string' ? 'img' : Image;
+    return createElement(Component, props);
+  },
+};
 
 export const useMDXComponents: typeof originalUseMDXComponents = (
   components,
@@ -21,5 +31,4 @@ export const useMDXComponents: typeof originalUseMDXComponents = (
 };
 
 export { MDXProvider } from '@mdx-js/react';
-
-export type { Components };
+export type { ComponentType as Component };
