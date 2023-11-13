@@ -47,7 +47,7 @@ __metadata:
     "@radix-ui/react-toggle-group": ^1.0.4
     "@radix-ui/react-tooltip": ^1.0.7
     "@types/node": ^20.8.7
-    "@types/react": ^18.2.24
+    "@types/react": ^18.2.37
     "@types/react-dom": ^18.2.7
     "@typescript-eslint/eslint-plugin": ^6.9.1
     "@typescript-eslint/parser": ^6.7.4
@@ -2818,14 +2818,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.24":
-  version: 18.2.24
-  resolution: "@types/react@npm:18.2.24"
+"@types/react@npm:^18.2.37":
+  version: 18.2.37
+  resolution: "@types/react@npm:18.2.37"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: ea5d8204e71b1c9c6631f429a93f8e7be0614cdbdb464e92b3181bdccd8a7c45e30ded8b13da726684b6393f651317c36d54832e3d3cdea0da480a3f26268909
+  checksum: 2d2599f1a09e4f678509161fea8baeaf76d21deee460f4f3ccc1ca431ebe85f896d7d0b906127de17e97ed57240cec61955eb97d0b5d9cbf4e97fd6620b1acdb
   languageName: node
   linkType: hard
 
@@ -7560,7 +7560,7 @@ __metadata:
   dependencies:
     "@mdx-js/react": ^3.0.0
     "@types/node": ^20.8.7
-    "@types/react": ^18.2.24
+    "@types/react": ^18.2.37
     "@types/react-dom": ^18.2.7
     autoprefixer: ^10.4.16
     class-variance-authority: ^0.7.0
@@ -7585,7 +7585,7 @@ __metadata:
     "@atlrdsgn/kit": "*"
     "@atlrdsgn/tsconfig": "*"
     "@types/node": ^20.8.7
-    "@types/react": ^18.2.24
+    "@types/react": ^18.2.37
     "@types/react-dom": ^18.2.7
     clsx: ^2.0.0
     eslint-config-atlrdsgn: "*"
