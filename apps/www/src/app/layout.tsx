@@ -5,21 +5,26 @@ import { MonaSans, fontClassName } from '@/lib/fonts';
 import { clsx } from 'clsx';
 import { AppHooks } from './hooks';
 
-import { type Metadata } from 'next';
+import type { Viewport } from 'next';
+import type { Metadata } from 'next';
 import ThemeProvider from '@/components/theme-provider';
 
 const siteURL = 'https://kit.atlrdsgn.com';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: [],
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://kit.atlrdsgn.com'),
   title: '@atlrdsgn/kit',
   description: 'an ever– expanding library of design components.',
   manifest: `${siteURL}/site.webmanifest`,
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
+
   openGraph: {
     title: '@atlrdsgn/kit',
     description: 'an ever– expanding library of design components.',
@@ -35,10 +40,7 @@ export const metadata: Metadata = {
     locale: 'en-US',
     type: 'website',
   },
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
-    { media: '(prefers-color-scheme: dark)', color: '#171717' },
-  ],
+
   icons: {
     icon: '/favicon.ico',
     shortcut: '/shortcut-icon.png',

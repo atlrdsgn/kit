@@ -158,6 +158,8 @@ export const themeVars = createThemeContract({
     LOW: null,
     MED: null,
     HIGH: null,
+    // Updates
+    SM: null,
   },
 
   /**

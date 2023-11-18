@@ -140,6 +140,10 @@ body:not(.user-is-tabbing) textarea:focus {
   z-index: 80 !important;
 }
 
+.main-content {
+  padding-bottom: 160px;
+}
+
 /**
   *
   * @scrollbar-custom

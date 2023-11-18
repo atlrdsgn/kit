@@ -145,6 +145,9 @@ export const theme = {
     LOW: '0px 4px 8px rgba(0, 0, 0, 0.1)',
     MED: '0px 8px 16px rgba(0, 0, 0, 0.1)',
     HIGH: '0px 12px 24px rgba(0, 0, 0, 0.1)',
+
+    // Updates
+    SM: '0px 1px 1px 0px rgba(0, 0, 0, 0.04), 0px 2px 5px 0px rgba(0, 0, 0, 0.08)',
   },
 
   // ..

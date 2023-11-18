@@ -1,8 +1,9 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { useCopyToClipboard } from 'usehooks-ts';
 import * as CSS from './copy.cmd.css';
+
 import { createKitClass } from '../../lib';
-import { isError } from '../@utils';
+import { useErrorHandler } from '../@utils';
 
 export type CopyCommandProps = {
   className?: string;
@@ -23,28 +24,29 @@ const CopyTrigger: React.FC<TriggerProps> = ({
    * useCopyToClipboard hook
    * see more: https://usehooks-ts.com/react-hook/use-copy-to-clipboard
    */
-  const [error, setError] = useState<string | null>(null);
   const [value, copy] = useCopyToClipboard();
+  const { error, handleError } = useErrorHandler();
 
   const copyClick = useCallback(async () => {
     try {
       await copy(copytext);
     } catch (err) {
-      if (isError(err)) {
-        setError(`Failed to copy text: ${err.message}`);
-      } else {
-        setError('An unexpected error occurred.');
-      }
+      handleError(err); // Handle errors using the custom hook
     }
-  }, [copytext, copy]);
+  }, [copytext, copy, handleError]);
+
+  const buttonClass = useMemo(
+    () => createKitClass(CSS.copyTrigger, className),
+    [className],
+  );
 
   return (
     <button
       {...rest}
       onClick={copyClick}
-      className={createKitClass(CSS.copyTrigger, className)}>
+      className={buttonClass}
+      aria-label='Copy to clipboard'>
       {value ? 'Copied' : 'Copy'}
-
       {error && <span className='error'>{error}</span>}
     </button>
   );

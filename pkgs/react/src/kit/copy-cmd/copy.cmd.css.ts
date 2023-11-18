@@ -15,7 +15,7 @@ const COMPOSE_BTN = {
 
 export const fieldRoot = style({
   width: '100%',
-  maxWidth: '340px',
+  maxWidth: '320px',
   display: 'inline-flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -35,14 +35,14 @@ export const backplate = style({
   paddingBottom: FIELD_PAD.bottom,
   paddingLeft: FIELD_PAD.left,
 
-  borderRadius: '0.75rem',
-  border: `2px solid ${kit.color.carbon2}`,
+  borderRadius: 12,
+  border: `1px solid ${kit.color.carbon2}`,
   background: kit.color.whiteA6,
 
-  boxShadow: `0px 1px 1px 0px rgba(0, 0, 0, 0.04), 0px 2px 5px 0px rgba(0, 0, 0, 0.08)`,
+  boxShadow: kit.shadow.SM,
 
   ':hover': {
-    border: `2px solid ${kit.color.carbon3}`,
+    border: `1px solid ${kit.color.carbon3}`,
   },
 });
 
@@ -80,7 +80,7 @@ export const copyTrigger = style({
   outline: 'none',
 
   border: `1px solid ${kit.color.carbon4}`,
-  borderRadius: `0.5rem`,
+  borderRadius: 8,
   height: '100%',
 
   backgroundColor: kit.color.carbon3,
@@ -94,7 +94,7 @@ export const copyTrigger = style({
   margin: 0,
 
   ':hover': {
-    border: `1px solid ${kit.color.carbon1}`,
+    border: `1px solid ${kit.color.carbon5}`,
   },
   ':active': {},
   ':focus': {},

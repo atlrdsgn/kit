@@ -9,3 +9,4 @@ export {
 } from './types';
 
 export { isError } from './error';
+export { useErrorHandler } from './error';
