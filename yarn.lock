@@ -57,7 +57,7 @@ __metadata:
     "@vanilla-extract/private": ^1.0.3
     "@vanilla-extract/recipes": ^0.5.0
     "@vanilla-extract/sprinkles": ^1.6.1
-    "@vanilla-extract/vite-plugin": ^3.9.0
+    "@vanilla-extract/vite-plugin": ^3.9.2
     clsx: 2.0.0
     eslint: ^8.50.0
     eslint-config-atlrdsgn: "*"
@@ -3110,7 +3110,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/css@npm:^1.10.0, @vanilla-extract/css@npm:^1.13.0":
+"@vanilla-extract/css@npm:^1.13.0":
   version: 1.13.0
   resolution: "@vanilla-extract/css@npm:1.13.0"
   dependencies:
@@ -3129,6 +3129,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/css@npm:^1.14.0":
+  version: 1.14.0
+  resolution: "@vanilla-extract/css@npm:1.14.0"
+  dependencies:
+    "@emotion/hash": ^0.9.0
+    "@vanilla-extract/private": ^1.0.3
+    chalk: ^4.1.1
+    css-what: ^6.1.0
+    cssesc: ^3.0.0
+    csstype: ^3.0.7
+    deep-object-diff: ^1.1.9
+    deepmerge: ^4.2.2
+    media-query-parser: ^2.0.2
+    modern-ahocorasick: ^1.0.0
+    outdent: ^0.8.0
+  checksum: ca12de26f72b908c7ac2ee9319faff885fb451ab3da7cef86aae8660c7e042c447041be40ac8c6155d87e8a709efb0697214db3a6cce211e8ef3c110d4dcf8a1
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/dynamic@npm:^2.1.0":
   version: 2.1.0
   resolution: "@vanilla-extract/dynamic@npm:2.1.0"
@@ -3138,14 +3157,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/integration@npm:^6.0.2":
-  version: 6.2.2
-  resolution: "@vanilla-extract/integration@npm:6.2.2"
+"@vanilla-extract/integration@npm:^6.2.4":
+  version: 6.2.4
+  resolution: "@vanilla-extract/integration@npm:6.2.4"
   dependencies:
     "@babel/core": ^7.20.7
     "@babel/plugin-syntax-typescript": ^7.20.0
     "@vanilla-extract/babel-plugin-debug-ids": ^1.0.2
-    "@vanilla-extract/css": ^1.10.0
+    "@vanilla-extract/css": ^1.14.0
     esbuild: 0.17.6
     eval: 0.1.8
     find-up: ^5.0.0
@@ -3155,7 +3174,7 @@ __metadata:
     outdent: ^0.8.0
     vite: ^4.1.4
     vite-node: ^0.28.5
-  checksum: dbff14a91957c47d3ef347d1578588685a9d6408a0cb33e9121df59e9c10482844cf60663fd9d3608a61a3e9578ccd5a303b33c61c238e7e89023197f3950c56
+  checksum: abf493c7c022991303081656ca2256f452e1bda79673ccf6ee63cf84a025bad14dfac9357b9aa333d90b69ab881c71ec1c843d6e125189931cec86080ad6fd1c
   languageName: node
   linkType: hard
 
@@ -3184,17 +3203,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/vite-plugin@npm:^3.9.0":
-  version: 3.9.0
-  resolution: "@vanilla-extract/vite-plugin@npm:3.9.0"
+"@vanilla-extract/vite-plugin@npm:^3.9.2":
+  version: 3.9.2
+  resolution: "@vanilla-extract/vite-plugin@npm:3.9.2"
   dependencies:
-    "@vanilla-extract/integration": ^6.0.2
+    "@vanilla-extract/integration": ^6.2.4
     outdent: ^0.8.0
     postcss: ^8.3.6
-    postcss-load-config: ^3.1.0
+    postcss-load-config: ^4.0.1
   peerDependencies:
-    vite: ^2.2.3 || ^3.0.0 || ^4.0.3
-  checksum: 1eb5850fa8d2c8befaf79256b3a5bfe41fd9f122de140d12d1b937302108efe324df88c09f16e67f2a4cdebb9d627405e7278076768a98604df7604ae0644cdc
+    vite: ^2.2.3 || ^3.0.0 || ^4.0.3 || ^5.0.0
+  checksum: 22b57abd861893f7cfe3b2c4b72a72b4e3ddad7cb67d5ede1ba2a2c21040e792808e57ec1151b3cf1ed8f80a6389d3426290a27b9040b2cdc16f74ed838edfe3
   languageName: node
   linkType: hard
 
@@ -8979,6 +8998,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"modern-ahocorasick@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "modern-ahocorasick@npm:1.0.1"
+  checksum: ec83479f406511f37a966d66ce1c2b1701bb4a2cc2aabbbc257001178c9fbc48ce748c88eb10dfe72ba8b7f991a0bc7f1fa14683f444685edd1a9eeb32ecbc1e
+  languageName: node
+  linkType: hard
+
 "mri@npm:^1.1.0":
   version: 1.2.0
   resolution: "mri@npm:1.2.0"
@@ -9824,24 +9850,6 @@ __metadata:
   peerDependencies:
     postcss: ^8.4.21
   checksum: 5c1e83efeabeb5a42676193f4357aa9c88f4dc1b3c4a0332c132fe88932b33ea58848186db117cf473049fc233a980356f67db490bd0a7832ccba9d0b3fd3491
-  languageName: node
-  linkType: hard
-
-"postcss-load-config@npm:^3.1.0":
-  version: 3.1.4
-  resolution: "postcss-load-config@npm:3.1.4"
-  dependencies:
-    lilconfig: ^2.0.5
-    yaml: ^1.10.2
-  peerDependencies:
-    postcss: ">=8.0.9"
-    ts-node: ">=9.0.0"
-  peerDependenciesMeta:
-    postcss:
-      optional: true
-    ts-node:
-      optional: true
-  checksum: 1c589504c2d90b1568aecae8238ab993c17dba2c44f848a8f13619ba556d26a1c09644d5e6361b5784e721e94af37b604992f9f3dc0483e687a0cc1cc5029a34
   languageName: node
   linkType: hard
 
@@ -12476,13 +12484,6 @@ __metadata:
   version: 4.0.0
   resolution: "yallist@npm:4.0.0"
   checksum: 343617202af32df2a15a3be36a5a8c0c8545208f3d3dfbc6bb7c3e3b7e8c6f8e7485432e4f3b88da3031a6e20afa7c711eded32ddfb122896ac5d914e75848d5
-  languageName: node
-  linkType: hard
-
-"yaml@npm:^1.10.2":
-  version: 1.10.2
-  resolution: "yaml@npm:1.10.2"
-  checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
   languageName: node
   linkType: hard
 
