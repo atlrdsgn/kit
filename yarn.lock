@@ -5363,7 +5363,7 @@ __metadata:
     eslint-plugin-prettier: ^5.0.0
     eslint-plugin-react: ^7.33.2
     eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-turbo: ^1.10.14
+    eslint-plugin-turbo: ^1.10.16
     prettier: ^3.0.3
   languageName: unknown
   linkType: soft
@@ -5597,7 +5597,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turbo@npm:1.10.14, eslint-plugin-turbo@npm:^1.10.14":
+"eslint-plugin-turbo@npm:1.10.14":
   version: 1.10.14
   resolution: "eslint-plugin-turbo@npm:1.10.14"
   dependencies:
@@ -5605,6 +5605,17 @@ __metadata:
   peerDependencies:
     eslint: ">6.6.0"
   checksum: 11d38c4eb73503a9bf896271dc712ef72555869b35856dd7810cc5bfe2ebe5e16af395fcb8202ed8d321dd04af4f9f4d0f94be01523dddb7a0327bdf9bf014dc
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-turbo@npm:^1.10.16":
+  version: 1.10.16
+  resolution: "eslint-plugin-turbo@npm:1.10.16"
+  dependencies:
+    dotenv: 16.0.3
+  peerDependencies:
+    eslint: ">6.6.0"
+  checksum: 00fdbd2cb956b3e9972c84169bb190bafaa274418989508bf52a5d1b5f7df0e850eb60fc702fedbc34477dcebc3e06450de0b81d8e30b56e061ced850e8cb8e3
   languageName: node
   linkType: hard
 
