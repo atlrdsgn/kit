@@ -3,9 +3,9 @@ import { kit } from '../../lib';
 
 const FIELD_PAD = {
   left: kit.space.IPX, // 16px
-  right: '5px',
-  top: '5px',
-  bottom: '5px',
+  right: kit.space.CPX, // 4px
+  top: kit.space.CPX, // 4px
+  bottom: kit.space.CPX, // 4px
 } as const;
 
 const COMPOSE_BTN = {
