@@ -1,7 +1,8 @@
-import { azure, lime, hyper } from './neon';
+import { azure, hyper } from './neon';
 import { carbon } from './carbon';
 import { jade } from './jade';
 
+import { lime } from './lime';
 import { sapphire } from './sapphire';
 import { slate } from './slate';
 import { orange } from './orange';
