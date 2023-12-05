@@ -68,7 +68,7 @@
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.10.0",
     "@vanilla-extract/vite-plugin": "^3.9.2",
-    "eslint": "^8.50.0",
+    "eslint": "^8.55.0",
     "eslint-config-atlrdsgn": "*",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
