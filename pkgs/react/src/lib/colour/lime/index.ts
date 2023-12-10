@@ -1,4 +1,5 @@
 export const lime = {
+  lime0: '#f4fff0',
   lime1: '#fcfdfa',
   lime2: '#f8faf3',
   lime3: '#eef6d6',
