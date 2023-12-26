@@ -73,7 +73,7 @@ __metadata:
     typescript: ^5.2.2
     usehooks-ts: ^2.9.1
     vite: ^5.0.10
-    vite-plugin-banner: ^0.7.0
+    vite-plugin-banner: ^0.7.1
     vite-plugin-dts: ^3.6.0
     vite-plugin-zip-pack: ^1.0.6
     vite-tsconfig-paths: ^4.2.1
@@ -7184,10 +7184,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inter-ui@npm:^3.19.3":
-  version: 3.19.3
-  resolution: "inter-ui@npm:3.19.3"
-  checksum: 74435e742e9829402cf15ac08aa48541c93e96d7528a29ba3bc2a14b059ccd3f330ddba8b1c96f06bfdda46b0c7e1a406db22a309045b3412b66ec4dcb5efa2a
+"inter-ui@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "inter-ui@npm:4.0.1"
+  checksum: ce2bdfa7f259fe325df3116cb5c5d2fba4da86500b71a88d6759d17947739c5a4b1674a5a7729ae0b1898e9c710c5e3d2df7a6e8083861b41889e10d5aeafabd
   languageName: node
   linkType: hard
 
@@ -7949,7 +7949,7 @@ __metadata:
     "@types/react-dom": ^18.2.17
     clsx: ^2.0.0
     eslint-config-atlrdsgn: "*"
-    inter-ui: ^3.19.3
+    inter-ui: ^4.0.0
     next: ^14.0.4
     next-themes: ^0.2.1
     prettier: ^3.0.3
@@ -12505,10 +12505,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-banner@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "vite-plugin-banner@npm:0.7.0"
-  checksum: 4078b10bc1acb2eec2c730f4c6ed966e9c81c5053b462bf6120c6ac48a0efe1a0ba3cadea117114e5a19073322f907549bfcd5e6be88779b4bb0fde4dc684908
+"vite-plugin-banner@npm:^0.7.1":
+  version: 0.7.1
+  resolution: "vite-plugin-banner@npm:0.7.1"
+  checksum: 29c0c8c6422651f258b8e3be728fcab25c7d521c8b2a5badd6919b1fb153fcf7111b80c8aeac5445948fba5032d6cb4fd792c858553e1792d2b656354be0d1d9
   languageName: node
   linkType: hard
 
