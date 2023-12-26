@@ -23,6 +23,17 @@ function AppCoverPage() {
             height='29'
           />
 
+          <div style={{ zIndex: 100 }}>
+            <Text
+              align='center'
+              size='md'
+              casing='none'
+              weight='bold'
+              color='carbon7'>
+              Advanced Techniques and Learning Resources.
+            </Text>
+          </div>
+
           <div style={{}}>
             <Text
               className='take'

@@ -9,8 +9,15 @@ export interface BaseButtonProps {
    */
   active?: boolean;
   disabled?: boolean;
-  after?: React.ReactNode;
-  before?: React.ReactNode;
+  /**
+   * The slot to be rendered before the label.
+   */
+  before?: React.ReactElement<HTMLElement>;
+
+  /**
+   * The slot to be rendered after the label.
+   */
+  after?: React.ReactElement<HTMLElement>;
 
   type?: 'button' | 'submit' | 'reset';
   /**
