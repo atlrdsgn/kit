@@ -3,14 +3,7 @@
 import React from 'react';
 
 // import { KitLogo } from '@/components/svg/kit.svg';
-import {
-  Badge,
-  Container,
-  Section,
-  PassLink,
-  Text,
-  Space,
-} from '@atlrdsgn/kit';
+import { Badge, Container, Section, Text, Space } from '@atlrdsgn/kit';
 
 function ComponentsPage({ children }: { children?: React.ReactNode }) {
   return (
@@ -34,25 +27,16 @@ function ComponentsPage({ children }: { children?: React.ReactNode }) {
 
           <Space size='lg' />
           <Text
-            color='sapphire6'
+            color='carbon6'
             align='center'
-            size='lg'
-            weight='medium'
+            size='xxl'
+            weight='semibold'
             font='system'>
-            Atelier® Kit is an ever– expanding library of React components,
+            Atlr®Kit is an ever– expanding library of React components,
             primitives, and tools.
           </Text>
 
           <Space size='xl' />
-          <PassLink
-            href='https://kit.atlrdsgn.com'
-            target='_blank'
-            variant='orange'
-            size='sm'
-            weight='medium'
-            font='mono'>
-            yarn add @atlrdsgn/kit
-          </PassLink>
         </Container>
 
         <Space size='xxl' />

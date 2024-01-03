@@ -38,9 +38,9 @@ function PageFooter() {
             color='carbon6'
             size='xl'
             align='center'
-            weight='medium'
+            weight='semibold'
             font='inter'>
-            This website is in– development.
+            This website is actively being developed.
           </Text>
         </Container>
 

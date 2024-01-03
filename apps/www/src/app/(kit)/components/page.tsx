@@ -8,6 +8,7 @@ import KitButton from '@/components/docs/button';
 import KitSelect from '@/components/docs/select';
 import KitPopover from '@/components/docs/popover';
 import KitCopyCommand from '@/components/docs/copy-cmd';
+import KitSection from '@/components/docs/section';
 
 const ComponentsIndex = () => {
   return (
@@ -16,6 +17,7 @@ const ComponentsIndex = () => {
         <AppNavbar />
         <ComponentsPage />
 
+        <KitSection />
         <KitBadge />
         <KitButton />
         <KitPopover />
