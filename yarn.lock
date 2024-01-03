@@ -7184,10 +7184,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inter-ui@npm:^3.19.3":
-  version: 3.19.3
-  resolution: "inter-ui@npm:3.19.3"
-  checksum: 74435e742e9829402cf15ac08aa48541c93e96d7528a29ba3bc2a14b059ccd3f330ddba8b1c96f06bfdda46b0c7e1a406db22a309045b3412b66ec4dcb5efa2a
+"inter-ui@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "inter-ui@npm:4.0.1"
+  checksum: ce2bdfa7f259fe325df3116cb5c5d2fba4da86500b71a88d6759d17947739c5a4b1674a5a7729ae0b1898e9c710c5e3d2df7a6e8083861b41889e10d5aeafabd
   languageName: node
   linkType: hard
 
@@ -7949,13 +7949,13 @@ __metadata:
     "@types/react-dom": ^18.2.17
     clsx: ^2.0.0
     eslint-config-atlrdsgn: "*"
-    inter-ui: ^3.19.3
+    inter-ui: ^4.0.0
     next: ^14.0.4
     next-themes: ^0.2.1
     prettier: ^3.0.3
     react: ^18.2.0
     react-dom: ^18.2.0
-    sass: ^1.69.0
+    sass: ^1.69.6
     typescript: ^5.2.2
     zustand: ^4.4.6
   languageName: unknown
@@ -10978,16 +10978,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.69.0":
-  version: 1.69.0
-  resolution: "sass@npm:1.69.0"
+"sass@npm:^1.69.6":
+  version: 1.69.6
+  resolution: "sass@npm:1.69.6"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: eabea31ea3b1dd529c7eff345c8b6468afe6ab8011bd4f95caa2cffb8fb115cc055ea21de425be6197f7ed22516f5652eccb98d315d592ea152ada553f964b8a
+  checksum: 9e98eecd283ce6ca5d75ee233e4ec193cb00706d0e119ab6843c44236d3beed2ba28d0af0b4b6bdb4da76feadf426f559d364a69ae54c010467059d130238a36
   languageName: node
   linkType: hard
 
