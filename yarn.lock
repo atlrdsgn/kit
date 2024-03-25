@@ -71,12 +71,12 @@ __metadata:
     react-dom: ^18.2.0
     ts-lib: ^0.0.5
     typescript: ^5.3.3
-    usehooks-ts: ^2.9.1
+    usehooks-ts: ^3.0.1
     vite: ^5.1.6
     vite-plugin-banner: ^0.7.1
     vite-plugin-dts: ^3.6.0
     vite-plugin-zip-pack: ^1.2.1
-    vite-tsconfig-paths: ^4.2.1
+    vite-tsconfig-paths: ^4.3.2
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -7920,7 +7920,7 @@ __metadata:
     eslint-config-atlrdsgn: "*"
     inter-ui: ^4.0.0
     next: ^14.0.4
-    next-themes: ^0.2.1
+    next-themes: ^0.3.0
     prettier: ^3.0.3
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -8054,6 +8054,13 @@ __metadata:
   version: 4.17.21
   resolution: "lodash-es@npm:4.17.21"
   checksum: 05cbffad6e2adbb331a4e16fbd826e7faee403a1a04873b82b42c0f22090f280839f85b95393f487c1303c8a3d2a010048bf06151a6cbe03eee4d388fb0a12d2
+  languageName: node
+  linkType: hard
+
+"lodash.debounce@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "lodash.debounce@npm:4.0.8"
+  checksum: a3f527d22c548f43ae31c861ada88b2637eb48ac6aa3eb56e82d44917971b8aa96fbb37aa60efea674dc4ee8c42074f90f7b1f772e9db375435f6c83a19b3bc6
   languageName: node
   linkType: hard
 
@@ -9330,6 +9337,16 @@ __metadata:
     react: "*"
     react-dom: "*"
   checksum: ebc248b956138e73436c4ed0a0f0a877a0a48a33156db577029b8b8469e48b5c777d61abf2baeb75953378febea74e067a4869ff90b4a3e94fce123289b862ba
+  languageName: node
+  linkType: hard
+
+"next-themes@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "next-themes@npm:0.3.0"
+  peerDependencies:
+    react: ^16.8 || ^17 || ^18
+    react-dom: ^16.8 || ^17 || ^18
+  checksum: 4285c4969eac517ad7addd773bcb71e7d14bc6c6e3b24eb97b80a6e06ac03fb6cb345e75dfb448156d14430d06289948eb8cfdeb52402ca7ce786093d01d2878
   languageName: node
   linkType: hard
 
@@ -11779,17 +11796,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfck@npm:^2.1.0":
-  version: 2.1.2
-  resolution: "tsconfck@npm:2.1.2"
+"tsconfck@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "tsconfck@npm:3.0.3"
   peerDependencies:
-    typescript: ^4.3.5 || ^5.0.0
+    typescript: ^5.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
   bin:
     tsconfck: bin/tsconfck.js
-  checksum: 6fd2f7de012a724f6b4bf48ae76cc7dae2b59dd5cad2dc50bac58d224d4ed7d5c43c6b26e55d3e00636f426f8b5373c996523d73b7830d05f8479a9b83282192
+  checksum: 8ee0d73f730c0747d4bfe569b1931e1b3848f2adfb86ee8f3dc9aedd123f155b363dec7f51dc165fc7938ce592af753aa513adf7753ffcbee1baf97017d919dd
   languageName: node
   linkType: hard
 
@@ -12348,13 +12365,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"usehooks-ts@npm:^2.9.1":
-  version: 2.9.1
-  resolution: "usehooks-ts@npm:2.9.1"
+"usehooks-ts@npm:^3.0.1":
+  version: 3.0.2
+  resolution: "usehooks-ts@npm:3.0.2"
+  dependencies:
+    lodash.debounce: ^4.0.8
   peerDependencies:
-    react: ^16.8.0  || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0  || ^17.0.0 || ^18.0.0
-  checksum: 36f1e4142ce23bc019b81d2e93aefd7f2c350abcf255598c21627114a69a2f2f116b35dc3a353375f09c6e4c9b704a04f104e3d10e98280545c097feca66c30a
+    react: ^16.8.0  || ^17 || ^18
+  checksum: b4c16d294e83c815fb24b94a6344fc4974026f36fc2537c0dabb6821853046a6dea397015de5dbb2fd69ec323fa1295cd08230d0293f7eef173ff6a231af45f1
   languageName: node
   linkType: hard
 
@@ -12522,19 +12540,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-tsconfig-paths@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "vite-tsconfig-paths@npm:4.2.1"
+"vite-tsconfig-paths@npm:^4.3.2":
+  version: 4.3.2
+  resolution: "vite-tsconfig-paths@npm:4.3.2"
   dependencies:
     debug: ^4.1.1
     globrex: ^0.1.2
-    tsconfck: ^2.1.0
+    tsconfck: ^3.0.3
   peerDependencies:
     vite: "*"
   peerDependenciesMeta:
     vite:
       optional: true
-  checksum: 8cfbd314eb82a9db97e193aef826e72a112ca8b98e68ef0f9cd8f8538fd5163afe67652507bae41d4aab967ab9a8b24dcf95bd0a8900d388cd6c500c5a82d3b1
+  checksum: 7105ff641379f9f7055110f33067b236c8ee71b1390c0e6482412cdcc7a98c2e139c1c2a483d14fe9045d1977c14dc931e1ff302d6257ec919c70379db9d2419
   languageName: node
   linkType: hard
 
