@@ -57,7 +57,7 @@ __metadata:
     "@vanilla-extract/private": ^1.0.3
     "@vanilla-extract/recipes": ^0.5.1
     "@vanilla-extract/sprinkles": ^1.6.1
-    "@vanilla-extract/vite-plugin": ^4.0.4
+    "@vanilla-extract/vite-plugin": ^4.0.7
     clsx: 2.1.0
     eslint: ^8.56.0
     eslint-config-atlrdsgn: "*"
@@ -3007,6 +3007,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vanilla-extract/css@npm:^1.14.2":
+  version: 1.14.2
+  resolution: "@vanilla-extract/css@npm:1.14.2"
+  dependencies:
+    "@emotion/hash": ^0.9.0
+    "@vanilla-extract/private": ^1.0.4
+    chalk: ^4.1.1
+    css-what: ^6.1.0
+    cssesc: ^3.0.0
+    csstype: ^3.0.7
+    deep-object-diff: ^1.1.9
+    deepmerge: ^4.2.2
+    media-query-parser: ^2.0.2
+    modern-ahocorasick: ^1.0.0
+    outdent: ^0.8.0
+  checksum: a256a0deecc9dfb84573cf44d37707b1a812c0be8e49973ef43d2ef86a5aea7ac4bf5cf2b579e18e37e92355f7618309fb27d40fd14e62f81723f9c5f608a9ce
+  languageName: node
+  linkType: hard
+
 "@vanilla-extract/dynamic@npm:^2.1.0":
   version: 2.1.0
   resolution: "@vanilla-extract/dynamic@npm:2.1.0"
@@ -3016,14 +3035,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/integration@npm:^7.1.0":
-  version: 7.1.1
-  resolution: "@vanilla-extract/integration@npm:7.1.1"
+"@vanilla-extract/integration@npm:^7.1.2":
+  version: 7.1.2
+  resolution: "@vanilla-extract/integration@npm:7.1.2"
   dependencies:
     "@babel/core": ^7.23.9
     "@babel/plugin-syntax-typescript": ^7.23.3
     "@vanilla-extract/babel-plugin-debug-ids": ^1.0.5
-    "@vanilla-extract/css": ^1.14.0
+    "@vanilla-extract/css": ^1.14.2
     esbuild: "npm:esbuild@~0.17.6 || ~0.18.0 || ~0.19.0"
     eval: 0.1.8
     find-up: ^5.0.0
@@ -3033,7 +3052,7 @@ __metadata:
     outdent: ^0.8.0
     vite: ^5.0.11
     vite-node: ^1.2.0
-  checksum: 3014a6268e183df8ff90d98d6123f74c285d8464d1640398e9c8dd159c4be5e092486df081834609377079ab2007c5dfb6d641c8e98a15feeac91c048e1bde24
+  checksum: 08f2bfdd16a65862d91c478bd8b111b0aaa96a7ecb335911175a5b1f5048b701e0da59a30ba8694d19009f3d1b6e4d066276d3d19eb23014010f462ceb7a8247
   languageName: node
   linkType: hard
 
@@ -3041,6 +3060,13 @@ __metadata:
   version: 1.0.3
   resolution: "@vanilla-extract/private@npm:1.0.3"
   checksum: 866a71ba6804edeb0735684e7723ba78f5cf0bb40d4fb538fe6bf7d73928099e341312337b2a510ac0ce96ff8a4b39eb7f7a5fad0c842532353dd20e7278f29b
+  languageName: node
+  linkType: hard
+
+"@vanilla-extract/private@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@vanilla-extract/private@npm:1.0.4"
+  checksum: 12d85d0e02d39e7ea27e63a4a623040ac1cce1cee2f39292185661803792457d80bdd21a60620764713fff87dffa0bf5744fe7e0d7f0740eb7dfb61210ed7171
   languageName: node
   linkType: hard
 
@@ -3062,14 +3088,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vanilla-extract/vite-plugin@npm:^4.0.4":
-  version: 4.0.6
-  resolution: "@vanilla-extract/vite-plugin@npm:4.0.6"
+"@vanilla-extract/vite-plugin@npm:^4.0.7":
+  version: 4.0.7
+  resolution: "@vanilla-extract/vite-plugin@npm:4.0.7"
   dependencies:
-    "@vanilla-extract/integration": ^7.1.0
+    "@vanilla-extract/integration": ^7.1.2
   peerDependencies:
     vite: ^4.0.3 || ^5.0.0
-  checksum: 3c7cadfa2d9c6489b76c71c09a5e4072e305f051caf6c975b72a345ccbd73a3e03f935593dc4fbb36d46a416d4e4457c94b5bfd51de76b7067aae819616daf67
+  checksum: a60b1e0d693eb9d8ea84ed05b3a7d20eb10f4586d7a002c5d01afdba7ea897b7a20d3595edfccae29fcd6fa3fd8618635363ec371d3dc466f453d7c3c57b94ba
   languageName: node
   linkType: hard
 
