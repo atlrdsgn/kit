@@ -20,6 +20,7 @@ export const fieldRoot = style({
   justifyContent: 'center',
   alignItems: 'center',
   overflow: 'hidden',
+  margin: 'auto',
 });
 
 export const backplate = style({
