@@ -20,13 +20,16 @@ const config: DocsThemeConfig = {
     </span>
   ),
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/atlrdsgn/kit',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/atlrdsgn/kit/tree/main/apps/docs',
   footer: {
     text: 'Copyright © 2023 atlrdsgn®, All rights reserved.',
   },
-  primaryHue: 146,
+  primaryHue: {
+    dark: 180,
+    light: 146,
+  },
 };
 
 export default config;

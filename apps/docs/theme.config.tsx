@@ -18,7 +18,10 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Copyright © 2023 atlrdsgn®, All rights reserved.',
   },
-  primaryHue: 146,
+  primaryHue: {
+    dark: 180,
+    light: 146,
+  },
 };
 
 export default config;
