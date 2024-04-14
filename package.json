@@ -1,7 +1,7 @@
 {
   "name": "kit",
   "private": true,
-  "description": "an ever– expanding library of React components by @atlrdsgn",
+  "description": "an ever expanding library of React components by @atlrdsgn",
   "license": "MIT",
   "author": "chvndler",
   "workspaces": [
@@ -27,6 +27,5 @@
     "prettier": "^3.0.3",
     "prettier-plugin-packagejson": "^2.4.5",
     "turbo": "^1.12.5"
-  },
-  "packageManager": "yarn@3.6.3"
+  }
 }
