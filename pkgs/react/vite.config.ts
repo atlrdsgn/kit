@@ -95,7 +95,7 @@ export default defineConfig({
     * 
     * This package is licensed under the MIT license.
     *
-    * Copyright © 2023 atlrdsgn®. 
+    * Copyright © 2024 atlrdsgn®. 
     * All rights reserved.
     `),
   ],

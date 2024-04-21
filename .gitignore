@@ -1,3 +1,9 @@
+.yarn
+.turbo
+.yarnrc.yml
+pnpm-lock.yaml
+.node-version
+
 # Misc.
 .vscode
 .DS_Store
@@ -8,10 +14,7 @@ pkgs/Icon
 .env
 .cache
 node_modules
-pnpm-lock.yaml
 package-lock.json
-.yarn
-.turbo
 
 # Build
 .next
@@ -28,5 +31,3 @@ public/dist
 *.local
 
 
-# Experimental
-# yarn.lock
