@@ -3,7 +3,7 @@
 
 __metadata:
   version: 8
-  cacheKey: 10
+  cacheKey: 10c0
 
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
   version: 1.2.6
@@ -59,7 +59,7 @@ __metadata:
     "@vanilla-extract/sprinkles": "npm:^1.6.1"
     "@vanilla-extract/vite-plugin": "npm:^4.0.7"
     clsx: "npm:^2.1.0"
-    eslint: "npm:^9.1.0"
+    eslint: "npm:^9.1.1"
     eslint-config-atlrdsgn: "npm:*"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-import: "npm:^2.29.1"
@@ -5134,7 +5134,7 @@ __metadata:
   dependencies:
     "@typescript-eslint/eslint-plugin": "npm:^7.7.0"
     "@typescript-eslint/parser": "npm:^7.7.0"
-    eslint: "npm:^9.1.0"
+    eslint: "npm:^9.1.1"
     eslint-config-next: "npm:^14.2.2"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-config-turbo: "npm:^1.13.2"
@@ -5386,9 +5386,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.1.0":
-  version: 9.1.0
-  resolution: "eslint@npm:9.1.0"
+"eslint@npm:^9.1.1":
+  version: 9.1.1
+  resolution: "eslint@npm:9.1.1"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@eslint-community/regexpp": "npm:^4.6.1"
@@ -5426,7 +5426,7 @@ __metadata:
     text-table: "npm:^0.2.0"
   bin:
     eslint: bin/eslint.js
-  checksum: 8/30372c41a26e9c5667348b4c7e605bd3ff12d77f329a7214e6a166fc3590613774b76ea3090abec298ba1498bb5228c37f1b64c09262af5bc00ab273cf8f096f
+  checksum: 10c0/0173fbc561d2272802315726283f63df0cf7197949ca1f80afd8ef92e95867677d54601ff6cad5467c44745160ba0f9cef7ac1154ccbd097d0269a4c6eb21041
   languageName: node
   linkType: hard
 
@@ -7236,7 +7236,7 @@ __metadata:
   resolution: "kit@workspace:."
   dependencies:
     "@changesets/cli": "npm:^2.27.1"
-    eslint: "npm:^9.1.0"
+    eslint: "npm:^9.1.1"
     eslint-config-atlrdsgn: "npm:*"
     prettier: "npm:^3.2.5"
     prettier-plugin-packagejson: "npm:^2.5.0"
