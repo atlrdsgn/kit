@@ -3,7 +3,7 @@
 
 __metadata:
   version: 8
-  cacheKey: 10
+  cacheKey: 10c0
 
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
   version: 1.2.6
@@ -72,7 +72,7 @@ __metadata:
     ts-lib: "npm:^0.0.5"
     typescript: "npm:^5.4.5"
     usehooks-ts: "npm:^3.1.0"
-    vite: "npm:^5.2.10"
+    vite: "npm:^5.2.12"
     vite-plugin-banner: "npm:^0.7.1"
     vite-plugin-dts: "npm:^3.8.3"
     vite-plugin-zip-pack: "npm:^1.2.3"
@@ -11687,9 +11687,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.2.10":
-  version: 5.2.10
-  resolution: "vite@npm:5.2.10"
+"vite@npm:^5.2.12":
+  version: 5.2.12
+  resolution: "vite@npm:5.2.12"
   dependencies:
     esbuild: "npm:^0.20.1"
     fsevents: "npm:~2.3.3"
@@ -11723,7 +11723,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 8/feb11be2b97259783afe1d0ff4b7ee0bef78fe8934d8b043465e039e4d8318249e2263adc724b719b9e9b45a37e012caeb7746854768f371d1a82bb189f50fe6
+  checksum: 10c0/f03fdfc320adea3397df3e327029fd875f8220779f679ab183a3a994e8788b4ce531fee28f830361fb274f3cf08ed9adb9429496ecefdc3faf535b38da7ea8b1
   languageName: node
   linkType: hard
 

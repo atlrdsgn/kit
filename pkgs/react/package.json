@@ -86,7 +86,7 @@
     "react-dom": "^18.2.0",
     "ts-lib": "^0.0.5",
     "typescript": "^5.4.5",
-    "vite": "^5.2.10",
+    "vite": "^5.2.12",
     "vite-plugin-banner": "^0.7.1",
     "vite-plugin-dts": "^3.8.3",
     "vite-plugin-zip-pack": "^1.2.3",
