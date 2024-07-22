@@ -3,7 +3,7 @@
 
 __metadata:
   version: 8
-  cacheKey: 10
+  cacheKey: 10c0
 
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
   version: 1.2.6
@@ -5137,7 +5137,7 @@ __metadata:
     eslint: "npm:^9.1.0"
     eslint-config-next: "npm:^14.2.2"
     eslint-config-prettier: "npm:^9.1.0"
-    eslint-config-turbo: "npm:^1.13.2"
+    eslint-config-turbo: "npm:^2.0.9"
     eslint-plugin-prettier: "npm:^5.1.3"
     eslint-plugin-react: "npm:^7.34.1"
     eslint-plugin-react-hooks: "npm:^4.6.0"
@@ -5180,14 +5180,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-turbo@npm:^1.13.2":
-  version: 1.13.2
-  resolution: "eslint-config-turbo@npm:1.13.2"
+"eslint-config-turbo@npm:^2.0.9":
+  version: 2.0.9
+  resolution: "eslint-config-turbo@npm:2.0.9"
   dependencies:
-    eslint-plugin-turbo: "npm:1.13.2"
+    eslint-plugin-turbo: "npm:2.0.9"
   peerDependencies:
     eslint: ">6.6.0"
-  checksum: 8/5f4e89d44f1d8eb7e21c1b841d28f05d67dca28fc473c56fa8cb1306bf2ff182b2af84029e4cd7853adb539f5cd07eae520e6928e00ae773d569165540cc57bf
+  checksum: 10c0/8a0022c8c5558fddb5cd477078bf732f3863b2f2327d19f047df3e5750aee84a20290036518e308d203e3fc731c46d6f35e68b97264d3e8d446e97881fb67318
   languageName: node
   linkType: hard
 
@@ -5351,7 +5351,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turbo@npm:1.13.2, eslint-plugin-turbo@npm:^1.13.2":
+"eslint-plugin-turbo@npm:2.0.9":
+  version: 2.0.9
+  resolution: "eslint-plugin-turbo@npm:2.0.9"
+  dependencies:
+    dotenv: "npm:16.0.3"
+  peerDependencies:
+    eslint: ">6.6.0"
+  checksum: 10c0/9271c1934fbb238146b4e8acd54a7586e9c76d6b6addceefb74ff4ad978dca1e307ce5bae3bb8be9c649d58cf80f0e01e465cbb5cc572d8bd42e12d5438ab268
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-turbo@npm:^1.13.2":
   version: 1.13.2
   resolution: "eslint-plugin-turbo@npm:1.13.2"
   dependencies:
