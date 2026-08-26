@@ -23,8 +23,9 @@ type TabsContentProps = {
   value: string;
 } & React.ComponentProps<typeof TAB.Content>;
 
-export interface TabSwitcherProps
-  extends React.ComponentProps<typeof TAB.Root> {
+export interface TabSwitcherProps extends React.ComponentProps<
+  typeof TAB.Root
+> {
   asChild?: boolean;
   /**
    * When automatic, tabs are activated when receiving focus.

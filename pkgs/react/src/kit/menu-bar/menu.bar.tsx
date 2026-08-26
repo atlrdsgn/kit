@@ -127,16 +127,9 @@ Menubar.Separator = MenubarSeparator;
 
 Menubar.displayName = 'Menubar';
 MenubarRoot.displayName = 'Menubar';
-MenubarCollection.displayName = 'MenubarCollection';
 MenubarTrigger.displayName = 'MenubarTrigger';
 MenubarContent.displayName = 'MenubarContent';
 MenubarItem.displayName = 'MenubarItem';
 MenubarSeparator.displayName = 'MenubarSeparator';
 
 /** ------------------------- */
-
-Menubar.Collection.displayName = 'MenubarCollection';
-Menubar.Trigger.displayName = 'MenubarTrigger';
-Menubar.Content.displayName = 'MenubarContent';
-Menubar.Item.displayName = 'MenubarItem';
-Menubar.Separator.displayName = 'MenubarSeparator';

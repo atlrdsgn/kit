@@ -2,7 +2,7 @@ import React from 'react';
 import * as SLCT from '@radix-ui/react-select';
 import * as CSS from './select.css';
 
-import { KitIcon } from 'src/lib';
+import { KitIcon } from '../../lib';
 
 import {
   IndicateIcon,

@@ -151,8 +151,7 @@ export type RequiredResponsiveValue<Value extends string | number> =
   RequiredConditionalValue<typeof responsiveProperties, Value>;
 
 export type OptionalResponsiveObject<Value> =
-  | Value
-  | Partial<Record<Breakpoint, Value>>;
+  Value | Partial<Record<Breakpoint, Value>>;
 export type RequiredResponsiveObject<Value> = Partial<
   Record<Breakpoint, Value>
 > &
